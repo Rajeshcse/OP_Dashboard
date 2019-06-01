@@ -31,6 +31,7 @@ mongoose.connect("mongodb+srv://rparaman:Geek123@cluster0-zugga.mongodb.net/test
 
 app.set("view engine","ejs");
 app.use(express.static(__dirname +"/public"));
+app.use(require('cookie-session'));
 app.use(flash());
 app.use(methodOverride("_method"));
 app.use(bodyParser.urlencoded({extended:true}));
