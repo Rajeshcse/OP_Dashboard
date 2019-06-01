@@ -20,7 +20,7 @@ var commentRoutes = require("./routes/comments"),
 //mongoose.connect("mongodb://localhost:27017/win",{useNewUrlParser: true});
 
 //rparaman:<password>@cluster0-zugga.mongodb.net/test?retryWrites=true&w=majority
-mongoose.connect("mongodb+srv://rparaman:Geek123#@cluster0-zugga.mongodb.net/test?retryWrites=true&w=majority",{
+mongoose.connect("mongodb+srv://rparaman:Geek123@cluster0-zugga.mongodb.net/test?retryWrites=true&w=majority",{
 	useNewUrlParser: true,
 	useCreateIndex: true
 }).then(() => {
@@ -28,6 +28,7 @@ mongoose.connect("mongodb+srv://rparaman:Geek123#@cluster0-zugga.mongodb.net/tes
 }).catch(err => {
 	console.log('ERROR:', err.message);
 });
+
 app.set("view engine","ejs");
 app.use(express.static(__dirname +"/public"));
 app.use(flash());
@@ -64,9 +65,9 @@ app.use(commentRoutes);
 
 
 // COMMENT routes
-
-app.listen(process.env.PORT, process.env.IP, function(){
-    console.log("Server Connected Successfully!!!");
+let port= 12345;
+app.listen(port, process.env.IP, function(){
+    console.log("Server Connected Successfully!!!"+ port);
 });
 
 
