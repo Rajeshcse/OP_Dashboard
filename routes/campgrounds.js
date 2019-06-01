@@ -45,6 +45,7 @@ router.post("/", middleware.isLoggedIn,  function(req, res){
 });
 
 // NEW - show for to create new Campground
+
 router.get("/new",middleware.isLoggedIn, function(req, res) {
     res.render("campgrounds/new");
 });
