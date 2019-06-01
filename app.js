@@ -17,7 +17,7 @@ var commentRoutes = require("./routes/comments"),
     indexRoutes     = require("./routes/index");
     
 //seedDB();
-mongoose.connect("mongodb://localhost:27017/win");
+//mongoose.connect("mongodb://localhost:27017/win",{useNewUrlParser: true});
 
 //rparaman:<password>@cluster0-zugga.mongodb.net/test?retryWrites=true&w=majority
 mongoose.connect("mongodb+srv://rparaman:Geek123#@cluster0-zugga.mongodb.net/test?retryWrites=true&w=majority",{
