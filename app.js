@@ -66,9 +66,8 @@ app.use(commentRoutes);
 
 
 // COMMENT routes
-let port= 12345;
-app.listen(port, process.env.IP, function(){
-    console.log("Server Connected Successfully!!!"+ port);
+var port = process.env.PORT || 3000;
+app.listen(port || process.env.PORT, process.env.IP, function(){
+    console.log("App server is running!"+ port);
 });
-
 
