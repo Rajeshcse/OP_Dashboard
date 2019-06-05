@@ -1,11 +1,11 @@
 <% include ../partials/header %>
-<div  class="container ">
+<div  class="ui main container ">
     <div class="col-md-9">
             <div class="thumbnail">
+                <h3><a><%=campground.name%></a></h3>
                 <img class="img-responsive" src="<%= campground.image %>">
                 <div class="caption-full">
-                    <h4 class="pull-right">$9.00/night</h4>
-                    <h4><a><%=campground.name%></a></h4>
+
                     <p><%= campground.description %></p>
                     <p><em>submitted by <%= campground.author.username %> </em></p>
                     <% if(currentUser && campground.author.id.equals(currentUser._id) ){ %>
