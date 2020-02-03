@@ -1,48 +1,64 @@
 <!DOCTYPE html>
+
 <html>
-<head>
-  <title>YelpCamp</title>
-  <link  rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css">
-  <link rel="stylesheet" href="/stylesheets/main.css">
-</head>
-<body>
+  <head>
+    <title>Metrics</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+    />
 
-<div class="ui fixed inverted menu">
-    <div class="ui container">
-        <a class="header item"><i class="amazon icon"></i><b>ITB Team Discussion Forum</b> </a>
-        <a class="ui item"  href="/campgrounds">Home</a>
-        <a class="ui item" href="/campgrounds/new">Ask new Question?</a>
-         <div class="item">
-          <div class="ui icon input">
-            <input type="text" placeholder="Search...">
-            <i class="search link icon"></i>
-          </div>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css"
+    />
+    <link rel="stylesheet" href="/stylesheets/main.css" />
+  </head>
+
+  <body>
+    <nav class=" navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">
+            <i class="large amazon icon"></i> OP Metrics Tool
+          </a>
         </div>
-        <div class="right menu">
-             <% if(!currentUser) { %>
-                  <a href="/login" class="ui item" >Login</a>
-                  <a href="/register" class="ui item">Sign Up</a>
-                  <% }else{ %>
-                  <a href="#" class="ui item">Welcome <%= currentUser.username %></a>
-                  <a href="/logout" class="ui item">Logout</a>
-              <% } %>
-        
+
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-left"></ul>
+          <ul class="nav navbar-nav navbar-right">
+            <% if(!currentUser){ %>
+
+            <li>
+              <a href="/login">Login <i class="sign-in icon"></i></a>
+            </li>
+            <li><a href="/register">Sign Up </a></li>
+
+            <% } else { %>
+            <li>
+              <a href="/campgrounds/profile">
+                <i class="user icon"></i> Signed In As <%= currentUser.username
+                %></a
+              >
+            </li>
+            <li><a href="/logout">Logout</a></li>
+            <% } %>
+          </ul>
+        </div>
       </div>
-    </div>
-</div>
+    </nav>
 
-<div class="main container">
-  <% if(error && error.length>0){ %>
-        <div class="alert alert-danger" role="alert">
-          <%=error%> 
-        </div>
-  <% } %>
-  
-  <% if(success && success.length>0){ %>
-        <div class="alert alert-success" role="alert">
-          <%=success%>
-        </div>
-  <% } %>
-</div>
-  
+    <div class="container">
+      <% if(error && error.length > 0){ %>
+      <div class="alert alert-danger" role="alert">
+        <%= error %>
+      </div>
+      <% } %> <% if(success && success.length > 0){ %>
+      <div class="alert alert-success" role="alert">
+        <%= success %>
+      </div>
+      <% } %>
+    </div>
+  </body>
+</html>
