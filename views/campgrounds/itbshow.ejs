@@ -13,7 +13,6 @@
           
       </ul>
   </div>
-  
   <div class="tab-content card-body">
       <div id="insta" class="tab-pane active"> <caption>
         <h2 class="team" > ITB Reports  , Year:2019 </h2>
@@ -27,10 +26,13 @@
         </thead>
         
         <tr>
-          <td class="quaterly" rowspan="3"><a href="/campgrounds/q3" target="0">Q3</a></td>
+
+          <td class="quaterly" rowspan="3"><a href="/campgrounds/q3" target="0" > Q3</a></td>
+          
           <td class="month">
-            <a  data-toggle="tab" href="/campgrounds/july">July
+            <a target="_blank"   href="/campgrounds/july" > July
           </td>
+
           <td> 
             <% campgrounds.forEach(function(itbMetric) {  %>
               <% if(itbMetric.week == "2019-W27"  ){  %>
@@ -71,7 +73,7 @@
         </tr>
       
         <tr>
-          <td class="month"><a  data-toggle="tab" href="/campgrounds/aug" > August </a></td>
+          <td class="month"><a  target="_blank"  href="/campgrounds/aug"  > August </a></td>
           <td> 
             <% campgrounds.forEach( function(itbMetric) {  %>
               <% if(itbMetric.week == "2019-W32" ){  %>
@@ -105,7 +107,7 @@
           </td>
         </tr>
         <tr>
-          <td class="month"><a  data-toggle="tab" href="/campgrounds/sep"  > September </a></td>
+          <td class="month"><a  target="_blank"  href="/campgrounds/sep"  > September </a></td>
           <td>
     
             <% campgrounds.forEach( function(itbMetric) {  %>
@@ -147,8 +149,8 @@
           </td>
         </tr>
         <tr>
-          <td class="quaterly" rowspan="3">Q4</td>
-          <td class="month"><a  data-toggle="tab" href="/campgrounds/oct"  > October </a></td>
+          <td class="quaterly" rowspan="3"><a href="/campgrounds/q3" target="_blank" > Q3</a></td>
+          <td class="month"><a target="_blank" href="/campgrounds/oct"  > October </a></td>
           <td> 
             <% campgrounds.forEach( function(itbMetric) {  %>
             <% if(itbMetric.week == "2019-W41" ){  %>
@@ -180,7 +182,7 @@
         </tr>
       
         <tr>
-          <td class="month"><a  data-toggle="tab" href="/campgrounds/nov"  > November </a></td>
+          <td class="month"><a target="_blank" href="/campgrounds/nov"  > November </a></td>
           <td> 
             <% campgrounds.forEach( function(itbMetric) {  %>
             <% if(itbMetric.week == "2019-W45" && itbMetric.team =="ITB"  ){  %>
@@ -211,7 +213,7 @@
           </td>
         </tr>
         <tr>
-          <td class="month"><a  data-toggle="tab" href="/campgrounds/dec"  > December </a></td>
+          <td class="month"><a target="_blank" href="/campgrounds/dec"  > December </a></td>
           <td>
             <% campgrounds.forEach( function(itbMetric) {  %>
             <% if(itbMetric.week == "2019-W49" ){  %>
@@ -340,3 +342,46 @@
   </div>
   </div>
 </div>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div >
+
+<header id="page_header">
+
+<div class="tab-content">
+<div id="jan" class="tab-pane fade in active">
+</div>
+<div id="feb" class="tab-pane fade">
+<h3>Menu 1</h3>
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<div id="march" class="tab-pane fade">
+<h3>Menu 2</h3>
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+</div>
+<div id="april" class="tab-pane fade">
+<h3>Menu 3</h3>
+<p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+</div>
+<div id="Q4" class="tab-pane fade">
+<h3>Menu 3</h3>
+<p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+</div>
+<div id="Q3" class="tab-pane fade">
+    <h3>Menu 35</h3>
+    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+</div>
+<hr>
+
+</div>
+</div>
+
+</body>
+
+</div>
+<br>

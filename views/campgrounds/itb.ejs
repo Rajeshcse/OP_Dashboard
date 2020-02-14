@@ -1,5 +1,6 @@
 <% include ../partials/header %>
 
+
 <script>
   
   function sum() {
@@ -225,6 +226,9 @@
 
   else if(  x=== "2019-W40" || x=== "2019-W41" || x=== "2019-W42" || x=== "2019-W43" || x=== "2019-W44"|| x=== "2019-W45"|| x=== "2019-W46" || x=== "2019-W47" || x=== "2019-W48" || x=== "2019-W49" || x=== "2019-W50"|| x=== "2019-W52"|| x=== "2019-W52"){
     
+    document.getElementById("P_CPH1").innerHTML = "1366" ;
+
+
     document.getElementById("Planned_v1" ).innerHTML = "658.84";
     document.getElementById("Planned_v2").innerHTML = "46.15";
     document.getElementById("Planned_v3").innerHTML = "264.69";
@@ -432,6 +436,7 @@
     
   }
   else if( x=== "2020-W14" || x=== "2020-W15" || x=== "2020-W16"   || x=== "2020-W17" || x=== "2020-W18" || x=== "2020-W19" || x=== "2020-W20" || x=== "2020-W21" || x=== "2020-W22" || x=== "2020-W23" || x=== "2020-W24"|| x=== "2020-W25"|| x=== "2020-W26" ){
+    
     document.getElementById("Planned_v1" ).innerHTML = "563.5";
     document.getElementById("Planned_v2").innerHTML = "663.5";
     document.getElementById("Planned_v3").innerHTML = "763.5";
@@ -536,6 +541,7 @@
   }
 
   else if( x=== "2020-W27" || x=== "2020-W28" || x=== "2020-W29" || x=== "2020-W30" || x=== "2020-W31" || x=== "2020-W32" || x=== "2020-W33" || x=== "2020-W34"|| x=== "2020-W35"|| x=== "2020-W36" || x=== "2020-W37" || x=== "2020-W38"|| x=== "2020-W39"|| x=== "2020-W40" ){
+    
     document.getElementById("Planned_v1" ).innerHTML = "563.5";
     document.getElementById("Planned_v2").innerHTML = "663.5";
     document.getElementById("Planned_v3").innerHTML = "763.5";
@@ -636,7 +642,10 @@
     document.getElementById("Planned_prod32").innerHTML = "8.5";
     
   }
+
+
   else   if(x=== "2020-W41" || x=== "2020-W42" || x=== "2020-W43" || x=== "2020-W44" || x=== "2020-W45" || x=== "2020-W46"   || x=== "2020-W47" || x=== "2020-W48" || x=== "2020-W49" || x=== "2020-W50" || x=== "2020-W51" || x=== "2020-W52" || x=== "2020-W53" ){
+    
     document.getElementById("Planned_v1" ).innerHTML = "363.5";
     document.getElementById("Planned_v2").innerHTML = "663.5";
     document.getElementById("Planned_v3").innerHTML = "563.5";
@@ -806,6 +815,44 @@
         
 
   }
+
+//   if(  x=== "2019-W40" || x=== "2019-W41" || x=== "2019-W42" || x=== "2019-W43" || x=== "2019-W44"){
+    
+//     document.getElementById("P_CPH1	").innerHTML = "1366" ;
+// document.getElementById("P_CPH2	").innerHTML = "1366" ;
+// document.getElementById("P_CPH3	").innerHTML = "1366" ;
+// document.getElementById("P_CPH4	").innerHTML = "1366" ;
+// document.getElementById("P_CPH5	").innerHTML = "1366" ;
+// document.getElementById("P_CPH6	").innerHTML = "1366" ;
+// document.getElementById("P_CPH7	").innerHTML = "1366" ;
+// document.getElementById("P_CPH8	").innerHTML = "1366" ;
+// document.getElementById("P_CPH9	").innerHTML = "1366" ;
+// document.getElementById("P_CPH10	").innerHTML = "1366" ;
+// document.getElementById("P_CPH11	").innerHTML = "1366" ;
+// document.getElementById("P_CPH12	").innerHTML = "1366" ;
+// document.getElementById("P_CPH13	").innerHTML = "1366" ;
+// document.getElementById("P_CPH14	").innerHTML = "1366" ;
+// document.getElementById("P_CPH15	").innerHTML = "1366" ;
+// document.getElementById("P_CPH16	").innerHTML = "1366" ;
+// document.getElementById("P_CPH17	").innerHTML = "1366" ;
+// document.getElementById("P_CPH18	").innerHTML = "1366" ;
+// document.getElementById("P_CPH19	").innerHTML = "1366" ;
+// document.getElementById("P_CPH20	").innerHTML = "1366" ;
+// document.getElementById("P_CPH21	").innerHTML = "1366" ;
+// document.getElementById("P_CPH22	").innerHTML = "1366" ;
+// document.getElementById("P_CPH23	").innerHTML = "1366" ;
+// document.getElementById("P_CPH24	").innerHTML = "1366" ;
+// document.getElementById("P_CPH25	").innerHTML = "1366" ;
+// document.getElementById("P_CPH26	").innerHTML = "1366" ;
+// document.getElementById("P_CPH27	").innerHTML = "1366" ;
+// document.getElementById("P_CPH28	").innerHTML = "1366" ;
+// document.getElementById("P_CPH29	").innerHTML = "1366" ;
+// document.getElementById("P_CPH30	").innerHTML = "1366" ;
+// document.getElementById("P_CPH31	").innerHTML = "1366" ;
+// document.getElementById("P_CPH32	").innerHTML = "1366" ;
+
+
+//   }
 }
   
   
@@ -838,6 +885,10 @@
               
               <th class="ui center aligned header" colspan="1">Accuracy</th>
               <th class="ui center aligned header" colspan="1">Call Outs</th>
+              
+              <th class="ui center aligned header" colspan="2">CPH</th>
+
+
 
             </tr>
 
@@ -847,11 +898,12 @@
               </th>
               <th>Volume</th>
               <th>Head Count</th>
-             
               <th>Volume</th>
               <th>Head Count</th>
               <th>Accuaracy percent ( % )</th>
               <th>Reason</th>
+              <th>Actual</th>
+              <th>Planned</th>
             </tr>
 
             <!-- 1  Proactive (Fresh Audits) -->
@@ -885,8 +937,11 @@
                   readonly
                 />
               </td>
+              
               <td><input type="text"   name="accuracy1" class="form-control" ></td>
-              <td><textarea rows="2" name="couts1"></textarea></td>`
+              <td><textarea rows="2" name="couts1"></textarea></td>
+              <td><input type="text"   name="A_CPH1" class="form-control" ></td>
+              <td><input type="text"  id="P_CPH1" name="P_CPH1" class="form-control" disabled ></td>
             </tr>
 
             <!-- 2. Best Sellers -->
@@ -920,6 +975,8 @@
               </td>
               <td><input type="text" name="accuracy2" class="form-control"></td>
               <td><textarea rows="2" name="couts2"></textarea></td>
+              <td><input type="text"   name="A_CPH2" class="form-control" ></td>
+              <td><input type="text"  id="P_CPH2"  name="P_CPH2" class="form-control" disabled ></td>
             </tr>
 
           <!-- Pre-Orders -->
@@ -953,6 +1010,8 @@
 
               <td><input type="text"  name="accuracy3" class="form-control"></td>
               <td><textarea rows="2" name="couts3"></textarea></td>
+              <td><input type="text"   name="A_CPH3" class="form-control" ></td>
+              <td><input type="text"  id="P_CPH1"  name="P_CPH3" class="form-control" disabled ></td>
             </tr>
 
             <!-- 4. Big Books -->
@@ -985,6 +1044,8 @@
               </td>
               <td><input type="text" name="accuracy4"  class="form-control"></td>
               <td><textarea rows="2" name="couts4"></textarea></td>
+              <td><input type="text"   name="A_CPH4" class="form-control" ></td>
+              <td><input type="text" id="P_CPH4"   name="P_CPH4" class="form-control" disabled ></td>
             </tr>
 
             <!-- 5. Kindle Deals -->
@@ -1021,6 +1082,8 @@
               </td>
               <td><input type="text" name="accuracy5"  class="form-control"></td>
               <td><textarea rows="2" name="couts5"></textarea></td>
+              <td><input type="text"   name="A_CPH5" class="form-control" ></td>
+              <td><input type="text" id="P_CPH5"   name="P_CPH5" class="form-control" disabled ></td>
             </tr>
 
 
@@ -1059,6 +1122,8 @@
               </td>
               <td><input type="text"  name="accuracy6" class="form-control"></td>
               <td><textarea rows="2" name="couts6"></textarea></td>
+              <td><input type="text"   name="A_CPH6" class="form-control" ></td>
+              <td><input type="text"  id="P_CPH6"  name="P_CPH6" class="form-control" disabled ></td>
             </tr> 
             
             
@@ -1093,6 +1158,8 @@
               </td>
               <td><input type="text" name="accuracy7"  class="form-control"></td>
               <td><textarea rows="2" name="couts7"></textarea></td>
+              <td><input type="text"   name="A_CPH7" class="form-control" ></td>
+              <td><input type="text"  id="P_CPH7"  name="P_CPH7" class="form-control" disabled ></td>
             </tr>
 
 
@@ -1115,6 +1182,8 @@
             </td>
             <td><input type="text"  name="accuracy8" class="form-control"></td>
             <td><textarea rows="2" name="couts8"></textarea></td>
+            <td><input type="text"   name="A_CPH8" class="form-control" ></td>
+              <td><input type="text" id="P_CPH8"  name="P_CPH8" class="form-control" disabled ></td>
           </tr>
 
 
@@ -1150,6 +1219,8 @@
               </td>
               <td><input type="text"  name="accuracy9"  class="form-control"></td>
               <td><textarea rows="2" name="couts9"></textarea></td>
+              <td><input type="text"   name="A_CPH9" class="form-control" ></td>
+              <td><input type="text" id="P_CPH9"  name="P_CPH9" class="form-control" disabled ></td>
             </tr>
 
 
@@ -1185,6 +1256,8 @@
               </td>
               <td><input type="text" name="accuracy10"  class="form-control"></td>
               <td><textarea rows="2" name="couts10"></textarea></td>
+              <td><input type="text"   name="A_CPH10" class="form-control" ></td>
+              <td><input type="text"  id="P_CPH10"  name="P_CPH10" class="form-control" disabled ></td>
             </tr>
 
             <!--11. English -->
@@ -1217,6 +1290,8 @@
               </td>
               <td><input type="text"  name="accuracy11" class="form-control"></td>
               <td><textarea rows="2" name="couts11"></textarea></td>
+              <td><input type="text"   name="A_CPH11" class="form-control" ></td>
+              <td><input type="text" id="P_CPH11"  name="P_CPH11" class="form-control" disabled ></td>
             </tr>
             </tr>
 
@@ -1250,6 +1325,8 @@
               </td>
               <td><input type="text" name="accuracy12"  class="form-control"></td>
               <td><textarea rows="2" name="couts12"></textarea></td>
+              <td><input type="text"   name="A_CPH12" class="form-control" ></td>
+              <td><input type="text" id="P_CPH12"  name="P_CPH12" class="form-control" disabled ></td>
             </tr>
             </tr>
 
@@ -1284,6 +1361,8 @@
               </td>
               <td><input type="text" name="accuracy13"  class="form-control"></td>
               <td><textarea rows="2" name="couts13"></textarea></td>
+              <td><input type="text"   name="A_CPH13" class="form-control" ></td>
+              <td><input type="text" id="P_CPH13"  name="P_CPH13" class="form-control" disabled ></td>
             </tr>
             </tr>
 
@@ -1318,6 +1397,8 @@
               </td>
               <td><input type="text"  name="accuracy14" class="form-control"></td>
               <td><textarea rows="2" name="couts14"></textarea></td>
+              <td><input type="text"   name="A_CPH14" class="form-control" ></td>
+              <td><input type="text"   id="P_CPH14"  name="P_CPH14" class="form-control" disabled ></td>
             </tr>
             </tr>
 
@@ -1354,6 +1435,8 @@
               </td>
               <td><input type="text" name="accuracy15"  class="form-control"></td>
               <td><textarea rows="2" name="couts15"></textarea></td>
+              <td><input type="text"   name="A_CPH15" class="form-control" ></td>
+              <td><input type="text"  id="P_CPH15"  name="P_CPH15" class="form-control" disabled ></td>
             </tr>
             </tr>
 
@@ -1389,6 +1472,8 @@
               </td>
               <td><input type="text"  name="accuracy16" class="form-control"></td>
               <td><textarea rows="2" name="couts16"></textarea></td>
+              <td><input type="text"   name="A_CPH16" class="form-control" ></td>
+              <td><input type="text" id="P_CPH16"  name="P_CPH16" class="form-control" disabled ></td>
             </tr>
             </tr>
 
@@ -1425,6 +1510,8 @@
               </td>
               <td><input type="text"  name="accuracy17" class="form-control"></td>
               <td><textarea rows="2" name="couts17"></textarea></td>
+              <td><input type="text"   name="A_CPH17" class="form-control" ></td>
+              <td><input type="text"  id="P_CPH17"  name="P_CPH17" class="form-control" disabled ></td>
             </tr>
             </tr>
 
@@ -1463,6 +1550,8 @@
               </td>
               <td><input type="text" name="accuracy18"  class="form-control"></td>
               <td><textarea rows="2" name="couts18"></textarea></td>
+              <td><input type="text"   name="A_CPH18" class="form-control" ></td>
+              <td><input type="text" id="P_CPH18"  name="P_CPH18" class="form-control" disabled ></td>
             </tr>
             </tr>
 
@@ -1500,6 +1589,8 @@
               </td>
               <td><input type="text"  name="accuracy19" class="form-control"></td>
               <td><textarea rows="2" name="couts19"></textarea></td>
+              <td><input type="text"   name="A_CPH19" class="form-control" ></td>
+              <td><input type="text"  id="P_CPH19"  name="P_CPH19" class="form-control" disabled ></td>
             </tr>
             </tr>
 
@@ -1524,6 +1615,8 @@
               </td>
               <td><input type="text"  name="accuracy20" class="form-control"></td>
               <td><textarea rows="2" name="couts20"></textarea></td>
+              <td><input type="text"   name="A_CPH20" class="form-control" ></td>
+              <td><input type="text"  id="P_CPH20"  name="P_CPH20" class="form-control" disabled ></td>
             </tr>
             </tr>
 
@@ -1563,6 +1656,8 @@
               <td><input type="text" name="accuracy21"  class="form-control"></td>
               
               <td><textarea rows="2" name="couts21"></textarea></td>
+              <td><input type="text"   name="A_CPH21" class="form-control" ></td>
+              <td><input type="text" id="P_CPH21"   name="P_CPH21" class="form-control" disabled ></td>
             </tr>
             </tr>
 
@@ -1601,6 +1696,8 @@
               </td>
               <td><input type="text"  name="accuracy22" class="form-control"></td>
               <td><textarea rows="2" name="couts22"></textarea></td>
+              <td><input type="text"   name="A_CPH22" class="form-control" ></td>
+              <td><input type="text" id="P_CPH22"   name="P_CPH22" class="form-control" disabled ></td>
             </tr>
             </tr>
 
@@ -1639,6 +1736,8 @@
               </td>
               <td><input type="text"  name="accuracy23" class="form-control"></td>
               <td><textarea rows="2" name="couts23"></textarea></td>
+              <td><input type="text"   name="A_CPH23" class="form-control" ></td>
+              <td><input type="text"  id="P_CPH23"  name="P_CPH23" class="form-control" disabled ></td>
             </tr>
             </tr>
 
@@ -1666,6 +1765,8 @@
               </td>
               <td><input type="text"  name="accuracy24" class="form-control"></td>
               <td><textarea rows="2" name="couts24"></textarea></td>
+              <td><input type="text"   name="A_CPH24" class="form-control" ></td>
+              <td><input type="text" id="P_CPH24"   name="P_CPH24" class="form-control" disabled ></td>
             </tr>
             </tr>
 
@@ -1703,6 +1804,8 @@
               </td>
               <td><input type="text"  class="form-control" name="accuracy25" ></td>
               <td><textarea rows="2" name="couts25"></textarea></td>
+              <td><input type="text"   name="A_CPH25" class="form-control" ></td>
+              <td><input type="text" id="P_CPH25"  name="P_CPH25" class="form-control" disabled ></td>
             </tr>
             </tr>
 
@@ -1738,6 +1841,8 @@
               </td>
               <td><input type="text"  class="form-control" name="accuracy26" ></td>
               <td><textarea rows="2" name="couts26"></textarea></td>
+              <td><input type="text"   name="A_CPH26" class="form-control" ></td>
+              <td><input type="text"  id="P_CPH26"  name="P_CPH26" class="form-control" disabled ></td>
             </tr>
             </tr>
 
@@ -1776,6 +1881,8 @@
               </td>
               <td><input type="text" name="accuracy27"  class="form-control"></td>
               <td><textarea rows="2" name="couts27"></textarea></td>
+              <td><input type="text"   name="A_CPH27" class="form-control" ></td>
+              <td><input type="text" id="P_CPH27"  name="P_CPH27" class="form-control" disabled ></td>
             </tr>
             </tr>
 
@@ -1814,6 +1921,8 @@
               </td>
               <td><input type="text" name="accuracy28"  class="form-control"></td>
               <td><textarea rows="2" name="couts28"></textarea></td>
+              <td><input type="text"   name="A_CPH28" class="form-control" ></td>
+              <td><input type="text"  id="P_CPH28"  name="P_CPH28" class="form-control" disabled ></td>
             </tr>
             </tr>
 
@@ -1839,6 +1948,8 @@
               </td>
               <td><input type="text" name="accuracy29"  class="form-control"></td>
               <td><textarea rows="2" name="couts29"></textarea></td>
+              <td><input type="text"   name="A_CPH29" class="form-control" ></td>
+              <td><input type="text" id="P_CPH29"  name="P_CPH29" class="form-control" disabled ></td>
             </tr>
             </tr>
 
@@ -1864,6 +1975,8 @@
               </td>
               <td><input type="text" name="accuracy30"  class="form-control"></td>
               <td><textarea rows="2" name="couts30"></textarea></td>
+              <td><input type="text"   name="A_CPH30" class="form-control" ></td>
+              <td><input type="text" id="P_CPH30"  name="P_CPH30" class="form-control" disabled ></td>
             </tr>
             </tr>
 
@@ -1886,6 +1999,8 @@
               </td>
               <td><input type="text" name="accuracy31"  class="form-control"></td>
               <td><textarea rows="2" name="couts31"></textarea></td>
+              <td><input type="text"   name="A_CPH31" class="form-control" ></td>
+              <td><input type="text" id="P_CPH31"  name="P_CPH31" class="form-control" disabled ></td>
             </tr>
             </tr>
 
@@ -1894,14 +2009,13 @@
             
             <!--  32. All Field Audit -->
             <tr>
-              <th class="ui center aligned header blue"> All Field Audit   </th>
+              <th class="ui center aligned header blue">All Field Audit </th>
               <td>
                 <label id="Planned_v32" name="P_Vol32"   ></label>
               </td>
               <td>
                 <label for="week" id="Planned_hc32" ></label>
               </td>
-             
               <td>
                 <input name="A_Vol32" class="form-control" type="text"  />
               </td>
@@ -1910,6 +2024,9 @@
               </td>
               <td><input type="text"  name="accuracy32" class="form-control"></td>
               <td><textarea rows="2" name="couts32"></textarea></td>
+             
+              <td><input type="text"   name="A_CPH32" class="form-control" ></td>
+              <td><label   for="week"  id="P_CPH32" name="P_CPH32"  ></label></td>
             </tr>
             </tr>
 

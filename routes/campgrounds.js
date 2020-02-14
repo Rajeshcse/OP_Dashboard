@@ -553,7 +553,7 @@ router.get("/q3", function(req, res) {
     if (err) {
       console.log(err);
     } else {
-      res.render("campgrounds/q3", { monthITB: allCampgrounds });
+      res.render("campgrounds/q3", { campgrounds: allCampgrounds });
     }
   });
 });

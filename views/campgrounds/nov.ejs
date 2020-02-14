@@ -1,31 +1,20 @@
- 
 <link
 rel="stylesheet"
 type="text/css"
 href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css"
 />
 
+<title>OP_Metrics - Monthly Report</title>
+
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
 integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 <link rel="stylesheet" href="/stylesheets/main.css" />
 
-<div class="container" >
+<div>
     <div class="thumbnail">
        
-        <div class="caption-full">
-
-
-        <% var sum = 0 %>
-        <% var month_view %>
-        
-        
-
- 
-
-            
-      
-        <%= console.log("sum ="+sum/30 ) %>
-        
+        <div class="caption-full">    
         <% pv1= 2584 ; pv2= 200;  pv3=1147  ; pv4 = 44 ; pv5 = 800 ; pv6= 28 ; pv7= 365 ; pv8= 6812; pv9 = 553; pv10 = 4358 ; pv11= 3376 ; pv12 = null ; %>
         <% pv13= 750 ; pv14 =232  ; pv15=542 ; pv16 =220 ; pv17= 1139 ; pv18 = 879 ; pv19 = 260 ; pv20= 2006 ; pv21= 210 ; pv22= 174 ; pv23= 1622; pv24= 718 ; %>
         <% pv25=542 ; pv26=80 ; pv27=68 ; pv28=28 ;  pv29= 400 ; pv30= 10833 ; pv31=400 ; pv32= 372 ; %>
@@ -34,10 +23,223 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
         <% phc13 = 1.22 ; phc14= 0.38 ; phc15 = 0.95 ; phc16 = 0.29 ; phc17 = 0.82; phc18 =0.32 ; phc19 = 0.50; phc20 = 1.22; phc21 = .35; phc22 =0.11 ; phc23 =0.76 ; phc24 =0.30 ; %>
         <% phc25 = 0.20 ; phc26= 0.03; phc27 =0.05 ; phc28 =0.02 ; phc29 = 2 ; phc30 =0.10 ; phc31 = 0.01; phc32 =0.10 ; %>
 
+        <!--  Calculation of Months table -->
+
+        <% var sum1 = 0 %> <% var sum2 = 0 %> <% var sum3 = 0 %> <% var sum4 = 0 %> <% var sum5 = 0 %> <% var	sum6	= 0 %> <% var	sum7	= 0 %> <% var	sum8	= 0 %> <% var	sum9	= 0 %> <% var	sum10	= 0 %>
+        <% var sum11	= 0 %> <% var	sum12	= 0 %> <% var	sum13	= 0 %> <% var	sum14	= 0 %> <% var	sum15	= 0 %> <% var	sum16 = 0 %> <% var	sum17	= 0 %> <% var	sum18	= 0 %> <% var	sum19	= 0 %> <% var	sum20 = 0 %> 
+        <% var sum21	= 0 %> <% var	sum22	= 0 %>  <% var	sum23	= 0 %> <% var	sum24	= 0 %> <% var	sum25	= 0 %> <% var	sum26	= 0 %> <% var	sum27	= 0 %> <% var	sum28	= 0 %> <% var	sum29	= 0 %> <% var	sum30	= 0 %> 
+        <% var sum31	= 0 %> <% var	sum32	= 0 %> <% var	sum33	 = 0 %> <% var	sum34	 = 0 %> <% var	sum35	 = 0 %> <% var	sum36	 = 0 %> <% var	sum37	 = 0 %> <% var	sum38	 = 0 %> <% var	sum39	 = 0 %> <% var	sum40	 = 0 %> 
+        <% var sum41	= 0 %> <% var	sum42	 = 0 %> <% var	sum43	 = 0 %> <% var	sum44	 = 0 %>  <% var	sum45	 = 0 %> <% var	sum46	 = 0 %> <% var	sum47	 = 0 %> <% var	sum48	 = 0 %> <% var	sum49	 = 0 %> <% var	sum50	 = 0 %> 
+        <% var sum51	= 0 %> <% var	sum52	 = 0 %> <% var	sum53	 = 0 %> <% var	sum54	 = 0 %> <% var	sum55	 = 0 %> <% var	sum56	 = 0 %> <% var	sum57	 = 0 %> <% var	sum58	 = 0 %> <% var	sum59	 = 0 %>
+        <% var sum60 = 0 %> <% var	sum61	 = 0 %>  <% var	sum62	 = 0 %> <% var	sum63	 = 0 %> <% var	sum64	 = 0 %>
+
+        <% campgrounds.forEach( function(itbMetrics) {  %>
+          <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31" ){   %>
+            
+            <% var add1	=	itbMetrics.A_Vol1	%> <% var add2	=	itbMetrics.A_HCount1	%> <% var add3	=	itbMetrics.A_Vol2	%> <% var add4	=	itbMetrics.A_HCount2	%> <% var add5	=	itbMetrics.A_Vol3	%> <% var add6	=	itbMetrics.A_HCount3	%> <% var add7	=	itbMetrics.A_Vol4	%> <% var add8	=	itbMetrics.A_HCount4	%> <% var add9	=	itbMetrics.A_Vol5	%> <% var add10	=	itbMetrics.A_HCount5	%>
+            <% var add11	=	itbMetrics.A_Vol6	%> <% var add12	=	itbMetrics.A_HCount6	%> <% var add13	=	itbMetrics.A_Vol7	%> <% var add14	=	itbMetrics.A_HCount7	%> <% var add15	=	itbMetrics.A_Vol8	%> <% var add16	=	itbMetrics.A_HCount8	%> <% var add17	=	itbMetrics.A_Vol9	%> <% var add18	=	itbMetrics.A_HCount9	%> <% var add19	=	itbMetrics.A_Vol10	%> <% var add20	=	itbMetrics.A_HCount10	%>
+            <% var add21	=	itbMetrics.A_Vol11	%> <% var add22	=	itbMetrics.A_HCount11	%> <% var add23	=	itbMetrics.A_Vol12	%> <% var add24	=	itbMetrics.A_HCount12	%> <% var add25	=	itbMetrics.A_Vol13	%> <% var add26	=	itbMetrics.A_HCount13	%> <% var add27	=	itbMetrics.A_Vol14	%> <% var add28	=	itbMetrics.A_HCount14	%> <% var add29	=	itbMetrics.A_Vol15	%> <% var add30	=	itbMetrics.A_HCount15	%> 
+            <% var add31	=	itbMetrics.A_Vol16	%> <% var add32	=	itbMetrics.A_HCount16	%> <% var add33	=	itbMetrics.A_Vol17	%> <% var add34	=	itbMetrics.A_HCount17	%> <% var add35	=	itbMetrics.A_Vol18	%> <% var add36	=	itbMetrics.A_HCount18	%>  <% var add37	=	itbMetrics.A_Vol19	%>  <% var add38	=	itbMetrics.A_HCount19	%> <% var add39	=	itbMetrics.A_Vol20	%> <% var add40	=	itbMetrics.A_HCount20	%>
+            <% var add41	=	itbMetrics.A_Vol21	%> <% var add42	=	itbMetrics.A_HCount21	%> <% var add43	=	itbMetrics.A_Vol22	%> <% var add44	=	itbMetrics.A_HCount22	%> <% var add45	=	itbMetrics.A_Vol23	%> <% var add46	=	itbMetrics.A_HCount23	%> <% var add47	=	itbMetrics.A_Vol24	%> <% var add48	=	itbMetrics.A_HCount24	%> <% var add49	=	itbMetrics.A_Vol25	%> <% var add50	=	itbMetrics.A_HCount25	%> 
+            <% var add51	=	itbMetrics.A_Vol26	%> <% var add52	=	itbMetrics.A_HCount26	%> <% var add53	=	itbMetrics.A_Vol27	%> <% var add54	=	itbMetrics.A_HCount27	%> <% var add55	=	itbMetrics.A_Vol28	%> <% var add56	=	itbMetrics.A_HCount28	%> <% var add57	=	itbMetrics.A_Vol29	%> <% var add58	=	itbMetrics.A_HCount29	%> <% var add59	=	itbMetrics.A_Vol30	%> <% var add60	=	itbMetrics.A_HCount30	%>
+            <% var add61	=	itbMetrics.A_Vol31	%> <% var add62	=	itbMetrics.A_HCount31	%> <% var add63	=	itbMetrics.A_Vol32	%> <% var add64	=	itbMetrics.A_HCount32	%>
+
+            <% sum1  = sum1 +  add1 %> <% sum2  = sum2 +  add2 %> <% sum3  = sum3 +  add3 %> <% sum4	=	sum4	+	add4	%> <% sum5	=	sum5	+	add5	%> <% sum6	=	sum6	+	add6	%> <% sum7	=	sum7	+	add7	%> <% sum8	=	sum8	+	add8	%> <% sum9	=	sum9	+	add9	%>
+             <% sum10	=	sum10	+	add10	%> <% sum11	=	sum11	+	add11	%> <% sum12	=	sum12	+	add12	%> <% sum13	=	sum13	+	add13	%> <% sum14	=	sum14	+	add14	%> <% sum15	=	sum15	+	add15	%> <% sum16	=	sum16	+	add16	%> <% sum17	=	sum17	+	add17	%> <% sum18	=	sum18	+	add18	%> <% sum19	=	sum19	+	add19	%> <% sum20	=	sum20	+	add20	%>
+             <% sum21	=	sum21	+	add21	%> <% sum22	=	sum22	+	add22	%> <% sum23	=	sum23	+	add23	%> <% sum24	=	sum24	+	add24	%> <% sum25	=	sum25	+	add25	%> <% sum26	=	sum26	+	add26	%> <% sum27	=	sum27	+	add27	%> <% sum28	=	sum28	+	add28	%> <% sum29	=	sum29	+	add29	%> <% sum30	=	sum30	+	add30	%>
+             <% sum31	=	sum31	+	add31	%> <% sum32	=	sum32	+	add32	%> <% sum33	=	sum33	+	add33	%> <% sum34	=	sum34	+	add34	%> <% sum35	=	sum35	+	add35	%> <% sum36	=	sum36	+	add36	%> <% sum37	=	sum37	+	add37	%> <% sum38	=	sum38	+	add38	%> <% sum39	=	sum39	+	add39	%> <% sum40	=	sum40	+	add40	%>
+             <% sum41	=	sum41	+	add41	%> <% sum42	=	sum42	+	add42	%> <% sum43	=	sum43	+	add43	%> <% sum44	=	sum44	+	add44	%> <% sum45	=	sum45	+	add45	%> <% sum46	=	sum46	+	add46	%> <% sum47	=	sum47	+	add47	%> <% sum48	=	sum48	+	add48	%> <% sum49	=	sum49	+	add49	%> <% sum50	=	sum50	+	add50	%>
+             <% sum51	=	sum51	+	add51	%> <% sum52	=	sum52	+	add52	%> <% sum53	=	sum53	+	add53	%> <% sum54	=	sum54	+	add54	%> <% sum55	=	sum55	+	add55	%> <% sum56	=	sum56	+	add56	%> <% sum57	=	sum57	+	add57	%> <% sum58	=	sum58	+	add58	%> <% sum59	=	sum59	+	add59	%> <% sum60	=	sum60	+	add60	%>
+             <% sum61	=	sum61	+	add61	%> <% sum62	=	sum62	+	add62	%> <% sum63	=	sum63	+	add63	%> <% sum64	=	sum64	+	add64	%>
+                                      
+          <% }  %>
+
+        <% }) %>
+
+        <% var AVol1= (sum1/30).toFixed(2) %> <% var AVol2 = (sum3/30).toFixed(2) %> <% var AVol3 = (sum5/30).toFixed(2) %> <% var AVol4 = (sum7/30).toFixed(2) %> <% var AVol5 = (sum9/30).toFixed(2) %> <% var AVol6 = (sum11/30).toFixed(2) %> <% var AVol7	=	(sum13/30).toFixed(2) %> <% var AVol8	=	(sum15/30).toFixed(2) %> <% var AVol9	=	(sum17/30).toFixed(2) %> <% var AVol10	=	(sum19/30).toFixed(2) %>
+        <% var AVol11	=	(sum21/30).toFixed(2) %> <% var AVol12	=	(sum23/30).toFixed(2) %> <% var AVol13	=	(sum25/30).toFixed(2) %> <% var AVol14	=	(sum27/30).toFixed(2) %> <% var AVol15	=	(sum29/30).toFixed(2) %> <% var AVol16	=	(sum31/30).toFixed(2) %> <% var AVol17	=	(sum33/30).toFixed(2) %> <% var AVol18	=	(sum35/30).toFixed(2) %> <% var AVol19	=	(sum37/30).toFixed(2) %> <% var AVol20	=	(sum39/30).toFixed(2) %>
+        <% var AVol21	=	(sum41/30).toFixed(2) %> <% var AVol22	=	(sum43/30).toFixed(2) %> <% var AVol23	=	(sum45/30).toFixed(2) %> <% var AVol24	=	(sum47/30).toFixed(2) %> <% var AVol25	=	(sum49/30).toFixed(2) %> <% var AVol26	=	(sum51/30).toFixed(2) %> <% var AVol27	=	(sum53/30).toFixed(2) %> <% var AVol28	=	(sum55/30).toFixed(2) %> <% var AVol29	=	(sum57/30).toFixed(2) %> <% var AVol30	=	(sum59/30).toFixed(2) %>
+        <% var AVol31	=	(sum61/30).toFixed(2) %> <% var AVol32	=	(sum63/30).toFixed(2) %>
+                      
+        <% var Ahc1	=	(sum2/30).toFixed(2) %> <% var Ahc2	=	(sum4/30).toFixed(2) %> <% var Ahc3	=	(sum6/30).toFixed(2) %> <% var Ahc4	=	(sum8/30).toFixed(2) %> <% var Ahc5	=	(sum10/30).toFixed(2) %> <% var Ahc6	=	(sum12/30).toFixed(2) %> <% var Ahc7	=	(sum14/30).toFixed(2) %> <% var Ahc8	=	(sum16/30).toFixed(2) %> <% var Ahc9	=	(sum18/30).toFixed(2) %> 
+        <% var Ahc10	=	(sum20/30).toFixed(2) %> <% var Ahc11	=	(sum22/30).toFixed(2) %> <% var Ahc12	=	(sum24/30).toFixed(2) %> <% var Ahc13	=	(sum26/30).toFixed(2) %> <% var Ahc14	=	(sum28/30).toFixed(2) %> <% var Ahc15	=	(sum30/30).toFixed(2) %> <% var Ahc16	=	(sum32/30).toFixed(2) %> <% var Ahc17	=	(sum34/30).toFixed(2) %> <% var Ahc18	=	(sum36/30).toFixed(2) %> <% var Ahc19	=	(sum38/30).toFixed(2) %> <% var Ahc20	=	(sum40/30).toFixed(2) %> 
+        <% var Ahc21	=	(sum42/30).toFixed(2) %> <% var Ahc22	=	(sum44/30).toFixed(2) %> <% var Ahc23	=	(sum46/30).toFixed(2) %> <% var Ahc24	=	(sum48/30).toFixed(2) %> <% var Ahc25	=	(sum50/30).toFixed(2) %> 
+        <% var Ahc26	=	(sum52/30).toFixed(2) %> <% var Ahc27	=	(sum54/30).toFixed(2) %> <% var Ahc28	=	(sum56/30).toFixed(2) %> <% var Ahc29	=	(sum58/30).toFixed(2) %> <% var Ahc30	=	(sum60/30).toFixed(2) %> <% var Ahc31	=	(sum62/30).toFixed(2) %> <% var Ahc32	=	(sum64/30).toFixed(2) %> 
 
 
-         
-          <h2 class="ui header centered basic big green label "> August, 2019: </i></h2>
+        <% var AProd1	=	(sum1/sum2/8).toFixed(2) %> <% var AProd2	=	(sum3/sum4/8).toFixed(2) %> <% var AProd3	=	(sum5/sum6/8).toFixed(2) %> <% var AProd4	=	(sum7/sum8/8).toFixed(2) %> <% var AProd5	=	(sum9/sum10/8).toFixed(2) %> <% var AProd6	=	(sum11/sum12/8).toFixed(2) %> <% var AProd7	=	(sum13/sum14/8).toFixed(2) %> <% var AProd8	=	(sum15/sum16/8).toFixed(2) %> <% var AProd9	=	(sum17/sum18/8).toFixed(2) %> <% var AProd10	=	(sum19/sum20/8).toFixed(2) %>
+        <% var AProd11	=	(sum21/sum22/8).toFixed(2) %> <% var AProd12	=	(sum23/sum24/8).toFixed(2) %> <% var AProd13	=	(sum25/sum26/8).toFixed(2) %> <% var AProd14	=	(sum27/sum28/8).toFixed(2) %> <% var AProd15	=	(sum29/sum30/8).toFixed(2) %> <% var AProd16	=	(sum31/sum32/8).toFixed(2) %> <% var AProd17	=	(sum33/sum34/8).toFixed(2) %> <% var AProd18	=	(sum35/sum36/8).toFixed(2) %> <% var AProd19	=	(sum37/sum38/8).toFixed(2) %> <% var AProd20	=	(sum39/sum40/8).toFixed(2) %>
+        <% var AProd21	=	(sum41/sum42/8).toFixed(2) %> <% var AProd22	=	(sum43/sum44/8).toFixed(2) %> <% var AProd23	=	(sum45/sum46/8).toFixed(2) %> <% var AProd24	=	(sum47/sum48/8).toFixed(2) %> <% var AProd25	=	(sum49/sum50/8).toFixed(2) %> <% var AProd26	=	(sum51/sum52/8).toFixed(2) %> <% var AProd27	=	(sum53/sum54/8).toFixed(2) %> <% var AProd28	=	(sum55/sum56/8).toFixed(2) %> <% var AProd29	=	(sum57/sum58/8).toFixed(2) %> <% var AProd30	=	(sum59/sum60/8).toFixed(2) %>
+        <% var AProd31	=	(sum61/sum62/8).toFixed(2) %> <% var AProd32	=	(sum63/sum64/8).toFixed(2) %>
+
+        <!-- Variance  -->
+
+        <!-- Fresh audits -->
+        <% var vol_variance1= (((AVol1 - pv1)/pv1)*100).toFixed()  %>  
+        <% var HCount_variance1= (((phc1 - Ahc1)/Ahc1)*100).toFixed()  %>   
+        <% var Prod_variance1= (((AProd1 - AVol1)/AVol1)*100).toFixed() %>  
+
+
+        <!--  Best Sellers -->
+        <% var vol_variance2= (((AVol2 - pv2)/pv2)*100).toFixed()  %>  
+        <% var HCount_variance2= (((phc2 - Ahc2)/Ahc2)*100).toFixed()  %>   
+        <% var Prod_variance2= (((AProd2 - AVol2)/AVol2)*100).toFixed() %>  
+        
+        <!-- Pre-Orders	 -->
+        <% var vol_variance3= (((AVol3 - pv3)/pv3)*100).toFixed()  %>
+        <% var HCount_variance3= (((phc3 - Ahc3)/Ahc3)*100).toFixed()  %>  
+        <% var Prod_variance3= (((AProd3 - AVol3)/AVol3)*100).toFixed() %>
+
+        <!-- Big Books	 -->
+        <% var vol_variance4= (((AVol4 - pv4)/pv4)*100).toFixed()  %>
+        <% var HCount_variance4= (((phc4 - Ahc4)/Ahc4)*100).toFixed()  %>   
+        <% var Prod_variance4= (((AProd4 - AVol4)/AVol4)*100).toFixed() %>  
+
+
+        <!-- Kindle Deals -->
+        <% var vol_variance5 = (((AVol5 - pv5)/pv5)*100).toFixed()  %>  
+        <% var HCount_variance5 = (((phc5 - Ahc5)/Ahc5)*100).toFixed()  %>   
+        <% var Prod_variance5 = (((AProd5 - AVol5)/AVol5)*100).toFixed() %> 
+
+        <!-- Ad-hoc Requests / Escalation Audits -->
+        <% var vol_variance6 = (((AVol6 - pv6)/pv6)*100).toFixed()  %>  
+        <% var HCount_variance6 = (((phc6 - Ahc6)/Ahc6)*100).toFixed()  %>   
+        <% var Prod_variance6 = (((AProd6 - AVol6)/AVol6)*100).toFixed() %> 
+
+        <!-- KU Page Violation Audits -->
+        <% var vol_variance7 = (((AVol7 - pv7)/pv7)*100).toFixed()  %>  
+        <% var HCount_variance7 = (((phc7 - Ahc7)/Ahc7)*100).toFixed()  %>   
+        <% var Prod_variance7 = (((AProd7 - AVol7)/AVol7)*100).toFixed() %> 
+
+        <!-- Reactive (Contacts) -->
+        <% var vol_variance8 = (((AVol8 - pv8)/pv8)*100).toFixed()  %>  
+        <% var HCount_variance8 = (((phc8 - Ahc8)/Ahc8)*100).toFixed()  %>   
+        <% var Prod_variance8 = (((AProd8 - AVol8)/AVol8)*100).toFixed() %>
+
+        <!-- Andons & Regulars -->
+        <% var vol_variance9 = (((AVol9 - pv9)/pv9)*100).toFixed()  %>
+        <% var HCount_variance9 = (((phc9 - Ahc9)/Ahc9)*100).toFixed()  %>
+        <% var Prod_variance9 = (((AProd9 - AVol9)/AVol9)*100).toFixed() %>
+
+        <!-- Report Content Errors -->
+        <% var vol_variance10 = (((AVol10 - pv10)/pv10)*100).toFixed()  %>  
+        <% var HCount_variance10 = (((phc10 - Ahc10)/Ahc10)*100).toFixed()  %>   
+        <% var Prod_variance10 = (((AProd10 - AVol10)/AVol10)*100).toFixed() %>
+
+        <!-- English -->
+        <% var vol_variance11 = (((AVol11 - pv11)/pv11)*100).toFixed()  %>  
+        <% var HCount_variance11 = (((phc11 - Ahc11)/Ahc11)*100).toFixed()  %>   
+        <% var Prod_variance11 = (((AProd11 - AVol11)/AVol11)*100).toFixed() %>
+
+        <!-- English (High-value titles to be considered by Ops)	 -->
+        <% var vol_variance12 = (((AVol12 - pv12)/pv12)*100).toFixed()  %>  
+        <% var HCount_variance12 = (((phc12 - Ahc12)/Ahc12)*100).toFixed()  %>   
+        <% var Prod_variance12 = (((AProd12 - AVol12)/AVol12)*100).toFixed() %>
+
+        <!-- German -->
+        <% var vol_variance13 = (((AVol13 - pv13)/pv13)*100).toFixed()  %>  
+        <% var HCount_variance13 = (((phc13 - Ahc13)/Ahc13)*100).toFixed()  %>   
+        <% var Prod_variance13= (((AProd13 - AVol13)/AVol13)*100).toFixed() %>
+
+        <!-- French -->
+        <% var vol_variance14 = (((AVol14 - pv14)/pv14)*100).toFixed()  %>  
+        <% var HCount_variance14 = (((phc14 - Ahc14)/Ahc14)*100).toFixed()  %>   
+        <% var Prod_variance14 = (((AProd14 - AVol14)/AVol14)*100).toFixed() %>
+
+        <!-- Customer Review	 -->
+        <% var vol_variance15 = (((AVol15 - pv15)/pv15)*100).toFixed()  %>  
+        <% var HCount_variance15 = (((phc15 - Ahc15)/Ahc15)*100).toFixed()  %>   
+        <% var Prod_variance15 = (((AProd15 - AVol15)/AVol15)*100).toFixed() %>
+
+        <!-- Massmail Tickets	 -->
+        <% var vol_variance16 = (((AVol16 - pv16)/pv16)*100).toFixed()  %>  
+        <% var HCount_variance16 = (((phc16 - Ahc16)/Ahc16)*100).toFixed()  %>   
+        <% var Prod_variance16 = (((AProd16 - AVol16)/AVol16)*100).toFixed() %>
+
+        <!-- Publisher Response -->
+        <% var vol_variance17 = (((AVol17 - pv17)/pv17)*100).toFixed()  %>  
+        <% var HCount_variance17 = (((phc17 - Ahc17)/Ahc17)*100).toFixed()  %>   
+        <% var Prod_variance17 = (((AProd17 - AVol17)/AVol17)*100).toFixed() %>
+
+        <!-- Submitted Corrections -->
+        <% var vol_variance18 = (((AVol18 - pv18)/pv18)*100).toFixed()  %>  
+        <% var HCount_variance18 = (((phc18 - Ahc18)/Ahc18)*100).toFixed()  %>   
+        <% var Prod_variance18 = (((AProd18 - AVol18)/AVol18)*100).toFixed() %>
+
+        <!-- Queries + Escalations -->
+        <% var vol_variance19 = (((AVol19 - pv19)/pv19)*100).toFixed()  %>  
+        <% var HCount_variance19 = (((phc19 - Ahc19)/Ahc19)*100).toFixed()  %>   
+        <% var Prod_variance19 = (((AProd19 - AVol19)/AVol19)*100).toFixed() %>
+
+        <!-- Rework  -->
+        <% var vol_variance20 = (((AVol20 - pv20)/pv20)*100).toFixed()  %>  
+        <% var HCount_variance20 = (((phc20 - Ahc20)/Ahc20)*100).toFixed()  %>   
+        <% var Prod_variance20 = (((AProd20 - AVol20)/AVol20)*100).toFixed() %>
+
+        <!-- Rework Blocking	 -->
+        <% var vol_variance21 = (((AVol21 - pv21)/pv21)*100).toFixed()  %>  
+        <% var HCount_variance21 = (((phc21 - Ahc21)/Ahc21)*100).toFixed()  %>   
+        <% var Prod_variance21 = (((AProd21 - AVol21)/AVol21)*100).toFixed() %>
+
+        <!-- Rework CFQI	 -->
+        <% var vol_variance22 = (((AVol22 - pv22)/pv22)*100).toFixed()  %>  
+        <% var HCount_variance22 = (((phc22 - Ahc22)/Ahc22)*100).toFixed()  %>   
+        <% var Prod_variance22 = (((AProd22 - AVol22)/AVol22)*100).toFixed() %>
+
+        <!-- Rework Non-Blocking	 -->
+        <% var vol_variance23 = (((AVol23 - pv23)/pv23)*100).toFixed()  %>  
+        <% var HCount_variance23 = (((phc23 - Ahc23)/Ahc23)*100).toFixed()  %>   
+        <% var Prod_variance23 = (((AProd23 - AVol23)/AVol23)*100).toFixed() %>
+
+        <!-- KCVP Detections -->
+        <% var vol_variance24 = (((AVol24 - pv24)/pv24)*100).toFixed()  %>  
+        <% var HCount_variance24 = (((phc24 - Ahc24)/Ahc24)*100).toFixed()  %>   
+        <% var Prod_variance24 = (((AProd24 - AVol24)/AVol24)*100).toFixed() %>
+
+        <!-- Language Mismatch	 -->
+        <% var vol_variance25 = (((AVol25 - pv25)/pv25)*100).toFixed()  %>  
+        <% var HCount_variance25 = (((phc25 - Ahc25)/Ahc25)*100).toFixed()  %>   
+        <% var Prod_variance25 = (((AProd25 - AVol25)/AVol25)*100).toFixed() %>
+
+        <!-- Unknown Language	 -->
+        <% var vol_variance26 = (((AVol26 - pv26)/pv26)*100).toFixed()  %>  
+        <% var HCount_variance26 = (((phc26 - Ahc26)/Ahc26)*100).toFixed()  %>   
+        <% var Prod_variance26 = (((AProd26 - AVol26)/AVol26)*100).toFixed() %>
+
+        <!-- Switcheroo -->
+        <% var vol_variance27 = (((AVol27 - pv27)/pv27)*100).toFixed()  %>  
+        <% var HCount_variance27 = (((phc27 - Ahc27)/Ahc27)*100).toFixed()  %>   
+        <% var Prod_variance27 = (((AProd27 - AVol27)/AVol27)*100).toFixed() %>
+
+        <!-- Fixed Layout	 -->
+        <% var vol_variance28 = (((AVol28 - pv28)/pv28)*100).toFixed()  %>  
+        <% var HCount_variance28 = (((phc28 - Ahc28)/Ahc28)*100).toFixed()  %>   
+        <% var Prod_variance28 = (((AProd28 - AVol28)/AVol28)*100).toFixed() %>
+
+        <!-- Content Testing	 -->
+        <% var vol_variance29 = (((AVol29 - pv29)/pv29)*100).toFixed()  %>  
+        <% var HCount_variance29 = (((phc29 - Ahc29)/Ahc29)*100).toFixed()  %>   
+        <% var Prod_variance29 = (((AProd29 - AVol29)/AVol29)*100).toFixed() %>
+
+        <!-- KDP Cover Gen	 -->
+        <% var vol_variance30 = (((AVol30 - pv30)/pv30)*100).toFixed()  %>  
+        <% var HCount_variance30 = (((phc30 - Ahc30)/Ahc30)*100).toFixed()  %>   
+        <% var Prod_variance30 = (((AProd30 - AVol30)/AVol30)*100).toFixed() %>
+
+        <!-- Author Fix-up	 -->
+        <% var vol_variance31 = (((AVol31 - pv31)/pv31)*100).toFixed()  %>  
+        <% var HCount_variance31 = (((phc31 - Ahc31)/Ahc31)*100).toFixed()  %>   
+        <% var Prod_variance31 = (((AProd31 - AVol31)/AVol31)*100).toFixed() %>
+
+        <!-- All Field Audit	 -->
+        <% var vol_variance32 = (((AVol32 - pv32)/pv32)*100).toFixed()  %>  
+        <% var HCount_variance32 = (((phc32 - Ahc32)/Ahc32)*100).toFixed()  %>   
+        <% var Prod_variance32 = (((AProd32 - AVol32)/AVol32)*100).toFixed() %>
+
+ 
+        <!-- HTML Code  -->
+
+        <h2 class="ui basic big green label "> ITB November , 2019: </i></h2> <a href="/">Go Home</a>
             
           <table class="ui celled  striped table " id="myTable">
             <thead>
@@ -48,8 +250,7 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                 <th class="ui center aligned header" colspan="3">Planned  </th>
                 <th class="ui center aligned header" colspan="3">Actual </th>
                 <th class="ui center aligned header" colspan="3">Variance </th>
-                <th class="ui center aligned header" colspan="1">Call Outs  </th>
-                
+               
                 <th class="ui center aligned header" colspan="1">Accuracy  </th>
           
               </tr>
@@ -64,587 +265,866 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                   <th>Volume</th>
                   <th>Head Count</th>
                   <th>Productivity</th>
-                  <th>Reason</th>
+                 
                   <th>Accuracy in (%)</th>
-                   
-          
-                  
-          
+
               </tr>
             </thead>
             <tbody class="panel">
-              <tr data-toggle="collapse" data-target="#demo1" class="ui center aligned header blue" data-parent="#myTable"> 
-                <td></i>  Proactive (Fresh Audits)  <i class="right aligned small dropdown icon  "></i></td> 
-                <td><%= pv1 %></td>
-          <td><%= phc1  %></td>
-          <% julyProd1= pv1/phc1/30 %>
-          <td><%= julyProd1.toFixed(2) %></td>
-          <td>
-            
-          <% var sum1 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics) {  %>
-            <% if(itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"    ){   %>
-              <% var add = itbMetrics.A_Vol1  %>
-                  <% sum1 = sum1 + add %>
-                  <%= console.log(add )%>
-              <% }  %>
-            <% }) %>
-            <%= console.log("sum1 ="+sum1/30 )%>
+              
+                  <!--  Proactive (Fresh Audits) -->
+                  <tr data-toggle="collapse" data-target="#demo1" class="ui center aligned header blue" data-parent="#myTable"> 
+                    <td></i>  Proactive (Fresh Audits)  <i class="right aligned small dropdown icon"></i></td> 
+                    <td><%= pv1 %></td>
+                    <td><%= phc1  %></td>
+                    <% julyProd1= pv1/phc1/30 %>
+                    <td><%= julyProd1.toFixed(2) %></td>
+                    <td> <%= AVol1  %> </td> 
+                    <td><%=  Ahc1  %> </td>
+                    <td>  <%=  AProd1 %></td>
+                    <!--   Variance  -->
+                    
+                    <!-- Volume variance -->
+                  <% if( vol_variance1 >= -9  &&  vol_variance1 <= 9 ) {   %>  
+                    <td   >  
+                      <%= vol_variance1 %> %  
+                    </td>
+                  <%  } else if( vol_variance1 > 10 ) {  %>
+                    <td  class="positive"   >
+                      <%= vol_variance1 %> %
+                    </td>
+                    <%  } else {  %>
+                      <td class="negative"  >
+                        <%= vol_variance1 %> %
+                      </td>
+                  <% } %>
+                  
+                  <!-- HCount  variance -->
 
-            <% var pVol1= (sum1/30).toFixed(2) %>
-            <p><%= pVol1  %> <p>
+                  <% if( HCount_variance1 >= -9  &&  HCount_variance1 <= 9 ) {   %>
+                    <td   >
+                      <%= HCount_variance1 %> %
+                    </td>
+                  <%  } else if( HCount_variance1 > 10 ) {  %>
+                    <td  class="positive"   >
+                      <%= HCount_variance1 %> %
+                    </td>
+                    <%  } else {  %>
+                      <td class="negative"  >
+                        <%= HCount_variance1 %> %
+                      </td>
+                  <% } %>
 
-          </td>
-          <td>
-            <% var sum2 = 0 %>
-            <% campgrounds.forEach( function(itbMetrics) {  %>
-             <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
-   
-               <% var add = itbMetrics.A_HCount1  %>
-                   
-                   <% sum2 = sum2 + add %>
-                   <%= console.log(add )%>
-                <% }  %>
-             <% }) %>
-             <%= console.log("sum2 ="+sum2/30 )%>
-             <%  var phc1= (sum2/30).toFixed(2) %>
-             <p><%=  phc1  %> <p>
-           
-          </td>
-          <td> 
-            <% var pProd1= (sum1/sum2/30).toFixed(2) %>
-            <%=  pProd1 %>
-          </td>
-          <td> </td>
-       
-               
-              </tr>
-          
-              </tr>
-              <tr id="demo1" class="collapse ">
-                <th>Best Sellers</th>
-                <td><%= pv2 %></td>
-          <td><%= phc2  %></td>
-          <% julyProd2= pv2/phc2/30  %>
-          <td><%= julyProd2.toFixed(2) %></td>
-          <td>
-            <% var sum3 = 0 %>
-            <% campgrounds.forEach( function(itbMetrics, index) {  %>
-             <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
-               <% var add = itbMetrics.A_Vol2  %>
-                   
-                   <% sum3 = sum3 + add %>
-                   <%= console.log(add )%>
-                <% }  %>
-             <% }) %>
-             <%= console.log("sum3 ="+sum3/30 )%>
-              <% var pVol2   = (sum1/30).toFixed(2) %>  
-            <p><%= pVol2      %> <p>
-           
-          </td>
+                  <!-- Prod Variance -->
 
-          <td>
-            <% var sum4 = 0 %>
-            <% campgrounds.forEach( function(itbMetrics, index) {  %>
-             <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
-   
-               <% var add = itbMetrics.A_HCount2  %>
-                   
-                   <% sum4 = sum4 + add %>
-                   <%= console.log(add )%>
-                <% }  %>
-             <% }) %>
-             <%= console.log("sum4 ="+sum4/30 )%>
-             <% var phc2   = (sum4/30).toFixed(2) %>  
-             <p><%=  phc2   %> <p>
-           
-          </td>
-          <td> 
-            <% var pProd2= (sum3/sum4/30).toFixed(2) %>
-            <%=  pProd2 %>
-          </td>
-          <td></td>
+                  <% if( Prod_variance1 >= -9  &&  Prod_variance1 <= 9 ) {   %>
+                    <td   >
+                      <%= Prod_variance1 %> %
+                    </td>
+                  <%  } else if( Prod_variance1 > 10 ) {  %>
+                    <td  class="positive"   >
+                      <%= Prod_variance1 %> %
+                    </td>
+                    <%  } else {  %>
+                      <td class="negative"  >
+                        <%= Prod_variance1 %> %
+                      </td>
+                  <% } %>
+    
+                </tr>
 
-               </tr>
-              <tr id="demo1" class="collapse">
-                <th>Pre-Orders</th>
-                <td><%= pv3 %></td>
-          <td><%= phc3  %></td>
-          <% julyProd3= pv3/phc3/30  %>
-          <td><%= julyProd3.toFixed(2) %></td>
-          <td><% var sum5 = 0 %>
-            <% campgrounds.forEach( function(itbMetrics, index) {  %>
-             <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
-   
-               <% var add = itbMetrics.A_Vol3  %>
-                   
-                   <% sum5 = sum5 + add %>
-                   <%= console.log(add )%>
-                <% }  %>
-             <% }) %>
-             <%= console.log("sum5 ="+sum5/30 )%>
-             <p><%= (sum5/30).toFixed(2)  %> <p></td>
-          
-          <td>
-            <% var sum6 = 0 %>
-            <% campgrounds.forEach( function(itbMetrics, index) {  %>
-             <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
-   
-               <% var add = itbMetrics.A_HCount3  %>
-                   
-                   <% sum6 = sum6 + add %>
-                   <%= console.log(add )%>
-                <% }  %>
-             <% }) %>
-             <%= console.log("sum6 ="+sum6/30 )%>
-             <p><%= (sum6/30).toFixed(2)  %> <p>
+
+
+                <!-- Best Sellers -->
+                <tr id="demo1" class="collapse ">
+                        <th>Best Sellers</th>
+                        <td><%= pv2 %></td>
+                  <td><%= phc2  %></td>
+                  <% julyProd2= pv2/phc2/30  %>
+                  <td><%= julyProd2.toFixed(2) %></td>
+                  <td> <%= AVol2  %> </td> 
+                  <td><%=  Ahc2  %> </td>
+                  <td>  <%=  AProd2 %></td>
+                  <!--  Variance  -->
+                   <!-- Volume variance -->
+         <% if( vol_variance2 >= -9  &&  vol_variance2 <= 9 ) {   %>
+          <td   >
+            <%= vol_variance2 %> %
           </td>
-          <td> 
-            <% var pProd3= (sum5/sum6/30).toFixed(2) %>
-            <%=  pProd3 %>
+        <%  } else  if( vol_variance2 > 10 ) {  %>
+          <td  class="positive"   >
+            <%= vol_variance2 %> %
           </td>
-          <td></td>
-                
-              </tr>
-          
-              <tr id="demo1" class="collapse">
-                <th>Big Books</th>
-                <td><%= pv4 %></td>
-        <td><%= phc4  %></td>
-        <% julyProd4= pv4/phc4/30  %>
-        <td><%= julyProd4.toFixed(2) %></td>
-        <td><% var sum7 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_Vol4  %>
-                 
-                 <% sum7 = sum7 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum7 ="+sum7/30 )%>
-           <p><%= (sum7/30).toFixed(2)  %> <p></td>
+          <%  } else {  %>
+            <td class="negative"  >
+              <%= vol_variance2 %>  %
+            </td>
+        <% } %>
         
-        <td>
-          <% var sum8 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_HCount4  %>
-                 
-                 <% sum8 = sum8 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum8 ="+sum6/30 )%>
-           <p><%= (sum8/30).toFixed(2)  %> <p>
-        </td>
-        <td> 
-          <% var pProd4= (sum7/sum8/30).toFixed(2) %>
-          <%=  pProd4 %>
-        </td>
-        <td></td>
-      
-                
-              </tr>
+        <!-- HCount  variance -->
+        <% if( HCount_variance2 >= -9  &&  HCount_variance2 <= 9 ) {   %>
+          <td   >
+            <%= HCount_variance2 %> %
+          </td>
+        <%  } else  if( HCount_variance2 > 10 ) {  %>
+          <td  class="positive"   >
+            <%= HCount_variance2 %> %
+          </td>
+          <%  } else {  %>
+            <td class="negative"  >
+              <%= HCount_variance2 %> %
+            </td>
+        <% } %>
+
+        <!-- Prod Variance -->
+        <% if( Prod_variance2 >= -9  &&  Prod_variance2 <= 9 ) {   %>
+          <td   >
+             <%= Prod_variance2 %> %
+          </td>
+        <%  } else  if( Prod_variance2 > 10 ) {  %>
+          <td  class="positive"   >
+            <%= Prod_variance2 %> %
+          </td>
+          <%  } else {  %>
+            <td class="negative"  >
+              <%= Prod_variance2 %> %
+            </td>
+        <% } %>
+                </tr>
+
+                <!-- Pre-Orders -->
+                <tr id="demo1" class="collapse">
+                        <th>Pre-Orders</th>
+                        <td><%= pv3 %></td>
+                  <td><%= phc3  %></td>
+                  <% julyProd3= pv3/phc3/30  %>
+                  <td><%= julyProd3.toFixed(2) %></td>
+                  <td> <%= AVol3  %> </td> 
+                    <td><%=  Ahc3  %> </td>
+                    <td>  <%=  AProd3 %></td>
+                    <!--   Variance  -->
+                    <% if( vol_variance3 >= -9  &&  vol_variance3 <= 9 ) {   %>
+                      <td   >
+                        <%= vol_variance3 %> % 
+                      </td>
+                    <%  } else  if( vol_variance3 > 10 ) {  %>
+                      <td  class="positive"   >
+                        <%= vol_variance3 %> %
+                      </td>
+                      <%  } else {  %>
+                        <td class="negative"  >
+                          <%= vol_variance3 %> %
+                        </td>
+                    <% } %>
+                    
+                    <!-- HCount  variance -->
+                    <% if( HCount_variance3 >= -9  &&  HCount_variance3 <= 9 ) {   %>
+                      <td   >
+                        <%= HCount_variance3 %> %
+                      </td>
+                    <%  } else  if( HCount_variance3 > 10 ) {  %>
+                      <td  class="positive"   >
+                        <%= HCount_variance3 %> %
+                      </td>
+                      <%  } else {  %>
+                        <td class="negative"  >
+                          <%= HCount_variance3 %> %
+                        </td>
+                    <% } %>
+              
+                    <!-- Prod Variance -->
+                    <% if( Prod_variance3 >= -9  &&  Prod_variance3 <= 9 ) {   %>
+                      <td   >
+                        <%= Prod_variance3 %> %
+                      </td>
+                    <%  } else  if( Prod_variance3 > 10 ) {  %>
+                      <td  class="positive"   >
+                        <%= Prod_variance3 %> %
+                      </td>
+                      <%  } else {  %>
+                        <td class="negative"  >
+                          <%= Prod_variance3 %> %
+                        </td>
+                    <% } %>
+                </tr>
+
+
+                  <!--  Big Books -->
+                <tr id="demo1" class="collapse">
+                <th>Big Books</th>
+                <!-- planned -->
+                <td><%= pv4 %></td>
+                <td><%= phc4  %></td>
+                <% julyProd4= pv4/phc4/30  %>
+                <td><%= julyProd4.toFixed(2) %></td>
+                <!-- Actual  -->
+                <td> <%= AVol4  %> </td> 
+                    <td><%=  Ahc4  %> </td>
+                    <td>  <%=  AProd4 %></td>
+                    <!--   Variance  -->
+                    <!-- Volume variance -->
+                    <% if( vol_variance4 >= -9  &&  vol_variance4 <= 9 ) {   %>
+                      <td   >
+                        <%= vol_variance4 %> % 
+                      </td>
+                    <%  }else  if( vol_variance4 > 10 ) {  %>
+                      <td  class="positive"   >
+                        <%= vol_variance4 %> %
+                      </td>
+                      <%  } else {  %>
+                        <td class="negative"  >
+                          <%= vol_variance4 %> %
+                        </td>
+                    <% } %>
+                    
+                    <!-- HCount  variance -->
+                    <% if( HCount_variance4 >= -9  &&  HCount_variance4 <= 9 ) {   %>
+                      <td   >
+                        <%= HCount_variance4 %> %
+                      </td>
+                    <%  }else  if( HCount_variance4 > 10 ) {  %>
+                      <td  class="positive"   >
+                        <%= HCount_variance4 %> %
+                      </td>
+                      <%  } else {  %>
+                        <td class="negative"  >
+                          <%= HCount_variance4 %> %
+                        </td>
+                    <% } %>
+
+                    <!-- Prod Variance -->
+                    <% if( Prod_variance4 >= -9  &&  Prod_variance4 <= 9 ) {   %>
+                      <td   >
+                        <%= Prod_variance4 %> %
+                      </td>
+                    <%  }else  if( Prod_variance4 > 10 ) {  %>
+                      <td  class="positive"   >
+                        <%= Prod_variance4 %> %
+                      </td>
+                      <%  } else {  %>
+                        <td class="negative"  >
+                          <%= Prod_variance4 %> %
+                        </td>
+                    <% } %>
           
-              <tr id="demo1" class="collapse">
+                </tr>
+
+
+
+                  <!-- Kindle Deals -->
+                <tr id="demo1" class="collapse">
                 <th>Kindle Deals</th>
                 <td><%= pv5 %></td>
-        <td><%= phc5  %></td>
-        <% julyProd5= pv5/phc5/30  %>
-        <td><%= julyProd5.toFixed(2) %></td>
-        <td><% var sum9 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_Vol5  %>
-                 
-                 <% sum9 = sum9 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum9 ="+sum5/30 )%>
-           <p><%= (sum9/30).toFixed(2)  %> <p></td>
-        
-        <td>
-          <% var sum10 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_HCount5  %>
-                 
-                 <% sum10 = sum10 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum10 ="+sum6/30 )%>
-           <p><%= (sum10/30).toFixed(2) %> <p>
-        </td>
-        <td> 
-          <% var pProd5= (sum9/sum10/30).toFixed(2) %>
-          <%=  pProd5 %>
-        </td>
-        <td></td>
-                
-              </tr>
-          
-              <tr id="demo1" class="collapse">
+                <td><%= phc5  %></td>
+                <% julyProd5= pv5/phc5/30  %>
+                <td><%= julyProd5.toFixed(2) %></td>
+                <!-- Actual  -->
+                <td> <%= AVol5  %> </td> 
+                <td><%=  Ahc5  %> </td>
+                <td>  <%=  AProd5 %></td>
+                <!--   Variance  -->
+               <!-- Volume variance -->
+                    <% if( vol_variance5 >= -9  &&  vol_variance5 <= 9 ) {   %>
+                      <td   >
+                        <%= vol_variance5 %> % 
+                      </td>
+                    <%  }else  if( vol_variance5 > 10 ) {  %>
+                      <td  class="positive"   >
+                        <%= vol_variance5 %> %
+                      </td>
+                      <%  } else {  %>
+                        <td class="negative"  >
+                          <%= vol_variance5 %> %
+                        </td>
+                    <% } %>
+                    
+                    <!-- HCount  variance -->
+                    <% if( HCount_variance5 >= -9  &&  HCount_variance5 <= 9 ) {   %>
+                      <td   >
+                        <%= HCount_variance5 %> %
+                      </td>
+                    <%  }else  if( HCount_variance5 > 10 ) {  %>
+                      <td  class="positive"   >
+                        <%= HCount_variance5 %> %
+                      </td>
+                      <%  } else {  %>
+                        <td class="negative"  >
+                          <%= HCount_variance5 %> %
+                        </td>
+                    <% } %>
+
+                    <!-- Prod Variance -->
+                    <% if( Prod_variance5 >= -9  &&  Prod_variance5 <= 9 ) {   %>
+                      <td   >
+                        <%= Prod_variance5 %> %
+                      </td>
+                    <%  }else  if( Prod_variance5 > 10 ) {  %>
+                      <td  class="positive"   >
+                        <%= Prod_variance5 %> %
+                      </td>
+                      <%  } else {  %>
+                        <td class="negative"  >
+                          <%= Prod_variance5 %> %
+                        </td>
+                    <% } %>
+                          
+                </tr>
+
+
+
+
+                <!-- Ad-hoc -->
+                <tr id="demo1" class="collapse">
                 <th>Ad-hoc Requests / Escalation Audits</th>
                 <td><%= pv6 %></td>
                 <td><%= phc6  %></td>
                 <% julyProd6= pv6/phc6/30  %>
                 <td><%= julyProd6.toFixed(2) %></td>
-                <td><% var sum11 = 0 %>
-                  <% campgrounds.forEach( function(itbMetrics, index) {  %>
-                   <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
-         
-                     <% var add = itbMetrics.A_Vol6  %>
-                         
-                         <% sum11 = sum11 + add %>
-                         <%= console.log(add )%>
-                      <% }  %>
-                   <% }) %>
-                   <%= console.log("sum11 ="+sum5/30 )%>
-                   <p><%= (sum11/30).toFixed(2)  %> <p></td>
-                
-                <td>
-                  <% var sum12 = 0 %>
-                  <% campgrounds.forEach( function(itbMetrics, index) {  %>
-                   <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
-         
-                     <% var add = itbMetrics.A_HCount6  %>
-                         
-                         <% sum12 = sum12 + add %>
-                         <%= console.log(add )%>
-                      <% }  %>
-                   <% }) %>
-                   <%= console.log("sum12 ="+sum6/30 )%>
-                   <p><%= (sum12/30).toFixed(2)  %> <p>
-                </td>
-                <td> 
-                  <% var pProd6= (sum11/sum12/30).toFixed(2) %>
-                  <%=  pProd6 %>
-                </td>
-                <td></td>
-               
-              </tr>
-          
+                  <!-- Actual  -->
+                  <td> <%= AVol6  %> </td> 
+                  <td><%=  Ahc6  %> </td>
+                  <td>  <%=  AProd6 %></td>
+                  <!--   Variance  -->
+                  <!-- Volume variance -->
+                    <% if( vol_variance6 >= -9  &&  vol_variance6 <= 9 ) {   %>
+                      <td   >
+                        <%= vol_variance6 %> % 
+                      </td>
+                    <%  }else  if( vol_variance6 > 10 ) {  %>
+                      <td  class="positive"   >
+                        <%= vol_variance6 %> %
+                      </td>
+                      <%  } else {  %>
+                        <td class="negative"  >
+                          <%= vol_variance6 %> %
+                        </td>
+                    <% } %>
+                    
+                    <!-- HCount  variance -->
+                    <% if( HCount_variance6 >= -9  &&  HCount_variance6 <= 9 ) {   %>
+                      <td   >
+                        <%= HCount_variance6 %> %
+                      </td>
+                    <%  }else  if( HCount_variance6 > 10 ) {  %>
+                      <td  class="positive"   >
+                        <%= HCount_variance6 %> %
+                      </td>
+                      <%  } else {  %>
+                        <td class="negative"  >
+                          <%= HCount_variance6 %> %
+                        </td>
+                    <% } %>
+
+                    <!-- Prod Variance -->
+                    <% if( Prod_variance6 >= -9  &&  Prod_variance6 <= 9 ) {   %>
+                      <td   >
+                        <%= Prod_variance6 %> %
+                      </td>
+                    <%  }else  if( Prod_variance6 > 10 ) {  %>
+                      <td  class="positive"   >
+                        <%= Prod_variance6 %> %
+                      </td>
+                      <%  } else {  %>
+                        <td class="negative"  >
+                          <%= Prod_variance6 %> %
+                        </td>
+                    <% } %>
+
+                </tr>
+
+
+
+          <!-- kU Page Violation Audits -->
               <tr id="demo1" class="collapse">
                 <th>KU Page Violation Audits</th>
                 <td><%= pv7 %></td>
                 <td><%= phc7  %></td>
                 <% julyProd7= pv7/phc7/30  %>
                 <td><%= julyProd7.toFixed(2) %></td>
-        
-                <td><% var sum13 = 0 %>
-                  <% campgrounds.forEach( function(itbMetrics, index) {  %>
-                   <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
-         
-                     <% var add = itbMetrics.A_Vol7  %>
-                         
-                         <% sum13 = sum13 + add %>
-                         <%= console.log(add )%>
-                      <% }  %>
-                   <% }) %>
-                   <%= console.log("sum13 ="+sum13/30 )%>
-                   <p><%= (sum13/30).toFixed(2) %> <p></td>
-                
-                <td>
-                  <% var sum14 = 0 %>
-                  <% campgrounds.forEach( function(itbMetrics, index) {  %>
-                   <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
-         
-                     <% var add = itbMetrics.A_HCount7  %>
-                         
-                         <% sum14 = sum14 + add %>
-                         <%= console.log(add )%>
-                      <% }  %>
-                   <% }) %>
-                   <%= console.log("sum6 ="+sum6/30 )%>
-                   <p><%= (sum14/30).toFixed(2)  %> <p>
-                </td>
-                <td> 
-                  <% var pProd7= (sum13/sum14/30).toFixed(2) %>
-                  <%=  pProd7 %>
-                </td>
-                <td></td>
+                      <!-- Actual  -->
+                <td> <%= AVol7  %> </td> 
+                <td><%=  Ahc7  %> </td>
+                <td>  <%=  AProd7 %></td>
+                <!--   Variance  -->
+                <!-- Volume variance -->
+                    <% if( vol_variance7 >= -9  &&  vol_variance7 <= 9 ) {   %>
+                      <td   >
+                        <%= vol_variance7 %> % 
+                      </td>
+                    <%  } else  if( vol_variance7 > 10 ) {  %>
+                      <td  class="positive"   >
+                        <%= vol_variance7 %> %
+                      </td>
+                      <%  } else {  %>
+                        <td class="negative"  >
+                          <%= vol_variance7 %> %
+                        </td>
+                    <% } %>
+                    
+                    <!-- HCount  variance -->
+                    <% if( HCount_variance7 >= -9  &&  HCount_variance7 <= 9 ) {   %>
+                      <td   >
+                        <%= HCount_variance7 %> %
+                      </td>
+                    <%  } else  if( HCount_variance7 > 10 ) {  %>
+                      <td  class="positive"   >
+                        <%= HCount_variance7 %> %
+                      </td>
+                      <%  } else {  %>
+                        <td class="negative"  >
+                          <%= HCount_variance7 %> %
+                        </td>
+                    <% } %>
+
+                    <!-- Prod Variance -->
+                    <% if( Prod_variance7 >= -9  &&  Prod_variance7 <= 9 ) {   %>
+                      <td   >
+                        <%= Prod_variance7 %> %
+                      </td>
+                    <%  } else  if( Prod_variance7 > 10 ) {  %>
+                      <td  class="positive"   >
+                        <%= Prod_variance7 %> %
+                      </td>
+                      <%  } else {  %>
+                        <td class="negative"  >
+                          <%= Prod_variance7 %> %
+                        </td>
+                    <% } %>
                </tr>
           
           
-              <tr
-              data-toggle="collapse"
-              data-target="#demo03"
-              data-parent="#myTable" class="ui center aligned header blue">
-              <td >Reactive (Contacts)<i class="right aligned small dropdown icon  "></i></td>
-              <td><%= pv8 %></td>
-        <td><%= phc8  %></td>
-        <% julyProd8= pv8/phc8/30  %>
-        <td><%= julyProd8.toFixed(2) %></td>
-        <td><% var sum15 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_Vol8  %>
-                 
-                 <% sum15 = sum15 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum5 ="+sum15/30 )%>
-           <p><%= (sum15/30).toFixed(2)  %> <p></td>
-        
-        <td>
-          <% var sum16 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_HCount8  %>
-                 
-                 <% sum16 = sum16 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum16 ="+sum16/30 )%>
-           <p><%= (sum16/30).toFixed(2)  %> <p>
-        </td>
-        <td> 
-          <% var pProd8= (sum15/sum16/30).toFixed(2) %>
-          <%=  pProd8 %>
-        </td>
-        <td></td>
-      
-            </tr>
-            
-          
-          
-          
-            <tr id="demo03" class="collapse"> 
-                  <td
+                    <tr
                     data-toggle="collapse"
-                    data-target="#demo09"
-                    data-parent="#myTable"
-                    class="ui  header subhead grey "
-                  >
-                  Andons & Regulars
-                  </td>
-                  <td><%= pv9 %></td>
-                  <td><%= phc9  %></td>
-                  <% julyProd9= pv9/phc9/30  %>
-                  <td><%= julyProd9.toFixed(2) %></td>
-                  <td><% var sum17 = 0 %>
-                    <% campgrounds.forEach( function(itbMetrics, index) {  %>
-                     <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
-           
-                       <% var add = itbMetrics.A_Vol9  %>
-                           
-                           <% sum17 = sum17 + add %>
-                           <%= console.log(add )%>
-                        <% }  %>
-                     <% }) %>
-                     <%= console.log("sum17 ="+sum17/30 )%>
-                     <p><%= (sum17/30).toFixed(2)  %> <p></td>
-                  
-                  <td>
-                    <% var sum18 = 0 %>
-                    <% campgrounds.forEach( function(itbMetrics, index) {  %>
-                     <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
-           
-                       <% var add = itbMetrics.A_HCount9  %>
-                           
-                           <% sum18 = sum18 + add %>
-                           <%= console.log(add )%>
-                        <% }  %>
-                     <% }) %>
-                     <%= console.log("sum18 ="+sum18/30 )%>
-                     <p><%= (sum18/30).toFixed(2)  %> <p>
-                  </td>
-                  <td> 
-                    <% var pProd9= (sum17/sum18/30).toFixed(2) %>
-                    <%=  pProd9 %>
-                  </td>
-                  <td></td>
+                    data-target="#demo03"
+                    data-parent="#myTable" class="ui center aligned header blue">
+                    <td >Reactive (Contacts)<i class="right aligned small dropdown icon  "></i></td>
+                    <td><%= pv8 %></td>
+                    <td><%= phc8  %></td>
+                    <% julyProd8= pv8/phc8/30  %>
+                    <td><%= julyProd8.toFixed(2) %></td>
+                    <!-- Actual  -->
+                    <td> <%= AVol8  %> </td> 
+                    <td><%=  Ahc8  %> </td>
+                    <td>  <%=  AProd8 %></td>
+                    <!--   Variance  -->
+                     <!-- Volume variance -->
+                     <% if( vol_variance8 >= -9  &&  vol_variance8 <= 9 ) {   %>
+                      <td   >
+                        <%= vol_variance8 %> % 
+                      </td>
+                    <%  }else  if( vol_variance8 > 10 ) {  %>
+                      <td  class="positive"   >
+                        <%= vol_variance8 %> %
+                      </td>
+                      <%  } else {  %>
+                        <td class="negative"  >
+                          <%= vol_variance8 %> %
+                        </td>
+                    <% } %>
+                    
+                    <!-- HCount  variance -->
+                    <% if( HCount_variance8 >= -9  &&  HCount_variance8 <= 9 ) {   %>
+                      <td   >
+                        <%= HCount_variance8 %> %
+                      </td>
+                    <%  }else  if( HCount_variance8 > 10 ) {  %>
+                      <td  class="positive"   >
+                        <%= HCount_variance8 %> %
+                      </td>
+                      <%  } else {  %>
+                        <td class="negative"  >
+                          <%= HCount_variance8 %> %
+                        </td>
+                    <% } %>
 
-            </tr>
-          
-          
-          
-            <tr id="demo03" class="collapse"> 
-              
-                  <td
-                    data-toggle="collapse"
-                    data-target="#demo010"
-                    data-parent="#myTable"
-                    class="ui  header subhead grey "
+                    <!-- Prod Variance -->
+                    <% if( Prod_variance8 >= -9  &&  Prod_variance8 <= 9 ) {   %>
+                      <td   >
+                        <%= Prod_variance8 %> %
+                      </td>
+                    <%  }else  if( Prod_variance8 > 10 ) {  %>
+                      <td  class="positive"   >
+                        <%= Prod_variance8 %> %
+                      </td>
+                      <%  } else {  %>
+                        <td class="negative"  >
+                          <%= Prod_variance8 %> %
+                        </td>
+                    <% } %>
                     
-                  >
+                    
+                  </tr>
                   
-                  <i class="small dropdown icon"></i>Report Content Errors 
-                  
+          
+          
+          
+                  <tr id="demo03" class="collapse"> 
+                        <td
+                          data-toggle="collapse"
+                          data-target="#demo09"
+                          data-parent="#myTable"
+                          class="ui  header subhead grey "
+                        >
+                        Andons & Regulars
+                        </td>
+                        <td><%= pv9 %></td>
+                        <td><%= phc9  %></td>
+                        <% julyProd9= pv9/phc9/30  %>
+                        <td><%= julyProd9.toFixed(2) %></td>
+                        <!-- Actual  -->
+                      <td> <%= AVol9  %> </td> 
+                      <td><%=  Ahc9  %> </td>
+                      <td>  <%=  AProd9 %></td>
+                      <!--   Variance  -->
+                         <!-- Volume variance -->
+               <% if( vol_variance9 >= -9  &&  vol_variance9 <= 9 ) {   %>
+                <td   >
+                  <%= vol_variance9 %> % 
+                </td>
+              <%  }else  if( vol_variance9 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= vol_variance9 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= vol_variance9 %> %
                   </td>
-                  <td><%= pv10 %></td>
-        <td><%= phc10  %></td>
-        <% julyProd10= pv10/phc10/30  %>
-        <td><%= julyProd10.toFixed(2) %></td>
-        <td><% var sum19 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_Vol10  %>
-                 
-                 <% sum19 = sum19 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum19 ="+sum19/30 )%>
-           <p><%= (sum19/30).toFixed(2)  %> <p></td>
-        
-        <td>
-          <% var sum20 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_HCount10  %>
-                 
-                 <% sum20 = sum20 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum20 ="+sum20/30 )%>
-           <p><%= (sum20/30).toFixed(2)  %> <p>
-        </td>
-        <td> 
-          <% var pProd10= (sum19/sum20/30).toFixed(2) %>
-          <%=  pProd10 %>
-        </td>
-        <td></td>
-                  
+              <% } %>
+              
+              <!-- HCount  variance -->
+              <% if( HCount_variance9 >= -9  &&  HCount_variance9 <= 9 ) {   %>
+                <td   >
+                  <%= HCount_variance9 %> %
+                </td>
+              <%  }else  if( HCount_variance9 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= HCount_variance9 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= HCount_variance9 %> %
+                  </td>
+              <% } %>
+  
+              <!-- Prod Variance -->
+              <% if( Prod_variance9 >= -9  &&  Prod_variance9 <= 9 ) {   %>
+                <td   >
+                  <%= Prod_variance9 %> %
+                </td>
+              <%  }else  if( Prod_variance9 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= Prod_variance9 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= Prod_variance9 %> %
+                  </td>
+              <% } %>
+                     
                   </tr>
-                  <tr id="demo010" class="collapse">
-                    <th>English </th>
-                    <td><%= pv11 %></td>
-                    <td><%= phc11  %></td>
-                    <% julyProd11= pv11/phc11/30  %>
-                    <td><%= julyProd11.toFixed(2) %></td>
-                    <td><% var sum21 = 0 %>
-                      <% campgrounds.forEach( function(itbMetrics, index) {  %>
-                       <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
-             
-                         <% var add = itbMetrics.A_Vol11  %>
-                             
-                             <% sum21 = sum21 + add %>
-                             <%= console.log(add )%>
-                          <% }  %>
-                       <% }) %>
-                       <%= console.log("sum21 ="+sum21/30 )%>
-                       <p><%= (sum21/30).toFixed(2)  %> <p></td>
+          
+          
+          
+                  <tr id="demo03" class="collapse"> 
                     
-                    <td>
-                      <% var sum22 = 0 %>
-                      <% campgrounds.forEach( function(itbMetrics, index) {  %>
-                       <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
-             
-                         <% var add = itbMetrics.A_HCount11  %>
-                             
-                             <% sum22 = sum22 + add %>
-                             <%= console.log(add )%>
-                          <% }  %>
-                       <% }) %>
-                       <%= console.log("sum22 ="+sum22/30 )%>
-                       <p><%= (sum22/30).toFixed(2) %> <p>
-                    </td>
-                    <td> 
-                      <% var pProd11= (sum21/sum22/30).toFixed(2) %>
-                      <%=  pProd11 %>
-                    </td>
-                    <td></td>
-            
+                        <td
+                          data-toggle="collapse"
+                          data-target="#demo010"
+                          data-parent="#myTable"
+                          class="ui  header subhead grey " >
+                        <i class="small dropdown icon"></i>Report Content Errors 
+                        </td>
+
+                        <td><%= pv10 %></td>
+                        <td><%= phc10  %></td>
+                        <% julyProd10= pv10/phc10/30  %>
+                        <td> <%=  julyProd10.toFixed(2) %> </td>
+                        <!-- Actual  -->
+                      <td> <%= AVol10  %> </td> 
+                      <td><%=  Ahc10  %> </td>
+                      <td>  <%=  AProd10 %></td>
+                      <!--   Variance  -->
+                       <!-- Volume variance -->
+               <% if( vol_variance10 >= -9  &&  vol_variance10 <= 9 ) {   %>
+                <td>
+                  <%= vol_variance10 %> % 
+                </td>
+              <%  } else if( vol_variance10 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= vol_variance10 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= vol_variance10 %> %
+                  </td>
+              <% } %>
+              
+              <!-- HCount  variance -->
+              <% if( HCount_variance10 >= -9  &&  HCount_variance10 <= 9 ) {   %>
+                <td>
+                  <%= HCount_variance10 %> %
+                </td>
+              <%  }else   if( HCount_variance10 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= HCount_variance10 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= HCount_variance10 %> %
+                  </td>
+              <% } %>
+  
+              <!-- Prod Variance -->
+              <% if( Prod_variance10 >= -9  &&  Prod_variance10 <= 9 ) {   %>
+                <td   >
+                  <%= Prod_variance10 %> %
+                </td>
+              <%  }else  if( Prod_variance10 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= Prod_variance10 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= Prod_variance10 %> %
+                  </td>
+              <% } %>
                   </tr>
+
+                  <tr id="demo010" class="collapse">
+                      <th>English </th>
+                      <td><%= pv11 %></td>
+                      <td><%= phc11  %></td>
+                      <% julyProd11= pv11/phc11/30  %>
+                      <td><%= julyProd11.toFixed(2) %></td>
+                            <!-- Actual  -->
+                      <td> <%= AVol11  %> </td> 
+                      <td><%=  Ahc11  %> </td>
+                      <td>  <%=  AProd11 %></td>
+                      <!--   Variance  -->
+                      <!-- Volume variance -->
+               <% if( vol_variance11 >= -9  &&  vol_variance11 <= 9 ) {   %>
+                <td   >
+                  <%= vol_variance11 %> % 
+                </td>
+              <%  }else  if( vol_variance11 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= vol_variance11 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= vol_variance11 %> %
+                  </td>
+              <% } %>
+              
+              <!-- HCount  variance -->
+              <% if( HCount_variance11 >= -9  &&  HCount_variance11 <= 9 ) {   %>
+                <td   >
+                  <%= HCount_variance11 %> %
+                </td>
+              <%  }else  if( HCount_variance11 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= HCount_variance11 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= HCount_variance11 %> %
+                  </td>
+              <% } %>
+  
+              <!-- Prod Variance -->
+              <% if( Prod_variance11 >= -9  &&  Prod_variance11 <= 9 ) {   %>
+                <td   >
+                  <%= Prod_variance11 %> %
+                </td>
+              <%  }else  if( Prod_variance11 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= Prod_variance11 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= Prod_variance11 %> %
+                  </td>
+              <% } %>
+                    
+                  </tr>
+
                   <tr id="demo010" class="collapse">
                     <th>English (High-value titles to be considered by Ops)</th>
                     <td><%= pv12 %></td>
                     <td><%= phc12  %></td>
                     <% julyProd12= pv12/phc12/30  %>
                     <td><%= julyProd12.toFixed(2) %></td>
-                    <td><% var sum23 = 0 %>
-                      <% campgrounds.forEach( function(itbMetrics, index) {  %>
-                      <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
-            
-                        <% var add = itbMetrics.A_Vol12  %>
-                            
-                            <% sum23 = sum23 + add %>
-                            <%= console.log(add )%>
-                          <% }  %>
-                      <% }) %>
-                      <%= console.log("sum23 ="+sum23/30 )%>
-                      <p><%= (sum23/30).toFixed(2)  %> <p></td>
-                    
-                    <td>
-                      <% var sum24 = 0 %>
-                      <% campgrounds.forEach( function(itbMetrics, index) {  %>
-                      <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
-            
-                        <% var add = itbMetrics.A_HCount12  %>
-                            
-                            <% sum24 = sum24 + add %>
-                            <%= console.log(add )%>
-                          <% }  %>
-                      <% }) %>
-                      <%= console.log("sum24 ="+sum24/30 )%>
-                      <p><%= (sum24/30).toFixed(2)  %> <p>
-                    </td>
-                    <td> 
-                      <% var pProd12= (sum23/sum24/30).toFixed(2) %>
-                      <%=  pProd12 %>
-                    </td>
-                    <td></td>
-
+                      <!-- Actual  -->
+                  <td> <%= AVol12  %> </td> 
+                  <td><%=  Ahc12  %> </td>
+                  <td>  <%=  AProd12 %></td>
+                  <!--   Variance  -->
+                  <!-- Volume variance -->
+               <% if( vol_variance12 >= -9  &&  vol_variance12 <= 9 ) {   %>
+                <td   >
+                  <%= vol_variance12 %> % 
+                </td>
+              <%  }else  if( vol_variance12 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= vol_variance12 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= vol_variance12 %> %
+                  </td>
+              <% } %>
+              
+              <!-- HCount  variance -->
+              <% if( HCount_variance12 >= -9  &&  HCount_variance12 <= 9 ) {   %>
+                <td   >
+                  <%= HCount_variance12 %> %
+                </td>
+              <%  }else  if( HCount_variance12 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= HCount_variance12 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= HCount_variance12 %> %
+                  </td>
+              <% } %>
+  
+              <!-- Prod Variance -->
+              <% if( Prod_variance12 >= -9  &&  Prod_variance12 <= 9 ) {   %>
+                <td   >
+                  <%= Prod_variance12 %> %
+                </td>
+              <%  }else  if( Prod_variance12 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= Prod_variance12 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= Prod_variance12 %> %
+                  </td>
+              <% } %>
+                      
                   </tr>
+
                   <tr id="demo010" class="collapse">
-                    <th >German</th>
+                        <th >German</th>
 
-                    <td><%= pv13 %></td>
-        <td><%= phc13  %></td>
-        <% julyProd13= pv13/phc13/30  %>
-        <td><%= julyProd13.toFixed(2) %></td>
-        <td><% var sum25 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_Vol13  %>
-                 
-                 <% sum25 = sum25 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum25 ="+sum25/30 )%>
-           <p><%= (sum25/30).toFixed(2)  %> <p></td>
-        
-        <td>
-          <% var sum26 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_HCount13  %>
-                 
-                 <% sum26 = sum26 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum26 ="+sum26/30 )%>
-           <p><%= (sum26/30).toFixed(2)  %> <p>
-        </td>
-        <td> 
-          <% var pProd13= (sum25/sum26/30).toFixed(2) %>
-          <%=  pProd13 %>
-        </td>
-        <td></td>
-                     
+                        <td><%= pv13 %></td>
+                    <td><%= phc13  %></td>
+                    <% julyProd13= pv13/phc13/30  %>
+                    <td><%= julyProd13.toFixed(2) %></td>
+                      <!-- Actual  -->
+                    <td> <%= AVol13  %> </td> 
+                    <td><%=  Ahc13  %> </td>
+                    <td>  <%=  AProd13 %></td>
+                       <!--   Variance  -->
+                   <!-- Volume variance -->
+               <% if( vol_variance13 >= -9  &&  vol_variance13 <= 9 ) {   %>
+                <td   >
+                  <%= vol_variance13 %> % 
+                </td>
+              <%  }else  if( vol_variance13 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= vol_variance13 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= vol_variance13 %> %
+                  </td>
+              <% } %>
+              
+              <!-- HCount  variance -->
+              <% if( HCount_variance13 >= -9  &&  HCount_variance13 <= 9 ) {   %>
+                <td   >
+                  <%= HCount_variance13 %> %
+                </td>
+              <%  }else  if( HCount_variance13 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= HCount_variance13 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= HCount_variance13 %> %
+                  </td>
+              <% } %>
+  
+              <!-- Prod Variance -->
+              <% if( Prod_variance13 >= -9  &&  Prod_variance13 <= 9 ) {   %>
+                <td   >
+                  <%= Prod_variance13 %> %
+                </td>
+              <%  }else  if( Prod_variance13 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= Prod_variance13 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= Prod_variance13 %> %
+                  </td>
+              <% } %>
+                  </tr>
+
+
+                  <tr id="demo010" class="collapse">
+                        <th >French</th>
+
+                        <td><%= pv14 %></td>
+                    <td><%= phc14  %></td>
+                    <% julyProd14= pv14/phc14/30  %>
+                    <td><%= julyProd14.toFixed(2) %></td>
+                     <!-- Actual  -->
+                     <td> <%= AVol14  %> </td> 
+                     <td><%=  Ahc14  %> </td>
+                     <td>  <%=  AProd14 %></td>
+                     <!--   Variance  -->
+                    <!-- Volume variance -->
+               <% if( vol_variance14 >= -9  &&  vol_variance14 <= 9 ) {   %>
+                <td   >
+                  <%= vol_variance14 %> % 
+                </td>
+              <%  }else  if( vol_variance14 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= vol_variance14 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= vol_variance14 %> %
+                  </td>
+              <% } %>
+              
+              <!-- HCount  variance -->
+              <% if( HCount_variance14 >= -9  &&  HCount_variance14 <= 9 ) {   %>
+                <td   >
+                  <%= HCount_variance14 %> %
+                </td>
+              <%  }else  if( HCount_variance14 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= HCount_variance14 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= HCount_variance14 %> %
+                  </td>
+              <% } %>
+  
+              <!-- Prod Variance -->
+              <% if( Prod_variance14 >= -9  &&  Prod_variance14 <= 9 ) {   %>
+                <td   >
+                  <%= Prod_variance14 %> %
+                </td>
+              <%  } else if( Prod_variance14 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= Prod_variance14 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative">
+                    <%= Prod_variance14 %> %
+                  </td>
+              <% } %>
+                      
                   </tr>
                  
-            </tr>
-          
+      
           
             <tr id="demo03" class="collapse"> 
               <td
@@ -655,45 +1135,62 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
               Customer Review
               </td>
               <td><%= pv15 %></td>
-        <td><%= phc15  %></td>
-        <% julyProd15= pv15/phc15/30  %>
-        <td><%= julyProd15.toFixed(2) %></td>
-        <td><% var sum5 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_Vol15  %>
-                 
-                 <% sum5 = sum5 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum5 ="+sum5/30 )%>
-           <p><%= (sum5/30).toFixed(2)  %> <p></td>
-        
-        <td>
-          <% var sum6 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_HCount15  %>
-                 
-                 <% sum6 = sum6 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum6 ="+sum6/30 )%>
-           <p><%= (sum6/30).toFixed(2)  %> <p>
-        </td>
-        <td> 
-          <% var pProd15= (sum1/sum2/30).toFixed(2) %>
-          <%=  pProd15 %>
-        </td>
-        <td></td>
+              <td><%= phc15  %></td>
+              <% julyProd15= pv15/phc15/30  %>
+              <td><%= julyProd15.toFixed(2) %></td>
+              <!-- Actual  -->
+              <td> <%= AVol15  %> </td> 
+              <td><%=  Ahc15  %> </td>
+              <td>  <%=  AProd15 %></td>
+                 <!--   Variance  -->
+                          
+                  <!-- Volume variance -->
 
+                  <% if( vol_variance15 >= -9  &&  vol_variance15 <= 9 ) {   %>
+                    <td>
+                      <%= vol_variance15 %> %
+                    </td>
 
+                  <%  } else  if ( vol_variance15 > 10 ) {  %>
+                    <td  class="positive"   >
+                      <%= vol_variance15 %> %
+                    </td>
 
-              
+                    <%  } else {  %>
+                      <td class="negative"  >
+                        <%= vol_variance15 %> %
+                      </td>
+                  <% } %>
+                  
+                  <!-- HCount  variance -->
+                  <% if( HCount_variance15 >= -9  &&  HCount_variance15 <= 9 ) {   %>
+                    <td   >
+                      <%= HCount_variance15 %> %
+                    </td>
+                  <%  }else  if( HCount_variance15 > 10 ) {  %>
+                    <td  class="positive"   >
+                      <%= HCount_variance15 %> %
+                    </td>
+                    <%  } else {  %>
+                      <td class="negative"  >
+                        <%= HCount_variance15 %> %
+                      </td>
+                  <% } %>
+
+                  <!-- Prod Variance -->
+                  <% if( Prod_variance15 >= -9  &&  Prod_variance15 <= 9 ) {   %>
+                    <td   >
+                      <%= Prod_variance15 %> %
+                    </td>
+                  <%  }else  if( Prod_variance15 > 10 ) {  %>
+                    <td  class="positive"   >
+                      <%= Prod_variance15 %> %
+                    </td>
+                    <%  } else {  %>
+                      <td class="negative"  >
+                        <%= Prod_variance15 %> %
+                      </td>
+                  <% } %>
             </tr>
           
             <tr id="demo03" class="collapse"> 
@@ -708,39 +1205,59 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
               <td><%= phc16  %></td>
               <% julyProd16= pv16/phc16/30  %>
               <td><%= julyProd16.toFixed(2) %></td>
-              <td><% var sum5 = 0 %>
-                <% campgrounds.forEach( function(itbMetrics, index) {  %>
-                 <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
-       
-                   <% var add = itbMetrics.A_Vol16  %>
-                       
-                       <% sum5 = sum5 + add %>
-                       <%= console.log(add )%>
-                    <% }  %>
-                 <% }) %>
-                 <%= console.log("sum5 ="+sum5/30 )%>
-                 <p><%= (sum5/30).toFixed(2)  %> <p></td>
+              <!-- Actual  -->
+              <td> <%= AVol16  %> </td> 
+              <td><%=  Ahc16  %> </td>
+              <td>  <%=  AProd16 %></td>
+                 <!--   Variance  -->
+              <!-- Volume variance -->
+              <% if( vol_variance16 >= -9  &&  vol_variance16 <= 9 ) {   %>
+                <td   >
+                  <%= vol_variance16 %> % 
+                </td>
+              <%  } else  if( vol_variance16 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= vol_variance16 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= vol_variance16 %> %
+                  </td>
+              <% } %>
               
-              <td>
-                <% var sum6 = 0 %>
-                <% campgrounds.forEach( function(itbMetrics, index) {  %>
-                 <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
-       
-                   <% var add = itbMetrics.A_HCount16  %>
-                       
-                       <% sum6 = sum6 + add %>
-                       <%= console.log(add )%>
-                    <% }  %>
-                 <% }) %>
-                 <%= console.log("sum6 ="+sum6/30 )%>
-                 <p><%= (sum6/30).toFixed(2)  %> <p>
-              </td>
-              <td> 
-                <% var pProd16= (sum1/sum2/30).toFixed(2) %>
-                <%=  pProd16 %>
-              </td>
-              <td></td>
-             </tr>
+              <!-- HCount  variance -->
+              <% if( HCount_variance16 >= -9  &&  HCount_variance16 <= 9 ) {   %>
+                <td   >
+                  <%= HCount_variance16 %> %
+                </td>
+              <%  }else if( HCount_variance16 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= HCount_variance16 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= HCount_variance16 %> %
+                  </td>
+              <% } %>
+  
+              <!-- Prod Variance -->
+              <% if( Prod_variance16 >= -9  &&  Prod_variance16 <= 9 ) {   %>
+                <td   >
+                  <%= Prod_variance16 %> %
+                </td>
+              <%  }else if( Prod_variance16 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= Prod_variance16 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= Prod_variance16 %> %
+                  </td>
+              <% } %>
+
+
+
+               </tr>
           
           
           <tr id="demo03" class="collapse"> 
@@ -752,132 +1269,182 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
             <i class="small dropdown icon"></i>
             Publisher Response
             </td>
-            <td><%= pv17 %></td>
-        <td><%= phc17  %></td>
-        <% julyProd17= pv17/phc17/30  %>
-        <td><%= julyProd17.toFixed(2) %></td>
-        <td><% var sum5 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_Vol17  %>
-                 
-                 <% sum5 = sum5 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum5 ="+sum5/30 )%>
-           <p><%= (sum5/30).toFixed(2)  %> <p></td>
+            <td><%= pv17 %></td>  
+            <td><%= phc17  %></td>  
+            <% julyProd17= pv17/phc17/30  %>
+            <td><%= julyProd17.toFixed(2) %></td> 
+              <!-- Actual  -->
+              <td> <%= AVol17  %> </td>   
+              <td><%=  Ahc17  %> </td>  
+              <td>  <%=  AProd17 %></td>  
+                 <!--   Variance  -->
+              <!-- Volume variance -->
+              <% if( vol_variance17 >= -9  &&  vol_variance17 <= 9 ) {   %>
+                <td   >
+                  <%= vol_variance17 %> % 
+                </td>
+              <%  }else  if( vol_variance17 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= vol_variance17 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= vol_variance17 %> %
+                  </td>
+              <% } %>
+              
+              <!-- HCount  variance -->
+              <% if( HCount_variance17 >= -9  &&  HCount_variance17 <= 9 ) {   %>
+                <td   >
+                  <%= HCount_variance17 %> %
+                </td>
+              <%  }else  if( HCount_variance17 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= HCount_variance17 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= HCount_variance17 %> %
+                  </td>
+              <% } %>
+  
+              <!-- Prod Variance -->
+              <% if( Prod_variance17 >= -9  &&  Prod_variance17 <= 9 ) {   %>
+                <td   >
+                  <%= Prod_variance17 %> %
+                </td>
+              <%  }else  if( Prod_variance17 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= Prod_variance17 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= Prod_variance17 %> %
+                  </td>
+              <% } %> 
         
-        <td>
-          <% var sum6 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_HCount17  %>
-                 
-                 <% sum6 = sum6 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum6 ="+sum6/30 )%>
-           <p><%= (sum6/30).toFixed(2)  %> <p>
-        </td>
-        <td> 
-          <% var pProd17= (sum1/sum2/30).toFixed(2) %>
-          <%=  pProd17 %>
-        </td>
-        <td></td>
-
-
          </tr>
             <tr id="demo011" class="collapse">
-              <td class="hiddenRow"><div>Submitted Corrections</div></td>
-              <td><%= pv18 %></td>
-        <td><%= phc18  %></td>
-        <% julyProd18= pv18/phc18/30  %>
-        <td><%= julyProd18.toFixed(2) %></td>
-        <td><% var sum5 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_Vol18  %>
-                 
-                 <% sum5 = sum5 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum5 ="+sum5/30 )%>
-           <p><%= (sum5/30).toFixed(2)  %> <p></td>
-        
-        <td>
-          <% var sum6 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_HCount18  %>
-                 
-                 <% sum6 = sum6 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum6 ="+sum6/30 )%>
-           <p><%= (sum6/30).toFixed(2)  %> <p>
-        </td>
-        <td> 
-          <% var pProd18= (sum1/sum2/30).toFixed(2) %>
-          <%=  pProd18 %>
-        </td>
-        <td></td>
-            </tr>
-            <tr id="demo011" class="collapse">
+            <td class="hiddenRow"><div>Submitted Corrections</div></td>
+            <td><%= pv18 %></td>
+            <td><%= phc18  %></td>
+            <% julyProd18= pv18/phc18/30  %>
+            <td><%= julyProd18.toFixed(2) %></td>
+            <!-- Actual  -->
+            <td> <%= AVol18  %> </td>   
+            <td><%=  Ahc18  %> </td>  
+            <td>  <%=  AProd18 %></td>  
+               <!--   Variance  -->
+           <!-- Volume variance -->
+           <% if( vol_variance18 >= -9  &&  vol_variance18 <= 9 ) {   %>
+            <td   >
+              <%= vol_variance18 %> % 
+            </td>
+          <%  }else if( vol_variance18 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= vol_variance18 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= vol_variance18 %> %
+              </td>
+          <% } %>
+          
+          <!-- HCount  variance -->
+          <% if( HCount_variance18 >= -9  &&  HCount_variance18 <= 9 ) {   %>
+            <td   >
+              <%= HCount_variance18 %> %
+            </td>
+          <%  }else if( HCount_variance18 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= HCount_variance18 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= HCount_variance18 %> %
+              </td>
+          <% } %>
+
+          <!-- Prod Variance -->
+          <% if( Prod_variance18 >= -9  &&  Prod_variance18 <= 9 ) {   %>
+            <td   >
+              <%= Prod_variance18 %> %
+            </td>
+          <%  }else if( Prod_variance18 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= Prod_variance18 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= Prod_variance18 %> %
+              </td>
+          <% } %>
+
+         </tr>
+
+         <tr id="demo011" class="collapse">
               <td class="hiddenRow"><div>Queries + Escalations</div></td>
               <td><%= pv19 %></td>
               <td><%= phc19  %></td>
               <% julyProd19= pv19/phc19/30  %>
               <td><%= julyProd19.toFixed(2) %></td>
-              <td><% var sum5 = 0 %>
-                <% campgrounds.forEach( function(itbMetrics, index) {  %>
-                 <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
-       
-                   <% var add = itbMetrics.A_Vol19  %>
-                       
-                       <% sum5 = sum5 + add %>
-                       <%= console.log(add )%>
-                    <% }  %>
-                 <% }) %>
-                 <%= console.log("sum5 ="+sum5/30 )%>
-                 <p><%= (sum5/30).toFixed(2)  %> <p></td> 
+              <!-- Actual  -->
+              <td> <%= AVol19  %> </td>   
+              <td><%=  Ahc19  %> </td>  
+              <td>  <%=  AProd19 %></td>  
+                 <!--   Variance  -->
+               <!-- Volume variance -->
+               <% if( vol_variance19 >= -9  &&  vol_variance19 <= 9 ) {   %>
+                <td   >
+                  <%= vol_variance19 %> % 
+                </td>
+              <%  }else if( vol_variance19 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= vol_variance19 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= vol_variance19 %> %
+                  </td>
+              <% } %>
               
-              <td>
-                <% var sum6 = 0 %>
-                <% campgrounds.forEach( function(itbMetrics, index) {  %>
-                 <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
-       
-                   <% var add = itbMetrics.A_HCount19  %>
-                       
-                       <% sum6 = sum6 + add %>
-                       <%= console.log(add )%>
-                    <% }  %>
-                 <% }) %>
-                 <%= console.log("sum6 ="+sum6/30 )%>
-                 <p><%= (sum6/30).toFixed(2)  %> <p> 
-              </td> 
-              <td> 
-                <% var pProd19= (sum1/sum2/30).toFixed(2) %>
-                <%=  pProd19 %> 
-              </td>
-              <td></td>
-            </tr>
+              <!-- HCount  variance -->
+              <% if( HCount_variance19 >= -9  &&  HCount_variance19 <= 9 ) {   %>
+                <td   >
+                  <%= HCount_variance19 %> %
+                </td>
+              <%  }else if( HCount_variance19 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= HCount_variance19 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= HCount_variance19 %> %
+                  </td>
+              <% } %>
+  
+              <!-- Prod Variance -->
+              <% if( Prod_variance19 >= -9  &&  Prod_variance19 <= 9 ) {   %>
+                <td   >
+                  <%= Prod_variance19 %> %
+                </td>
+              <%  }else if( Prod_variance19 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= Prod_variance19 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= Prod_variance19 %> %
+                  </td>
+              <% } %>
+              
+          </tr>
           
            
            
           </tr>
-          
-          
-          
-          
-                  <!-- =======================================   REWORK  ======================================== -->
+
+          <!-- =======================================   REWORK  ======================================== -->
                  
           
               <tr data-toggle="collapse" data-target="#demo3"  class="ui center aligned header blue" data-parent="#myTable">
@@ -886,244 +1453,365 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                 <td><%= phc20  %></td>
                 <% julyProd20= pv20/phc20/30  %>
                 <td><%= julyProd20.toFixed(2) %></td>
-                <td><% var sum5 = 0 %>
-                  <% campgrounds.forEach( function(itbMetrics, index) {  %>
-                   <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
-         
-                     <% var add = itbMetrics.A_Vol20  %>
-                         
-                         <% sum5 = sum5 + add %>
-                         <%= console.log(add )%>
-                      <% }  %>
-                   <% }) %>
-                   <%= console.log("sum5 ="+sum5/30 )%>
-                   <p><%= (sum5/30).toFixed(2) %> <p></td>
-                
-                <td>
-                  <% var sum6 = 0 %>
-                  <% campgrounds.forEach( function(itbMetrics, index) {  %>
-                   <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
-         
-                     <% var add = itbMetrics.A_HCount20  %>
-                         
-                         <% sum6 = sum6 + add %>
-                         <%= console.log(add )%>
-                      <% }  %>
-                   <% }) %>
-                   <%= console.log("sum6 ="+sum6/30 )%>
-                   <p><%= (sum6/30).toFixed(2)  %> <p>
-                </td>
-                <td> 
-                  <% var pProd20= (sum1/sum2/30).toFixed(2) %>
-                  <%=  pProd20 %>
-                </td>
-                <td></td>
-              
+                <!-- Actual  -->
+              <td> <%= AVol20  %> </td>   
+              <td><%=  Ahc20  %> </td>  
+              <td>  <%=  AProd20 %></td>  
+                 <!--   Variance  -->
+             <!-- Volume variance -->
+                  <% if( vol_variance20 >= -9  &&  vol_variance20 <= 9 ) {   %>
+                    <td   >
+                      <%= vol_variance20 %> % 
+                    </td>
+                  <%  }else if( vol_variance20 > 10 ) {  %>
+                    <td  class="positive"   >
+                      <%= vol_variance20 %> %
+                    </td>
+                    <%  } else {  %>
+                      <td class="negative"  >
+                        <%= vol_variance20 %> %
+                      </td>
+                  <% } %>
+                  
+                  <!-- HCount  variance -->
+                  <% if( HCount_variance20 >= -9  &&  HCount_variance20 <= 9 ) {   %>
+                    <td   >
+                      <%= HCount_variance20 %> %
+                    </td>
+                  <%  }else if( HCount_variance20 > 10 ) {  %>
+                    <td  class="positive"   >
+                      <%= HCount_variance20 %> %
+                    </td>
+                    <%  } else {  %>
+                      <td class="negative"  >
+                        <%= HCount_variance20 %> %
+                      </td>
+                  <% } %>
+
+                  <!-- Prod Variance -->
+                  <% if( Prod_variance20 >= -9  &&  Prod_variance20 <= 9 ) {   %>
+                    <td   >
+                      <%= Prod_variance20 %> %
+                    </td>
+                  <%  }else if( Prod_variance20 > 10 ) {  %>
+                    <td  class="positive"   >
+                      <%= Prod_variance20 %> %
+                    </td>
+                    <%  } else {  %>
+                      <td class="negative"  >
+                        <%= Prod_variance20 %> %
+                      </td>
+                  <% } %>
+
+                  <!-- Accuracy in (%) -->
+                  <td></td>
+                            
                </tr>
           
               </tr>
+
+
               <tr id="demo3" class="collapse">
                 <th>Rework Blocking</th>
                 <td><%= pv21 %></td>
-        <td><%= phc21  %></td>
-        <% julyProd21= pv21/phc21/30  %>
-        <td><%= julyProd21.toFixed(2) %></td>
-        <td><% var sum5 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_Vol21  %>
-                 
-                 <% sum5 = sum5 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum5 ="+sum5/30 )%>
-           <p><%= (sum5/30).toFixed(2)  %> <p></td>
-        
-        <td>
-          <% var sum6 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_HCount21  %>
-                 
-                 <% sum6 = sum6 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum6 ="+sum6/30 )%>
-           <p><%= (sum6/30).toFixed(2)  %> <p>
-        </td>
-        <td> 
-          <% var pProd21= (sum1/sum2/30).toFixed(2) %>
-          <%=  pProd21 %>
-        </td>
-        <td></td>
+                <td><%= phc21  %></td>
+                <% julyProd21= pv21/phc21/30  %>
+                <td><%= julyProd21.toFixed(2) %></td>
+                <!-- Actual  -->
+                <td> <%= AVol21  %> </td>   
+                <td><%=  Ahc21  %> </td>  
+                <td>  <%=  AProd21 %></td>  
+               <!-- Volume variance -->
+           <% if( vol_variance21 >= -9  &&  vol_variance21 <= 9 ) {   %>
+            <td   >
+              <%= vol_variance21 %> % 
+            </td>
+          <%  }else if( vol_variance21 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= vol_variance21 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= vol_variance21 %> %
+              </td>
+          <% } %>
+          
+          <!-- HCount  variance -->
+          <% if( HCount_variance21 >= -9  &&  HCount_variance21 <= 9 ) {   %>
+            <td   >
+              <%= HCount_variance21 %> %
+            </td>
+          <%  }else if( HCount_variance21 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= HCount_variance21 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= HCount_variance21 %> %
+              </td>
+          <% } %>
+
+          <!-- Prod Variance -->
+          <% if( Prod_variance21 >= -9  &&  Prod_variance21 <= 9 ) {   %>
+            <td   >
+              <%= Prod_variance21 %> %
+            </td>
+          <%  }else if( Prod_variance21 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= Prod_variance21 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= Prod_variance21 %> %
+              </td>
+          <% } %>
+
+                 <!--   Variance  -->
+            
                 
+
                </tr>
+
               <tr id="demo3" class="collapse">
                 <th>Rework CFQI</th>
                 <td><%= pv22 %></td>
-        <td><%= phc22  %></td>
-        <% julyProd22= pv22/phc22/30  %>
-        <td><%= julyProd22.toFixed(2) %></td>
-        <td><% var sum5 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_Vol22  %>
-                 
-                 <% sum5 = sum5 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum5 ="+sum5/30 )%>
-           <p><%= (sum5/30).toFixed(2)  %> <p></td>
-        
-        <td>
-          <% var sum6 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_HCount22  %>
-                 
-                 <% sum6 = sum6 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum6 ="+sum6/30 )%>
-           <p><%= (sum6/30).toFixed(2)  %> <p>
-        </td>
-        <td> 
-          <% var pProd22= (sum1/sum2/30).toFixed(2) %>
-          <%=  pProd22 %>
-        </td>
-        <td></td>
+                <td><%= phc22  %></td>
+                <% julyProd22= pv22/phc22/30  %>
+                <td><%= julyProd22.toFixed(2) %></td>
+                <!-- Actual  -->
+              <td> <%= AVol22  %> </td>   
+              <td><%=  Ahc22  %> </td>  
+              <td>  <%=  AProd22 %></td>  
+                 <!--   Variance  -->
+            <!-- Volume variance -->
+           <% if( vol_variance22 >= -9  &&  vol_variance22 <= 9 ) {   %>
+            <td   >
+              <%= vol_variance22 %> % 
+            </td>
+          <%  }else  if( vol_variance22 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= vol_variance22 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= vol_variance22 %> %
+              </td>
+          <% } %>
+          
+          <!-- HCount  variance -->
+          <% if( HCount_variance22 >= -9  &&  HCount_variance22 <= 9 ) {   %>
+            <td   >
+              <%= HCount_variance22 %> %
+            </td>
+          <%  }else  if( HCount_variance22 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= HCount_variance22 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= HCount_variance22 %> %
+              </td>
+          <% } %>
+
+          <!-- Prod Variance -->
+          <% if( Prod_variance22 >= -9  &&  Prod_variance22 <= 9 ) {   %>
+            <td   >
+              <%= Prod_variance22 %> %
+            </td>
+          <%  }else  if( Prod_variance22 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= Prod_variance22 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= Prod_variance22 %> %
+              </td>
+          <% } %>
+
+
+
                 
                </tr>
+
               <tr id="demo3" class="collapse">
                 <th>Rework Non-Blocking</th>
                 <td><%= pv23 %></td>
-        <td><%= phc23  %></td>
-        <% julyProd23= pv23/phc23/30  %>
-        <td><%= julyProd23.toFixed(2) %></td>
-        <td><% var sum5 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_Vol23  %>
-                 
-                 <% sum5 = sum5 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum5 ="+sum5/30 )%>
-           <p><%= (sum5/30).toFixed(2)  %> <p></td>
-        
-        <td>
-          <% var sum6 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_HCount23  %>
-                 
-                 <% sum6 = sum6 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum6 ="+sum6/30 )%>
-           <p><%= (sum6/30).toFixed(2)  %> <p>
-        </td>
-        <td> 
-          <% var pProd23= (sum1/sum2/30).toFixed(2) %>
-          <%=  pProd23 %>
-        </td>
-        <td></td>
-                </tr>
+                <td><%= phc23  %></td>
+                <% julyProd23= pv23/phc23/30  %>
+                <td><%= julyProd23.toFixed(2) %></td>
+                <!-- Actual  -->
+              <td> <%= AVol23  %> </td>   
+              <td><%=  Ahc23  %> </td>  
+              <td>  <%=  AProd23 %></td>  
+                 <!--   Variance  -->
+             <!-- Volume variance -->
+           <% if( vol_variance23 >= -9  &&  vol_variance23 <= 9 ) {   %>
+            <td   >
+              <%= vol_variance23 %> % 
+            </td>
+          <%  }else  if( vol_variance23 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= vol_variance23 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= vol_variance23 %> %
+              </td>
+          <% } %>
+          
+          <!-- HCount  variance -->
+          <% if( HCount_variance23 >= -9  &&  HCount_variance23 <= 9 ) {   %>
+            <td   >
+              <%= HCount_variance23 %> %
+            </td>
+          <%  }else  if( HCount_variance23 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= HCount_variance23 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= HCount_variance23 %> %
+              </td>
+          <% } %>
+
+          <!-- Prod Variance -->
+          <% if( Prod_variance23 >= -9  &&  Prod_variance23 <= 9 ) {   %>
+            <td   >
+              <%= Prod_variance23 %> %
+            </td>
+          <%  } else if( Prod_variance23 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= Prod_variance23 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= Prod_variance23 %> % 
+              </td>
+          <% } %>
+
+               </tr>
           
           
               <tr data-toggle="collapse" data-target="#demo4"  class="ui center aligned header blue" data-parent="#myTable">
                 <td>  KCVP Detections <i class="left aligned  small dropdown icon "></i>	</td>
                 <td><%= pv24 %></td>
-        <td><%= phc24  %></td>
-        <% julyProd24= pv24/phc24/30  %>
-        <td><%= julyProd24.toFixed(2) %></td>
-        <td><% var sum5 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_Vol24  %>
-                 
-                 <% sum5 = sum5 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum5 ="+sum5/30 )%>
-           <p><%= (sum5/30).toFixed(2)  %> <p></td>
-        
-        <td>
-          <% var sum6 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_HCount24  %>
-                 
-                 <% sum6 = sum6 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum6 ="+sum6/30 )%>
-           <p><%= (sum6/30).toFixed(2)  %> <p>
-        </td>
-        <td> 
-          <% var pProd24= (sum1/sum2/30).toFixed(2) %>
-          <%=  pProd24 %>
-        </td>
-
-               </tr>
+                <td><%= phc24  %></td>
+                <% julyProd24= pv24/phc24/30  %>
+                <td><%= julyProd24.toFixed(2) %></td>
+                <!-- Actual  -->
+              <td> <%= AVol24  %> </td>   
+              <td><%=  Ahc24  %> </td>  
+              <td>  <%=  AProd24 %></td>  
+                 <!--   Variance  -->
+             <!-- Volume variance -->
+           <% if( vol_variance24 >= -9  &&  vol_variance24 <= 9 ) {   %>
+            <td   >
+              <%= vol_variance24 %> % 
+            </td>
+          <%  } else if( vol_variance24 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= vol_variance24 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= vol_variance24 %> %
+              </td>
+          <% } %>
           
+          <!-- HCount  variance -->
+          <% if( HCount_variance24 >= -9  &&  HCount_variance24 <= 9 ) {   %>
+            <td   >
+              <%= HCount_variance24 %> %
+            </td>
+          <%  } else if( HCount_variance24 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= HCount_variance24 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= HCount_variance24 %> %
+              </td>
+          <% } %>
+
+          <!-- Prod Variance -->
+          <% if( Prod_variance24 >= -9  &&  Prod_variance24 <= 9 ) {   %>
+            <td   >
+              <%= Prod_variance24 %> %
+            </td>
+          <%  } else if( Prod_variance24 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= Prod_variance24 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= Prod_variance24 %> %
+              </td>
+          <% } %>
+
+              
+              
               </tr>
+          
+             
           
               <tr id="demo4" class="collapse">
                 <th> Language Mismatch</th>
                 <td><%= pv25 %></td>
-        <td><%= phc25  %></td>
-        <% julyProd25= pv25/phc25/30  %>
-        <td><%= julyProd25.toFixed(2) %></td>
-        <td><% var sum5 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_Vol25  %>
-                 
-                 <% sum5 = sum5 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum5 ="+sum5/30 )%>
-           <p><%= (sum5/30).toFixed(2)  %> <p></td>
-        
-        <td>
-          <% var sum6 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_HCount25  %>
-                 
-                 <% sum6 = sum6 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum6 ="+sum6/30 )%>
-           <p><%= (sum6/30).toFixed(2)  %> <p>
-        </td>
-        <td> 
-          <% var pProd25= (sum1/sum2/30).toFixed(2) %>
-          <%=  pProd25 %>
-        </td>
-        <td></td>
-               
+                <td><%= phc25  %></td>
+                <% julyProd25= pv25/phc25/30  %>
+                <td><%= julyProd25.toFixed(2) %></td>
+                <!-- Actual  -->
+              <td> <%= AVol25  %> </td>
+              <td><%=  Ahc25  %> </td>
+              <td>  <%=  AProd25 %></td>
+                 <!--   Variance  -->
+              <!-- Volume variance -->
+           <% if( vol_variance25 >= -9  &&  vol_variance25 <= 9 ) {   %>
+            <td   >
+              <%= vol_variance25 %> % 
+            </td>
+          <%  }else  if( vol_variance25 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= vol_variance25 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= vol_variance25 %> %
+              </td>
+          <% } %>
+          
+          <!-- HCount  variance -->
+          <% if( HCount_variance25 >= -9  &&  HCount_variance25 <= 9 ) {   %>
+            <td   >
+              <%= HCount_variance25 %> %
+            </td>
+          <%  }else  if( HCount_variance25 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= HCount_variance25 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= HCount_variance25 %> %
+              </td>
+          <% } %>
+
+          <!-- Prod Variance -->
+          <% if( Prod_variance25 >= -9  &&  Prod_variance25 <= 9 ) {   %>
+            <td   >
+              <%= Prod_variance25 %> %
+            </td>
+          <%  }else  if( Prod_variance25 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= Prod_variance25 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= Prod_variance25 %> %
+              </td>
+          <% } %>
+
+
+
                </tr>
               <tr id="demo4" class="collapse">
                 <th> Unknown Language</th>
@@ -1131,247 +1819,351 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                 <td><%= phc26  %></td>
                 <% julyProd26= pv26/phc26/30  %>
                 <td><%= julyProd26.toFixed(2) %></td>
-                <td><% var sum5 = 0 %>
-                  <% campgrounds.forEach( function(itbMetrics, index) {  %>
-                    <% if( itbMetrics.week == "2019-W32" || itbMetrics.week == "2019-W33" || itbMetrics.week == "2019-W34" || itbMetrics.week == "2019-W35"  ){   %>
-         
-                     <% var add = itbMetrics.A_Vol26  %>
-                         
-                         <% sum5 = sum5 + add %>
-                         <%= console.log(add )%>
-                      <% }  %>
-                   <% }) %>
-                   <%= console.log("sum5 ="+sum5/30 )%>
-                   <p><%= (sum5/30).toFixed(2)  %> <p></td>
-                
-                <td>
-                  <% var sum6 = 0 %>
-                  <% campgrounds.forEach( function(itbMetrics, index) {  %>
-                    <% if( itbMetrics.week == "2019-W32" || itbMetrics.week == "2019-W33" || itbMetrics.week == "2019-W34" || itbMetrics.week == "2019-W35"  ){   %>
-         
-                     <% var add = itbMetrics.A_HCount26  %>
-                         
-                         <% sum6 = sum6 + add %>
-                         <%= console.log(add )%>
-                      <% }  %>
-                   <% }) %>
-                   <%= console.log("sum6 ="+sum6/30 )%>
-                   <p><%= (sum6/30).toFixed(2)  %> <p>
-                </td>
-                <td> 
-                  <% var pProd26= (sum1/sum2/30).toFixed(2) %>
-                  <%=  pProd26 %>
-                </td>
-                <td></td>
+                <!-- Actual  -->
+              <td> <%= AVol26  %> </td>   
+              <td><%=  Ahc26  %> </td>  
+              <td>  <%=  AProd26 %></td>  
+                 <!--   Variance  -->
+             <!-- Volume variance -->
+           <% if( vol_variance26 >= -9  &&  vol_variance26 <= 9 ) {   %>
+            <td   >
+              <%= vol_variance26 %> % 
+            </td>
+          <%  }else  if( vol_variance26 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= vol_variance26 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= vol_variance26 %> %
+              </td>
+          <% } %>
+          
+          <!-- HCount  variance -->
+          <% if( HCount_variance26 >= -9  &&  HCount_variance26 <= 9 ) {   %>
+            <td   >
+              <%= HCount_variance26 %> %
+            </td>
+          <%  }else  if( HCount_variance26 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= HCount_variance26 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= HCount_variance26 %> %
+              </td>
+          <% } %>
+
+          <!-- Prod Variance -->
+          <% if( Prod_variance26 >= -9  &&  Prod_variance26 <= 9 ) {   %>
+            <td   >
+              <%= Prod_variance26 %> %
+            </td>
+          <%  }else  if( Prod_variance26 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= Prod_variance26 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= Prod_variance26 %> %
+              </td>
+          <% } %>
+
+
                 
                </tr>
+
               <tr id="demo4" class="collapse">
                 <th> Switcheroo </th>
                 <td><%= pv27 %></td>
                 <td><%= phc27  %></td>
                 <% julyProd27= pv27/phc27/30  %>
                 <td><%= julyProd27.toFixed(2) %></td>
-                <td><% var sum5 = 0 %>
-                  <% campgrounds.forEach( function(itbMetrics, index) {  %>
-                    <% if( itbMetrics.week == "2019-W32" || itbMetrics.week == "2019-W33" || itbMetrics.week == "2019-W34" || itbMetrics.week == "2019-W35"  ){   %>
-         
-                     <% var add = itbMetrics.A_Vol27  %>
-                         
-                         <% sum5 = sum5 + add %>
-                         <%= console.log(add )%>
-                      <% }  %>
-                   <% }) %>
-                   <%= console.log("sum5 ="+sum5/30 )%>
-                   <p><%= (sum5/30).toFixed(2)  %> <p></td>
-                
-                <td>
-                  <% var sum6 = 0 %>
-                  <% campgrounds.forEach( function(itbMetrics, index) {  %>
-                    <% if( itbMetrics.week == "2019-W32" || itbMetrics.week == "2019-W33" || itbMetrics.week == "2019-W34" || itbMetrics.week == "2019-W35"  ){   %>
-         
-                     <% var add = itbMetrics.A_HCount27  %>
-                         
-                         <% sum6 = sum6 + add %>
-                         <%= console.log(add )%>
-                      <% }  %>
-                   <% }) %>
-                   <%= console.log("sum6 ="+sum6/30 )%>
-                   <p><%= (sum6/30).toFixed(2)  %> <p>
-                </td>
-                <td> 
-                  <% var pProd27= (sum1/sum2/30).toFixed(2) %>
-                  <%=  pProd27 %>
-                </td>
-                <td></td>
-                
+                <!-- Actual  -->
+              <td> <%= AVol27  %> </td>   
+              <td><%=  Ahc27  %> </td>  
+              <td>  <%=  AProd27 %></td>  
+                 <!--   Variance  -->
+             <!-- Volume variance -->
+       <% if( vol_variance27 >= -9  &&  vol_variance27 <= 9 ) {   %>
+        <td   >
+          <%= vol_variance27 %> % 
+        </td>
+      <%  }else  if( vol_variance27 > 10 ) {  %>
+        <td  class="positive"   >
+          <%= vol_variance27 %> %
+        </td>
+        <%  } else {  %>
+          <td class="negative"  >
+            <%= vol_variance27 %> %
+          </td>
+      <% } %>
+      
+      <!-- HCount  variance -->
+      <% if( HCount_variance27 >= -9  &&  HCount_variance27 <= 9 ) {   %>
+        <td   >
+          <%= HCount_variance27 %> %
+        </td>
+      <%  }else  if( HCount_variance27 > 10 ) {  %>
+        <td  class="positive"   >
+          <%= HCount_variance27 %> %
+        </td>
+        <%  } else {  %>
+          <td class="negative"  >
+            <%= HCount_variance27 %> %
+          </td>
+      <% } %>
+
+      <!-- Prod Variance -->
+      <% if( Prod_variance27 >= -9  &&  Prod_variance27 <= 9 ) {   %>
+        <td   >
+          <%= Prod_variance27 %> %
+        </td>
+      <%  }else  if( Prod_variance27 > 10 ) {  %>
+        <td  class="positive"   >
+          <%= Prod_variance27 %> %
+        </td>
+        <%  } else {  %>
+          <td class="negative"  >
+            <%= Prod_variance27 %> %
+          </td>
+      <% } %>
+
                </tr>
+
               <tr id="demo4" class="collapse">
                 <th> Fixed Layout </th>
                 <td><%= pv28 %></td>
                 <td><%= phc28  %></td>
                 <% julyProd28= pv28/phc28/30  %>
                 <td><%= julyProd28.toFixed(2) %></td>
-                <td><% var sum5 = 0 %>
-                  <% campgrounds.forEach( function(itbMetrics, index) {  %>
-                    <% if( itbMetrics.week == "2019-W32" || itbMetrics.week == "2019-W33" || itbMetrics.week == "2019-W34" || itbMetrics.week == "2019-W35"  ){   %>
-         
-                     <% var add = itbMetrics.A_Vol28  %>
-                         
-                         <% sum5 = sum5 + add %>
-                         <%= console.log(add )%>
-                      <% }  %>
-                   <% }) %>
-                   <%= console.log("sum5 ="+sum5/30 )%>
-                   <p><%= (sum5/30).toFixed(2)  %> <p></td>
-                
-                <td>
-                  <% var sum6 = 0 %>
-                  <% campgrounds.forEach( function(itbMetrics, index) {  %>
-                    <% if( itbMetrics.week == "2019-W32" || itbMetrics.week == "2019-W33" || itbMetrics.week == "2019-W34" || itbMetrics.week == "2019-W35"  ){   %>
-         
-                     <% var add = itbMetrics.A_HCount28  %>
-                         
-                         <% sum6 = sum6 + add %>
-                         <%= console.log(add )%>
-                      <% }  %>
-                   <% }) %>
-                   <%= console.log("sum6 ="+sum6/30 )%>
-                   <p><%= (sum6/30).toFixed(2)  %> <p>
-                </td>
-                <<td> 
-                  <% var pProd28= (sum1/sum2/30).toFixed(2) %>
-                  <%=  pProd28 %>
-                </td>
-                <td></td>
+                <!-- Actual  -->
+              <td> <%= AVol28  %> </td>   
+              <td><%=  Ahc28  %> </td>  
+              <td>  <%=  AProd28 %></td>  
+                 <!--   Variance  -->
+             <!-- Volume variance -->
+           <% if( vol_variance28 >= -9  &&  vol_variance28 <= 9 ) {   %>
+            <td   >
+              <%= vol_variance28 %> % 
+            </td>
+          <%  }else  if( vol_variance28 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= vol_variance28 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= vol_variance28 %> %
+              </td>
+          <% } %>
+          
+          <!-- HCount  variance -->
+          <% if( HCount_variance28 >= -9  &&  HCount_variance28 <= 9 ) {   %>
+            <td   >
+              <%= HCount_variance28 %> %
+            </td>
+          <%  }else  if( HCount_variance28 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= HCount_variance28 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= HCount_variance28 %> %
+              </td>
+          <% } %>
 
-               
+          <!-- Prod Variance -->
+          <% if( Prod_variance28 >= -9  &&  Prod_variance28 <= 9 ) {   %>
+            <td   >
+              <%= Prod_variance28 %> %
+            </td>
+          <%  }else  if( Prod_variance28 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= Prod_variance28 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= Prod_variance28 %> %
+              </td>
+          <% } %>
+                
                </tr>
-          
-          
               
               <tr data-toggle="collapse" data-target="#demo5"  class="ui center aligned header blue" data-parent="#myTable">
                 <td> Content Testing	</td>
                 <td><%= pv29 %></td>
-        <td><%= phc29  %></td>
-        <% julyProd29= pv29/phc29/30  %>
-        <td><%= julyProd29.toFixed(2) %></td>
-        <td><% var sum5 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_Vol29  %>
-                 
-                 <% sum5 = sum5 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum5 ="+sum5/30 )%>
-           <p><%= (sum5/30).toFixed(2)  %> <p></td>
-        
-        <td>
-          <% var sum6 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_HCount29  %>
-                 
-                 <% sum6 = sum6 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum6 ="+sum6/30 )%>
-           <p><%= (sum6/30).toFixed(2)  %> <p>
-        </td>
-        <td> 
-          <% var pProd29= (sum1/sum2/30).toFixed(2) %>
-          <%=  pProd29 %>
-        </td>
+                <td><%= phc29  %></td>
+                <% julyProd29= pv29/phc29/30  %>
+                <td><%= julyProd29.toFixed(2) %></td>
+                <!-- Actual  -->
+              <td> <%= AVol29  %> </td>   
+              <td><%=  Ahc29  %> </td>  
+              <td>  <%=  AProd29 %></td>  
+                 <!--   Variance  -->
+             <!-- Volume variance -->
+           <% if( vol_variance29 >= -9  &&  vol_variance29 <= 9 ) {   %>
+            <td   >
+              <%= vol_variance29 %> % 
+            </td>
+          <%  }else if( vol_variance29 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= vol_variance29 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= vol_variance29 %> %
+              </td>
+          <% } %>
+          
+          <!-- HCount  variance -->
+          <% if( HCount_variance29 >= -9  &&  HCount_variance29 <= 9 ) {   %>
+            <td   >
+              <%= HCount_variance29 %> %
+            </td>
+          <%  }else if( HCount_variance29 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= HCount_variance29 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= HCount_variance29 %> %
+              </td>
+          <% } %>
 
-        
-                
+          <!-- Prod Variance -->
+          <% if( Prod_variance29 >= -9  &&  Prod_variance29 <= 9 ) {   %>
+            <td   >
+              <%= Prod_variance29 %> %
+            </td>
+          <%  }else if( Prod_variance29 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= Prod_variance29 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= Prod_variance29 %> %
+              </td>
+          <% } %>
+
               </tr>
              
           
               <tr data-toggle="collapse" data-target="#demo6"  class="ui center aligned header blue" data-parent="#myTable">
                 <td>KDP Cover Gen	</td>
                 <td><%= pv30 %></td>
-        <td><%= phc30  %></td>
-        <% julyProd30= pv30/phc30/30  %>
-        <td><%= julyProd30.toFixed(2) %></td>
-        <td><% var sum5 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_Vol30  %>
-                 
-                 <% sum5 = sum5 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum5 ="+sum5/30 )%>
-           <p><%= (sum5/30).toFixed(2)  %> <p></td>
-        
-        <td>
-          <% var sum6 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_HCount30  %>
-                 
-                 <% sum6 = sum6 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum6 ="+sum6/30 )%>
-           <p><%= (sum6/30).toFixed(2)  %> <p>
-        </td>
-        <td> 
-          <% var pProd30= (sum1/sum2/30).toFixed(2) %>
-          <%=  pProd30 %>
-        </td>
-
-        
+                <td><%= phc30  %></td>
+                <% julyProd30= pv30/phc30/30  %>
+                <td><%= julyProd30.toFixed(2) %></td>
+                  <!-- Actual  -->
+              <td> <%= AVol30  %> </td>   
+              <td><%=  Ahc30  %> </td>  
+              <td>  <%=  AProd30 %></td>  
+                 <!--   Variance  -->
+             <!-- Volume variance -->
+                <% if( vol_variance30 >= -9  &&  vol_variance30 <= 9 ) {   %>
+                  <td   >
+                    <%= vol_variance30 %> % 
+                  </td>
+                <%  }else  if( vol_variance30 > 10 ) {  %>
+                  <td  class="positive"   >
+                    <%= vol_variance30 %> %
+                  </td>
+                  <%  } else {  %>
+                    <td class="negative"  >
+                      <%= vol_variance30 %> %
+                    </td>
+                <% } %>
                 
+                <!-- HCount  variance -->
+                <% if( HCount_variance30 >= -9  &&  HCount_variance30 <= 9 ) {   %>
+                  <td   >
+                    <%= HCount_variance30 %> %
+                  </td>
+                <%  }else  if( HCount_variance30 > 10 ) {  %>
+                  <td  class="positive"   >
+                    <%= HCount_variance30 %> %
+                  </td>
+                  <%  } else {  %>
+                    <td class="negative"  >
+                      <%= HCount_variance30 %> %
+                    </td>
+                <% } %>
+
+                <!-- Prod Variance -->
+                <% if( Prod_variance30 >= -9  &&  Prod_variance30 <= 9 ) {   %>
+                  <td   >
+                    <%= Prod_variance30 %> %
+                  </td>
+                <%  }else  if( Prod_variance30 > 10 ) {  %>
+                  <td  class="positive"   >
+                    <%= Prod_variance30 %> %
+                  </td>
+                  <%  } else {  %>
+                    <td class="negative"  >
+                      <%= Prod_variance30 %> %
+                    </td>
+                <% } %>
               </tr>
-              
-              
               <tr data-toggle="collapse" data-target="#demo7"  class="ui center aligned header blue" data-parent="#myTable">
                 <td>Author Fix-up	</td>
                 <td><%= pv31 %></td>
-        <td><%= phc31  %></td>
-        <% julyProd31= pv31/phc31/30  %>
-        <td><%= julyProd31.toFixed(2) %></td>
-        <td><% var sum5 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_Vol31  %>
-                 
-                 <% sum5 = sum5 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum5 ="+sum5/30 )%>
-           <p><%= (sum5/30).toFixed(2)  %> <p></td>
+                <td><%= phc31  %></td>
+                <% julyProd31= pv31/phc31/30  %>
+                <td><%= julyProd31.toFixed(2) %></td>
+                 <!-- Actual  -->
+                <td> <%= AVol31  %> </td>   
+                <td><%=  Ahc31  %> </td>  
+                <td>  <%=  AProd31 %></td>  
+                  <!--   Variance  -->
+               <!-- Volume variance -->
+                <% if( vol_variance31 >= -9  &&  vol_variance31 <= 9 ) {   %>
+                  <td   >
+                    <%= vol_variance31 %> % 
+                  </td>
+                <%  } else  if( vol_variance31 > 10 ) {  %>
+                  <td  class="positive"   >
+                    <%= vol_variance31 %> %
+                  </td>
+                  <%  } else {  %>
+                    <td class="negative"  >
+                      <%= vol_variance31 %> %
+                    </td>
+                <% } %>
+                
+                <!-- HCount  variance -->
+                <% if( HCount_variance31 >= -9  &&  HCount_variance31 <= 9 ) {   %>
+                  <td   >
+                    <%= HCount_variance31 %> %
+                  </td>
+                <%  }  else if( HCount_variance31 > 10 ) {  %>
+                  <td  class="positive"   >
+                    <%= HCount_variance31 %> %
+                  </td>
+                  <%  } else {  %>
+                    <td class="negative"  >
+                      <%= HCount_variance31 %> %
+                    </td>
+                <% } %>
+
+                <!-- Prod Variance -->
+                <% if( Prod_variance31 >= -9  &&  Prod_variance31 <= 9 ) {   %>
+                  <td   >
+                    <%= Prod_variance31 %> %
+                  </td>
+                <%  } else  if( Prod_variance31 > 10 ) {  %>
+                  <td  class="positive"   >
+                    <%= Prod_variance31 %> %
+                  </td>
+                  <%  } else {  %>
+                    <td class="negative"  >
+                      <%= Prod_variance31 %> %
+                    </td>
+                <% } %>
+
+
+
+
         
-        <td>
-          <% var sum6 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_HCount31  %>
-                 
-                 <% sum6 = sum6 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum6 ="+sum6/30 )%>
-           <p><%= (sum6/30 ).toFixed(2) %> <p>
-        </td>
-        <td> 
-          <% var pProd31= (sum1/sum2/30).toFixed(2) %>
-          <%=  pProd31 %>
-        </td>
 
                </tr>
               
@@ -1379,52 +2171,67 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
               <tr data-toggle="collapse" data-target="#demo8" class="ui center aligned header blue" data-parent="#myTable">
                 <td>All Field Audit	</td>
                 <td><%= pv32 %></td>
-        <td><%= phc32  %></td>
-        <% julyProd32= pv32/phc32/30  %>
-        <td><%= julyProd32.toFixed(2) %></td>
-        <td><% var sum5 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_Vol32  %>
-                 
-                 <% sum5 = sum5 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum5 ="+sum5/30 )%>
-           <p><%= (sum5/30).toFixed(2)  %> <p></td>
-        
-        <td>
-          <% var sum6 = 0 %>
-          <% campgrounds.forEach( function(itbMetrics, index) {  %>
-           <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31"   ){   %>
- 
-             <% var add = itbMetrics.A_HCount32  %>
-                 
-                 <% sum6 = sum6 + add %>
-                 <%= console.log(add )%>
-              <% }  %>
-           <% }) %>
-           <%= console.log("sum6 ="+sum6/30 )%>
-           <p><%= (sum6/30).toFixed(2)  %> <p>
-        </td>
-        <td> 
-          <% var pProd32= (sum1/sum2/30).toFixed(2) %>
-          <%=  pProd32 %>
-        </td>
+                <td><%= phc32  %></td>
+                <% julyProd32= pv32/phc32/30  %>
+                <td><%= julyProd32.toFixed(2) %></td>
+                 <!-- Actual  -->
+                <td> <%= AVol32  %> </td>   
+                <td><%=  Ahc32  %> </td>  
+                <td>  <%=  AProd32 %></td>  
+                  <!--   Variance  -->
+               <!-- Volume variance -->
+           <% if( vol_variance32 >= -9  &&  vol_variance32 <= 9 ) {   %>
+            <td   >
+              <%= vol_variance32 %> % 
+            </td>
+          <%  }else  if( vol_variance32 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= vol_variance32 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= vol_variance32 %> %
+              </td>
+          <% } %>
+          
+          <!-- HCount  variance -->
+          <% if( HCount_variance32 >= -9  &&  HCount_variance32 <= 9 ) {   %>
+            <td   >
+              <%= HCount_variance32 %> %
+            </td>
+          <%  }else  if( HCount_variance32 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= HCount_variance32 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= HCount_variance32 %> %
+              </td>
+          <% } %>
+
+          <!-- Prod Variance -->
+          <% if( Prod_variance32 >= -9  &&  Prod_variance32 <= 9 ) {   %>
+            <td   >
+              <%= Prod_variance32 %> %
+            </td>
+          <%  }else  if( Prod_variance32 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= Prod_variance32 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= Prod_variance32 %> %
+              </td>
+          <% } %>
+
+
+
                </tr>
-             
-          
-          
-          
+
               </tbody>
             </table>
-
+          
           <!-- ============================= Q3 TABLE =================== -->
-
-
-
             </div>
 
         </div>
