@@ -1,16 +1,14 @@
-
-<% include ../partials/header %>
-
-<div class="container card text-center">
-  <div class="card-header">
-      <ul class="nav nav-tabs card-header-tabs">
+<% include ../partials/header %> 
+<div class="container card text-center"> 
+  <div class="card-header"> 
+      <ul class="nav nav-tabs card-header-tabs"> 
           <li class="nav-item">
               <a class="nav-link active" data-toggle="tab" href="#insta">ITB , 2019</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#face">ITB, 2020 </a>
-          </li>
-          
+          </li> 
+          <li class="nav-item">  
+              <a class="nav-link" data-toggle="tab" href="#face">ITB, 2020 </a> 
+          </li> 
+           
       </ul>
   </div>
   <div class="tab-content card-body">
@@ -19,9 +17,9 @@
       </caption> <table class="ui fixed inverted single line celled table">
         <thead>
           <tr>
-            <th>Quaterly</th>
-            <th>Monthly</th>
-            <th colspan="5">Weekly</th>
+            <th>Quaterly</th> 
+            <th>Monthly</th>  
+            <th colspan="5">Weekly</th> 
           </tr>
         </thead>
         
@@ -224,23 +222,23 @@
           <td> 
             <% campgrounds.forEach( function(itbMetric) {  %>
             <% if(itbMetric.week == "2019-W50" ){  %>
-            <a  href="/campgrounds/<%= itbMetric._id %>"  > Week 50 </a>
+            <a  href="/campgrounds/<%= itbMetric._id %>"  > Week 50 </a> 
             <% }  %>  
             <% })  %> 
-          </td>
-          <td> 
+          </td> 
+          <td>  
             <% campgrounds.forEach( function(itbMetric) {  %>
             <% if(itbMetric.week == "2019-W51" ){  %>
-            <a  href="/campgrounds/<%= itbMetric._id %>"  > Week 51 </a>
+            <a  href="/campgrounds/<%= itbMetric._id %>"  > Week 51 </a> 
             <% }  %> 
             <% })  %> 
           </td>
           <td>
-            <% campgrounds.forEach( function(itbMetric) {  %>
-            <% if(itbMetric.week == "2019-W52" ){  %>
-            <a  href="/campgrounds/<%= itbMetric._id %>"  > Week 52 </a>
-          <% }  %>
-          <% })  %>
+            <% campgrounds.forEach( function(itbMetric) {  %> 
+            <% if(itbMetric.week == "2019-W52" ){  %> 
+            <a  href="/campgrounds/<%= itbMetric._id %>"  > Week 52 </a> 
+          <% }  %> 
+          <% })  %> 
     
           </td>
         </tr>

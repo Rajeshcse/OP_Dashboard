@@ -21,6 +21,7 @@ router.get("/itb", middleware.isLoggedIn, function(req, res) {
     if (err) {
       console.log(err);
     } else {
+      console.log(allCampgrounds);
       res.render("campgrounds/itb", { campgrounds: allCampgrounds });
     }
   });
@@ -263,6 +264,39 @@ router.post("/itbshow", function(req, res) {
   var couts33 = req.body.couts33;
   var couts34 = req.body.couts34;
 
+  var A_CPH1 = req.body.A_CPH1;
+  var A_CPH2 = req.body.A_CPH2;
+  var A_CPH3 = req.body.A_CPH3;
+  var A_CPH4 = req.body.A_CPH4;
+  var A_CPH5 = req.body.A_CPH5;
+  var A_CPH6 = req.body.A_CPH6;
+  var A_CPH7 = req.body.A_CPH7;
+  var A_CPH8 = req.body.A_CPH8;
+  var A_CPH9 = req.body.A_CPH9;
+  var A_CPH10 = req.body.A_CPH10;
+  var A_CPH11 = req.body.A_CPH11;
+  var A_CPH12 = req.body.A_CPH12;
+  var A_CPH13 = req.body.A_CPH13;
+  var A_CPH14 = req.body.A_CPH14;
+  var A_CPH15 = req.body.A_CPH15;
+  var A_CPH16 = req.body.A_CPH16;
+  var A_CPH17 = req.body.A_CPH17;
+  var A_CPH18 = req.body.A_CPH18;
+  var A_CPH19 = req.body.A_CPH19;
+  var A_CPH20 = req.body.A_CPH20;
+  var A_CPH21 = req.body.A_CPH21;
+  var A_CPH22 = req.body.A_CPH22;
+  var A_CPH23 = req.body.A_CPH23;
+  var A_CPH24 = req.body.A_CPH24;
+  var A_CPH25 = req.body.A_CPH25;
+  var A_CPH26 = req.body.A_CPH26;
+  var A_CPH27 = req.body.A_CPH27;
+  var A_CPH28 = req.body.A_CPH28;
+  var A_CPH29 = req.body.A_CPH29;
+  var A_CPH30 = req.body.A_CPH30;
+  var A_CPH31 = req.body.A_CPH31;
+  var A_CPH32 = req.body.A_CPH32;
+
   var author = {
     id: req.user._id,
     username: req.user.username
@@ -502,7 +536,40 @@ router.post("/itbshow", function(req, res) {
     accuracy29: accuracy29,
     accuracy30: accuracy30,
     accuracy31: accuracy31,
-    accuracy32: accuracy32
+    accuracy32: accuracy32,
+
+    A_CPH1: A_CPH1,
+    A_CPH2: A_CPH2,
+    A_CPH3: A_CPH3,
+    A_CPH4: A_CPH4,
+    A_CPH5: A_CPH5,
+    A_CPH6: A_CPH6,
+    A_CPH7: A_CPH7,
+    A_CPH8: A_CPH8,
+    A_CPH9: A_CPH9,
+    A_CPH10: A_CPH10,
+    A_CPH11: A_CPH11,
+    A_CPH12: A_CPH12,
+    A_CPH13: A_CPH13,
+    A_CPH14: A_CPH14,
+    A_CPH15: A_CPH15,
+    A_CPH16: A_CPH16,
+    A_CPH17: A_CPH17,
+    A_CPH18: A_CPH18,
+    A_CPH19: A_CPH19,
+    A_CPH20: A_CPH20,
+    A_CPH21: A_CPH21,
+    A_CPH22: A_CPH22,
+    A_CPH23: A_CPH23,
+    A_CPH24: A_CPH24,
+    A_CPH25: A_CPH25,
+    A_CPH26: A_CPH26,
+    A_CPH27: A_CPH27,
+    A_CPH28: A_CPH28,
+    A_CPH29: A_CPH29,
+    A_CPH30: A_CPH30,
+    A_CPH31: A_CPH31,
+    A_CPH32: A_CPH32
   };
 
   // Create a new campground and save to DB

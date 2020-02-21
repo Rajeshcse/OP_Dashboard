@@ -22,58 +22,65 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
         <% phc1 = 4.29 ; phc2= 0.38; phc3 =1.61 ; phc4 =0.12 ; phc5 =1.40 ; phc6 =0.05 ; phc7 =0.73; phc8 =10.65 ; phc9 =0.97 ; phc10 =7.62 ; phc11 = 6.03; phc12 =null ; %>  
         <% phc13 = 1.22 ; phc14= 0.38 ; phc15 = 0.95 ; phc16 = 0.29 ; phc17 = 0.82; phc18 =0.32 ; phc19 = 0.50; phc20 = 1.22; phc21 = .35; phc22 =0.11 ; phc23 =0.76 ; phc24 =0.30 ; %>
         <% phc25 = 0.20 ; phc26= 0.03; phc27 =0.05 ; phc28 =0.02 ; phc29 = 2 ; phc30 =0.10 ; phc31 = 0.01; phc32 =0.10 ; %>
-
+        
         <!--  Calculation of Months table -->
 
-        <% var sum1 = 0 %> <% var sum2 = 0 %> <% var sum3 = 0 %> <% var sum4 = 0 %> <% var sum5 = 0 %> <% var	sum6	= 0 %> <% var	sum7	= 0 %> <% var	sum8	= 0 %> <% var	sum9	= 0 %> <% var	sum10	= 0 %>
-        <% var sum11	= 0 %> <% var	sum12	= 0 %> <% var	sum13	= 0 %> <% var	sum14	= 0 %> <% var	sum15	= 0 %> <% var	sum16 = 0 %> <% var	sum17	= 0 %> <% var	sum18	= 0 %> <% var	sum19	= 0 %> <% var	sum20 = 0 %> 
-        <% var sum21	= 0 %> <% var	sum22	= 0 %>  <% var	sum23	= 0 %> <% var	sum24	= 0 %> <% var	sum25	= 0 %> <% var	sum26	= 0 %> <% var	sum27	= 0 %> <% var	sum28	= 0 %> <% var	sum29	= 0 %> <% var	sum30	= 0 %> 
-        <% var sum31	= 0 %> <% var	sum32	= 0 %> <% var	sum33	 = 0 %> <% var	sum34	 = 0 %> <% var	sum35	 = 0 %> <% var	sum36	 = 0 %> <% var	sum37	 = 0 %> <% var	sum38	 = 0 %> <% var	sum39	 = 0 %> <% var	sum40	 = 0 %> 
-        <% var sum41	= 0 %> <% var	sum42	 = 0 %> <% var	sum43	 = 0 %> <% var	sum44	 = 0 %>  <% var	sum45	 = 0 %> <% var	sum46	 = 0 %> <% var	sum47	 = 0 %> <% var	sum48	 = 0 %> <% var	sum49	 = 0 %> <% var	sum50	 = 0 %> 
-        <% var sum51	= 0 %> <% var	sum52	 = 0 %> <% var	sum53	 = 0 %> <% var	sum54	 = 0 %> <% var	sum55	 = 0 %> <% var	sum56	 = 0 %> <% var	sum57	 = 0 %> <% var	sum58	 = 0 %> <% var	sum59	 = 0 %>
+        <% var sum1 = 0 %> <% var sum2 = 0 %> <% var sum3 = 0 %> <% var sum4 = 0 %> <% var sum5 = 0 %> <% var	sum6= 0 %> <% var	sum7= 0 %> <% var	sum8= 0 %> <% var	sum9= 0 %> <% var	sum10= 0 %>
+        <% var sum11= 0 %> <% var	sum12= 0 %> <% var	sum13= 0 %> <% var	sum14= 0 %> <% var	sum15= 0 %> <% var	sum16 = 0 %> <% var	sum17= 0 %> <% var	sum18= 0 %> <% var	sum19= 0 %> <% var	sum20 = 0 %> 
+        <% var sum21= 0 %> <% var	sum22= 0 %>  <% var	sum23= 0 %> <% var	sum24= 0 %> <% var	sum25= 0 %> <% var	sum26= 0 %> <% var	sum27= 0 %> <% var	sum28= 0 %> <% var	sum29= 0 %> <% var	sum30= 0 %> 
+        <% var sum31= 0 %> <% var	sum32= 0 %> <% var	sum33	 = 0 %> <% var	sum34	 = 0 %> <% var	sum35	 = 0 %> <% var	sum36	 = 0 %> <% var	sum37	 = 0 %> <% var	sum38	 = 0 %> <% var	sum39	 = 0 %> <% var	sum40	 = 0 %> 
+        <% var sum41= 0 %> <% var	sum42	 = 0 %> <% var	sum43	 = 0 %> <% var	sum44	 = 0 %>  <% var	sum45	 = 0 %> <% var	sum46	 = 0 %> <% var	sum47	 = 0 %> <% var	sum48	 = 0 %> <% var	sum49	 = 0 %> <% var	sum50	 = 0 %> 
+        <% var sum51= 0 %> <% var	sum52	 = 0 %> <% var	sum53	 = 0 %> <% var	sum54	 = 0 %> <% var	sum55	 = 0 %> <% var	sum56	 = 0 %> <% var	sum57	 = 0 %> <% var	sum58	 = 0 %> <% var	sum59	 = 0 %>
         <% var sum60 = 0 %> <% var	sum61	 = 0 %>  <% var	sum62	 = 0 %> <% var	sum63	 = 0 %> <% var	sum64	 = 0 %>
-
+        
         <% campgrounds.forEach( function(itbMetrics) {  %>
-          <% if( itbMetrics.week == "2019-W32" || itbMetrics.week == "2019-W33" || itbMetrics.week == "2019-W34" || itbMetrics.week == "2019-W35"   ){   %>
-            
-            <% var add1	=	itbMetrics.A_Vol1	%> <% var add2	=	itbMetrics.A_HCount1	%> <% var add3	=	itbMetrics.A_Vol2	%> <% var add4	=	itbMetrics.A_HCount2	%> <% var add5	=	itbMetrics.A_Vol3	%> <% var add6	=	itbMetrics.A_HCount3	%> <% var add7	=	itbMetrics.A_Vol4	%> <% var add8	=	itbMetrics.A_HCount4	%> <% var add9	=	itbMetrics.A_Vol5	%> <% var add10	=	itbMetrics.A_HCount5	%>
-            <% var add11	=	itbMetrics.A_Vol6	%> <% var add12	=	itbMetrics.A_HCount6	%> <% var add13	=	itbMetrics.A_Vol7	%> <% var add14	=	itbMetrics.A_HCount7	%> <% var add15	=	itbMetrics.A_Vol8	%> <% var add16	=	itbMetrics.A_HCount8	%> <% var add17	=	itbMetrics.A_Vol9	%> <% var add18	=	itbMetrics.A_HCount9	%> <% var add19	=	itbMetrics.A_Vol10	%> <% var add20	=	itbMetrics.A_HCount10	%>
-            <% var add21	=	itbMetrics.A_Vol11	%> <% var add22	=	itbMetrics.A_HCount11	%> <% var add23	=	itbMetrics.A_Vol12	%> <% var add24	=	itbMetrics.A_HCount12	%> <% var add25	=	itbMetrics.A_Vol13	%> <% var add26	=	itbMetrics.A_HCount13	%> <% var add27	=	itbMetrics.A_Vol14	%> <% var add28	=	itbMetrics.A_HCount14	%> <% var add29	=	itbMetrics.A_Vol15	%> <% var add30	=	itbMetrics.A_HCount15	%> 
-            <% var add31	=	itbMetrics.A_Vol16	%> <% var add32	=	itbMetrics.A_HCount16	%> <% var add33	=	itbMetrics.A_Vol17	%> <% var add34	=	itbMetrics.A_HCount17	%> <% var add35	=	itbMetrics.A_Vol18	%> <% var add36	=	itbMetrics.A_HCount18	%>  <% var add37	=	itbMetrics.A_Vol19	%>  <% var add38	=	itbMetrics.A_HCount19	%> <% var add39	=	itbMetrics.A_Vol20	%> <% var add40	=	itbMetrics.A_HCount20	%>
-            <% var add41	=	itbMetrics.A_Vol21	%> <% var add42	=	itbMetrics.A_HCount21	%> <% var add43	=	itbMetrics.A_Vol22	%> <% var add44	=	itbMetrics.A_HCount22	%> <% var add45	=	itbMetrics.A_Vol23	%> <% var add46	=	itbMetrics.A_HCount23	%> <% var add47	=	itbMetrics.A_Vol24	%> <% var add48	=	itbMetrics.A_HCount24	%> <% var add49	=	itbMetrics.A_Vol25	%> <% var add50	=	itbMetrics.A_HCount25	%> 
-            <% var add51	=	itbMetrics.A_Vol26	%> <% var add52	=	itbMetrics.A_HCount26	%> <% var add53	=	itbMetrics.A_Vol27	%> <% var add54	=	itbMetrics.A_HCount27	%> <% var add55	=	itbMetrics.A_Vol28	%> <% var add56	=	itbMetrics.A_HCount28	%> <% var add57	=	itbMetrics.A_Vol29	%> <% var add58	=	itbMetrics.A_HCount29	%> <% var add59	=	itbMetrics.A_Vol30	%> <% var add60	=	itbMetrics.A_HCount30	%>
-            <% var add61	=	itbMetrics.A_Vol31	%> <% var add62	=	itbMetrics.A_HCount31	%> <% var add63	=	itbMetrics.A_Vol32	%> <% var add64	=	itbMetrics.A_HCount32	%>
 
-            <% sum1  = sum1 +  add1 %> <% sum2  = sum2 +  add2 %> <% sum3  = sum3 +  add3 %> <% sum4	=	sum4	+	add4	%> <% sum5	=	sum5	+	add5	%> <% sum6	=	sum6	+	add6	%> <% sum7	=	sum7	+	add7	%> <% sum8	=	sum8	+	add8	%> <% sum9	=	sum9	+	add9	%>
-             <% sum10	=	sum10	+	add10	%> <% sum11	=	sum11	+	add11	%> <% sum12	=	sum12	+	add12	%> <% sum13	=	sum13	+	add13	%> <% sum14	=	sum14	+	add14	%> <% sum15	=	sum15	+	add15	%> <% sum16	=	sum16	+	add16	%> <% sum17	=	sum17	+	add17	%> <% sum18	=	sum18	+	add18	%> <% sum19	=	sum19	+	add19	%> <% sum20	=	sum20	+	add20	%>
-             <% sum21	=	sum21	+	add21	%> <% sum22	=	sum22	+	add22	%> <% sum23	=	sum23	+	add23	%> <% sum24	=	sum24	+	add24	%> <% sum25	=	sum25	+	add25	%> <% sum26	=	sum26	+	add26	%> <% sum27	=	sum27	+	add27	%> <% sum28	=	sum28	+	add28	%> <% sum29	=	sum29	+	add29	%> <% sum30	=	sum30	+	add30	%>
-             <% sum31	=	sum31	+	add31	%> <% sum32	=	sum32	+	add32	%> <% sum33	=	sum33	+	add33	%> <% sum34	=	sum34	+	add34	%> <% sum35	=	sum35	+	add35	%> <% sum36	=	sum36	+	add36	%> <% sum37	=	sum37	+	add37	%> <% sum38	=	sum38	+	add38	%> <% sum39	=	sum39	+	add39	%> <% sum40	=	sum40	+	add40	%>
-             <% sum41	=	sum41	+	add41	%> <% sum42	=	sum42	+	add42	%> <% sum43	=	sum43	+	add43	%> <% sum44	=	sum44	+	add44	%> <% sum45	=	sum45	+	add45	%> <% sum46	=	sum46	+	add46	%> <% sum47	=	sum47	+	add47	%> <% sum48	=	sum48	+	add48	%> <% sum49	=	sum49	+	add49	%> <% sum50	=	sum50	+	add50	%>
-             <% sum51	=	sum51	+	add51	%> <% sum52	=	sum52	+	add52	%> <% sum53	=	sum53	+	add53	%> <% sum54	=	sum54	+	add54	%> <% sum55	=	sum55	+	add55	%> <% sum56	=	sum56	+	add56	%> <% sum57	=	sum57	+	add57	%> <% sum58	=	sum58	+	add58	%> <% sum59	=	sum59	+	add59	%> <% sum60	=	sum60	+	add60	%>
-             <% sum61	=	sum61	+	add61	%> <% sum62	=	sum62	+	add62	%> <% sum63	=	sum63	+	add63	%> <% sum64	=	sum64	+	add64	%>
-                                      
+          <% if( itbMetrics.week == "2019-W32" || itbMetrics.week == "2019-W33" || itbMetrics.week == "2019-W34" || itbMetrics.week == "2019-W35"  ){   %>
+            
+            <% var add1=	itbMetrics.A_Vol1	%> <% var add2=	itbMetrics.A_HCount1	%> <% var add3=	itbMetrics.A_Vol2	%> <% var add4=	itbMetrics.A_HCount2	%> <% var add5=	itbMetrics.A_Vol3	%> <% var add6=	itbMetrics.A_HCount3	%> <% var add7=	itbMetrics.A_Vol4	%> <% var add8=	itbMetrics.A_HCount4	%> <% var add9=	itbMetrics.A_Vol5	%> <% var add10=	itbMetrics.A_HCount5	%>
+            <% var add11=	itbMetrics.A_Vol6	%> <% var add12=	itbMetrics.A_HCount6	%> <% var add13=	itbMetrics.A_Vol7	%> <% var add14=	itbMetrics.A_HCount7	%> <% var add15=	itbMetrics.A_Vol8	%> <% var add16=	itbMetrics.A_HCount8	%> <% var add17=	itbMetrics.A_Vol9	%> <% var add18=	itbMetrics.A_HCount9	%> <% var add19=	itbMetrics.A_Vol10	%> <% var add20=	itbMetrics.A_HCount10	%>
+            <% var add21=	itbMetrics.A_Vol11	%> <% var add22=	itbMetrics.A_HCount11	%> <% var add23=	itbMetrics.A_Vol12	%> <% var add24=	itbMetrics.A_HCount12	%> <% var add25=	itbMetrics.A_Vol13	%> <% var add26=	itbMetrics.A_HCount13	%> <% var add27=	itbMetrics.A_Vol14	%> <% var add28=	itbMetrics.A_HCount14	%> <% var add29=	itbMetrics.A_Vol15	%> <% var add30=	itbMetrics.A_HCount15	%> 
+            <% var add31=	itbMetrics.A_Vol16	%> <% var add32=	itbMetrics.A_HCount16	%> <% var add33=	itbMetrics.A_Vol17	%> <% var add34=	itbMetrics.A_HCount17	%> <% var add35=	itbMetrics.A_Vol18	%> <% var add36=	itbMetrics.A_HCount18	%>  <% var add37=	itbMetrics.A_Vol19	%>  <% var add38=	itbMetrics.A_HCount19	%> <% var add39=	itbMetrics.A_Vol20	%> <% var add40=	itbMetrics.A_HCount20	%>
+            <% var add41=	itbMetrics.A_Vol21	%> <% var add42=	itbMetrics.A_HCount21	%> <% var add43=	itbMetrics.A_Vol22	%> <% var add44=	itbMetrics.A_HCount22	%> <% var add45=	itbMetrics.A_Vol23	%> <% var add46=	itbMetrics.A_HCount23	%> <% var add47=	itbMetrics.A_Vol24	%> <% var add48=	itbMetrics.A_HCount24	%> <% var add49=	itbMetrics.A_Vol25	%> <% var add50=	itbMetrics.A_HCount25	%> 
+            <% var add51=	itbMetrics.A_Vol26	%> <% var add52=	itbMetrics.A_HCount26	%> <% var add53=	itbMetrics.A_Vol27	%> <% var add54=	itbMetrics.A_HCount27	%> <% var add55=	itbMetrics.A_Vol28	%> <% var add56=	itbMetrics.A_HCount28	%> <% var add57=	itbMetrics.A_Vol29	%> <% var add58=	itbMetrics.A_HCount29	%> <% var add59=	itbMetrics.A_Vol30	%> <% var add60=	itbMetrics.A_HCount30	%>
+            <% var add61=	itbMetrics.A_Vol31	%> <% var add62=	itbMetrics.A_HCount31	%> <% var add63=	itbMetrics.A_Vol32	%> <% var add64=	itbMetrics.A_HCount32	%>
+
+            <% sum1  = sum1 +  add1 %> <% sum2  = sum2 +  add2 %> <% sum3  = sum3 +  add3 %> <% sum4=	sum4	+	add4	%> <% sum5=	sum5	+	add5	%> <% sum6=	sum6	+	add6	%> <% sum7=	sum7	+	add7	%> <% sum8=	sum8	+	add8	%> <% sum9=	sum9	+	add9	%>
+             <% sum10=	sum10	+	add10	%> <% sum11=	sum11	+	add11	%> <% sum12=	sum12	+	add12	%> <% sum13=	sum13	+	add13	%> <% sum14=	sum14	+	add14	%> <% sum15=	sum15	+	add15	%> <% sum16=	sum16	+	add16	%> <% sum17=	sum17	+	add17	%> <% sum18=	sum18	+	add18	%> <% sum19=	sum19	+	add19	%> <% sum20=	sum20	+	add20	%>
+             <% sum21=	sum21	+	add21	%> <% sum22=	sum22	+	add22	%> <% sum23=	sum23	+	add23	%> <% sum24=	sum24	+	add24	%> <% sum25=	sum25	+	add25	%> <% sum26=	sum26	+	add26	%> <% sum27=	sum27	+	add27	%> <% sum28=	sum28	+	add28	%> <% sum29=	sum29	+	add29	%> <% sum30=	sum30	+	add30	%>
+             <% sum31=	sum31	+	add31	%> <% sum32=	sum32	+	add32	%> <% sum33=	sum33	+	add33	%> <% sum34=	sum34	+	add34	%> <% sum35=	sum35	+	add35	%> <% sum36=	sum36	+	add36	%> <% sum37=	sum37	+	add37	%> <% sum38=	sum38	+	add38	%> <% sum39=	sum39	+	add39	%> <% sum40=	sum40	+	add40	%>
+             <% sum41=	sum41	+	add41	%> <% sum42=	sum42	+	add42	%> <% sum43=	sum43	+	add43	%> <% sum44=	sum44	+	add44	%> <% sum45=	sum45	+	add45	%> <% sum46=	sum46	+	add46	%> <% sum47=	sum47	+	add47	%> <% sum48=	sum48	+	add48	%> <% sum49=	sum49	+	add49	%> <% sum50=	sum50	+	add50	%>
+             <% sum51=	sum51	+	add51	%> <% sum52=	sum52	+	add52	%> <% sum53=	sum53	+	add53	%> <% sum54=	sum54	+	add54	%> <% sum55=	sum55	+	add55	%> <% sum56=	sum56	+	add56	%> <% sum57=	sum57	+	add57	%> <% sum58=	sum58	+	add58	%> <% sum59=	sum59	+	add59	%> <% sum60=	sum60	+	add60	%>
+             <% sum61=	sum61	+	add61	%> <% sum62=	sum62	+	add62	%> <% sum63=	sum63	+	add63	%> <% sum64=	sum64	+	add64	%>
+
+            <%= itbMetrics %>
           <% }  %>
+
 
         <% }) %>
 
-        <% var AVol1= (sum1/30).toFixed(2) %> <% var AVol2 = (sum3/30).toFixed(2) %> <% var AVol3 = (sum5/30).toFixed(2) %> <% var AVol4 = (sum7/30).toFixed(2) %> <% var AVol5 = (sum9/30).toFixed(2) %> <% var AVol6 = (sum11/30).toFixed(2) %> <% var AVol7	=	(sum13/30).toFixed(2) %> <% var AVol8	=	(sum15/30).toFixed(2) %> <% var AVol9	=	(sum17/30).toFixed(2) %> <% var AVol10	=	(sum19/30).toFixed(2) %>
-        <% var AVol11	=	(sum21/30).toFixed(2) %> <% var AVol12	=	(sum23/30).toFixed(2) %> <% var AVol13	=	(sum25/30).toFixed(2) %> <% var AVol14	=	(sum27/30).toFixed(2) %> <% var AVol15	=	(sum29/30).toFixed(2) %> <% var AVol16	=	(sum31/30).toFixed(2) %> <% var AVol17	=	(sum33/30).toFixed(2) %> <% var AVol18	=	(sum35/30).toFixed(2) %> <% var AVol19	=	(sum37/30).toFixed(2) %> <% var AVol20	=	(sum39/30).toFixed(2) %>
-        <% var AVol21	=	(sum41/30).toFixed(2) %> <% var AVol22	=	(sum43/30).toFixed(2) %> <% var AVol23	=	(sum45/30).toFixed(2) %> <% var AVol24	=	(sum47/30).toFixed(2) %> <% var AVol25	=	(sum49/30).toFixed(2) %> <% var AVol26	=	(sum51/30).toFixed(2) %> <% var AVol27	=	(sum53/30).toFixed(2) %> <% var AVol28	=	(sum55/30).toFixed(2) %> <% var AVol29	=	(sum57/30).toFixed(2) %> <% var AVol30	=	(sum59/30).toFixed(2) %>
-        <% var AVol31	=	(sum61/30).toFixed(2) %> <% var AVol32	=	(sum63/30).toFixed(2) %>
+        <% var AVol1= (sum1/30).toFixed(2) %> <% var AVol2 = (sum3/30).toFixed(2) %> <% var AVol3 = (sum5/30).toFixed(2) %> <% var AVol4 = (sum7/30).toFixed(2) %> <% var AVol5 = (sum9/30).toFixed(2) %> <% var AVol6 = (sum11/30).toFixed(2) %> <% var AVol7=(sum13/30).toFixed(2) %> <% var AVol8=(sum15/30).toFixed(2) %> <% var AVol9=(sum17/30).toFixed(2) %> <% var AVol10=(sum19/30).toFixed(2) %>
+        <% var AVol11=(sum21/30).toFixed(2) %> <% var AVol12=(sum23/30).toFixed(2) %> <% var AVol13=(sum25/30).toFixed(2) %> <% var AVol14=(sum27/30).toFixed(2) %> <% var AVol15=(sum29/30).toFixed(2) %> <% var AVol16=(sum31/30).toFixed(2) %> <% var AVol17=(sum33/30).toFixed(2) %> <% var AVol18=(sum35/30).toFixed(2) %> <% var AVol19=(sum37/30).toFixed(2) %> <% var AVol20=(sum39/30).toFixed(2) %>
+        <% var AVol21=(sum41/30).toFixed(2) %> <% var AVol22=(sum43/30).toFixed(2) %> <% var AVol23=(sum45/30).toFixed(2) %> <% var AVol24=(sum47/30).toFixed(2) %> <% var AVol25=(sum49/30).toFixed(2) %> <% var AVol26=(sum51/30).toFixed(2) %> <% var AVol27=(sum53/30).toFixed(2) %> <% var AVol28=(sum55/30).toFixed(2) %> <% var AVol29=(sum57/30).toFixed(2) %> <% var AVol30=(sum59/30).toFixed(2) %>
+        <% var AVol31=(sum61/30).toFixed(2) %> <% var AVol32=(sum63/30).toFixed(2) %>
+
                       
-        <% var Ahc1	=	(sum2/30).toFixed(2) %> <% var Ahc2	=	(sum4/30).toFixed(2) %> <% var Ahc3	=	(sum6/30).toFixed(2) %> <% var Ahc4	=	(sum8/30).toFixed(2) %> <% var Ahc5	=	(sum10/30).toFixed(2) %> <% var Ahc6	=	(sum12/30).toFixed(2) %> <% var Ahc7	=	(sum14/30).toFixed(2) %> <% var Ahc8	=	(sum16/30).toFixed(2) %> <% var Ahc9	=	(sum18/30).toFixed(2) %> 
-        <% var Ahc10	=	(sum20/30).toFixed(2) %> <% var Ahc11	=	(sum22/30).toFixed(2) %> <% var Ahc12	=	(sum24/30).toFixed(2) %> <% var Ahc13	=	(sum26/30).toFixed(2) %> <% var Ahc14	=	(sum28/30).toFixed(2) %> <% var Ahc15	=	(sum30/30).toFixed(2) %> <% var Ahc16	=	(sum32/30).toFixed(2) %> <% var Ahc17	=	(sum34/30).toFixed(2) %> <% var Ahc18	=	(sum36/30).toFixed(2) %> <% var Ahc19	=	(sum38/30).toFixed(2) %> <% var Ahc20	=	(sum40/30).toFixed(2) %> 
-        <% var Ahc21	=	(sum42/30).toFixed(2) %> <% var Ahc22	=	(sum44/30).toFixed(2) %> <% var Ahc23	=	(sum46/30).toFixed(2) %> <% var Ahc24	=	(sum48/30).toFixed(2) %> <% var Ahc25	=	(sum50/30).toFixed(2) %> 
-        <% var Ahc26	=	(sum52/30).toFixed(2) %> <% var Ahc27	=	(sum54/30).toFixed(2) %> <% var Ahc28	=	(sum56/30).toFixed(2) %> <% var Ahc29	=	(sum58/30).toFixed(2) %> <% var Ahc30	=	(sum60/30).toFixed(2) %> <% var Ahc31	=	(sum62/30).toFixed(2) %> <% var Ahc32	=	(sum64/30).toFixed(2) %> 
+        <% Ahc1 = 3.08 ; Ahc2= 0.42; Ahc3 =1.32 ; Ahc4 =0.1 ; Ahc5 =0.66 ; Ahc6 =0.26 ; Ahc7 =0.32; Ahc8 =10.95 ; Ahc9 =1.2 ; Ahc10 =2.85 ; Ahc11 = 2.23 ; Ahc12 =null ; %>  
+        <% Ahc13 = 0.56 ; Ahc14= 0.06 ; Ahc15 = 0.82 ; Ahc16 = 0.21 ; Ahc17 = 1.51 ; Ahc18 =0.8 ; Ahc19 = 0.71 ; Ahc20 = 2.98 ; Ahc21 = 0.75 ; Ahc22 =0.44 ; Ahc23 =1.79 ; Ahc24 =0.04 ; %>
+        <% Ahc25 = 0.01 ; Ahc26= 0.01 ; Ahc27 =0.01 ; Ahc28 =0.01 ; Ahc29 = 1.5  ; Ahc30 =0.05 ; Ahc31 = 0; Ahc32 =0.96 ; %>
 
 
-        <% var AProd1	=	(sum1/sum2/8).toFixed(2) %> <% var AProd2	=	(sum3/sum4/8).toFixed(2) %> <% var AProd3	=	(sum5/sum6/8).toFixed(2) %> <% var AProd4	=	(sum7/sum8/8).toFixed(2) %> <% var AProd5	=	(sum9/sum10/8).toFixed(2) %> <% var AProd6	=	(sum11/sum12/8).toFixed(2) %> <% var AProd7	=	(sum13/sum14/8).toFixed(2) %> <% var AProd8	=	(sum15/sum16/8).toFixed(2) %> <% var AProd9	=	(sum17/sum18/8).toFixed(2) %> <% var AProd10	=	(sum19/sum20/8).toFixed(2) %>
-        <% var AProd11	=	(sum21/sum22/8).toFixed(2) %> <% var AProd12	=	(sum23/sum24/8).toFixed(2) %> <% var AProd13	=	(sum25/sum26/8).toFixed(2) %> <% var AProd14	=	(sum27/sum28/8).toFixed(2) %> <% var AProd15	=	(sum29/sum30/8).toFixed(2) %> <% var AProd16	=	(sum31/sum32/8).toFixed(2) %> <% var AProd17	=	(sum33/sum34/8).toFixed(2) %> <% var AProd18	=	(sum35/sum36/8).toFixed(2) %> <% var AProd19	=	(sum37/sum38/8).toFixed(2) %> <% var AProd20	=	(sum39/sum40/8).toFixed(2) %>
-        <% var AProd21	=	(sum41/sum42/8).toFixed(2) %> <% var AProd22	=	(sum43/sum44/8).toFixed(2) %> <% var AProd23	=	(sum45/sum46/8).toFixed(2) %> <% var AProd24	=	(sum47/sum48/8).toFixed(2) %> <% var AProd25	=	(sum49/sum50/8).toFixed(2) %> <% var AProd26	=	(sum51/sum52/8).toFixed(2) %> <% var AProd27	=	(sum53/sum54/8).toFixed(2) %> <% var AProd28	=	(sum55/sum56/8).toFixed(2) %> <% var AProd29	=	(sum57/sum58/8).toFixed(2) %> <% var AProd30	=	(sum59/sum60/8).toFixed(2) %>
-        <% var AProd31	=	(sum61/sum62/8).toFixed(2) %> <% var AProd32	=	(sum63/sum64/8).toFixed(2) %>
+
+
+
+        <% var AProd1=(sum1/sum2/8).toFixed(2) %> <% var AProd2=(sum3/sum4/8).toFixed(2) %> <% var AProd3=(sum5/sum6/8).toFixed(2) %> <% var AProd4=(sum7/sum8/8).toFixed(2) %> <% var AProd5=(sum9/sum10/8).toFixed(2) %> <% var AProd6=(sum11/sum12/8).toFixed(2) %> <% var AProd7=(sum13/sum14/8).toFixed(2) %> <% var AProd8=(sum15/sum16/8).toFixed(2) %> <% var AProd9=(sum17/sum18/8).toFixed(2) %> <% var AProd10=(sum19/sum20/8).toFixed(2) %>
+        <% var AProd11=(sum21/sum22/8).toFixed(2) %> <% var AProd12=(sum23/sum24/8).toFixed(2) %> <% var AProd13=(sum25/sum26/8).toFixed(2) %> <% var AProd14=(sum27/sum28/8).toFixed(2) %> <% var AProd15=(sum29/sum30/8).toFixed(2) %> <% var AProd16=(sum31/sum32/8).toFixed(2) %> <% var AProd17=(sum33/sum34/8).toFixed(2) %> <% var AProd18=(sum35/sum36/8).toFixed(2) %> <% var AProd19=(sum37/sum38/8).toFixed(2) %> <% var AProd20=(sum39/sum40/8).toFixed(2) %>
+        <% var AProd21=(sum41/sum42/8).toFixed(2) %> <% var AProd22=(sum43/sum44/8).toFixed(2) %> <% var AProd23=(sum45/sum46/8).toFixed(2) %> <% var AProd24=(sum47/sum48/8).toFixed(2) %> <% var AProd25=(sum49/sum50/8).toFixed(2) %> <% var AProd26=(sum51/sum52/8).toFixed(2) %> <% var AProd27=(sum53/sum54/8).toFixed(2) %> <% var AProd28=(sum55/sum56/8).toFixed(2) %> <% var AProd29=(sum57/sum58/8).toFixed(2) %> <% var AProd30=(sum59/sum60/8).toFixed(2) %>
+        <% var AProd31=(sum61/sum62/8).toFixed(2) %> <% var AProd32=(sum63/sum64/8).toFixed(2) %>
+
+
 
         <!-- Variance  -->
-
         <!-- Fresh audits -->
         <% var vol_variance1= (((AVol1 - pv1)/pv1)*100).toFixed()  %>  
         <% var HCount_variance1= (((phc1 - Ahc1)/Ahc1)*100).toFixed()  %>   
@@ -239,9 +246,9 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
  
         <!-- HTML Code  -->
 
-        <h2 class="ui basic big green label "> ITB August , 2019: </i></h2> <a href="/">Go Home</a>
-            
-          <table class="ui celled  striped table " id="myTable">
+        <h2 class="ui basic big green label mt-5  mb-5 "> ITB August ,  2019: </i></h2> <a href="/">Go Home</a>
+        <div class="table-responsive ">
+          <table class="ui celled  striped table table-hover table-sm  " id="myTable">
             <thead>
               <tr>
                 <th>
@@ -250,8 +257,15 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                 <th class="ui center aligned header" colspan="3">Planned  </th>
                 <th class="ui center aligned header" colspan="3">Actual </th>
                 <th class="ui center aligned header" colspan="3">Variance </th>
-               
                 <th class="ui center aligned header" colspan="1">Accuracy  </th>
+                <th class="ui center aligned header" colspan="2">CPH  </th>
+                <th class="ui center aligned header" colspan="2">OPEX  </th>
+                <th class="ui center aligned header" colspan="1">OPEX Variance</th>
+                <th class="ui center aligned header" colspan="2">CPU</th>
+                <th class="ui center aligned header" colspan="1">CPU Variance</th>
+
+
+
           
               </tr>
               <tr>
@@ -265,8 +279,17 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                   <th>Volume</th>
                   <th>Head Count</th>
                   <th>Productivity</th>
-                 
                   <th>Accuracy in (%)</th>
+                  <th>Actual</th>
+                  <th>Planned</th>
+                  <th>Actual</th>
+                  <th>Planned</th>
+                  <th>   </th>
+                  <th>Actual</th>
+                  <th>Planned</th>
+               
+                  <th>   </th>
+                  
 
               </tr>
             </thead>
@@ -282,6 +305,7 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                     <td> <%= AVol1  %> </td> 
                     <td><%=  Ahc1  %> </td>
                     <td>  <%=  AProd1 %></td>
+
                     <!--   Variance  -->
                     
                     <!-- Volume variance -->
@@ -330,28 +354,30 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                         <%= Prod_variance1 %> %
                       </td>
                   <% } %>
+
+                  
     
                 </tr>
 
 
 
                 <!-- Best Sellers -->
-                <tr id="demo1" class="collapse ">
-                        <th>Best Sellers</th>
-                        <td><%= pv2 %></td>
-                  <td><%= phc2  %></td>
-                  <% julyProd2= pv2/phc2/30  %>
-                  <td><%= julyProd2.toFixed(2) %></td>
-                  <td> <%= AVol2  %> </td> 
-                  <td><%=  Ahc2  %> </td>
-                  <td>  <%=  AProd2 %></td>
+                <tr id="demo1" class="collapse "> 
+                        <th>Best Sellers</th> 
+                        <td><%= pv2 %></td>   
+                  <td><%= phc2  %></td>  
+                  <% julyProd2= pv2/phc2/30  %> 
+                  <td><%= julyProd2.toFixed(2) %></td> 
+                  <td> <%= AVol2  %> </td>  
+                  <td><%=  Ahc2  %> </td> 
+                  <td>  <%=  AProd2 %></td> 
                   <!--  Variance  -->
                    <!-- Volume variance -->
          <% if( vol_variance2 >= -9  &&  vol_variance2 <= 9 ) {   %>
           <td   >
             <%= vol_variance2 %> %
           </td>
-        <%  } else  if( vol_variance2 > 10 ) {  %>
+        <%  } else  if( vol_variance2 > 10 ) {  %>  
           <td  class="positive"   >
             <%= vol_variance2 %> %
           </td>
@@ -2235,7 +2261,7 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
             </div>
 
         </div>
-      
+      </div>
     </div>
 
 </div>

@@ -1,9 +1,9 @@
 <% include ../partials/header %>
 
-
 <script>
-  
+
   function sum() {
+
     var v1 = document.getElementById("value1").value;
     var v2 = document.getElementById("value2").value;
     var v3 = document.getElementById("value3").value;
@@ -12,8 +12,7 @@
     var v6 = document.getElementById("value6").value;
     var result = +v1 + +v2 + +v3 + +v4 + +v5 + +v6;
     if (!isNaN(result)) {
-      document.getElementById("sum_value").value = result.toFixed(2);
-      
+      document.getElementById("sum_value").value = result.toFixed(2); 
     }
   }
 
@@ -72,9 +71,8 @@
   function rework(){
     var v1 = document.getElementById("value1110").value;
     var v2 = document.getElementById("value1120").value;
-
     var v3 = document.getElementById("value1130").value;
-    
+
     var result = +v1 + +v2 + +v3;
     if (!isNaN(result)) {
       document.getElementById("sum_rework").value = result.toFixed(2);
@@ -84,14 +82,14 @@
   function reworkHCount(){
     var v1 = document.getElementById("value1010").value;
     var v2 = document.getElementById("value1020").value;
-
     var v3 = document.getElementById("value1030").value;
-    
     var result = +v1 + +v2 + +v3;
     if (!isNaN(result)) {
       document.getElementById("sum_reworkHCount").value = result.toFixed(2);
     }
   }
+
+
 
   function kcvp(){
     var v1 = document.getElementById("kcvp1").value;
@@ -121,6 +119,7 @@
   var x = document.getElementById("myText").value;
 
   if( x=== "2019-W27" || x=== "2019-W28" || x=== "2019-W29" || x=== "2019-W30" || x=== "2019-W31" || x=== "2019-W32" || x=== "2019-W33" || x=== "2019-W34"|| x=== "2019-W35"|| x=== "2019-W36" || x=== "2019-W37" || x=== "2019-W38"|| x=== "2019-W39" ){
+    
     
     document.getElementById("Planned_v1" ).innerHTML = "596.23";
     document.getElementById("Planned_v2").innerHTML = "46.15";
@@ -154,7 +153,6 @@
     document.getElementById("Planned_v30").innerHTML = "2500";
     document.getElementById("Planned_v31").innerHTML = "92.31";
     document.getElementById("Planned_v32").innerHTML = "85.85";
-
 
     document.getElementById("Planned_hc1" ).innerHTML = "4.05";
     document.getElementById("Planned_hc2").innerHTML = "0.38";
@@ -224,9 +222,43 @@
 
   }
 
-  else if(  x=== "2019-W40" || x=== "2019-W41" || x=== "2019-W42" || x=== "2019-W43" || x=== "2019-W44"|| x=== "2019-W45"|| x=== "2019-W46" || x=== "2019-W47" || x=== "2019-W48" || x=== "2019-W49" || x=== "2019-W50"|| x=== "2019-W52"|| x=== "2019-W52"){
-    
-    document.getElementById("P_CPH1").innerHTML = "1366" ;
+// October 2019
+  else if(x=== "2019-W40" || x=== "2019-W41" || x=== "2019-W42" || x=== "2019-W43" || x=== "2019-W44"){
+
+        document.getElementById("P_CPH01").innerHTML = "1366";
+    document.getElementById("P_CPH02").innerHTML = "1366";
+    document.getElementById("P_CPH03").innerHTML = "1366";
+    document.getElementById("P_CPH04").innerHTML = "1366";
+    document.getElementById("P_CPH05").innerHTML = "1366";
+    
+    document.getElementById("P_CPH06").innerHTML = "1366";
+    document.getElementById("P_CPH07").innerHTML = "1366";
+    document.getElementById("P_CPH08").innerHTML = "1366";
+    document.getElementById("P_CPH09").innerHTML = "1366";
+    document.getElementById("P_CPH010").innerHTML = "1366";
+    document.getElementById("P_CPH011").innerHTML = "1366";
+    document.getElementById("P_CPH012").innerHTML = "1366";
+    document.getElementById("P_CPH013").innerHTML = "1366";
+    document.getElementById("P_CPH014").innerHTML = "1366";
+    document.getElementById("P_CPH015").innerHTML = "1366";
+    document.getElementById("P_CPH016").innerHTML = "1366";
+    document.getElementById("P_CPH017").innerHTML = "1366";
+    document.getElementById("P_CPH018").innerHTML = "1366";
+    document.getElementById("P_CPH019").innerHTML = "1366";
+    document.getElementById("P_CPH020").innerHTML = "1366";
+    document.getElementById("P_CPH021").innerHTML = "1366";
+    document.getElementById("P_CPH022").innerHTML = "1366";
+    document.getElementById("P_CPH023").innerHTML = "1366";
+    document.getElementById("P_CPH024").innerHTML = "1366";
+    document.getElementById("P_CPH025").innerHTML = "1366";
+    document.getElementById("P_CPH026").innerHTML = "1366";
+    document.getElementById("P_CPH027").innerHTML = "1366";
+    document.getElementById("P_CPH028").innerHTML = "1366";
+    document.getElementById("P_CPH029").innerHTML = "1366";
+    document.getElementById("P_CPH030").innerHTML = "1366";
+    document.getElementById("P_CPH031").innerHTML = "1366";
+    document.getElementById("P_CPH032").innerHTML = "1366";
+
 
 
     document.getElementById("Planned_v1" ).innerHTML = "658.84";
@@ -328,12 +360,305 @@
     document.getElementById("Planned_prod30").innerHTML = "6.5";
     document.getElementById("Planned_prod31").innerHTML = "7.5";
     document.getElementById("Planned_prod32").innerHTML = "8.5";
+
+
+    document.getElementById("P_CPH032").innerHTML = "1366" ;
+
+
+  }
+  //  Novenmber 2019
+  else if(x=== "2019-W45" || x=== "2019-W46" || x=== "2019-W47" || x=== "2019-W48"){
     
+    document.getElementById("P_CPH01").innerHTML = "1363";
+    document.getElementById("P_CPH02").innerHTML = "1363";
+    document.getElementById("P_CPH03").innerHTML = "1363";
+    document.getElementById("P_CPH04").innerHTML = "1363";
+    document.getElementById("P_CPH05").innerHTML = "1363";
+    
+    document.getElementById("P_CPH06").innerHTML = "1363";
+    document.getElementById("P_CPH07").innerHTML = "1363";
+    document.getElementById("P_CPH08").innerHTML = "1363";
+    document.getElementById("P_CPH09").innerHTML = "1363";
+    document.getElementById("P_CPH010").innerHTML = "1363";
+    document.getElementById("P_CPH011").innerHTML = "1363";
+    document.getElementById("P_CPH012").innerHTML = "1363";
+    document.getElementById("P_CPH013").innerHTML = "1363";
+    document.getElementById("P_CPH014").innerHTML = "1363";
+    document.getElementById("P_CPH015").innerHTML = "1363";
+    document.getElementById("P_CPH016").innerHTML = "1363";
+    document.getElementById("P_CPH017").innerHTML = "1363";
+    document.getElementById("P_CPH018").innerHTML = "1363";
+    document.getElementById("P_CPH019").innerHTML = "1363";
+    document.getElementById("P_CPH020").innerHTML = "1363";
+    document.getElementById("P_CPH021").innerHTML = "1363";
+    document.getElementById("P_CPH022").innerHTML = "1363";
+    document.getElementById("P_CPH023").innerHTML = "1363";
+    document.getElementById("P_CPH024").innerHTML = "1363";
+    document.getElementById("P_CPH025").innerHTML = "1363";
+    document.getElementById("P_CPH026").innerHTML = "1363";
+    document.getElementById("P_CPH027").innerHTML = "1363";
+    document.getElementById("P_CPH028").innerHTML = "1363";
+    document.getElementById("P_CPH029").innerHTML = "1363";
+    document.getElementById("P_CPH030").innerHTML = "1363";
+    document.getElementById("P_CPH031").innerHTML = "1363";
+    document.getElementById("P_CPH032").innerHTML = "1363";
+
+
+    document.getElementById("Planned_v1" ).innerHTML = "658.84";
+    document.getElementById("Planned_v2").innerHTML = "46.15";
+    document.getElementById("Planned_v3").innerHTML = "264.69";
+    document.getElementById("Planned_v4").innerHTML = "10.15";
+    document.getElementById("Planned_v5" ).innerHTML = "184.61";
+    document.getElementById("Planned_v6").innerHTML = "6.46";
+    document.getElementById("Planned_v7").innerHTML = "84.15";
+    document.getElementById("Planned_v8").innerHTML = "1572";
+    document.getElementById("Planned_v9" ).innerHTML = "123.2";
+    document.getElementById("Planned_v10").innerHTML = "52";
+    document.getElementById("Planned_v11").innerHTML = "14";
+    document.getElementById("Planned_v12").innerHTML = "63";
+    document.getElementById("Planned_v13" ).innerHTML = "5";
+    document.getElementById("Planned_v14").innerHTML = "663.5";
+    document.getElementById("Planned_v15").innerHTML = "763.5";
+    document.getElementById("Planned_v16").innerHTML = "863.5";
+    document.getElementById("Planned_v17" ).innerHTML = "563.5";
+    document.getElementById("Planned_v18").innerHTML = "663.5";
+    document.getElementById("Planned_v19").innerHTML = "763.5";
+    document.getElementById("Planned_v20").innerHTML = "863.5";
+    document.getElementById("Planned_v21" ).innerHTML = "563.5";
+    document.getElementById("Planned_v22").innerHTML = "663.5";
+    document.getElementById("Planned_v23").innerHTML = "763.5";
+    document.getElementById("Planned_v24").innerHTML = "863.5";
+    document.getElementById("Planned_v25" ).innerHTML = "563.5";
+    document.getElementById("Planned_v26").innerHTML = "663.5";
+    document.getElementById("Planned_v27").innerHTML = "763.5";
+    document.getElementById("Planned_v28").innerHTML = "863.5";
+    document.getElementById("Planned_v29" ).innerHTML = "563.5";
+    document.getElementById("Planned_v30").innerHTML = "663.5";
+    document.getElementById("Planned_v31").innerHTML = "763.5";
+    document.getElementById("Planned_v32").innerHTML = "863.5";
+
+    document.getElementById("Planned_hc1" ).innerHTML = "1.35";
+    document.getElementById("Planned_hc2").innerHTML = "5.5";
+    document.getElementById("Planned_hc3").innerHTML = "8.05";
+    document.getElementById("Planned_hc4").innerHTML = "4.5";
+    document.getElementById("Planned_hc5" ).innerHTML = "3.15";
+    document.getElementById("Planned_hc6").innerHTML = "4.5";
+    document.getElementById("Planned_hc7").innerHTML = "3.5";
+    document.getElementById("Planned_hc8").innerHTML = "2.05";
+    document.getElementById("Planned_hc9" ).innerHTML = "1.35";
+    document.getElementById("Planned_hc10").innerHTML = "6.5";
+    document.getElementById("Planned_hc11").innerHTML = "6.5";
+    document.getElementById("Planned_hc12").innerHTML = "8.5";
+    document.getElementById("Planned_hc13" ).innerHTML = "6.5";
+    document.getElementById("Planned_hc14").innerHTML = "6.5";
+    document.getElementById("Planned_hc15").innerHTML = "76.35";
+    document.getElementById("Planned_hc16").innerHTML = "8.5";
+    document.getElementById("Planned_hc17" ).innerHTML = "6.5";
+    document.getElementById("Planned_hc18").innerHTML = "66.5";
+    document.getElementById("Planned_hc19").innerHTML = "6.35";
+    document.getElementById("Planned_hc20").innerHTML = "6.5";
+    document.getElementById("Planned_hc21" ).innerHTML = "6.05";
+    document.getElementById("Planned_hc22").innerHTML = "66.5";
+    document.getElementById("Planned_hc23").innerHTML = "6.5";
+    document.getElementById("Planned_hc24").innerHTML = "86.5";
+    document.getElementById("Planned_hc25" ).innerHTML = "56.15";
+    document.getElementById("Planned_hc26").innerHTML = "66.5";
+    document.getElementById("Planned_hc27").innerHTML = "6.5";
+    document.getElementById("Planned_hc28").innerHTML = "6.5";
+    document.getElementById("Planned_hc29" ).innerHTML = "6.15";
+    document.getElementById("Planned_hc30").innerHTML = "6.5";
+    document.getElementById("Planned_hc31").innerHTML = "7.5";
+    document.getElementById("Planned_hc32").innerHTML = "6.5";
+
+
+    document.getElementById("Planned_prod1" ).innerHTML = "1.5";
+    document.getElementById("Planned_prod2").innerHTML = "6.5";
+    document.getElementById("Planned_prod3").innerHTML = "68.5";
+    document.getElementById("Planned_prod4").innerHTML = "4.5";
+    document.getElementById("Planned_prod5" ).innerHTML = "4.5";
+    document.getElementById("Planned_prod6").innerHTML = "34.5";
+    document.getElementById("Planned_prod7").innerHTML = "5.5";
+    document.getElementById("Planned_prod8").innerHTML = "6.5";
+    document.getElementById("Planned_prod9" ).innerHTML = "1.5";
+    document.getElementById("Planned_prod10").innerHTML = "1.5";
+    document.getElementById("Planned_prod11").innerHTML = "3.5";
+    document.getElementById("Planned_prod12").innerHTML = "863.5";
+    document.getElementById("Planned_prod13" ).innerHTML = "5.5";
+    document.getElementById("Planned_prod14").innerHTML = "6.5";
+    document.getElementById("Planned_prod15").innerHTML = "7.5";
+    document.getElementById("Planned_prod16").innerHTML = "3.5";
+    document.getElementById("Planned_prod17" ).innerHTML = "5.5";
+    document.getElementById("Planned_prod18").innerHTML = "5.5";
+    document.getElementById("Planned_prod19").innerHTML = "7.5";
+    document.getElementById("Planned_prod20").innerHTML = "8.5";
+    document.getElementById("Planned_prod21" ).innerHTML = "5.5";
+    document.getElementById("Planned_prod22").innerHTML = "6.5";
+    document.getElementById("Planned_prod23").innerHTML = "7.5";
+    document.getElementById("Planned_prod24").innerHTML = "8.5";
+    document.getElementById("Planned_prod25" ).innerHTML = "5.5";
+    document.getElementById("Planned_prod26").innerHTML = "6.5";
+    document.getElementById("Planned_prod27").innerHTML = "7.5";
+    document.getElementById("Planned_prod28").innerHTML = "8.5";
+    document.getElementById("Planned_prod29" ).innerHTML = "5.5";
+    document.getElementById("Planned_prod30").innerHTML = "6.5";
+    document.getElementById("Planned_prod31").innerHTML = "7.5";
+    document.getElementById("Planned_prod32").innerHTML = "8.5";
+    document.getElementById("P_CPH032").innerHTML = "1366" ;
+
+
   }
 
+  //  December 2019
+  else if(x=== "2019-W49" || x=== "2019-W50" || x=== "2019-W51" || x=== "2019-W52"){
+    
 
+        document.getElementById("P_CPH01").innerHTML = "1498";
+    document.getElementById("P_CPH02").innerHTML = "1498";
+    document.getElementById("P_CPH03").innerHTML = "1498";
+    document.getElementById("P_CPH04").innerHTML = "1498";
+    document.getElementById("P_CPH05").innerHTML = "1498";
+    
+    document.getElementById("P_CPH06").innerHTML = "1498";
+    document.getElementById("P_CPH07").innerHTML = "1498";
+    document.getElementById("P_CPH08").innerHTML = "1498";
+    document.getElementById("P_CPH09").innerHTML = "1498";
+    document.getElementById("P_CPH010").innerHTML = "1498";
+    document.getElementById("P_CPH011").innerHTML = "1498";
+    document.getElementById("P_CPH012").innerHTML = "1498";
+    document.getElementById("P_CPH013").innerHTML = "1498";
+    document.getElementById("P_CPH014").innerHTML = "1498";
+    document.getElementById("P_CPH015").innerHTML = "1498";
+    document.getElementById("P_CPH016").innerHTML = "1498";
+    document.getElementById("P_CPH017").innerHTML = "1498";
+    document.getElementById("P_CPH018").innerHTML = "1498";
+    document.getElementById("P_CPH019").innerHTML = "1498";
+    document.getElementById("P_CPH020").innerHTML = "1498";
+    document.getElementById("P_CPH021").innerHTML = "1498";
+    document.getElementById("P_CPH022").innerHTML = "1498";
+    document.getElementById("P_CPH023").innerHTML = "1498";
+    document.getElementById("P_CPH024").innerHTML = "1498";
+    document.getElementById("P_CPH025").innerHTML = "1498";
+    document.getElementById("P_CPH026").innerHTML = "1498";
+    document.getElementById("P_CPH027").innerHTML = "1498";
+    document.getElementById("P_CPH028").innerHTML = "1498";
+    document.getElementById("P_CPH029").innerHTML = "1498";
+    document.getElementById("P_CPH030").innerHTML = "1498";
+    document.getElementById("P_CPH031").innerHTML = "1498";
+    document.getElementById("P_CPH032").innerHTML = "1498";
+
+
+    document.getElementById("Planned_v1" ).innerHTML = "658.84";
+    document.getElementById("Planned_v2").innerHTML = "46.15";
+    document.getElementById("Planned_v3").innerHTML = "264.69";
+    document.getElementById("Planned_v4").innerHTML = "10.15";
+    document.getElementById("Planned_v5" ).innerHTML = "184.61";
+    document.getElementById("Planned_v6").innerHTML = "6.46";
+    document.getElementById("Planned_v7").innerHTML = "84.15";
+    document.getElementById("Planned_v8").innerHTML = "1572";
+    document.getElementById("Planned_v9" ).innerHTML = "123.2";
+    document.getElementById("Planned_v10").innerHTML = "52";
+    document.getElementById("Planned_v11").innerHTML = "14";
+    document.getElementById("Planned_v12").innerHTML = "63";
+    document.getElementById("Planned_v13" ).innerHTML = "5";
+    document.getElementById("Planned_v14").innerHTML = "663.5";
+    document.getElementById("Planned_v15").innerHTML = "763.5";
+    document.getElementById("Planned_v16").innerHTML = "863.5";
+    document.getElementById("Planned_v17" ).innerHTML = "563.5";
+    document.getElementById("Planned_v18").innerHTML = "663.5";
+    document.getElementById("Planned_v19").innerHTML = "763.5";
+    document.getElementById("Planned_v20").innerHTML = "863.5";
+    document.getElementById("Planned_v21" ).innerHTML = "563.5";
+    document.getElementById("Planned_v22").innerHTML = "663.5";
+    document.getElementById("Planned_v23").innerHTML = "763.5";
+    document.getElementById("Planned_v24").innerHTML = "863.5";
+    document.getElementById("Planned_v25" ).innerHTML = "563.5";
+    document.getElementById("Planned_v26").innerHTML = "663.5";
+    document.getElementById("Planned_v27").innerHTML = "763.5";
+    document.getElementById("Planned_v28").innerHTML = "863.5";
+    document.getElementById("Planned_v29" ).innerHTML = "563.5";
+    document.getElementById("Planned_v30").innerHTML = "663.5";
+    document.getElementById("Planned_v31").innerHTML = "763.5";
+    document.getElementById("Planned_v32").innerHTML = "863.5";
+
+    document.getElementById("Planned_hc1" ).innerHTML = "1.35";
+    document.getElementById("Planned_hc2").innerHTML = "5.5";
+    document.getElementById("Planned_hc3").innerHTML = "8.05";
+    document.getElementById("Planned_hc4").innerHTML = "4.5";
+    document.getElementById("Planned_hc5" ).innerHTML = "3.15";
+    document.getElementById("Planned_hc6").innerHTML = "4.5";
+    document.getElementById("Planned_hc7").innerHTML = "3.5";
+    document.getElementById("Planned_hc8").innerHTML = "2.05";
+    document.getElementById("Planned_hc9" ).innerHTML = "1.35";
+    document.getElementById("Planned_hc10").innerHTML = "6.5";
+    document.getElementById("Planned_hc11").innerHTML = "6.5";
+    document.getElementById("Planned_hc12").innerHTML = "8.5";
+    document.getElementById("Planned_hc13" ).innerHTML = "6.5";
+    document.getElementById("Planned_hc14").innerHTML = "6.5";
+    document.getElementById("Planned_hc15").innerHTML = "76.35";
+    document.getElementById("Planned_hc16").innerHTML = "8.5";
+    document.getElementById("Planned_hc17" ).innerHTML = "6.5";
+    document.getElementById("Planned_hc18").innerHTML = "66.5";
+    document.getElementById("Planned_hc19").innerHTML = "6.35";
+    document.getElementById("Planned_hc20").innerHTML = "6.5";
+    document.getElementById("Planned_hc21" ).innerHTML = "6.05";
+    document.getElementById("Planned_hc22").innerHTML = "66.5";
+    document.getElementById("Planned_hc23").innerHTML = "6.5";
+    document.getElementById("Planned_hc24").innerHTML = "86.5";
+    document.getElementById("Planned_hc25" ).innerHTML = "56.15";
+    document.getElementById("Planned_hc26").innerHTML = "66.5";
+    document.getElementById("Planned_hc27").innerHTML = "6.5";
+    document.getElementById("Planned_hc28").innerHTML = "6.5";
+    document.getElementById("Planned_hc29" ).innerHTML = "6.15";
+    document.getElementById("Planned_hc30").innerHTML = "6.5";
+    document.getElementById("Planned_hc31").innerHTML = "7.5";
+    document.getElementById("Planned_hc32").innerHTML = "6.5";
+
+
+    document.getElementById("Planned_prod1" ).innerHTML = "1.5";
+    document.getElementById("Planned_prod2").innerHTML = "6.5";
+    document.getElementById("Planned_prod3").innerHTML = "68.5";
+    document.getElementById("Planned_prod4").innerHTML = "4.5";
+    document.getElementById("Planned_prod5" ).innerHTML = "4.5";
+    document.getElementById("Planned_prod6").innerHTML = "34.5";
+    document.getElementById("Planned_prod7").innerHTML = "5.5";
+    document.getElementById("Planned_prod8").innerHTML = "6.5";
+    document.getElementById("Planned_prod9" ).innerHTML = "1.5";
+    document.getElementById("Planned_prod10").innerHTML = "1.5";
+    document.getElementById("Planned_prod11").innerHTML = "3.5";
+    document.getElementById("Planned_prod12").innerHTML = "863.5";
+    document.getElementById("Planned_prod13" ).innerHTML = "5.5";
+    document.getElementById("Planned_prod14").innerHTML = "6.5";
+    document.getElementById("Planned_prod15").innerHTML = "7.5";
+    document.getElementById("Planned_prod16").innerHTML = "3.5";
+    document.getElementById("Planned_prod17" ).innerHTML = "5.5";
+    document.getElementById("Planned_prod18").innerHTML = "5.5";
+    document.getElementById("Planned_prod19").innerHTML = "7.5";
+    document.getElementById("Planned_prod20").innerHTML = "8.5";
+    document.getElementById("Planned_prod21" ).innerHTML = "5.5";
+    document.getElementById("Planned_prod22").innerHTML = "6.5";
+    document.getElementById("Planned_prod23").innerHTML = "7.5";
+    document.getElementById("Planned_prod24").innerHTML = "8.5";
+    document.getElementById("Planned_prod25" ).innerHTML = "5.5";
+    document.getElementById("Planned_prod26").innerHTML = "6.5";
+    document.getElementById("Planned_prod27").innerHTML = "7.5";
+    document.getElementById("Planned_prod28").innerHTML = "8.5";
+    document.getElementById("Planned_prod29" ).innerHTML = "5.5";
+    document.getElementById("Planned_prod30").innerHTML = "6.5";
+    document.getElementById("Planned_prod31").innerHTML = "7.5";
+    document.getElementById("Planned_prod32").innerHTML = "8.5";
+
+
+
+
+
+  }
+
+  
+  // 2020 Q1 
   else if(x=== "2020-W01" || x=== "2020-W02" || x=== "2020-W03" || x=== "2020-W04" || x=== "2020-W05" || x=== "2020-W06"   || x=== "2020-W07" || x=== "2020-W08" || x=== "2020-W09" || x=== "2020-W10" || x=== "2020-W11" || x=== "2020-W12" || x=== "2020-W13" ){
     
+
+
     document.getElementById("Planned_v1" ).innerHTML = "563.5";
     document.getElementById("Planned_v2").innerHTML = "663.5";
     document.getElementById("Planned_v3").innerHTML = "763.5";
@@ -437,6 +762,7 @@
   }
   else if( x=== "2020-W14" || x=== "2020-W15" || x=== "2020-W16"   || x=== "2020-W17" || x=== "2020-W18" || x=== "2020-W19" || x=== "2020-W20" || x=== "2020-W21" || x=== "2020-W22" || x=== "2020-W23" || x=== "2020-W24"|| x=== "2020-W25"|| x=== "2020-W26" ){
     
+  
     document.getElementById("Planned_v1" ).innerHTML = "563.5";
     document.getElementById("Planned_v2").innerHTML = "663.5";
     document.getElementById("Planned_v3").innerHTML = "763.5";
@@ -542,6 +868,7 @@
 
   else if( x=== "2020-W27" || x=== "2020-W28" || x=== "2020-W29" || x=== "2020-W30" || x=== "2020-W31" || x=== "2020-W32" || x=== "2020-W33" || x=== "2020-W34"|| x=== "2020-W35"|| x=== "2020-W36" || x=== "2020-W37" || x=== "2020-W38"|| x=== "2020-W39"|| x=== "2020-W40" ){
     
+    
     document.getElementById("Planned_v1" ).innerHTML = "563.5";
     document.getElementById("Planned_v2").innerHTML = "663.5";
     document.getElementById("Planned_v3").innerHTML = "763.5";
@@ -646,6 +973,7 @@
 
   else   if(x=== "2020-W41" || x=== "2020-W42" || x=== "2020-W43" || x=== "2020-W44" || x=== "2020-W45" || x=== "2020-W46"   || x=== "2020-W47" || x=== "2020-W48" || x=== "2020-W49" || x=== "2020-W50" || x=== "2020-W51" || x=== "2020-W52" || x=== "2020-W53" ){
     
+    
     document.getElementById("Planned_v1" ).innerHTML = "363.5";
     document.getElementById("Planned_v2").innerHTML = "663.5";
     document.getElementById("Planned_v3").innerHTML = "563.5";
@@ -749,6 +1077,7 @@
   }
 
   else{
+    document.getElementById("P_CPH032").innerHTML = x ;
   	document.getElementById("Planned_v1" ).innerHTML = x;
     document.getElementById("Planned_v2").innerHTML = x;
     document.getElementById("Planned_v3").innerHTML = x;
@@ -772,7 +1101,7 @@
   	document.getElementById("Planned_v31" ).innerHTML = x;
     document.getElementById("Planned_v32").innerHTML = x;
 
-    document.getElementById("Planned_hc1" ).innerHTML = null
+    document.getElementById("Planned_hc1" ).innerHTML = null;
     document.getElementById("Planned_hc2").innerHTML = null;
     document.getElementById("Planned_hc3").innerHTML =  null ;
     document.getElementById("Planned_hc4").innerHTML =  null ;
@@ -785,74 +1114,26 @@
     document.getElementById("Planned_hc11").innerHTML = null; 
     document.getElementById("Planned_hc12").innerHTML = null ;
     document.getElementById("Planned_hc13" ).innerHTML = null;
-       document.getElementById("Planned_hc14").innerHTML = null ;
-       document.getElementById("Planned_hc15").innerHTML =  null;
-        document.getElementById("Planned_hc16").innerHTML = null;
-       document.getElementById("Planned_hc17" ).innerHTML =  null;
-      document.getElementById("Planned_hc18").innerHTML = null;
-        document.getElementById("Planned_hc19").innerHTML =  null;
-       document.getElementById("Planned_hc20").innerHTML =  null;
-      document.getElementById("Planned_hc21" ).innerHTML =  null;
-       document.getElementById("Planned_hc22").innerHTML = null ;
-
+    document.getElementById("Planned_hc14").innerHTML = null ;
+    document.getElementById("Planned_hc15").innerHTML =  null;
+    document.getElementById("Planned_hc16").innerHTML = null;
+    document.getElementById("Planned_hc17" ).innerHTML =  null;
+    document.getElementById("Planned_hc18").innerHTML = null;
+    document.getElementById("Planned_hc19").innerHTML =  null;
+    document.getElementById("Planned_hc20").innerHTML =  null;
+    document.getElementById("Planned_hc21" ).innerHTML =  null;
+    document.getElementById("Planned_hc22").innerHTML = null ;
     document.getElementById("Planned_hc23").innerHTML =  null;
-        document.getElementById("Planned_hc24").innerHTML =  null;
-
+    document.getElementById("Planned_hc24").innerHTML =  null;
     document.getElementById("Planned_hc25" ).innerHTML =  null;
-    
     document.getElementById("Planned_hc26").innerHTML = null ;
-
     document.getElementById("Planned_hc27").innerHTML =  null;
-        document.getElementById("Planned_hc28").innerHTML =  null;
-        document.getElementById("Planned_hc29" ).innerHTML = null;
-    
+    document.getElementById("Planned_hc28").innerHTML =  null;
+    document.getElementById("Planned_hc29" ).innerHTML = null;
     document.getElementById("Planned_hc30").innerHTML =  null;
-        document.getElementById("Planned_hc31").innerHTML =  null;
-        document.getElementById("Planned_hc32").innerHTML = null ;
-
-
-
-        
-
+    document.getElementById("Planned_hc31").innerHTML =  null;
+    document.getElementById("Planned_hc32").innerHTML = null ;
   }
-
-//   if(  x=== "2019-W40" || x=== "2019-W41" || x=== "2019-W42" || x=== "2019-W43" || x=== "2019-W44"){
-    
-//     document.getElementById("P_CPH1	").innerHTML = "1366" ;
-// document.getElementById("P_CPH2	").innerHTML = "1366" ;
-// document.getElementById("P_CPH3	").innerHTML = "1366" ;
-// document.getElementById("P_CPH4	").innerHTML = "1366" ;
-// document.getElementById("P_CPH5	").innerHTML = "1366" ;
-// document.getElementById("P_CPH6	").innerHTML = "1366" ;
-// document.getElementById("P_CPH7	").innerHTML = "1366" ;
-// document.getElementById("P_CPH8	").innerHTML = "1366" ;
-// document.getElementById("P_CPH9	").innerHTML = "1366" ;
-// document.getElementById("P_CPH10	").innerHTML = "1366" ;
-// document.getElementById("P_CPH11	").innerHTML = "1366" ;
-// document.getElementById("P_CPH12	").innerHTML = "1366" ;
-// document.getElementById("P_CPH13	").innerHTML = "1366" ;
-// document.getElementById("P_CPH14	").innerHTML = "1366" ;
-// document.getElementById("P_CPH15	").innerHTML = "1366" ;
-// document.getElementById("P_CPH16	").innerHTML = "1366" ;
-// document.getElementById("P_CPH17	").innerHTML = "1366" ;
-// document.getElementById("P_CPH18	").innerHTML = "1366" ;
-// document.getElementById("P_CPH19	").innerHTML = "1366" ;
-// document.getElementById("P_CPH20	").innerHTML = "1366" ;
-// document.getElementById("P_CPH21	").innerHTML = "1366" ;
-// document.getElementById("P_CPH22	").innerHTML = "1366" ;
-// document.getElementById("P_CPH23	").innerHTML = "1366" ;
-// document.getElementById("P_CPH24	").innerHTML = "1366" ;
-// document.getElementById("P_CPH25	").innerHTML = "1366" ;
-// document.getElementById("P_CPH26	").innerHTML = "1366" ;
-// document.getElementById("P_CPH27	").innerHTML = "1366" ;
-// document.getElementById("P_CPH28	").innerHTML = "1366" ;
-// document.getElementById("P_CPH29	").innerHTML = "1366" ;
-// document.getElementById("P_CPH30	").innerHTML = "1366" ;
-// document.getElementById("P_CPH31	").innerHTML = "1366" ;
-// document.getElementById("P_CPH32	").innerHTML = "1366" ;
-
-
-//   }
 }
   
   
@@ -874,22 +1155,14 @@
                         Choose :
                         <input  name="week"  type="week" id="myText" onchange="weekly()" >
                       </div>
-                      
-                      
                     </div>
                   </form>
-                
               </th>
               <th class="ui center aligned header" colspan="2">Planned</th>
               <th class="ui center aligned header" colspan="2">Actual</th>
-              
               <th class="ui center aligned header" colspan="1">Accuracy</th>
               <th class="ui center aligned header" colspan="1">Call Outs</th>
-              
               <th class="ui center aligned header" colspan="2">CPH</th>
-
-
-
             </tr>
 
             <tr>
@@ -938,10 +1211,10 @@
                 />
               </td>
               
-              <td><input type="text"   name="accuracy1" class="form-control" ></td>
-              <td><textarea rows="2" name="couts1"></textarea></td>
-              <td><input type="text"   name="A_CPH1" class="form-control" ></td>
-              <td><input type="text"  id="P_CPH1" name="P_CPH1" class="form-control" disabled ></td>
+              <td><input type="text"   name="accuracy1" class="form-control" ></td> 
+              <td><textarea rows="2" name="couts1"></textarea></td> 
+              <td><input type="text"   name="A_CPH1" class="form-control" disabled ></td> 
+              <td><label for="week"  id="P_CPH01" name="P_CPH01"  ></label></td>  
             </tr>
 
             <!-- 2. Best Sellers -->
@@ -975,8 +1248,8 @@
               </td>
               <td><input type="text" name="accuracy2" class="form-control"></td>
               <td><textarea rows="2" name="couts2"></textarea></td>
-              <td><input type="text"   name="A_CPH2" class="form-control" ></td>
-              <td><input type="text"  id="P_CPH2"  name="P_CPH2" class="form-control" disabled ></td>
+              <td><input type="text"   name="A_CPH2" class="form-control" disabled ></td> 
+              <td><label   for="week"  id="P_CPH02" name="P_CPH02"  ></label></td>
             </tr>
 
           <!-- Pre-Orders -->
@@ -1010,8 +1283,8 @@
 
               <td><input type="text"  name="accuracy3" class="form-control"></td>
               <td><textarea rows="2" name="couts3"></textarea></td>
-              <td><input type="text"   name="A_CPH3" class="form-control" ></td>
-              <td><input type="text"  id="P_CPH1"  name="P_CPH3" class="form-control" disabled ></td>
+              <td><input type="text"   name="A_CPH3" class="form-control" disabled  ></td> 
+              <td><label   for="week"  id="P_CPH03" name="P_CPH03"  ></label></td>
             </tr>
 
             <!-- 4. Big Books -->
@@ -1044,8 +1317,8 @@
               </td>
               <td><input type="text" name="accuracy4"  class="form-control"></td>
               <td><textarea rows="2" name="couts4"></textarea></td>
-              <td><input type="text"   name="A_CPH4" class="form-control" ></td>
-              <td><input type="text" id="P_CPH4"   name="P_CPH4" class="form-control" disabled ></td>
+              <td><input type="text"   name="A_CPH4" class="form-control" disabled ></td> 
+              <td><label   for="week"  id="P_CPH04" name="P_CPH04"  ></label></td>
             </tr>
 
             <!-- 5. Kindle Deals -->
@@ -1082,8 +1355,10 @@
               </td>
               <td><input type="text" name="accuracy5"  class="form-control"></td>
               <td><textarea rows="2" name="couts5"></textarea></td>
-              <td><input type="text"   name="A_CPH5" class="form-control" ></td>
-              <td><input type="text" id="P_CPH5"   name="P_CPH5" class="form-control" disabled ></td>
+              <td><input type="text"   name="A_CPH5" class="form-control" disabled  ></td> 
+              
+              <td><label   for="week"  id="P_CPH05" name="P_CPH05"  ></label></td>
+
             </tr>
 
 
@@ -1122,8 +1397,8 @@
               </td>
               <td><input type="text"  name="accuracy6" class="form-control"></td>
               <td><textarea rows="2" name="couts6"></textarea></td>
-              <td><input type="text"   name="A_CPH6" class="form-control" ></td>
-              <td><input type="text"  id="P_CPH6"  name="P_CPH6" class="form-control" disabled ></td>
+              <td><input type="text"   name="A_CPH6" class="form-control"  disabled ></td>
+              <td><label   for="week"  id="P_CPH06" name="P_CPH06"  ></label></td>
             </tr> 
             
             
@@ -1158,8 +1433,8 @@
               </td>
               <td><input type="text" name="accuracy7"  class="form-control"></td>
               <td><textarea rows="2" name="couts7"></textarea></td>
-              <td><input type="text"   name="A_CPH7" class="form-control" ></td>
-              <td><input type="text"  id="P_CPH7"  name="P_CPH7" class="form-control" disabled ></td>
+              <td><input type="text"   name="A_CPH7" class="form-control" disabled  ></td>
+              <td><label   for="week"  id="P_CPH07" name="P_CPH07"  ></label></td>
             </tr>
 
 
@@ -1182,8 +1457,8 @@
             </td>
             <td><input type="text"  name="accuracy8" class="form-control"></td>
             <td><textarea rows="2" name="couts8"></textarea></td>
-            <td><input type="text"   name="A_CPH8" class="form-control" ></td>
-              <td><input type="text" id="P_CPH8"  name="P_CPH8" class="form-control" disabled ></td>
+            <td><input type="text"   name="A_CPH8" class="form-control"  disabled ></td>
+            <td><label   for="week"  id="P_CPH08" name="P_CPH08"  ></label></td>
           </tr>
 
 
@@ -1219,8 +1494,8 @@
               </td>
               <td><input type="text"  name="accuracy9"  class="form-control"></td>
               <td><textarea rows="2" name="couts9"></textarea></td>
-              <td><input type="text"   name="A_CPH9" class="form-control" ></td>
-              <td><input type="text" id="P_CPH9"  name="P_CPH9" class="form-control" disabled ></td>
+              <td><input type="text"   name="A_CPH9" class="form-control"  disabled ></td>
+              <td><label   for="week"  id="P_CPH09" name="P_CPH09"  ></label></td>
             </tr>
 
 
@@ -1256,8 +1531,8 @@
               </td>
               <td><input type="text" name="accuracy10"  class="form-control"></td>
               <td><textarea rows="2" name="couts10"></textarea></td>
-              <td><input type="text"   name="A_CPH10" class="form-control" ></td>
-              <td><input type="text"  id="P_CPH10"  name="P_CPH10" class="form-control" disabled ></td>
+              <td><input type="text"   name="A_CPH10" class="form-control"  disabled ></td>
+              <td><label   for="week"  id="P_CPH010" name="P_CPH010"  ></label></td>
             </tr>
 
             <!--11. English -->
@@ -1290,8 +1565,8 @@
               </td>
               <td><input type="text"  name="accuracy11" class="form-control"></td>
               <td><textarea rows="2" name="couts11"></textarea></td>
-              <td><input type="text"   name="A_CPH11" class="form-control" ></td>
-              <td><input type="text" id="P_CPH11"  name="P_CPH11" class="form-control" disabled ></td>
+              <td><input type="text"   name="A_CPH11" class="form-control" disabled  ></td>
+              <td><label   for="week"  id="P_CPH011" name="P_CPH011"  ></label></td>
             </tr>
             </tr>
 
@@ -1325,8 +1600,8 @@
               </td>
               <td><input type="text" name="accuracy12"  class="form-control"></td>
               <td><textarea rows="2" name="couts12"></textarea></td>
-              <td><input type="text"   name="A_CPH12" class="form-control" ></td>
-              <td><input type="text" id="P_CPH12"  name="P_CPH12" class="form-control" disabled ></td>
+              <td><input type="text"   name="A_CPH12" class="form-control" disabled  ></td>
+              <td><label   for="week"  id="P_CPH012" name="P_CPH012"  ></label></td>
             </tr>
             </tr>
 
@@ -1361,8 +1636,8 @@
               </td>
               <td><input type="text" name="accuracy13"  class="form-control"></td>
               <td><textarea rows="2" name="couts13"></textarea></td>
-              <td><input type="text"   name="A_CPH13" class="form-control" ></td>
-              <td><input type="text" id="P_CPH13"  name="P_CPH13" class="form-control" disabled ></td>
+              <td><input type="text"   name="A_CPH13" class="form-control" disabled  ></td>
+              <td><label   for="week"  id="P_CPH013" name="P_CPH013"  ></label></td>
             </tr>
             </tr>
 
@@ -1397,8 +1672,8 @@
               </td>
               <td><input type="text"  name="accuracy14" class="form-control"></td>
               <td><textarea rows="2" name="couts14"></textarea></td>
-              <td><input type="text"   name="A_CPH14" class="form-control" ></td>
-              <td><input type="text"   id="P_CPH14"  name="P_CPH14" class="form-control" disabled ></td>
+              <td><input type="text"   name="A_CPH14" class="form-control" disabled  ></td>
+              <td><label   for="week"  id="P_CPH014" name="P_CPH014"  ></label></td>
             </tr>
             </tr>
 
@@ -1435,8 +1710,8 @@
               </td>
               <td><input type="text" name="accuracy15"  class="form-control"></td>
               <td><textarea rows="2" name="couts15"></textarea></td>
-              <td><input type="text"   name="A_CPH15" class="form-control" ></td>
-              <td><input type="text"  id="P_CPH15"  name="P_CPH15" class="form-control" disabled ></td>
+              <td><input type="text"   name="A_CPH15" class="form-control" disabled  ></td>
+              <td><label   for="week"  id="P_CPH015" name="P_CPH015"  ></label></td>
             </tr>
             </tr>
 
@@ -1472,8 +1747,8 @@
               </td>
               <td><input type="text"  name="accuracy16" class="form-control"></td>
               <td><textarea rows="2" name="couts16"></textarea></td>
-              <td><input type="text"   name="A_CPH16" class="form-control" ></td>
-              <td><input type="text" id="P_CPH16"  name="P_CPH16" class="form-control" disabled ></td>
+              <td><input type="text"   name="A_CPH16" class="form-control" disabled  ></td>
+              <td><label   for="week"  id="P_CPH016" name="P_CPH016"  ></label></td>
             </tr>
             </tr>
 
@@ -1510,8 +1785,8 @@
               </td>
               <td><input type="text"  name="accuracy17" class="form-control"></td>
               <td><textarea rows="2" name="couts17"></textarea></td>
-              <td><input type="text"   name="A_CPH17" class="form-control" ></td>
-              <td><input type="text"  id="P_CPH17"  name="P_CPH17" class="form-control" disabled ></td>
+              <td><input type="text"   name="A_CPH17" class="form-control" disabled  ></td>
+              <td><label   for="week"  id="P_CPH017" name="P_CPH017"  ></label></td>
             </tr>
             </tr>
 
@@ -1550,8 +1825,8 @@
               </td>
               <td><input type="text" name="accuracy18"  class="form-control"></td>
               <td><textarea rows="2" name="couts18"></textarea></td>
-              <td><input type="text"   name="A_CPH18" class="form-control" ></td>
-              <td><input type="text" id="P_CPH18"  name="P_CPH18" class="form-control" disabled ></td>
+              <td><input type="text"   name="A_CPH18" class="form-control" disabled  ></td>
+              <td><label   for="week"  id="P_CPH018" name="P_CPH018"  ></label></td>
             </tr>
             </tr>
 
@@ -1589,8 +1864,8 @@
               </td>
               <td><input type="text"  name="accuracy19" class="form-control"></td>
               <td><textarea rows="2" name="couts19"></textarea></td>
-              <td><input type="text"   name="A_CPH19" class="form-control" ></td>
-              <td><input type="text"  id="P_CPH19"  name="P_CPH19" class="form-control" disabled ></td>
+              <td><input type="text"   name="A_CPH19" class="form-control" disabled  ></td>
+              <td><label   for="week"  id="P_CPH019" name="P_CPH019"  ></label></td>
             </tr>
             </tr>
 
@@ -1615,8 +1890,8 @@
               </td>
               <td><input type="text"  name="accuracy20" class="form-control"></td>
               <td><textarea rows="2" name="couts20"></textarea></td>
-              <td><input type="text"   name="A_CPH20" class="form-control" ></td>
-              <td><input type="text"  id="P_CPH20"  name="P_CPH20" class="form-control" disabled ></td>
+              <td><input type="text"   name="A_CPH20" class="form-control"  disabled ></td>
+              <td><label   for="week"  id="P_CPH020" name="P_CPH020"  ></label></td>
             </tr>
             </tr>
 
@@ -1656,8 +1931,8 @@
               <td><input type="text" name="accuracy21"  class="form-control"></td>
               
               <td><textarea rows="2" name="couts21"></textarea></td>
-              <td><input type="text"   name="A_CPH21" class="form-control" ></td>
-              <td><input type="text" id="P_CPH21"   name="P_CPH21" class="form-control" disabled ></td>
+              <td><input type="text"   name="A_CPH21" class="form-control" disabled  ></td>
+              <td><label   for="week"  id="P_CPH021" name="P_CPH021"  ></label></td>
             </tr>
             </tr>
 
@@ -1696,8 +1971,8 @@
               </td>
               <td><input type="text"  name="accuracy22" class="form-control"></td>
               <td><textarea rows="2" name="couts22"></textarea></td>
-              <td><input type="text"   name="A_CPH22" class="form-control" ></td>
-              <td><input type="text" id="P_CPH22"   name="P_CPH22" class="form-control" disabled ></td>
+              <td><input type="text"   name="A_CPH22" class="form-control"  disabled ></td>
+              <td><label   for="week"  id="P_CPH022" name="P_CPH022"  ></label></td>
             </tr>
             </tr>
 
@@ -1736,8 +2011,8 @@
               </td>
               <td><input type="text"  name="accuracy23" class="form-control"></td>
               <td><textarea rows="2" name="couts23"></textarea></td>
-              <td><input type="text"   name="A_CPH23" class="form-control" ></td>
-              <td><input type="text"  id="P_CPH23"  name="P_CPH23" class="form-control" disabled ></td>
+              <td><input type="text"   name="A_CPH23" class="form-control"  disabled  ></td>
+              <td><label   for="week"  id="P_CPH023" name="P_CPH023"  ></label></td>
             </tr>
             </tr>
 
@@ -1765,8 +2040,8 @@
               </td>
               <td><input type="text"  name="accuracy24" class="form-control"></td>
               <td><textarea rows="2" name="couts24"></textarea></td>
-              <td><input type="text"   name="A_CPH24" class="form-control" ></td>
-              <td><input type="text" id="P_CPH24"   name="P_CPH24" class="form-control" disabled ></td>
+              <td><input type="text"   name="A_CPH24" class="form-control" disabled  ></td>
+              <td><label   for="week"  id="P_CPH024" name="P_CPH024"  ></label></td>
             </tr>
             </tr>
 
@@ -1804,8 +2079,8 @@
               </td>
               <td><input type="text"  class="form-control" name="accuracy25" ></td>
               <td><textarea rows="2" name="couts25"></textarea></td>
-              <td><input type="text"   name="A_CPH25" class="form-control" ></td>
-              <td><input type="text" id="P_CPH25"  name="P_CPH25" class="form-control" disabled ></td>
+              <td><input type="text"   name="A_CPH25" class="form-control"  disabled ></td>
+              <td><label   for="week"  id="P_CPH025" name="P_CPH025"  ></label></td>
             </tr>
             </tr>
 
@@ -1841,8 +2116,8 @@
               </td>
               <td><input type="text"  class="form-control" name="accuracy26" ></td>
               <td><textarea rows="2" name="couts26"></textarea></td>
-              <td><input type="text"   name="A_CPH26" class="form-control" ></td>
-              <td><input type="text"  id="P_CPH26"  name="P_CPH26" class="form-control" disabled ></td>
+              <td><input type="text"   name="A_CPH26" class="form-control"  disabled  ></td>
+              <td><label   for="week"  id="P_CPH026" name="P_CPH026"  ></label></td>
             </tr>
             </tr>
 
@@ -1881,8 +2156,8 @@
               </td>
               <td><input type="text" name="accuracy27"  class="form-control"></td>
               <td><textarea rows="2" name="couts27"></textarea></td>
-              <td><input type="text"   name="A_CPH27" class="form-control" ></td>
-              <td><input type="text" id="P_CPH27"  name="P_CPH27" class="form-control" disabled ></td>
+              <td><input type="text"   name="A_CPH27" class="form-control"  disabled ></td>
+              <td><label   for="week"  id="P_CPH027" name="P_CPH027"  ></label></td>
             </tr>
             </tr>
 
@@ -1921,13 +2196,11 @@
               </td>
               <td><input type="text" name="accuracy28"  class="form-control"></td>
               <td><textarea rows="2" name="couts28"></textarea></td>
-              <td><input type="text"   name="A_CPH28" class="form-control" ></td>
-              <td><input type="text"  id="P_CPH28"  name="P_CPH28" class="form-control" disabled ></td>
+              <td><input type="text"   name="A_CPH28" class="form-control"  disabled ></td>
+              <td><label   for="week"  id="P_CPH028" name="P_CPH028"  ></label></td>
             </tr>
             </tr>
-
-
-
+            
             <!-- 29.Content Testing  -->
             
             <tr>
@@ -1948,14 +2221,11 @@
               </td>
               <td><input type="text" name="accuracy29"  class="form-control"></td>
               <td><textarea rows="2" name="couts29"></textarea></td>
-              <td><input type="text"   name="A_CPH29" class="form-control" ></td>
-              <td><input type="text" id="P_CPH29"  name="P_CPH29" class="form-control" disabled ></td>
+              <td><input type="text"   name="A_CPH29" class="form-control"  disabled  ></td>
+              <td><label   for="week"  id="P_CPH029" name="P_CPH029"  ></label></td>
             </tr>
             </tr>
 
-
-
-            
             <!-- 30.KDP Cover Gen  -->
             <tr>
               <th class="ui center aligned header blue">KDP Cover Gen  </th>
@@ -1975,8 +2245,8 @@
               </td>
               <td><input type="text" name="accuracy30"  class="form-control"></td>
               <td><textarea rows="2" name="couts30"></textarea></td>
-              <td><input type="text"   name="A_CPH30" class="form-control" ></td>
-              <td><input type="text" id="P_CPH30"  name="P_CPH30" class="form-control" disabled ></td>
+              <td><input type="text"   name="A_CPH30" class="form-control" disabled  ></td>
+              <td><label   for="week"  id="P_CPH030" name="P_CPH030"  ></label></td>
             </tr>
             </tr>
 
@@ -1999,8 +2269,8 @@
               </td>
               <td><input type="text" name="accuracy31"  class="form-control"></td>
               <td><textarea rows="2" name="couts31"></textarea></td>
-              <td><input type="text"   name="A_CPH31" class="form-control" ></td>
-              <td><input type="text" id="P_CPH31"  name="P_CPH31" class="form-control" disabled ></td>
+              <td><input type="text"   name="A_CPH31" class="form-control" disabled  ></td>
+              <td><label   for="week"  id="P_CPH031" name="P_CPH031"  ></label></td>
             </tr>
             </tr>
 
@@ -2025,8 +2295,8 @@
               <td><input type="text"  name="accuracy32" class="form-control"></td>
               <td><textarea rows="2" name="couts32"></textarea></td>
              
-              <td><input type="text"   name="A_CPH32" class="form-control" ></td>
-              <td><label   for="week"  id="P_CPH32" name="P_CPH32"  ></label></td>
+              <td><input type="text"   name="A_CPH32" class="form-control" disabled  ></td>
+              <td><label   for="week"  id="P_CPH032" name="P_CPH032"  ></label></td>
             </tr>
             </tr>
 
@@ -2042,4 +2312,5 @@
     </div>
   </div>
 </div>
+
 <% include ../partials/footer %>

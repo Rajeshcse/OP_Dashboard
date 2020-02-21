@@ -42,7 +42,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // passport config
 app.use(
   require("express-session")({
-    secret: "Nivi is the best and cutest girl in this world! ",
+    secret: "Dogs are so lovely and cutest beings in this world! ",
     resave: false,
     saveUninitialized: false
   })
