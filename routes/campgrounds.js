@@ -624,6 +624,15 @@ router.get("/q3", function(req, res) {
     }
   });
 });
+router.get("/q4", function(req, res) {
+  Campground.find({}, function(err, allCampgrounds) {
+    if (err) {
+      console.log(err);
+    } else {
+      res.render("campgrounds/q4", { campgrounds: allCampgrounds });
+    }
+  });
+});
 
 router.get("/aug", function(req, res) {
   Campground.find({}, function(err, allCampgrounds) {

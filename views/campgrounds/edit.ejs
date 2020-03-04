@@ -1146,7 +1146,7 @@
               <th>
                 
               </th>
-              <th class="ui center aligned header" colspan="2">Planned</th>
+           
               <th class="ui center aligned header" colspan="2">Actual</th>
               <th class="ui center aligned header" colspan="1">Accuracy</th>
               <th class="ui center aligned header" colspan="1">Call Outs</th>
@@ -1157,8 +1157,7 @@
               <th class="ui center aligned ">
                 Title
               </th>
-              <th>Volume</th>
-              <th>Head Count</th>
+            
               <th>Volume</th>
               <th>Head Count</th>
               <th>Accuaracy percent ( % )</th>
@@ -1172,12 +1171,7 @@
               <th class="ui center aligned header blue">
                 Proactive (Fresh Audits)
               </th>
-              <td>
-                <label for="week" id="Planned_v1" ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc1" ></label>
-              </td>
+            
               
               <td>
                 <input
@@ -1202,7 +1196,7 @@
               
               <td><input type="text"  value="<%= campground.accuracy1 %>"  name="campground[accuracy1]" class="form-control" ></td> 
               <td><textarea rows="2" name="campground[couts1]"></textarea></td>
-              <td><input type="text"   name="campground[A_CPH1]" class="form-control"    ></td>
+              <td><input type="text"   name="campground[A_CPH1]" class="form-control" value="<%= campground.A_CPH1 %>"    ></td>
               <td><label for="week"  id="P_CPH01" name="campground[P_CPH01]"  ></label></td>
         
             </tr>
@@ -1210,13 +1204,7 @@
             <!-- 2. Best Sellers -->
             <tr>
               <th>Best Sellers</th>
-              <td>
-               
-                <label for="week" id="Planned_v2" ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc2" ></label>
-              </td>
+              
              
               <td>
                 <input
@@ -1240,19 +1228,14 @@
               </td>
               <td><input type="text" name="campground[accuracy2]" class="form-control"></td>
               <td><textarea rows="2" name="campground[couts2]"></textarea></td>
-              <td><input type="text"   name="campground[A_CPH2]" class="form-control"  ></td>
+              <td><input type="text"   name="campground[A_CPH2]" class="form-control"  value="<%= campground.A_CPH2 %>" ></td>
               <td><label   for="week"  id="P_CPH02" name="P_CPH02"  ></label></td>
             </tr>
 
           <!-- Pre-Orders -->
             <tr>
               <th>Pre-Orders</th>
-              <td>
-                <label for="week" id="Planned_v3" ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc3" ></label>
-              </td>
+             
               
               <td>
                 <input
@@ -1277,19 +1260,14 @@
 
               <td><input type="text"  name="campground[accuracy3]" class="form-control"></td>
               <td><textarea rows="2" name="campground[couts3]"></textarea></td>
-              <td><input type="text"   name="campground[A_CPH3]" class="form-control"  ></td>
+              <td><input type="text"   name="campground[A_CPH3]" class="form-control" value="<%= campground.A_CPH3 %>"  ></td>
               <td><label   for="week"  id="P_CPH03" name="P_CPH03"  ></label></td>
             </tr>
 
             <!-- 4. Big Books -->
             <tr>
               <th>Big Books</th>
-              <td>
-                <label id="Planned_v4" name="P_Vol4"  ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc4" ></label>
-              </td>
+              
               
               <td>
                 <input
@@ -1313,20 +1291,14 @@
               </td>
               <td><input type="text" name="campground[accuracy4]"  class="form-control"></td>
               <td><textarea rows="2" name="campground[couts4]"></textarea></td>
-              <td><input type="text"   name="campground[A_CPH4]" class="form-control"  ></td>
+              <td><input type="text"   name="campground[A_CPH4]" class="form-control" value="<%= campground.A_CPH4 %>"  ></td>
               <td><label   for="week"  id="P_CPH04" name="campground[P_CPH04]"  ></label></td>
             </tr>
 
             <!-- 5. Kindle Deals -->
             <tr>
               <th>Kindle Deals</th>
-              <td>
-                <label id="Planned_v5" name="P_Vol5"   ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc5" ></label>
-              </td>
-
+             
               <td>
                 <input
                   name="campground[A_Vol5]"
@@ -1350,7 +1322,7 @@
               </td>
               <td><input type="text" name="campground[accuracy5]"  class="form-control"></td>
               <td><textarea rows="2" name="campground[couts5]"></textarea></td>
-              <td><input type="text"   name="campground[A_CPH5]" class="form-control"  ></td>
+              <td><input type="text"   name="campground[A_CPH5]" class="form-control" value="<%= campground.A_CPH5 %>"  ></td>
               <td><label   for="week"  id="P_CPH05" name="P_CPH05"  ></label></td>
 
             </tr>
@@ -1358,12 +1330,7 @@
             <!--  6. Ad-hoc Requests / Escalation Audits -->
             <tr>
               <th>Ad-hoc Requests / Escalation Audits</th>
-              <td>
-                <label id="Planned_v6" name="P_Vol6"   ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc6" ></label>
-              </td>
+             
              
               <td>
                 <input
@@ -1385,9 +1352,9 @@
                   type="text"
                 />
               </td>
-              <td><input type="text"  name="accuracy6" class="form-control"></td>
+              <td><input type="text"  name="campground[accuracy6]" class="form-control"></td>
               <td><textarea rows="2" name="campground[couts6]"></textarea></td>
-              <td><input type="text"   name="campground[A_CPH6]" class="form-control"  ></td>
+              <td><input type="text"   name="campground[A_CPH6]" class="form-control" value="<%= campground.A_CPH6 %>"  ></td>
               <td><label   for="week"  id="P_CPH06" name="P_CPH06"  ></label></td>
             </tr> 
             
@@ -1397,13 +1364,7 @@
 
             <tr>
               <th> KU Page Violation Audits </th>
-              <td>
-                <label id="Planned_v7" name="P_Vol7"   ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc7" ></label>
-              </td>
-              
+             
               <td>
                 <input
                   name="campground[A_Vol7]"
@@ -1426,7 +1387,7 @@
               </td>
               <td><input type="text" name="campground[accuracy7]"  class="form-control"></td>
               <td><textarea rows="2" name="campground[couts7]"></textarea></td>
-              <td><input type="text"   name="campground[A_CPH7]" class="form-control"  ></td>
+              <td><input type="text"   name="campground[A_CPH7]" class="form-control" value="<%= campground.A_CPH7 %>"  ></td>
               <td><label   for="week"  id="P_CPH07" name="P_CPH07"  ></label></td>
             </tr>
 
@@ -1435,12 +1396,7 @@
         <!--8. Reactive (Contacts) -->
           <tr>
             <th class="ui center aligned header blue" >Reactive (Contacts) </th>
-            <td>
-              <label id="Planned_v8" name="P_Vol8"   ></label>
-            </td>
-            <td>
-              <label for="week" id="Planned_hc8" ></label>
-            </td>
+           
             
             <td>
               <input name="campground[A_Vol8]" class="form-control" type="text" id="sum_reactive"  value="<%= campground.A_Vol8 %>"  readonly />
@@ -1448,9 +1404,9 @@
             <td>
               <input name="campground[A_HCount8]" class="form-control" type="text"  value="<%= campground.A_HCount8 %>" id="sum_reactiveHCount" readonly />
             </td>
-            <td><input type="text"  name="accuracy8"  value="<%=campground.accuracy8 %>" class="form-control"></td>
+            <td><input type="text"  name="campground[accuracy8]"  value="<%=campground.accuracy8 %>" class="form-control"></td>
             <td><textarea rows="2" name="campground[couts8]"></textarea></td>
-            <td><input type="text"   name="campground[A_CPH8]" class="form-control"  ></td>
+            <td><input type="text"   name="campground[A_CPH8]" class="form-control" value="<%= campground.A_CPH8 %>"  ></td>
             <td><label   for="week"  id="P_CPH08" name="P_CPH08"  ></label></td>
           </tr>
 
@@ -1459,14 +1415,7 @@
 
             <tr>
               <th class="ui  header subhead grey " >Andons & Regulars</th>
-              <td>
-                <label id="Planned_v9" name="P_Vol9"   ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc9" ></label>
-              </td>
-              
-
+             
               <td>
                 <input
                   name="campground[A_Vol9]"
@@ -1487,9 +1436,9 @@
                   type="text"
                 />
               </td>
-              <td><input type="text"  name="accuracy9"  class="form-control"></td>
+              <td><input type="text"  name="campground[accuracy9]"  class="form-control"></td>
               <td><textarea rows="2" name="campground[couts9]"></textarea></td>
-              <td><input type="text"   name="campground[A_CPH9]" class="form-control"  ></td>
+              <td><input type="text"   name="campground[A_CPH9]" value="<%= campground.A_CPH9 %>" class="form-control"  ></td>
               <td><label   for="week"  id="P_CPH09" name="P_CPH09"  ></label></td>
             </tr>
 
@@ -1500,12 +1449,7 @@
             <tr>
               <th class="ui  header subhead grey ">Report Content Errors</th>
               </th>
-              <td>
-                <label id="Planned_v10" name="P_Vol10"   ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc10" ></label>
-              </td>
+             
               
               <td>
                 <input
@@ -1527,9 +1471,9 @@
                   type="text"
                 />
               </td>
-              <td><input type="text" name="accuracy10"  class="form-control"></td>
+              <td><input type="text" name="campground[accuracy10]"  class="form-control"></td>
               <td><textarea rows="2" name="campground[couts10]"></textarea></td>
-              <td><input type="text"   name="campground[A_CPH10]" class="form-control"  ></td>
+              <td><input type="text"   name="campground[A_CPH10]" value="<%= campground.A_CPH10 %>" class="form-control"  ></td>
               <td><label   for="week"  id="P_CPH010" name="P_CPH010"  ></label></td>
             </tr>
 
@@ -1537,13 +1481,7 @@
 
             <tr>
               <th>English</th>
-              <td>
-                <label id="Planned_v11" name="P_Vol11"   ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc11" ></label>
-              </td>
-              
+             
               <td>
                 <input
                   name="campground[A_Vol11]"
@@ -1566,9 +1504,9 @@
                 />
 
               </td>
-              <td><input type="text"  name="accuracy11" class="form-control"></td>
+              <td><input type="text"  name="campground[accuracy11]" class="form-control"></td>
               <td><textarea rows="2" name="campground[couts11]"></textarea></td>
-              <td><input type="text"   name="A_CPH11" class="form-control"  ></td>
+              <td><input type="text"   name="campground[A_CPH11]" class="form-control" value="<%= campground.A_CPH11 %>"  ></td>
               <td><label   for="week"  id="P_CPH011" name="P_CPH011"  ></label></td>
             </tr>
             </tr>
@@ -1577,13 +1515,7 @@
 
             <tr>
               <th>English (High-value titles to be considered by Ops)</th>
-              <td>
-                <label id="Planned_v12" name="P_Vol12"   ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc12" ></label>
-              </td>
-              
+             
               <td>
                 <input
                   name="campground[A_Vol12]"
@@ -1604,9 +1536,9 @@
                   type="text"
                 />
               </td>
-              <td><input type="text" name="accuracy12"  class="form-control"></td>
+              <td><input type="text" name="campground[accuracy12]"  class="form-control"></td>
               <td><textarea rows="2" name="campground[couts12]"></textarea></td>
-              <td><input type="text"   name="campground[A_CPH12]" class="form-control"  ></td>
+              <td><input type="text"   name="campground[A_CPH12]" value="<%= campground.A_CPH12 %>" class="form-control"  ></td>
               <td><label   for="week"  id="P_CPH012" name="P_CPH012"  ></label></td>
             </tr>
             </tr>
@@ -1616,12 +1548,7 @@
 
             <tr>
               <th>German</th>
-              <td>
-                <label id="Planned_v13" name="P_Vol13"   ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc13" ></label>
-              </td>
+             
               
               <td>
                 <input
@@ -1643,9 +1570,9 @@
                   type="text"
                 />
               </td>
-              <td><input type="text" name="accuracy13"  class="form-control"></td>
+              <td><input type="text" name="campground[accuracy13]"  class="form-control"></td>
               <td><textarea rows="2" name="campground[couts13]"></textarea></td>
-              <td><input type="text"   name="campground[A_CPH13]" class="form-control"  ></td>
+              <td><input type="text"   name="campground[A_CPH13]" value="<%= campground.A_CPH13 %>" class="form-control"  ></td>
               <td><label   for="week"  id="P_CPH013" name="P_CPH013"  ></label></td>
             </tr>
             </tr>
@@ -1656,12 +1583,7 @@
 
             <tr>
               <th>French</th>
-              <td>
-                <label id="Planned_v14" name="P_Vol14"   ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc14" ></label>
-              </td>
+             
               
               <td>
                 <input
@@ -1683,9 +1605,9 @@
                   type="text"
                 />
               </td>
-              <td><input type="text"  name="accuracy14" class="form-control"></td>
+              <td><input type="text"  name="campground[accuracy14]" class="form-control"></td>
               <td><textarea rows="2" name="campground[couts14]"></textarea></td>
-              <td><input type="text"   name="campground[A_CPH14]" class="form-control" ></td>
+              <td><input type="text"   name="campground[A_CPH14]" value="<%= campground.A_CPH14 %>" class="form-control" ></td>
               <td><label   for="week"  id="P_CPH014" name="P_CPH014"  ></label></td>
             </tr>
             </tr>
@@ -1694,13 +1616,7 @@
 
             <tr>
               <th class="ui header subhead grey" >Customer Reviews  </th>
-              <td>
-                <label id="Planned_v15" name="P_Vol15"   ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc15" ></label>
-              </td>
-
+              
               <td>
                 <input
                   name="campground[A_Vol15]"
@@ -1722,9 +1638,9 @@
                   type="text"
                 />
               </td>
-              <td><input type="text" name="accuracy15"  class="form-control"></td>
+              <td><input type="text" name="campground[accuracy15]"  class="form-control"></td>
               <td><textarea rows="2" name="campground[couts15]"></textarea></td>
-              <td><input type="text"   name="campground[A_CPH15]" class="form-control"  ></td>
+              <td><input type="text"   name="campground[A_CPH15]" value="<%= campground.A_CPH15 %>" class="form-control"  ></td>
               <td><label   for="week"  id="P_CPH015" name="P_CPH015"  ></label></td>
             </tr>
             </tr>
@@ -1733,14 +1649,6 @@
             <!-- 16 Massmail Tickets -->
             <tr>
               <th class="ui  header subhead grey">Massmail Tickets </th>
-              <td>
-                <label id="Planned_v16" name="P_Vol16"   ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc16" ></label>
-              </td>
-              
-
               <td>
                 <input
                   name="campground[A_Vol16]"
@@ -1761,9 +1669,9 @@
                   type="text"
                 />
               </td>
-              <td><input type="text"  name="accuracy16" class="form-control"></td>
+              <td><input type="text"  name="campground[accuracy16]" class="form-control"></td>
               <td><textarea rows="2" name="campground[couts16]"></textarea></td>
-              <td><input type="text"   name="campground[A_CPH16]" class="form-control"  ></td>
+              <td><input type="text"   name="campground[A_CPH16]" value="<%= campground.A_CPH16 %>" class="form-control"  ></td>
               <td><label   for="week"  id="P_CPH016" name="campground[P_CPH016]"  ></label></td>
             </tr>
             </tr>
@@ -1773,12 +1681,7 @@
             <!-- 17. Publisher Response  -->
             <tr>
               <th class="ui  header subhead grey">Publisher Response </th>
-              <td>
-                <label id="Planned_v17" name="P_Vol17"   > </label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc17" ></label>
-              </td>
+              
               
 
               <td>
@@ -1803,7 +1706,7 @@
               </td>
               <td><input type="text"  name="campground[accuracy17]" class="form-control"></td>
               <td><textarea rows="2" name="campground[couts17]"></textarea></td>
-              <td><input type="text"   name="campground[A_CPH17]" class="form-control"  ></td>
+              <td><input type="text"   name="campground[A_CPH17]" value="<%= campground.A_CPH17 %>" class="form-control"  ></td>
               <td><label   for="week"  id="P_CPH017" name="P_CPH017"  ></label></td>
             </tr>
             </tr>
@@ -1815,12 +1718,7 @@
 
             <tr>
               <th>Submitted Corrections   </th>
-              <td>
-                <label id="Planned_v18" name="P_Vol18"   ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc18" ></label>
-              </td>
+              
             
 
               <td>
@@ -1843,9 +1741,9 @@
                   type="text"
                 />
               </td>
-              <td><input type="text" name="accuracy18"  class="form-control"></td>
+              <td><input type="text" name="campground[accuracy18]"  class="form-control"></td>
               <td><textarea rows="2" name="campground[couts18]"></textarea></td>
-              <td><input type="text"   name="campground[A_CPH18]" class="form-control"  ></td>
+              <td><input type="text"   name="campground[A_CPH18]" value="<%= campground.A_CPH18 %>" class="form-control"  ></td>
               <td><label   for="week"  id="P_CPH018" name="P_CPH018"  ></label></td>
             </tr>
             </tr>
@@ -1856,12 +1754,7 @@
 
             <tr>
               <th>Queries + Escalations     </th>
-              <td>
-                <label id="Planned_v19" name="P_Vol19"   ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc19" ></label>
-              </td>
+              
               
               
               <td>
@@ -1884,9 +1777,9 @@
                   type="text"
                 />
               </td>
-              <td><input type="text"  name="accuracy19" class="form-control"></td>
+              <td><input type="text"  name="campground[accuracy19]" class="form-control"></td>
               <td><textarea rows="2" name="campground[couts19"]></textarea></td>
-              <td><input type="text"   name="campground[A_CPH19]" class="form-control"  ></td>
+              <td><input type="text"   name="campground[A_CPH19]" value="<%= campground.A_CPH19 %>" class="form-control"  ></td>
               <td><label   for="week"  id="P_CPH019" name="P_CPH019"  ></label></td>
             </tr>
             </tr>
@@ -1895,13 +1788,8 @@
 
             <!-- 20. Rework  -->
             <tr>
-              <th class="ui center aligned header blue">Rework  </th>
-              <td>
-                <label id="Planned_v20" name="P_Vol20"   ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc20" ></label>
-              </td>
+              <th class="ui center aligned header blue">Rework</th>
+              
               <td>
                 <input name="campground[A_Vol20]" class="form-control" value="<%= campground.A_Vol20 %>" type="text" id="sum_rework"  readonly />
               </td>
@@ -1909,9 +1797,12 @@
               <td>
                 <input name="campground[A_HCount20]" class="form-control" value="<%= campground.A_HCount20 %>" type="text"  id="sum_reworkHCount" readonly />
               </td>
-              <td><input type="text"  name="accuracy20" value="<%= campground.accuracy20 %>" class="form-control"></td>
+              <td><input type="text"  name="campground[accuracy20]" value="<%= campground.accuracy20 %>" class="form-control"></td>
+
               <td><textarea rows="2" name="campground[couts20]"></textarea></td>
-              <td><input type="text"   name="campground[A_CPH20]" class="form-control" ></td>
+
+              <td><input type="text"   name="campground[A_CPH20]" value="<%= campground.A_CPH20 %>" class="form-control" ></td>
+
               <td><label   for="week"  id="P_CPH020" name="P_CPH020"  ></label></td>
             </tr>
             </tr>
@@ -1922,12 +1813,7 @@
             <!-- 21.Rework Blocking  -->
             <tr>
               <th>Rework Blocking  </th>
-              <td>
-                <label id="Planned_v21" name="P_Vol21"   ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc21" ></label>
-              </td>
+              
               
               
               <td>
@@ -1951,10 +1837,10 @@
                 />
                
               </td>
-              <td><input type="text" name="accuracy21" value="<%= campground.accuracy21 %>"  class="form-control"></td>
+              <td><input type="text" name="campground[accuracy21]" value="<%= campground.accuracy21 %>"  class="form-control"></td>
               
               <td><textarea rows="2" name="campground[couts21]"></textarea></td>
-              <td><input type="text"   name="campground[A_CPH21]" class="form-control"  ></td>
+              <td><input type="text"   name="campground[A_CPH21]" value="<%= campground.A_CPH21 %>" class="form-control"  ></td>
               <td><label   for="week"  id="P_CPH021" name="P_CPH021"  ></label></td>
             </tr>
             </tr>
@@ -1966,12 +1852,6 @@
           <!-- 22. Rework CFQ -->
             <tr>
               <th>Rework CFQI </th>
-              <td>
-                <label id="Planned_v22" name="P_Vol22"   ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc22" ></label>
-              </td>
               
               
               <td>
@@ -1994,9 +1874,9 @@
                 type="text"
               />
               </td>
-              <td><input type="text"  name="accuracy22" class="form-control"></td>
+              <td><input type="text"  name="campground[accuracy22]" class="form-control"></td>
               <td><textarea rows="2" name="campground[couts22]"></textarea></td>
-              <td><input type="text"   name="campground[A_CPH22]" class="form-control"  ></td>
+              <td><input type="text"   name="campground[A_CPH22]" value="<%= campground.A_CPH22 %>" class="form-control"  ></td>
               <td><label   for="week"  id="P_CPH022" name="P_CPH022"  ></label></td>
             </tr>
             </tr>
@@ -2008,14 +1888,6 @@
 
             <tr>
               <th>Rework Non-Blocking  </th>
-              <td>
-                <label id="Planned_v23" name="P_Vol23"   ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc23" ></label>
-              </td>
-              
-              
              <td>
                 <input
                   name="campground[A_Vol23]"
@@ -2036,23 +1908,39 @@
                 type="text"
               />
               </td>
-              <td><input type="text"  name="accuracy23" class="form-control"></td>
+              <td><input type="text"  name="campground[accuracy23]" class="form-control"></td>
               <td><textarea rows="2" name="campground[couts23]"></textarea></td>
-              <td><input type="text"   name="campground[A_CPH23]" class="form-control"   ></td>
+              <td><input type="text"   name="campground[A_CPH23]" value="<%= campground.A_CPH23 %>" class="form-control"   ></td>
               <td><label   for="week"  id="P_CPH023" name="P_CPH023"  ></label></td>
             </tr>
             </tr>
+
+
+              <!-- 29.Content Testing  -->
+            
+              <tr>
+                <th class="ui center aligned header blue">Content Testing  </th>
+                
+  
+                <td>
+                  <input name="campground[A_Vol29]" value="<%= campground.A_Vol29 %>" class="form-control" type="text"  />
+                </td>
+                <td> 
+                  <input name="campground[A_HCount29]" value="<%= campground.A_HCount29 %>" class="form-control" type="text"  />
+                </td>
+                <td><input type="text" name="campground[accuracy29]" value="<%= campground.accuracy29 %>"  class="form-control"></td>
+                <td><textarea rows="2" name="campground[couts29]"></textarea></td>
+                <td><input type="text"   name="campground[A_CPH29]" class="form-control"  value="<%= campground.A_CPH29 %>"  ></td>
+                <td><label   for="week"  id="P_CPH029" name="P_CPH029"  ></label></td>
+              </tr>
+              </tr>
+  
             
 
             <!-- 24.KCVP Detections  -->
             <tr>
-              <th class="ui center aligned header blue">KCVP Detections   </th>
-              <td>
-                <label id="Planned_v24" name="P_Vol24"   ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc24" ></label>
-              </td>
+              <th class="ui center aligned header blue">Others   </th>
+              
 
               <td>
                 <input name="campground[A_Vol24]" class="form-control" value="<%= campground.A_Vol24 %>" type="text" id="sum_kcvp" readonly  />
@@ -2062,9 +1950,9 @@
                 <input name="campground[A_HCount24]" class="form-control"  value="<%= campground.A_HCount24 %>" type="text"  id="sum_kcvpHCount"  readonly />
               </td>
 
-              <td><input type="text"  name="accuracy24" value="<%=  campground.accuracy24 %>"  class="form-control"></td>
+              <td><input type="text"  name="campground[accuracy24]" value="<%=  campground.accuracy24 %>"  class="form-control"></td>
               <td><textarea rows="2" name="campground[couts24]"></textarea></td>
-              <td><input type="text"   name="campground[A_CPH24]" class="form-control" ></td>
+              <td><input type="text"   name="campground[A_CPH24]" value="<%= campground.A_CPH24 %>" class="form-control" ></td>
               <td><label   for="week"  id="P_CPH024" name="P_CPH024"  ></label></td>
             </tr>
             </tr>
@@ -2073,12 +1961,7 @@
             <!-- 25.Language Mismatch  -->
             <tr>
               <th > Language Mismatch  </th>
-              <td>
-                <label id="Planned_v25" name="P_Vol25"   ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc25" ></label>
-              </td>
+              
              
               <td>
                 <input
@@ -2101,9 +1984,9 @@
                   type="text"
                 />
               </td>
-              <td><input type="text"  class="form-control" name="accuracy25" ></td>
+              <td><input type="text"  class="form-control" name="campground[accuracy25]" ></td>
               <td><textarea rows="2" name="campground[couts25]"></textarea></td>
-              <td><input type="text"   name="campground[A_CPH25]" class="form-control"  ></td>
+              <td><input type="text"   name="campground[A_CPH25]" value="<%= campground.A_CPH25 %>" class="form-control"  ></td>
               <td><label   for="week"  id="P_CPH025" name="P_CPH025"  ></label></td>
             </tr>
             </tr>
@@ -2112,12 +1995,7 @@
             <!-- 26.Unknown Language -->
             <tr>
               <th >Unknown Language </th>
-              <td>
-                <label id="Planned_v26" name="P_Vol26"   ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc26" ></label>
-              </td>
+              
              
               <td>
                 <input
@@ -2141,9 +2019,9 @@
                 />
               </td>
 
-              <td><input type="text"  class="form-control" name="accuracy26" ></td>
+              <td><input type="text"  class="form-control" name="campground[accuracy26]" ></td>
               <td><textarea rows="2" name="campground[couts26]"></textarea></td>
-              <td><input type="text"   name="campground[A_CPH26]" class="form-control" ></td>
+              <td><input type="text"   name="campground[A_CPH26]" value="<%= campground.A_CPH26 %>" class="form-control" ></td>
               <td><label   for="week"  id="P_CPH026" name="P_CPH026"  ></label></td>
             </tr>
             </tr>
@@ -2152,12 +2030,7 @@
             
             <tr>
               <th >Switcheroo</th>
-              <td>
-                <label id="Planned_v27" name="P_Vol27"   ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc27" ></label>
-              </td>
+             
               
 
               <td>
@@ -2181,9 +2054,9 @@
                   type="text"
                 />
               </td>
-              <td><input type="text" name="accuracy27"  class="form-control"></td>
+              <td><input type="text" name="campground[accuracy27]"  class="form-control"></td>
               <td><textarea rows="2" name="campground[couts27]"></textarea></td>
-              <td><input type="text"   name="campground[A_CPH27]" class="form-control"  ></td>
+              <td><input type="text"   name="campground[A_CPH27]" value="<%= campground.A_CPH27 %>" class="form-control"  ></td>
               <td><label   for="week"  id="P_CPH027" name="P_CPH027"  ></label></td>
             </tr>
             </tr>
@@ -2194,12 +2067,7 @@
             
             <tr>
               <th>Fixed Layout   </th>
-              <td>
-                <label id="Planned_v28" name="P_Vol28"   ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc28" ></label>
-              </td>
+              
               
 
               <td>
@@ -2223,114 +2091,17 @@
                   type="text"
                 />
               </td>
-              <td><input type="text" name="accuracy28"  class="form-control"></td>
+              <td><input type="text" name="campground[accuracy28]"  class="form-control"></td>
               <td><textarea rows="2" name="campground[couts28]"></textarea></td>
-              <td><input type="text"   name="campground[A_CPH28]" class="form-control"  ></td>
+              <td><input type="text"   name="campground[A_CPH28]" value="<%= campground.A_CPH28 %>" class="form-control"  ></td>
               <td><label   for="week"  id="P_CPH028" name="P_CPH028"  ></label></td>
             </tr>
             </tr>
 
 
 
-            <!-- 29.Content Testing  -->
-            
-            <tr>
-              <th class="ui center aligned header blue">Content Testing  </th>
-              <td>
-                <label id="Planned_v29" name="P_Vol29"   ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc29" ></label>
-              </td>
-             
+          
 
-              <td>
-                <input name="campground[A_Vol29]" value="<%= campground.A_Vol29 %>" class="form-control" type="text"  />
-              </td>
-              <td> 
-                <input name="campground[A_HCount29]" value="<%= campground.A_HCount29 %>" class="form-control" type="text"  />
-              </td>
-              <td><input type="text" name="campground[accuracy29]" value="<%= campground.accuracy29 %>"  class="form-control"></td>
-              <td><textarea rows="2" name="campground[couts29]"></textarea></td>
-              <td><input type="text"   name="campground[A_CPH29]" class="form-control"   ></td>
-              <td><label   for="week"  id="P_CPH029" name="P_CPH029"  ></label></td>
-            </tr>
-            </tr>
-
-
-
-            
-            <!-- 30.KDP Cover Gen  -->
-            <tr>
-              <th class="ui center aligned header blue">KDP Cover Gen  </th>
-              <td>
-                <label id="Planned_v30" name="P_Vol30"   ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc30" ></label>
-              </td>
-             
-
-              <td>
-                <input name="campground[A_Vol30]"  value="<%= campground.A_Vol30 %>"  class="form-control" type="text"  />
-              </td>
-              <td>
-                <input name="campground[A_HCount30]"  value="<%= campground.A_HCount30 %>" class="form-control" type="text"  />
-              </td>
-              <td><input type="text" name="campground[accuracy30]" value="<%= campground.accuracy30 %>"   class="form-control"></td>
-              <td><textarea rows="2" name="campground[couts30]"></textarea></td>
-              <td><input type="text"   name="campground[A_CPH30]" class="form-control"   ></td>
-              <td><label   for="week"  id="P_CPH030" name="P_CPH030"  ></label></td>
-            </tr>
-            </tr>
-
-            <!-- 31.Author Fix-up   -->
-            <tr>
-              <th class="ui center aligned header blue">Author Fix-up</th>
-              <td>
-                <label id="Planned_v31" name="P_Vol31"   ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc31" ></label>
-              </td>
-              <td>
-                <input name="campground[A_Vol31]" value="<%= campground.A_Vol31 %>"  class="form-control" type="text"  />
-              </td>
-              <td>
-                <input name="campground[A_HCount31]" value="<%= campground.A_HCount31 %>" class="form-control" type="text"  />
-              </td>
-              <td><input type="text" name="campground[accuracy31]" value="<%= campground.accuracy31 %>"   class="form-control"></td>
-              <td><textarea rows="2" name="couts31"></textarea></td>
-              <td><input type="text"   name="campground[A_CPH31]" class="form-control"></td>
-              <td><label   for="week"  id="P_CPH031" name="P_CPH031"  ></label></td>
-            </tr>
-            </tr>
-
-
-
-            
-            <!--  32. All Field Audit -->
-            <tr>
-              <th class="ui center aligned header blue">All Field Audit </th>
-              <td>
-                <label id="Planned_v32" name="P_Vol32"   ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc32" ></label>
-              </td>
-              <td>
-                <input name="campground[A_Vol32]"  value="<%= campground.A_Vol32 %>" class="form-control" type="text"  />
-              </td>
-              <td>
-                <input name="campground[A_HCount32]" value="<%= campground.A_HCount32 %>"   class="form-control" type="text"  />
-              </td>
-              <td><input type="text"  name="campground[accuracy32]"  value="<%= campground.accuracy32 %>"  class="form-control"></td>
-              <td><textarea rows="2" name="campground[couts32]"></textarea></td>
-             
-              <td><input type="text"   name="campground[A_CPH32]" class="form-control"  ></td>
-              <td><label   for="week"  id="P_CPH032" name="P_CPH032"  ></label></td>
-            </tr>
-            </tr>
 
           </thead>
         </table>

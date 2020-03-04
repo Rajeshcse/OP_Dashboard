@@ -3,7 +3,6 @@
 <script>
 
   function sum() {
-
     var v1 = document.getElementById("value1").value;
     var v2 = document.getElementById("value2").value;
     var v3 = document.getElementById("value3").value;
@@ -15,6 +14,8 @@
       document.getElementById("sum_value").value = result.toFixed(2); 
     }
   }
+
+
 
   function hcsum() {
     var hc1 = document.getElementById("headcount1").value;
@@ -362,8 +363,7 @@
     document.getElementById("Planned_prod32").innerHTML = "8.5";
 
 
-    document.getElementById("P_CPH032").innerHTML = "1366" ;
-
+  
 
   }
   //  Novenmber 2019
@@ -503,7 +503,7 @@
     document.getElementById("Planned_prod30").innerHTML = "6.5";
     document.getElementById("Planned_prod31").innerHTML = "7.5";
     document.getElementById("Planned_prod32").innerHTML = "8.5";
-    document.getElementById("P_CPH032").innerHTML = "1366" ;
+   
 
 
   }
@@ -512,7 +512,7 @@
   else if(x=== "2019-W49" || x=== "2019-W50" || x=== "2019-W51" || x=== "2019-W52"){
     
 
-        document.getElementById("P_CPH01").innerHTML = "1498";
+    document.getElementById("P_CPH01").innerHTML = "1498";
     document.getElementById("P_CPH02").innerHTML = "1498";
     document.getElementById("P_CPH03").innerHTML = "1498";
     document.getElementById("P_CPH04").innerHTML = "1498";
@@ -1133,6 +1133,7 @@
     document.getElementById("Planned_hc30").innerHTML =  null;
     document.getElementById("Planned_hc31").innerHTML =  null;
     document.getElementById("Planned_hc32").innerHTML = null ;
+
   }
 }
   
@@ -1140,7 +1141,7 @@
 </script>
 
 
-<div class="container">
+<div class="container pt-6" >
   <div class="row">
     <h1 style="text-align: center">Create New metrics of the week</h1>
     <div style="margin: 25px auto; ">
@@ -1440,25 +1441,26 @@
 
 
         <!--8. Reactive (Contacts) -->
-          <tr>
-            <th class="ui center aligned header blue" >Reactive (Contacts) </th>
-            <td>
-              <label id="Planned_v8" name="P_Vol8"   ></label>
-            </td>
-            <td>
-              <label for="week" id="Planned_hc8" ></label>
-            </td>
+          <tr>  
+            <th class="ui center aligned header blue" >Reactive (Contacts) </th>  
+            <td>  
+              <label id="Planned_v8" name="P_Vol8"   > </label>
+            </td> 
+            <td>  
+              <label for="week" id="Planned_hc8" ></label>  
+            </td> 
             
-            <td>
-              <input name="A_Vol8" class="form-control" type="text" id="sum_reactive"   readonly />
-            </td>
-            <td>
-              <input name="A_HCount8" class="form-control" type="text"  id="sum_reactiveHCount" readonly />
-            </td>
-            <td><input type="text"  name="accuracy8" class="form-control"></td>
-            <td><textarea rows="2" name="couts8"></textarea></td>
-            <td><input type="text"   name="A_CPH8" class="form-control"  disabled ></td>
-            <td><label   for="week"  id="P_CPH08" name="P_CPH08"  ></label></td>
+            <td>  
+              <input name="A_Vol8" class="form-control" type="text" id="sum_reactive"   readonly /> 
+            </td> 
+            <td>  
+              <input name="A_HCount8" class="form-control" type="text"  id="sum_reactiveHCount" readonly /> 
+            </td> 
+           
+            <td><input  type="text"  name="accuracy8" class="form-control"></td>  
+            <td><textarea rows="2" name="couts8"></textarea></td> 
+            <td><input type="text"   name="A_CPH8" class="form-control"  disabled ></td>  
+            <td><label   for="week"  id="P_CPH08" name="P_CPH08"  ></label></td>  
           </tr>
 
 
@@ -1563,10 +1565,10 @@
                   type="text"
                 />
               </td>
-              <td><input type="text"  name="accuracy11" class="form-control"></td>
-              <td><textarea rows="2" name="couts11"></textarea></td>
-              <td><input type="text"   name="A_CPH11" class="form-control" disabled  ></td>
-              <td><label   for="week"  id="P_CPH011" name="P_CPH011"  ></label></td>
+              <td><input type="text"  name="accuracy11" class="form-control"></td>  
+              <td><textarea rows="2" name="couts11"></textarea></td>  
+              <td><input type="text"   name="A_CPH11" class="form-control" disabled  ></td> 
+              <td><label   for="week"  id="P_CPH011" name="P_CPH011"  ></label></td>  
             </tr>
             </tr>
 
@@ -2017,21 +2019,40 @@
             </tr>
 
 
+ <!-- 29.Content Testing  -->
+            
+ <tr>
+  <th class="ui center aligned header blue">Content Testing  </th>
+  <td>
+    <label id="Planned_v29" name="P_Vol29"   ></label>
+  </td>
+  <td>
+    <label for="week" id="Planned_hc29" ></label>
+  </td>
+ 
 
-            
-            
+  <td>
+    <input name="A_Vol29" class="form-control" type="text"  />
+  </td>
+  <td>
+    <input name="A_HCount29" class="form-control" type="text"  />
+  </td>
+  <td><input type="text" name="accuracy29"  class="form-control"></td>
+  <td><textarea rows="2" name="couts29"></textarea></td>
+  <td><input type="text"   name="A_CPH29" class="form-control"  disabled  ></td>
+  <td><label   for="week"  id="P_CPH029" name="P_CPH029"  ></label></td>
+</tr>
+</tr>
             <!-- 24.KCVP Detections  -->
             <tr>
-              <th class="ui center aligned header blue">KCVP Detections   </th>
+              <th class="ui center aligned header blue">Others</th>
               <td>
                 <label id="Planned_v24" name="P_Vol24"   ></label>
               </td>
               <td>
                 <label for="week" id="Planned_hc24" ></label>
               </td>
-              
-
-              
+                            
               <td>
                 <input name="A_Vol24" class="form-control" type="text" id="sum_kcvp" readonly  />
               </td>
@@ -2050,7 +2071,7 @@
             <!-- 25.Language Mismatch  -->
             
             <tr>
-              <th > Language Mismatch  </th>
+              <th > All Field Audit	  </th>
               <td>
                 <label id="Planned_v25" name="P_Vol25"   ></label>
               </td>
@@ -2087,7 +2108,7 @@
 
             <!-- 26.Unknown Language -->
             <tr>
-              <th >Unknown Language </th>
+              <th >Author Fix-up</th>
               <td>
                 <label id="Planned_v26" name="P_Vol26"   ></label>
               </td>
@@ -2126,7 +2147,7 @@
             <!-- 27.Switcheroo  -->
             
             <tr>
-              <th >Switcheroo</th>
+              <th >KDP Cover Gen </th>
               <td>
                 <label id="Planned_v27" name="P_Vol27"   ></label>
               </td>
@@ -2166,7 +2187,7 @@
             <!-- 28.Fixed Layout  -->
             
             <tr>
-              <th>Fixed Layout   </th>
+              <th>KCVP Detections </th>
               <td>
                 <label id="Planned_v28" name="P_Vol28"   ></label>
               </td>
@@ -2201,105 +2222,7 @@
             </tr>
             </tr>
             
-            <!-- 29.Content Testing  -->
-            
-            <tr>
-              <th class="ui center aligned header blue">Content Testing  </th>
-              <td>
-                <label id="Planned_v29" name="P_Vol29"   ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc29" ></label>
-              </td>
-             
-
-              <td>
-                <input name="A_Vol29" class="form-control" type="text"  />
-              </td>
-              <td>
-                <input name="A_HCount29" class="form-control" type="text"  />
-              </td>
-              <td><input type="text" name="accuracy29"  class="form-control"></td>
-              <td><textarea rows="2" name="couts29"></textarea></td>
-              <td><input type="text"   name="A_CPH29" class="form-control"  disabled  ></td>
-              <td><label   for="week"  id="P_CPH029" name="P_CPH029"  ></label></td>
-            </tr>
-            </tr>
-
-            <!-- 30.KDP Cover Gen  -->
-            <tr>
-              <th class="ui center aligned header blue">KDP Cover Gen  </th>
-              <td>
-                <label id="Planned_v30" name="P_Vol30"   ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc30" ></label>
-              </td>
-             
-
-              <td>
-                <input name="A_Vol30" class="form-control" type="text"  />
-              </td>
-              <td>
-                <input name="A_HCount30" class="form-control" type="text"  />
-              </td>
-              <td><input type="text" name="accuracy30"  class="form-control"></td>
-              <td><textarea rows="2" name="couts30"></textarea></td>
-              <td><input type="text"   name="A_CPH30" class="form-control" disabled  ></td>
-              <td><label   for="week"  id="P_CPH030" name="P_CPH030"  ></label></td>
-            </tr>
-            </tr>
-
-            <!-- 31.Author Fix-up   -->
-            <tr>
-              <th class="ui center aligned header blue">Author Fix-up</th>
-              <td>
-                <label id="Planned_v31" name="P_Vol31"   ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc31" ></label>
-              </td>
-            
-
-              <td>
-                <input name="A_Vol31" class="form-control" type="text"  />
-              </td>
-              <td>
-                <input name="A_HCount31" class="form-control" type="text"  />
-              </td>
-              <td><input type="text" name="accuracy31"  class="form-control"></td>
-              <td><textarea rows="2" name="couts31"></textarea></td>
-              <td><input type="text"   name="A_CPH31" class="form-control" disabled  ></td>
-              <td><label   for="week"  id="P_CPH031" name="P_CPH031"  ></label></td>
-            </tr>
-            </tr>
-
-
-
-            
-            <!--  32. All Field Audit -->
-            <tr>
-              <th class="ui center aligned header blue">All Field Audit </th>
-              <td>
-                <label id="Planned_v32" name="P_Vol32"   ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc32" ></label>
-              </td>
-              <td>
-                <input name="A_Vol32" class="form-control" type="text"  />
-              </td>
-              <td>
-                <input name="A_HCount32" class="form-control" type="text"  />
-              </td>
-              <td><input type="text"  name="accuracy32" class="form-control"></td>
-              <td><textarea rows="2" name="couts32"></textarea></td>
-             
-              <td><input type="text"   name="A_CPH32" class="form-control" disabled  ></td>
-              <td><label   for="week"  id="P_CPH032" name="P_CPH032"  ></label></td>
-            </tr>
-            </tr>
-
+           
           </thead>
         </table>
 

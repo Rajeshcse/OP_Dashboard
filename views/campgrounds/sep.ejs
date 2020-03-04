@@ -12,19 +12,40 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 <link rel="stylesheet" href="/stylesheets/main.css" />
 
 <div>
+ 
     <div class="thumbnail">
-       
         <div class="caption-full">    
+
         <% pv1= 2584 ; pv2= 200;  pv3=1147  ; pv4 = 44 ; pv5 = 800 ; pv6= 28 ; pv7= 365 ; pv8= 6812; pv9 = 553; pv10 = 4358 ; pv11= 3376 ; pv12 = null ; %>
         <% pv13= 750 ; pv14 =232  ; pv15=542 ; pv16 =220 ; pv17= 1139 ; pv18 = 879 ; pv19 = 260 ; pv20= 2006 ; pv21= 210 ; pv22= 174 ; pv23= 1622; pv24= 718 ; %>
         <% pv25=542 ; pv26=80 ; pv27=68 ; pv28=28 ;  pv29= 400 ; pv30= 10833 ; pv31=400 ; pv32= 372 ; %>
+
 
 
         <% phc1 = 4.29 ; phc2= 0.38; phc3 =1.61 ; phc4 =0.12 ; phc5 =1.40 ; phc6 =0.05 ; phc7 =0.73; phc8 =10.65 ; phc9 =0.97 ; phc10 =7.62 ; phc11 = 6.03; phc12 =null ; %>  
         <% phc13 = 1.22 ; phc14= 0.38 ; phc15 = 0.95 ; phc16 = 0.29 ; phc17 = 0.82; phc18 =0.32 ; phc19 = 0.50; phc20 = 1.22; phc21 = .35; phc22 =0.11 ; phc23 =0.76 ; phc24 =0.30 ; %>
         <% phc25 = 0.20 ; phc26= 0.03; phc27 =0.05 ; phc28 =0.02 ; phc29 = 2 ; phc30 =0.10 ; phc31 = 0.01; phc32 =0.10 ; %>
 
-       
+
+        <% P_CPH1	 = 1366 %> <% P_CPH16	 = 1366 %>
+        <% P_CPH2	 = 1366 %> <% P_CPH17	 = 1366 %>
+        <% P_CPH3	 = 1366 %> <% P_CPH18	 = 1366 %>
+        <% P_CPH4	 = 1366 %> <% P_CPH19	 = 1366 %>
+        <% P_CPH5	 = 1366 %> <% P_CPH20	 = 1366 %>
+        <% P_CPH6	 = 1366 %> <% P_CPH21	 = 1366 %>
+        <% P_CPH7	 = 1366 %> <% P_CPH22	 = 1366 %>
+        <% P_CPH8	 = 1366 %> <% P_CPH23	 = 1366 %>
+        <% P_CPH9	 = 1366 %> <% P_CPH24	 = 1366 %>
+        <% P_CPH10 = 1366 %> <% P_CPH25	 = 1366 %>
+        <% P_CPH11 = 1366 %> <% P_CPH26	 = 1366 %>
+        <% P_CPH12 = 1366 %> <% P_CPH27	 = 1366 %>
+        <% P_CPH13 = 1366 %> <% P_CPH28	 = 1366 %>
+        <% P_CPH14 = 1366 %> <% P_CPH29	 = 1366 %>
+        <% P_CPH15 = 1366 %> <% P_CPH30	 = 1366 %>
+        <% P_CPH31 = 1366 %>
+        <% P_CPH32 = 1366 %>
+          
+        
         <!--  Calculation of Months table -->
 
         <% var sum1 = 0 %> <% var sum2 = 0 %> <% var sum3 = 0 %> <% var sum4 = 0 %> <% var sum5 = 0 %> <% var	sum6= 0 %> <% var	sum7= 0 %> <% var	sum8= 0 %> <% var	sum9= 0 %> <% var	sum10= 0 %>
@@ -34,9 +55,11 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
         <% var sum41= 0 %> <% var	sum42	 = 0 %> <% var	sum43	 = 0 %> <% var	sum44	 = 0 %>  <% var	sum45	 = 0 %> <% var	sum46	 = 0 %> <% var	sum47	 = 0 %> <% var	sum48	 = 0 %> <% var	sum49	 = 0 %> <% var	sum50	 = 0 %> 
         <% var sum51= 0 %> <% var	sum52	 = 0 %> <% var	sum53	 = 0 %> <% var	sum54	 = 0 %> <% var	sum55	 = 0 %> <% var	sum56	 = 0 %> <% var	sum57	 = 0 %> <% var	sum58	 = 0 %> <% var	sum59	 = 0 %>
         <% var sum60 = 0 %> <% var	sum61	 = 0 %>  <% var	sum62	 = 0 %> <% var	sum63	 = 0 %> <% var	sum64	 = 0 %>
+        
 
-        <% campgrounds.forEach( function(itbMetrics) {  %>
-          <% if( itbMetrics.week == "2019-W27" || itbMetrics.week == "2019-W28" || itbMetrics.week == "2019-W29" || itbMetrics.week == "2019-W30"  || itbMetrics.week == "2019-W31" ){   %>
+         
+        <% campgrounds.forEach(function(itbMetrics) {  %>
+          <% if( itbMetrics.week == "2019-W36" || itbMetrics.week == "2019-W37" || itbMetrics.week == "2019-W38"  || itbMetrics.week == "2019-W39" || itbMetrics.week == "2019-W40"){   %>
             
             <% var add1=	itbMetrics.A_Vol1	%> <% var add2=	itbMetrics.A_HCount1	%> <% var add3=	itbMetrics.A_Vol2	%> <% var add4=	itbMetrics.A_HCount2	%> <% var add5=	itbMetrics.A_Vol3	%> <% var add6=	itbMetrics.A_HCount3	%> <% var add7=	itbMetrics.A_Vol4	%> <% var add8=	itbMetrics.A_HCount4	%> <% var add9=	itbMetrics.A_Vol5	%> <% var add10=	itbMetrics.A_HCount5	%>
             <% var add11=	itbMetrics.A_Vol6	%> <% var add12=	itbMetrics.A_HCount6	%> <% var add13=	itbMetrics.A_Vol7	%> <% var add14=	itbMetrics.A_HCount7	%> <% var add15=	itbMetrics.A_Vol8	%> <% var add16=	itbMetrics.A_HCount8	%> <% var add17=	itbMetrics.A_Vol9	%> <% var add18=	itbMetrics.A_HCount9	%> <% var add19=	itbMetrics.A_Vol10	%> <% var add20=	itbMetrics.A_HCount10	%>
@@ -46,6 +69,7 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
             <% var add51=	itbMetrics.A_Vol26	%> <% var add52=	itbMetrics.A_HCount26	%> <% var add53=	itbMetrics.A_Vol27	%> <% var add54=	itbMetrics.A_HCount27	%> <% var add55=	itbMetrics.A_Vol28	%> <% var add56=	itbMetrics.A_HCount28	%> <% var add57=	itbMetrics.A_Vol29	%> <% var add58=	itbMetrics.A_HCount29	%> <% var add59=	itbMetrics.A_Vol30	%> <% var add60=	itbMetrics.A_HCount30	%>
             <% var add61=	itbMetrics.A_Vol31	%> <% var add62=	itbMetrics.A_HCount31	%> <% var add63=	itbMetrics.A_Vol32	%> <% var add64=	itbMetrics.A_HCount32	%>
 
+
             <% sum1  = sum1 +  add1 %> <% sum2  = sum2 +  add2 %> <% sum3  = sum3 +  add3 %> <% sum4=	sum4	+	add4	%> <% sum5=	sum5	+	add5	%> <% sum6=	sum6	+	add6	%> <% sum7=	sum7	+	add7	%> <% sum8=	sum8	+	add8	%> <% sum9=	sum9	+	add9	%>
              <% sum10=	sum10	+	add10	%> <% sum11=	sum11	+	add11	%> <% sum12=	sum12	+	add12	%> <% sum13=	sum13	+	add13	%> <% sum14=	sum14	+	add14	%> <% sum15=	sum15	+	add15	%> <% sum16=	sum16	+	add16	%> <% sum17=	sum17	+	add17	%> <% sum18=	sum18	+	add18	%> <% sum19=	sum19	+	add19	%> <% sum20=	sum20	+	add20	%>
              <% sum21=	sum21	+	add21	%> <% sum22=	sum22	+	add22	%> <% sum23=	sum23	+	add23	%> <% sum24=	sum24	+	add24	%> <% sum25=	sum25	+	add25	%> <% sum26=	sum26	+	add26	%> <% sum27=	sum27	+	add27	%> <% sum28=	sum28	+	add28	%> <% sum29=	sum29	+	add29	%> <% sum30=	sum30	+	add30	%>
@@ -53,26 +77,66 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
              <% sum41=	sum41	+	add41	%> <% sum42=	sum42	+	add42	%> <% sum43=	sum43	+	add43	%> <% sum44=	sum44	+	add44	%> <% sum45=	sum45	+	add45	%> <% sum46=	sum46	+	add46	%> <% sum47=	sum47	+	add47	%> <% sum48=	sum48	+	add48	%> <% sum49=	sum49	+	add49	%> <% sum50=	sum50	+	add50	%>
              <% sum51=	sum51	+	add51	%> <% sum52=	sum52	+	add52	%> <% sum53=	sum53	+	add53	%> <% sum54=	sum54	+	add54	%> <% sum55=	sum55	+	add55	%> <% sum56=	sum56	+	add56	%> <% sum57=	sum57	+	add57	%> <% sum58=	sum58	+	add58	%> <% sum59=	sum59	+	add59	%> <% sum60=	sum60	+	add60	%>
              <% sum61=	sum61	+	add61	%> <% sum62=	sum62	+	add62	%> <% sum63=	sum63	+	add63	%> <% sum64=	sum64	+	add64	%>
-                                      
+
+
+            <% cph1	 = itbMetrics.A_CPH1	 %>	<% cph17	 = itbMetrics.A_CPH17	 %>
+            <% cph2	 = itbMetrics.A_CPH2	 %>	<% cph18	 = itbMetrics.A_CPH18	 %>
+            <% cph3	 = itbMetrics.A_CPH3	 %>	<% cph19	 = itbMetrics.A_CPH19	 %>
+            <% cph4	 = itbMetrics.A_CPH4	 %>	<% cph20	 = itbMetrics.A_CPH20	 %>
+            <% cph5	 = itbMetrics.A_CPH5	 %>	<% cph21	 = itbMetrics.A_CPH21	 %>
+            <% cph6	 = itbMetrics.A_CPH6	 %>	<% cph22	 = itbMetrics.A_CPH22	 %>
+            <% cph7	 = itbMetrics.A_CPH7	 %>	<% cph23	 = itbMetrics.A_CPH23	 %>
+            <% cph8	 = itbMetrics.A_CPH8	 %>	<% cph24	 = itbMetrics.A_CPH24	 %>
+            <% cph9	 = itbMetrics.A_CPH9	 %>	<% cph25	 = itbMetrics.A_CPH25	 %>
+            <% cph10	 = itbMetrics.A_CPH10	 %>	<% cph26	 = itbMetrics.A_CPH26	 %>
+            <% cph11	 = itbMetrics.A_CPH11	 %>	<% cph27	 = itbMetrics.A_CPH27	 %>
+            <% cph12	 = itbMetrics.A_CPH12	 %>	<% cph28	 = itbMetrics.A_CPH28	 %>
+            <% cph13	 = itbMetrics.A_CPH13	 %>	<% cph29	 = itbMetrics.A_CPH29	 %>
+            <% cph14	 = itbMetrics.A_CPH14	 %>	<% cph30	 = itbMetrics.A_CPH30	 %>
+            <% cph15	 = itbMetrics.A_CPH15	 %>	<% cph31	 = itbMetrics.A_CPH31	 %>
+            <% cph16	 = itbMetrics.A_CPH16	 %>	<% cph32	 = itbMetrics.A_CPH32	 %>
+
+           
+
+            <%  acu1  = itbMetrics.accuracy1 %>
+            <%  acu8  = itbMetrics.accuracy8 %>
+            <%  acu20  = itbMetrics.accuracy20 %>
+            <%  acu24 = itbMetrics.accuracy24 %>
+            <%  acu29  = itbMetrics.accuracy29 %>
+            <%  acu30  = itbMetrics.accuracy30 %>
+            <%  acu31  = itbMetrics.accuracy31 %>
+            <%  acu32  = itbMetrics.accuracy32 %>
+            <% callouts1 = itbMetrics.couts1 %>
+            
           <% }  %>
-
         <% }) %>
-
+          
         <% var AVol1= (sum1/30).toFixed(2) %> <% var AVol2 = (sum3/30).toFixed(2) %> <% var AVol3 = (sum5/30).toFixed(2) %> <% var AVol4 = (sum7/30).toFixed(2) %> <% var AVol5 = (sum9/30).toFixed(2) %> <% var AVol6 = (sum11/30).toFixed(2) %> <% var AVol7=(sum13/30).toFixed(2) %> <% var AVol8=(sum15/30).toFixed(2) %> <% var AVol9=(sum17/30).toFixed(2) %> <% var AVol10=(sum19/30).toFixed(2) %>
         <% var AVol11=(sum21/30).toFixed(2) %> <% var AVol12=(sum23/30).toFixed(2) %> <% var AVol13=(sum25/30).toFixed(2) %> <% var AVol14=(sum27/30).toFixed(2) %> <% var AVol15=(sum29/30).toFixed(2) %> <% var AVol16=(sum31/30).toFixed(2) %> <% var AVol17=(sum33/30).toFixed(2) %> <% var AVol18=(sum35/30).toFixed(2) %> <% var AVol19=(sum37/30).toFixed(2) %> <% var AVol20=(sum39/30).toFixed(2) %>
         <% var AVol21=(sum41/30).toFixed(2) %> <% var AVol22=(sum43/30).toFixed(2) %> <% var AVol23=(sum45/30).toFixed(2) %> <% var AVol24=(sum47/30).toFixed(2) %> <% var AVol25=(sum49/30).toFixed(2) %> <% var AVol26=(sum51/30).toFixed(2) %> <% var AVol27=(sum53/30).toFixed(2) %> <% var AVol28=(sum55/30).toFixed(2) %> <% var AVol29=(sum57/30).toFixed(2) %> <% var AVol30=(sum59/30).toFixed(2) %>
         <% var AVol31=(sum61/30).toFixed(2) %> <% var AVol32=(sum63/30).toFixed(2) %>
 
+        
                       
         <% Ahc1 = 3.08 ; Ahc2= 0.42; Ahc3 =1.32 ; Ahc4 =0.1 ; Ahc5 =0.66 ; Ahc6 =0.26 ; Ahc7 =0.32; Ahc8 =10.95 ; Ahc9 =1.2 ; Ahc10 =2.85 ; Ahc11 = 2.23 ; Ahc12 =null ; %>  
         <% Ahc13 = 0.56 ; Ahc14= 0.06 ; Ahc15 = 0.82 ; Ahc16 = 0.21 ; Ahc17 = 1.51 ; Ahc18 =0.8 ; Ahc19 = 0.71 ; Ahc20 = 2.98 ; Ahc21 = 0.75 ; Ahc22 =0.44 ; Ahc23 =1.79 ; Ahc24 =0.04 ; %>
         <% Ahc25 = 0.01 ; Ahc26= 0.01 ; Ahc27 =0.01 ; Ahc28 =0.01 ; Ahc29 = 1.5  ; Ahc30 =0.05 ; Ahc31 = 0; Ahc32 =0.96 ; %>
 
 
-        <% var AProd1=(sum1/sum2/8).toFixed(2) %> <% var AProd2=(sum3/sum4/8).toFixed(2) %> <% var AProd3=(sum5/sum6/8).toFixed(2) %> <% var AProd4=(sum7/sum8/8).toFixed(2) %> <% var AProd5=(sum9/sum10/8).toFixed(2) %> <% var AProd6=(sum11/sum12/8).toFixed(2) %> <% var AProd7=(sum13/sum14/8).toFixed(2) %> <% var AProd8=(sum15/sum16/8).toFixed(2) %> <% var AProd9=(sum17/sum18/8).toFixed(2) %> <% var AProd10=(sum19/sum20/8).toFixed(2) %>
-        <% var AProd11=(sum21/sum22/8).toFixed(2) %> <% var AProd12=(sum23/sum24/8).toFixed(2) %> <% var AProd13=(sum25/sum26/8).toFixed(2) %> <% var AProd14=(sum27/sum28/8).toFixed(2) %> <% var AProd15=(sum29/sum30/8).toFixed(2) %> <% var AProd16=(sum31/sum32/8).toFixed(2) %> <% var AProd17=(sum33/sum34/8).toFixed(2) %> <% var AProd18=(sum35/sum36/8).toFixed(2) %> <% var AProd19=(sum37/sum38/8).toFixed(2) %> <% var AProd20=(sum39/sum40/8).toFixed(2) %>
-        <% var AProd21=(sum41/sum42/8).toFixed(2) %> <% var AProd22=(sum43/sum44/8).toFixed(2) %> <% var AProd23=(sum45/sum46/8).toFixed(2) %> <% var AProd24=(sum47/sum48/8).toFixed(2) %> <% var AProd25=(sum49/sum50/8).toFixed(2) %> <% var AProd26=(sum51/sum52/8).toFixed(2) %> <% var AProd27=(sum53/sum54/8).toFixed(2) %> <% var AProd28=(sum55/sum56/8).toFixed(2) %> <% var AProd29=(sum57/sum58/8).toFixed(2) %> <% var AProd30=(sum59/sum60/8).toFixed(2) %>
-        <% var AProd31=(sum61/sum62/8).toFixed(2) %> <% var AProd32=(sum63/sum64/8).toFixed(2) %>
+        <% var AProd1=(sum1/sum2/8).toFixed(2) %> <% var AProd2=(sum3/sum4/8).toFixed(2) %> <% var AProd3=(sum5/sum6/8).toFixed(2) %> <% var AProd4=(sum7/sum8/8).toFixed(2) %> 
+        <% var AProd5=(sum9/sum10/8).toFixed(2) %> <% var AProd6=(sum11/sum12/8).toFixed(2) %> <% var AProd7=(sum13/sum14/8).toFixed(2) %>
+         <% var AProd8=(sum15/sum16/8).toFixed(2) %> 
+        <% var AProd9=(sum17/sum18/8).toFixed(2) %> <% var AProd10=(sum19/sum20/8).toFixed(2) %>
+        <% var AProd11=(sum21/sum22/8).toFixed(2) %> <% var AProd12=(sum23/sum24/8).toFixed(2) %> <% var AProd13=(sum25/sum26/8).toFixed(2) %>
+        <% var AProd14=(sum27/sum28/8).toFixed(2) %> 
+        <% var AProd15=(sum29/sum30/8).toFixed(2) %> <% var AProd16=(sum31/sum32/8).toFixed(2) %> <% var AProd17=(sum33/sum34/8).toFixed(2) %> 
+        <% var AProd18=(sum35/sum36/8).toFixed(2) %>
+        <% var AProd19=(sum37/sum38/8).toFixed(2) %> <% var AProd20=(sum39/sum40/8).toFixed(2) %>
+        <% var AProd21=(sum41/sum42/8).toFixed(2) %> <% var AProd22=(sum43/sum44/8).toFixed(2) %>
+         <% var AProd23=(sum45/sum46/8).toFixed(2) %>
+        <% var AProd24=(sum47/sum48/8).toFixed(2) %> <% var AProd25=(sum49/sum50/8).toFixed(2) %> <% var AProd26=(sum51/sum52/8).toFixed(2) %>
+        <% var AProd27=(sum53/sum54/8).toFixed(2) %> <% var AProd28=(sum55/sum56/8).toFixed(2) %> <% var AProd29=(sum57/sum58/8).toFixed(2) %>
+        <% var AProd30=(sum59/sum60/8).toFixed(2) %> <% var AProd31=(sum61/sum62/8).toFixed(2) %> <% var AProd32=(sum63/sum64/8).toFixed(2) %>
 
 
 
@@ -240,9 +304,14 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
         <% var Prod_variance32 = (((AProd32 - AVol32)/AVol32)*100).toFixed() %>
 
  
+
+
+           
+
+
         <!-- HTML Code  -->
 
-        <h2 class="ui basic big green label mt-5  mb-5 "> ITB September ,  2019: </i></h2> <a href="/">Go Home</a>
+       <center> <h2 class="ui basic big green label mt-5  mb-5 "> ITB September , 2019: </i></h2> <a href="/"> Go Home </a> </center>
         <div class="table-responsive ">
           <table class="ui celled  striped table table-hover table-sm  " id="myTable">
             <thead>
@@ -250,22 +319,18 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                 <th>
                  
                 </th>
-                <th class="ui center aligned header" colspan="3">Planned  </th>
-                <th class="ui center aligned header" colspan="3">Actual </th>
-                <th class="ui center aligned header" colspan="3">Variance </th>
-                <th class="ui center aligned header" colspan="1">Accuracy  </th>
-                <th class="ui center aligned header" colspan="2">CPH  </th>
-                <th class="ui center aligned header" colspan="2">OPEX  </th>
-                <th class="ui center aligned header" colspan="1">OPEX Variance</th>
-                <th class="ui center aligned header" colspan="2">CPU</th>
-                <th class="ui center aligned header" colspan="1">CPU Variance</th>
-
-
-
-          
+                <th class="ui center aligned header" colspan="3">Planned </th>
+                <th class="ui center aligned header" colspan="3">Actual</th>
+                <th class="ui center aligned header" colspan="3">Variance</th>
+                <th class="ui center aligned header" colspan="1">Accuracy</th>
+                <th class="ui center aligned header" colspan="2">CPH</th>
+                <th class="ui center aligned header" colspan="3">OPEX  </th>
+                <th class="ui center aligned header" colspan="3">CPU</th>
+                <th class="ui center aligned header" colspan="1">Call Outs</th>
+                
               </tr>
               <tr>
-                <th class="ui center aligned ">  Metrics Title</th>
+                <th class="ui center aligned ">Metrics Title</th>
                   <th>Volume</th>
                   <th>Head Count</th>
                   <th>Productivity</th>
@@ -280,11 +345,11 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                   <th>Planned</th>
                   <th>Actual</th>
                   <th>Planned</th>
-                  <th>   </th>
+                  <th>Variance </th>
                   <th>Actual</th>
                   <th>Planned</th>
-               
-                  <th>   </th>
+                  <th>Variance   </th>
+                  <th>Reasons </th>
                   
 
               </tr>
@@ -350,12 +415,45 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                         <%= Prod_variance1 %> %
                       </td>
                   <% } %>
-
                   
-    
-                </tr>
+                  <td><%= acu1 %></td>  
+                 <td> <%= cph1	  %></td>  
+                 <td><%= P_CPH1  %>  </td>     
+                
+                
+                 <!--  opex  -->
+                <% A_Opex1= (cph1*Ahc1).toFixed(2)  %>
+                <% P_Opex1 = (P_CPH1*phc1).toFixed(2) %>
+                <% Opex_Variance1 = (((A_Opex1-P_Opex1)/A_Opex1)*100).toFixed() %>
+                 <td><%= A_Opex1 %></td> 
+                 <td><%= P_Opex1  %> </td>  
+                 <% if( Opex_Variance1 >= -9  &&  Opex_Variance1 <= 9 ) {   %>
+                  <td>
+                    <%= Opex_Variance1 %> %
+                  </td>
+                <%  } else if( Opex_Variance1 > 10 ) {  %>
+                  <td  class="positive"   >
+                    <%= Opex_Variance1 %> %
+                  </td>
+                  <%  } else {  %>
+                    <td class="negative"  >
+                      <%= Opex_Variance1 %> %
+                    </td>
+                <% } %>
 
+                 <!-- CPU Calculations -->
+                <% A_CPU1 = A_Opex1/AVol1	%>
+                <% P_CPU1	 = P_Opex1/pv1	 %>
+                <% CPU_Variance1	 = (((A_CPU1-P_CPU1	)/A_CPU1)*100).toFixed()  %>
+                <td><%= (A_CPU1).toFixed(2) %></td>
+                <td><%= (P_CPU1).toFixed(2) %></td>
+                <td><%= CPU_Variance1 %></td>
 
+                <!-- call outs -->
+                <td><%= callouts1 %></td>
+
+               
+       </tr>
 
                 <!-- Best Sellers -->
                 <tr id="demo1" class="collapse "> 
@@ -369,6 +467,7 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                   <td>  <%=  AProd2 %></td> 
                   <!--  Variance  -->
                    <!-- Volume variance -->
+                   
          <% if( vol_variance2 >= -9  &&  vol_variance2 <= 9 ) {   %>
           <td   >
             <%= vol_variance2 %> %
@@ -412,7 +511,41 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
               <%= Prod_variance2 %> %
             </td>
         <% } %>
-                </tr>
+        <td></td>
+       
+
+       
+        <td> <%= cph2	  %></td>  
+        <td><%= P_CPH2  %>  </td>     
+          <!--  opex  -->
+        <% A_Opex2= (cph2*Ahc2).toFixed(2)  %> 
+        <% P_Opex2 = (P_CPH2*phc2).toFixed(2) %> 
+        <% Opex_Variance2 = (((A_Opex2-P_Opex2)/A_Opex2)*100).toFixed() %> 
+          <td><%= A_Opex2 %></td>   
+          <td><%= P_Opex2  %> </td>   
+          <% if( Opex_Variance2 >= -9  &&  Opex_Variance2 <= 9 ) {   %> 
+          <td> 
+            <%= Opex_Variance2 %>%
+          </td>
+          <%  } else if( Opex_Variance2 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= Opex_Variance2 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= Opex_Variance2 %> %
+              </td>
+          <% } %>
+           <!-- CPU Calculations -->
+             <% A_CPU2 = A_Opex2/AVol2	%>
+           <% P_CPU2	 = P_Opex2/pv2	 %>
+           <% CPU_Variance2	 = (((A_CPU2-P_CPU2	)/A_CPU2)*100).toFixed()  %>
+           <td><%= (A_CPU2).toFixed(2) %></td>
+           <td><%= (P_CPU2).toFixed(2) %></td>
+           <td><%= CPU_Variance2 %></td>
+
+          
+        </tr>
 
                 <!-- Pre-Orders -->
                 <tr id="demo1" class="collapse">
@@ -424,6 +557,7 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                   <td> <%= AVol3  %> </td> 
                     <td><%=  Ahc3  %> </td>
                     <td>  <%=  AProd3 %></td>
+                    
                     <!--   Variance  -->
                     <% if( vol_variance3 >= -9  &&  vol_variance3 <= 9 ) {   %>
                       <td   >
@@ -438,20 +572,24 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                           <%= vol_variance3 %> %
                         </td>
                     <% } %>
+
                     
                     <!-- HCount  variance -->
                     <% if( HCount_variance3 >= -9  &&  HCount_variance3 <= 9 ) {   %>
-                      <td   >
-                        <%= HCount_variance3 %> %
+                      <td>
+                        <%= HCount_variance3 %>%
                       </td>
+
                     <%  } else  if( HCount_variance3 > 10 ) {  %>
-                      <td  class="positive"   >
+                      <td  class="positive">
                         <%= HCount_variance3 %> %
                       </td>
+
                       <%  } else {  %>
-                        <td class="negative"  >
+                        <td class="negative">
                           <%= HCount_variance3 %> %
                         </td>
+
                     <% } %>
               
                     <!-- Prod Variance -->
@@ -468,6 +606,38 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                           <%= Prod_variance3 %> %
                         </td>
                     <% } %>
+                    <td></td>
+                    <td> <%= cph3	  %>    </td>  
+                    <td><%= P_CPH3  %>  </td>  
+
+                    <!--  opex  -->
+                <% A_Opex3= (cph3*Ahc3).toFixed(2)  %>
+                <% P_Opex3 = (P_CPH3*phc3).toFixed(2) %>
+                <% Opex_Variance3 = (((A_Opex3-P_Opex3)/A_Opex3)*100).toFixed() %>
+                 <td><%= A_Opex3 %></td> 
+                 <td><%= P_Opex3  %> </td>  
+                 <% if( Opex_Variance3 >= -9  &&  Opex_Variance3 <= 9 ) {   %>
+                  <td>
+                    <%= Opex_Variance3 %> %
+                  </td>
+                <%  } else if( Opex_Variance3 > 10 ) {  %>
+                  <td  class="positive"   >
+                    <%= Opex_Variance3 %> %
+                  </td>
+                  <%  } else {  %>
+                    <td class="negative"  >
+                      <%= Opex_Variance3 %> %
+                    </td>
+                <% } %>     
+
+                 <!-- CPU Calculations -->
+             <% A_CPU3 = A_Opex3/AVol3	%>
+            <% P_CPU3	 = P_Opex3/pv3	 %>
+            <% CPU_Variance3	 = (((A_CPU3-P_CPU3	)/A_CPU3)*100).toFixed()  %>
+            <td><%= (A_CPU3).toFixed(2) %></td>
+            <td><%= (P_CPU3).toFixed(2) %></td>
+            <td><%= CPU_Variance3 %></td>
+
                 </tr>
 
 
@@ -528,8 +698,37 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                           <%= Prod_variance4 %> %
                         </td>
                     <% } %>
-          
-                </tr>
+                    <td></td>
+                  
+                    <td> <%= cph4	  %>    </td>  
+                    <td><%= P_CPH4  %>  </td> 
+                     <!--  opex  -->
+                <% A_Opex4= (cph4*Ahc4).toFixed(2)  %>
+                <% P_Opex4 = (P_CPH4*phc4).toFixed(2) %>
+                <% Opex_Variance4 = (((A_Opex4-P_Opex4)/A_Opex4)*100).toFixed() %>
+                 <td><%= A_Opex4 %></td> 
+                 <td><%= P_Opex4  %> </td>  
+                 <% if( Opex_Variance4 >= -9  &&  Opex_Variance4 <= 9 ) {   %>
+                  <td>
+                    <%= Opex_Variance4 %> %
+                  </td>
+                <%  } else if( Opex_Variance4 > 10 ) {  %>
+                  <td  class="positive"   >
+                    <%= Opex_Variance4 %> %
+                  </td>
+                  <%  } else {  %>
+                    <td class="negative"  >
+                      <%= Opex_Variance4 %> %
+                    </td>
+                <% } %>          
+                  <!-- CPU Calculations -->
+                <% A_CPU4 = A_Opex4/AVol4	%>
+                <% P_CPU4	 = P_Opex4/pv4	 %>
+                <% CPU_Variance4	 = (((A_CPU4-P_CPU4	)/A_CPU4)*100).toFixed()  %>
+                <td><%= (A_CPU4).toFixed(2) %></td>
+                <td><%= (P_CPU4).toFixed(2) %></td>
+                <td><%= CPU_Variance4 %></td>
+                  </tr>
 
 
 
@@ -589,7 +788,37 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                           <%= Prod_variance5 %> %
                         </td>
                     <% } %>
-                          
+
+                    <td></td>
+                    <td> <%= cph5	  %>    </td>  
+                    <td><%= P_CPH5  %>  </td>    
+                    <!--  opex  -->
+                    <% A_Opex5= (cph5*Ahc5).toFixed(2)  %>
+                    <% P_Opex5 = (P_CPH5*phc5).toFixed(2) %>
+                    <% Opex_Variance5 = (((A_Opex5-P_Opex5)/A_Opex5)*100).toFixed() %>
+                    <td><%= A_Opex5 %></td> 
+                    <td><%= P_Opex5  %> </td>  
+                    <% if( Opex_Variance5 >= -9  &&  Opex_Variance5 <= 9 ) {   %>
+                      <td>
+                        <%= Opex_Variance5 %> %
+                      </td>
+                    <%  } else if( Opex_Variance5 > 10 ) {  %>
+                      <td  class="positive"   >
+                        <%= Opex_Variance5 %> %
+                      </td>
+                      <%  } else {  %>
+                        <td class="negative"  >
+                          <%= Opex_Variance5 %> %
+                        </td>
+                    <% } %>        
+                     <!-- CPU Calculations -->
+                <% A_CPU5 = A_Opex5/AVol5	%>
+                <% P_CPU5	 = P_Opex5/pv5	 %>
+                <% CPU_Variance5	 = (((A_CPU5-P_CPU5	)/A_CPU5)*100).toFixed()  %>
+                <td><%= (A_CPU5).toFixed(2) %></td>
+                <td><%= (P_CPU5).toFixed(2) %></td>
+                <td><%= CPU_Variance5 %></td>
+                            
                 </tr>
 
 
@@ -652,6 +881,39 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                         </td>
                     <% } %>
 
+                    <td></td>
+                    <td> <%= cph6	  %>    </td>  
+                    <td><%= P_CPH6  %>  </td>     
+                    <!--  opex  -->
+                    <% A_Opex6= (cph6*Ahc6).toFixed(2)  %>
+                    <% P_Opex6 = (P_CPH6*phc6).toFixed(2) %>
+                    <% Opex_Variance6 = (((A_Opex6-P_Opex6)/A_Opex6)*100).toFixed() %>
+                    <td><%= A_Opex6 %></td> 
+                    <td><%= P_Opex6  %> </td>  
+                    <% if( Opex_Variance6 >= -9  &&  Opex_Variance6 <= 9 ) {   %>
+                      <td>
+                        <%= Opex_Variance6 %> %
+                      </td>
+                    <%  } else if( Opex_Variance6 > 10 ) {  %>
+                      <td  class="positive"   >
+                        <%= Opex_Variance6 %> %
+                      </td>
+                      <%  } else {  %>
+                        <td class="negative"  >
+                          <%= Opex_Variance6 %> %
+                        </td>
+                    <% } %>      
+                    
+                      <!-- CPU Calculations -->
+                <% A_CPU6 = A_Opex6/AVol6	%>
+                <% P_CPU6	 = P_Opex6/pv6	 %>
+                <% CPU_Variance6	 = (((A_CPU6-P_CPU6	)/A_CPU6)*100).toFixed()  %>
+                <td><%= (A_CPU6).toFixed(2) %></td>
+                <td><%= (P_CPU6).toFixed(2) %></td>
+                <td><%= CPU_Variance6 %></td>
+                            
+                          
+
                 </tr>
 
 
@@ -712,6 +974,38 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                           <%= Prod_variance7 %> %
                         </td>
                     <% } %>
+
+                    <td></td>
+                    <td> <%= cph7	  %>    </td>  
+                    <td><%= P_CPH7  %>  </td>    
+                    <!--  opex  -->
+                    <% A_Opex7= (cph7*Ahc7).toFixed(2)  %>
+                    <% P_Opex7 = (P_CPH7*phc7).toFixed(2) %>
+                    <% Opex_Variance7 = (((A_Opex7-P_Opex7)/A_Opex7)*100).toFixed() %>
+                    <td><%= A_Opex7 %></td> 
+                    <td><%= P_Opex7  %> </td>  
+                    <% if( Opex_Variance7 >= -9  &&  Opex_Variance7 <= 9 ) {   %>
+                      <td>
+                        <%= Opex_Variance7 %> %
+                      </td>
+                    <%  } else if( Opex_Variance7 > 10 ) {  %>
+                      <td  class="positive"   >
+                        <%= Opex_Variance7 %> %
+                      </td>
+                      <%  } else {  %>
+                        <td class="negative"  >
+                          <%= Opex_Variance7 %> %
+                        </td>
+                    <% } %>       
+
+                     <!-- CPU Calculations -->
+                <% A_CPU7 = A_Opex7/AVol7	%>
+                <% P_CPU7	 = P_Opex7/pv7	 %>
+                <% CPU_Variance7	 = (((A_CPU7-P_CPU7	)/A_CPU7)*100).toFixed()  %>
+                <td><%= (A_CPU7).toFixed(2) %></td>
+                <td><%= (P_CPU7).toFixed(2) %></td>
+                <td><%= CPU_Variance7 %></td>
+
                </tr>
           
           
@@ -725,7 +1019,6 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                     <% julyProd8= pv8/phc8/30  %>
                     <td><%= julyProd8.toFixed(2) %></td>
                     <!-- Actual  -->
-                    
                     <td> <%= AVol8  %> </td> 
                     <td><%=  Ahc8  %> </td>
                     <td>  <%=  AProd8 %></td>
@@ -775,7 +1068,38 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                         </td>
                     <% } %>
                     
-                    
+                    <td><%= acu8 %></td>
+                    <td> <%= cph8	  %>    </td>  
+                    <td><%= P_CPH8  %>  </td>    
+                   <!--  opex  -->
+                   <% A_Opex8= (cph8*Ahc8).toFixed(2)  %>
+                   <% P_Opex8 = (P_CPH8*phc8).toFixed(2) %>
+                   <% Opex_Variance8 = (((A_Opex8-P_Opex8)/A_Opex8)*100).toFixed() %>
+                   <td><%= A_Opex8 %></td> 
+                   <td><%= P_Opex8  %> </td>  
+                   <% if( Opex_Variance8 >= -9  &&  Opex_Variance8 <= 9 ) {   %>
+                     <td>
+                       <%= Opex_Variance8 %> %
+                     </td>
+                   <%  } else if( Opex_Variance8 > 10 ) {  %>
+                     <td  class="positive"   >
+                       <%= Opex_Variance8 %> %
+                     </td>
+                     <%  } else {  %>
+                       <td class="negative"  >
+                         <%= Opex_Variance8 %> %
+                       </td>
+                   <% } %>  
+                   
+                    <!-- CPU Calculations -->
+                <% A_CPU8 = A_Opex8/AVol8	%>
+                <% P_CPU8	 = P_Opex8/pv8	 %>
+                <% CPU_Variance8	 = (((A_CPU8-P_CPU8	)/A_CPU8)*100).toFixed()  %>
+                <td><%= (A_CPU8).toFixed(2) %></td>
+                <td><%= (P_CPU8).toFixed(2) %></td>
+                <td><%= CPU_Variance8 %></td>
+
+
                   </tr>
                   
           
@@ -843,7 +1167,39 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                     <%= Prod_variance9 %> %
                   </td>
               <% } %>
-                     
+                      <td></td>
+                    <td> <%= cph9	  %>    </td>  
+                    <td><%= P_CPH9  %>  </td>    
+                    <!--  opex  -->
+                    <% A_Opex9= (cph9*Ahc9).toFixed(2)  %>
+                    <% P_Opex9 = (P_CPH9*phc9).toFixed(2) %>
+                    <% Opex_Variance9 = (((A_Opex9-P_Opex9)/A_Opex9)*100).toFixed() %>
+                    <td><%= A_Opex9 %></td> 
+                    <td><%= P_Opex9  %> </td>  
+                    <% if( Opex_Variance9 >= -9  &&  Opex_Variance9 <= 9 ) {   %>
+                      <td>
+                        <%= Opex_Variance9 %> %
+                      </td>
+                    <%  } else if( Opex_Variance9 > 10 ) {  %>
+                      <td  class="positive"   >
+                        <%= Opex_Variance9 %> %
+                      </td>
+                      <%  } else {  %>
+                        <td class="negative"  >
+                          <%= Opex_Variance9 %> %
+                        </td>
+                    <% } %>  
+
+                    <!-- CPU Calculations -->
+                    <% A_CPU9 = A_Opex9/AVol9	%>
+                    <% P_CPU9	 = P_Opex9/pv9	 %>
+                    <% CPU_Variance9	 = (((A_CPU9-P_CPU9	)/A_CPU9)*100).toFixed()  %>
+                    <td><%= (A_CPU9).toFixed(2) %></td>
+                    <td><%= (P_CPU9).toFixed(2) %></td>
+                    <td><%= CPU_Variance9 %></td>
+
+
+
                   </tr>
           
           
@@ -911,11 +1267,46 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                     <%= Prod_variance10 %> %
                   </td>
               <% } %>
+
+                    <td></td>
+                    <td> <%= cph10	  %>    </td>  
+                    <td><%= P_CPH10  %>  </td>   
+                     <!--  opex  -->
+                     <% A_Opex10= (cph10*Ahc10).toFixed(2)  %>
+                     <% P_Opex10 = (P_CPH10*phc10).toFixed(2) %>
+                     <% Opex_Variance10 = (((A_Opex10-P_Opex10)/A_Opex10)*100).toFixed() %>
+                     <td><%= A_Opex10 %></td> 
+                     <td><%= P_Opex10  %> </td>  
+                     <% if( Opex_Variance10 >= -9  &&  Opex_Variance10 <= 9 ) {   %>
+                       <td>
+                         <%= Opex_Variance10 %> %
+                       </td>
+                     <%  } else if( Opex_Variance10 > 10 ) {  %>
+                       <td  class="positive"   >
+                         <%= Opex_Variance10 %> %
+                       </td>
+                       <%  } else {  %>
+                         <td class="negative"  >
+                           <%= Opex_Variance10 %> %
+                         </td>
+                     <% } %> 
+                     
+                     
+                     <!-- CPU Calculations -->
+                    <% A_CPU10 = A_Opex10/AVol10	%>
+                    <% P_CPU10	 = P_Opex10/pv10	 %>
+                    <% CPU_Variance10	 = (((A_CPU10-P_CPU10	)/A_CPU10)*100).toFixed()  %>
+                    <td><%= (A_CPU10).toFixed(2) %></td>
+                    <td><%= (P_CPU10).toFixed(2) %></td>
+                    <td><%= CPU_Variance10 %></td>
+
+
                   </tr>
 
                   <tr id="demo010" class="collapse">
                       <th>English </th>
                       <td><%= pv11 %></td>
+
                       <td><%= phc11  %></td>
                       <% julyProd11= pv11/phc11/30  %>
                       <td><%= julyProd11.toFixed(2) %></td>
@@ -968,8 +1359,41 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                     <%= Prod_variance11 %> %
                   </td>
               <% } %>
-                    
-                  </tr>
+              <td></td>
+              <td> <%= cph11	  %>    </td>  
+              <td><%= P_CPH11  %>  </td>   
+               <!--  opex  -->
+               <% A_Opex11= (cph11*Ahc11).toFixed(2)  %>
+               <% P_Opex11 = (P_CPH11*phc11).toFixed(2) %>
+               <% Opex_Variance11 = (((A_Opex11-P_Opex11)/A_Opex11)*100).toFixed() %>
+               <td><%= A_Opex11 %></td> 
+               <td><%= P_Opex11  %> </td>  
+               <% if( Opex_Variance11 >= -9  &&  Opex_Variance11 <= 9 ) {   %>
+                 <td>
+                   <%= Opex_Variance11 %> %
+                 </td>
+               <%  } else if( Opex_Variance11 > 10 ) {  %>
+                 <td  class="positive"   >
+                   <%= Opex_Variance11 %> %
+                 </td>
+                 <%  } else {  %>
+                   <td class="negative"  >
+                     <%= Opex_Variance11 %> %
+                   </td>
+               <% } %>    
+                 
+                     <!-- CPU Calculations -->
+                     <% A_CPU11 = A_Opex11/AVol11	%>
+                     <% P_CPU11	 = P_Opex11/pv11	 %>
+                     <% CPU_Variance11	 = (((A_CPU11-P_CPU11	)/A_CPU11)*100).toFixed()  %>
+                     <td><%= (A_CPU11).toFixed(2) %></td>
+                     <td><%= (P_CPU11).toFixed(2) %></td>
+                     <td><%= CPU_Variance11 %></td>
+ 
+ 
+ 
+               
+          </tr>
 
                   <tr id="demo010" class="collapse">
                     <th>English (High-value titles to be considered by Ops)</th>
@@ -1026,7 +1450,37 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                     <%= Prod_variance12 %> %
                   </td>
               <% } %>
-                      
+              <td></td>
+              <td> <%= cph12	  %>    </td>  
+              <td><%= P_CPH12  %>  </td>   
+            <!--  opex  -->
+               <% A_Opex12= (cph12*Ahc12).toFixed(2)  %>
+               <% P_Opex12 = (P_CPH12*phc12).toFixed(2) %>
+               <% Opex_Variance12 = (((A_Opex12-P_Opex12)/A_Opex12)*100).toFixed() %>
+               <td><%= A_Opex12 %></td> 
+               <td><%= P_Opex12  %> </td>  
+               <% if( Opex_Variance12 >= -9  &&  Opex_Variance12 <= 9 ) {   %>
+                 <td>
+                   <%= Opex_Variance12 %> %
+                 </td>
+               <%  } else if( Opex_Variance12 > 10 ) {  %>
+                 <td  class="positive"   >
+                   <%= Opex_Variance12 %> %
+                 </td>
+                 <%  } else {  %>
+                   <td class="negative"  >
+                     <%= Opex_Variance12 %> %
+                   </td>
+               <% } %>    
+
+                <!-- CPU Calculations -->
+                <% A_CPU12 = A_Opex12/AVol12	%>
+                <% P_CPU12	 = P_Opex12/pv12	 %>
+                <% CPU_Variance12	 = (((A_CPU12-P_CPU12	)/A_CPU12)*100).toFixed()  %>
+                <td><%= (A_CPU12).toFixed(2) %></td>
+                <td><%= (P_CPU12).toFixed(2) %></td>
+                <td><%= CPU_Variance12 %></td>
+
                   </tr>
 
                   <tr id="demo010" class="collapse">
@@ -1085,6 +1539,39 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                     <%= Prod_variance13 %> %
                   </td>
               <% } %>
+              <td></td>
+              <td> <%= cph13	  %>    </td>  
+              <td><%= P_CPH13  %>  </td>   
+                 <!--  opex  -->
+                 <% A_Opex13= (cph13*Ahc13).toFixed(2)  %>
+                 <% P_Opex13 = (P_CPH13*phc13).toFixed(2) %>
+                 <% Opex_Variance13 = (((A_Opex13-P_Opex13)/A_Opex13)*100).toFixed() %>
+                 <td><%= A_Opex13 %></td> 
+                 <td><%= P_Opex13  %> </td>  
+                 <% if( Opex_Variance13 >= -9  &&  Opex_Variance13 <= 9 ) {   %>
+                   <td>
+                     <%= Opex_Variance13 %> %
+                   </td>
+                 <%  } else if( Opex_Variance13 > 10 ) {  %>
+                   <td  class="positive"   >
+                     <%= Opex_Variance13 %> %
+                   </td>
+                   <%  } else {  %>
+                     <td class="negative"  >
+                       <%= Opex_Variance13 %> %
+                     </td>
+                 <% } %>   
+                 
+                 
+                  <!-- CPU Calculations -->
+                <% A_CPU13 = A_Opex13/AVol13	%>
+                <% P_CPU13	 = P_Opex13/pv13	 %>
+                <% CPU_Variance13	 = (((A_CPU13-P_CPU13	)/A_CPU13)*100).toFixed()  %>
+                <td><%= (A_CPU13).toFixed(2) %></td>
+                <td><%= (P_CPU13).toFixed(2) %></td>
+                <td><%= CPU_Variance13%></td>
+
+
                   </tr>
 
 
@@ -1144,7 +1631,38 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                     <%= Prod_variance14 %> %
                   </td>
               <% } %>
-                      
+              <td></td>
+              <td> <%= cph14	  %>    </td>  
+              <td><%= P_CPH14  %>  </td>   
+             <!--  opex  -->
+             <% A_Opex14= (cph14*Ahc14).toFixed(2)  %>
+             <% P_Opex14 = (P_CPH14*phc14).toFixed(2) %>
+             <% Opex_Variance14 = (((A_Opex14-P_Opex14)/A_Opex14)*100).toFixed() %>
+             <td><%= A_Opex14 %></td> 
+             <td><%= P_Opex14  %> </td>  
+             <% if( Opex_Variance14 >= -9  &&  Opex_Variance14 <= 9 ) {   %>
+               <td>
+                 <%= Opex_Variance14 %> %
+               </td>
+             <%  } else if( Opex_Variance14 > 10 ) {  %>
+               <td  class="positive"   >
+                 <%= Opex_Variance14 %> %
+               </td>
+               <%  } else {  %>
+                 <td class="negative"  >
+                   <%= Opex_Variance14 %> %
+                 </td>
+             <% } %>     
+
+              <!-- CPU Calculations -->
+              <% A_CPU14 = A_Opex14/AVol14	%>
+              <% P_CPU14	 = P_Opex14/pv14	 %>
+              <% CPU_Variance14	 = (((A_CPU14-P_CPU14	)/A_CPU14)*100).toFixed()  %>
+              <td><%= (A_CPU14).toFixed(2) %></td>
+              <td><%= (P_CPU14).toFixed(2) %></td>
+              <td><%= CPU_Variance14 %></td>
+
+
                   </tr>
                  
       
@@ -1214,6 +1732,37 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                         <%= Prod_variance15 %> %
                       </td>
                   <% } %>
+                  <td></td>
+                  <td> <%= cph15	  %>    </td>  
+                  <td><%= P_CPH15  %>  </td>  
+                  <!--  opex  -->
+                  <% A_Opex15= (cph15*Ahc15).toFixed(2)  %>
+                  <% P_Opex15 = (P_CPH15*phc15).toFixed(2) %>
+                  <% Opex_Variance15 = (((A_Opex15-P_Opex15)/A_Opex15)*100).toFixed() %>
+                  <td><%= A_Opex15 %></td> 
+                  <td><%= P_Opex15  %> </td>  
+                  <% if( Opex_Variance15 >= -9  &&  Opex_Variance15 <= 9 ) {   %>
+                    <td>
+                      <%= Opex_Variance15 %> %
+                    </td>
+                  <%  } else if( Opex_Variance15 > 10 ) {  %>
+                    <td  class="positive"   >
+                      <%= Opex_Variance15 %> %
+                    </td>
+                    <%  } else {  %>
+                      <td class="negative"  >
+                        <%= Opex_Variance15 %> %
+                      </td>
+                  <% } %>    
+                  
+                    <!-- CPU Calculations -->
+                    <% A_CPU15 = A_Opex15/AVol15	%>
+                    <% P_CPU15 = P_Opex15/pv15	 %>
+                    <% CPU_Variance15	= (((A_CPU15-P_CPU15)/A_CPU15)*100).toFixed()  %>
+                    <td><%= (A_CPU15).toFixed(2) %></td>
+                    <td><%= (P_CPU15).toFixed(2) %></td>
+                    <td><%= CPU_Variance15 %></td>
+
             </tr>
           
             <tr id="demo03" class="collapse"> 
@@ -1278,11 +1827,43 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                   </td>
               <% } %>
 
+              <td></td>
+
+              <td> <%= cph16 %> </td>
+              <td><%= P_CPH16  %>  </td>
+              
+              <!--  opex  -->
+              <% A_Opex16= (cph16*Ahc16).toFixed(2)  %>
+              <% P_Opex16 = (P_CPH16*phc16).toFixed(2) %>
+              <% Opex_Variance16 = (((A_Opex16-P_Opex16)/A_Opex16)*100).toFixed() %>
+              <td><%= A_Opex16 %></td> 
+              <td><%= P_Opex16  %> </td>  
+              <% if( Opex_Variance16 >= -9  &&  Opex_Variance16 <= 9 ) {   %>
+                <td>
+                  <%= Opex_Variance16 %> %
+                </td>
+              <%  } else if( Opex_Variance16 > 10 ) {  %>
+                <td  class="positive">
+                  <%= Opex_Variance16 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative">
+                    <%= Opex_Variance16 %> %
+                  </td>
+              <% } %>  
+
+              <!-- CPU Calculations -->
+              <% A_CPU16 = A_Opex16/AVol16	%>
+              <% P_CPU16 = P_Opex16/pv16	 %>
+              <% CPU_Variance16	= (((A_CPU16-P_CPU16)/A_CPU16)*100).toFixed()  %>
+              <td><%= (A_CPU16).toFixed(2) %></td>
+              <td><%= (P_CPU16).toFixed(2) %></td>
+              <td><%= CPU_Variance16 %></td>
+
+              
+       </tr>
 
 
-               </tr>
-          
-          
           <tr id="demo03" class="collapse"> 
             <td
               data-toggle="collapse"
@@ -1290,6 +1871,7 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
               data-parent="#myTable" class="ui  header subhead grey"
             >
             <i class="small dropdown icon"></i>
+            
             Publisher Response
             </td>
             <td><%= pv17 %></td>  
@@ -1307,7 +1889,7 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                   <%= vol_variance17 %> % 
                 </td>
               <%  }else  if( vol_variance17 > 10 ) {  %>
-                <td  class="positive"   >
+                <td  class="positive">
                   <%= vol_variance17 %> %
                 </td>
                 <%  } else {  %>
@@ -1345,7 +1927,37 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                     <%= Prod_variance17 %> %
                   </td>
               <% } %> 
-        
+              <td></td>
+              <td> <%= cph17	  %>    </td>  
+              <td><%= P_CPH17  %>  </td>   
+              <!--  opex  -->
+              <% A_Opex17= (cph17*Ahc17).toFixed(2)  %>
+              <% P_Opex17 = (P_CPH17*phc17).toFixed(2) %>
+              <% Opex_Variance17 = (((A_Opex17-P_Opex17)/A_Opex17)*100).toFixed() %>
+              <td><%= A_Opex17 %></td> 
+              <td><%= P_Opex17  %> </td>  
+              <% if( Opex_Variance17 >= -9  &&  Opex_Variance17 <= 9 ) {   %>
+                <td>
+                  <%= Opex_Variance17 %> %
+                </td>
+              <%  } else if( Opex_Variance17 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= Opex_Variance17 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= Opex_Variance17 %> %
+                  </td>
+              <% } %> 
+
+              <!-- CPU Calculations -->
+              <% A_CPU17 = A_Opex17/AVol17	%>
+              <% P_CPU17 = P_Opex17/pv17	 %>
+              <% CPU_Variance17	= (((A_CPU17-P_CPU17)/A_CPU17)*100).toFixed()  %>
+              <td><%= (A_CPU17).toFixed(2) %></td>
+              <td><%= (P_CPU17).toFixed(2) %></td>
+              <td><%= CPU_Variance17 %></td>
+
          </tr>
             <tr id="demo011" class="collapse">
             <td class="hiddenRow"><div>Submitted Corrections</div></td>
@@ -1402,7 +2014,36 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                 <%= Prod_variance18 %> %
               </td>
           <% } %>
-
+          <td></td>
+          <td> <%= cph18	  %>    </td>  
+          <td><%= P_CPH18  %>  </td>   
+          <!--  opex  -->
+          <% A_Opex18= (cph18*Ahc18).toFixed(2)  %>
+          <% P_Opex18 = (P_CPH18*phc18).toFixed(2) %>
+          <% Opex_Variance18 = (((A_Opex18-P_Opex18)/A_Opex18)*100).toFixed() %>
+          <td><%= A_Opex18 %></td> 
+          <td><%= P_Opex18  %> </td>  
+          <% if( Opex_Variance18 >= -9  &&  Opex_Variance18 <= 9 ) {   %>
+            <td>
+              <%= Opex_Variance18 %> %
+            </td>
+          <%  } else if( Opex_Variance18 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= Opex_Variance18 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= Opex_Variance18 %> %
+              </td>
+          <% } %> 
+          
+           <!-- CPU Calculations -->
+           <% A_CPU18 = A_Opex18/AVol18	%>
+           <% P_CPU18 = P_Opex18/pv18	 %>
+           <% CPU_Variance18	= (((A_CPU18-P_CPU18)/A_CPU18)*100).toFixed()  %>
+           <td><%= (A_CPU18).toFixed(2) %></td>
+           <td><%= (P_CPU18).toFixed(2) %></td>
+           <td><%= CPU_Variance18 %></td>
          </tr>
 
          <tr id="demo011" class="collapse">
@@ -1460,7 +2101,37 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                     <%= Prod_variance19 %> %
                   </td>
               <% } %>
-              
+              <td></td>
+            <td> <%= cph19	  %>    </td>  
+            <td><%= P_CPH19  %>  </td>   
+             <!--  opex  -->
+          <% A_Opex19= (cph19*Ahc19).toFixed(2)  %>
+          <% P_Opex19 = (P_CPH19*phc19).toFixed(2) %>
+          <% Opex_Variance19 = (((A_Opex19-P_Opex19)/A_Opex19)*100).toFixed() %>
+          <td><%= A_Opex19 %></td> 
+          <td><%= P_Opex19  %> </td>  
+          <% if( Opex_Variance19 >= -9  &&  Opex_Variance19 <= 9 ) {   %>
+            <td>
+              <%= Opex_Variance19 %> %
+            </td>
+          <%  } else if( Opex_Variance19 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= Opex_Variance19 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= Opex_Variance19 %> %
+              </td>
+          <% } %>
+          
+          
+           <!-- CPU Calculations -->
+           <% A_CPU19 = A_Opex19/AVol19	%>
+           <% P_CPU19 = P_Opex19/pv19	 %>
+           <% CPU_Variance19	= (((A_CPU19-P_CPU19)/A_CPU19)*100).toFixed()  %>
+           <td><%= (A_CPU19).toFixed(2) %></td>
+           <td><%= (P_CPU19).toFixed(2) %></td>
+           <td><%= CPU_Variance19 %></td>
           </tr>
           
            
@@ -1527,9 +2198,39 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                   <% } %>
 
                   <!-- Accuracy in (%) -->
-                  <td></td>
+                  <td><%= acu20 %></td>
+                <td> <%= cph20	  %>    </td>  
+                <td><%= P_CPH20  %>  </td>   
                             
-               </tr>
+               <!--  opex  -->
+          <% A_Opex20= (cph20*Ahc20).toFixed(2)  %>
+          <% P_Opex20 = (P_CPH20*phc20).toFixed(2) %>
+          <% Opex_Variance20 = (((A_Opex20-P_Opex20)/A_Opex20)*100).toFixed() %>
+          <td><%= A_Opex20 %></td> 
+          <td><%= P_Opex20  %> </td>  
+          <% if( Opex_Variance20 >= -9  &&  Opex_Variance20 <= 9 ) {   %>
+            <td>
+              <%= Opex_Variance20 %> %
+            </td>
+          <%  } else if( Opex_Variance20 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= Opex_Variance20 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= Opex_Variance20 %> %
+              </td>
+          <% } %>  
+
+              <!-- CPU Calculations -->
+              <% A_CPU20 = A_Opex20/AVol20	%>
+              <% P_CPU20 = P_Opex20/pv20	 %>
+              <% CPU_Variance20	= (((A_CPU20-P_CPU20)/A_CPU20)*100).toFixed()  %>
+              <td><%= (A_CPU20).toFixed(2) %></td>
+              <td><%= (P_CPU20).toFixed(2) %></td>
+              <td><%= CPU_Variance20 %></td>
+
+
           
               </tr>
 
@@ -1591,7 +2292,36 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 
                  <!--   Variance  -->
             
-                
+                 <td></td>
+                 <td> <%= cph21	  %>    </td>  
+                 <td><%= P_CPH21  %>  </td>   
+                <!--  opex  -->
+          <% A_Opex21= (cph21*Ahc21).toFixed(2)  %>
+          <% P_Opex21 = (P_CPH21*phc21).toFixed(2) %>
+          <% Opex_Variance21 = (((A_Opex21-P_Opex21)/A_Opex21)*100).toFixed() %>
+          <td><%= A_Opex21 %></td> 
+          <td><%= P_Opex21  %> </td>  
+          <% if( Opex_Variance21 >= -9  &&  Opex_Variance21 <= 9 ) {   %>
+            <td>
+              <%= Opex_Variance21 %> %
+            </td>
+          <%  } else if( Opex_Variance21 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= Opex_Variance21 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= Opex_Variance21 %> %
+              </td>
+          <% } %>  
+
+           <!-- CPU Calculations -->
+           <% A_CPU21 = A_Opex21/AVol21	%>
+           <% P_CPU21 = P_Opex21/pv21	 %>
+           <% CPU_Variance21	= (((A_CPU21-P_CPU21)/A_CPU21)*100).toFixed()  %>
+           <td><%= (A_CPU21).toFixed(2) %></td>
+           <td><%= (P_CPU21).toFixed(2) %></td>
+           <td><%= CPU_Variance21 %></td>
 
                </tr>
 
@@ -1651,8 +2381,36 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
               </td>
           <% } %>
 
+          <td></td>
+          <td> <%= cph22	  %>    </td>  
+          <td><%= P_CPH22  %>  </td>   
+           <!--  opex  -->
+           <% A_Opex22= (cph22*Ahc22).toFixed(2)  %>
+           <% P_Opex22 = (P_CPH22*phc22).toFixed(2) %>
+           <% Opex_Variance22 = (((A_Opex22-P_Opex22)/A_Opex22)*100).toFixed() %>
+           <td><%= A_Opex22 %></td> 
+           <td><%= P_Opex22  %> </td>  
+           <% if( Opex_Variance22 >= -9  &&  Opex_Variance22 <= 9 ) {   %>
+             <td>
+               <%= Opex_Variance22 %> %
+             </td>
+           <%  } else if( Opex_Variance22 > 10 ) {  %>
+             <td  class="positive"   >
+               <%= Opex_Variance22 %> %
+             </td>
+             <%  } else {  %>
+               <td class="negative"  >
+                 <%= Opex_Variance22 %> %
+               </td>
+           <% } %>  
 
-
+            <!-- CPU Calculations -->
+            <% A_CPU22 = A_Opex22/AVol22	%>
+            <% P_CPU22 = P_Opex22/pv22	 %>
+            <% CPU_Variance22	= (((A_CPU22-P_CPU22)/A_CPU22)*100).toFixed()  %>
+            <td><%= (A_CPU22).toFixed(2) %></td>
+            <td><%= (P_CPU22).toFixed(2) %></td>
+            <td><%= CPU_Variance22 %></td>
                 
                </tr>
 
@@ -1711,6 +2469,37 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                 <%= Prod_variance23 %> % 
               </td>
           <% } %>
+          <td></td>
+          <td> <%= cph23	  %>    </td>  
+          <td><%= P_CPH23  %>  </td>   
+           <!--  opex  -->
+           <% A_Opex23= (cph23*Ahc23).toFixed(2)  %>
+           <% P_Opex23 = (P_CPH23*phc23).toFixed(2) %>
+           <% Opex_Variance23 = (((A_Opex23-P_Opex23)/A_Opex23)*100).toFixed() %>
+           <td><%= A_Opex23 %></td> 
+           <td><%= P_Opex23  %> </td>  
+           <% if( Opex_Variance23 >= -9  &&  Opex_Variance23 <= 9 ) {   %>
+             <td>
+               <%= Opex_Variance23 %> %
+             </td>
+           <%  } else if( Opex_Variance23 > 10 ) {  %>
+             <td  class="positive"   >
+               <%= Opex_Variance23 %> %
+             </td>
+             <%  } else {  %>
+               <td class="negative"  >
+                 <%= Opex_Variance23 %> %
+               </td>
+           <% } %> 
+           
+           
+            <!-- CPU Calculations -->
+            <% A_CPU23 = A_Opex23/AVol23	%>
+            <% P_CPU23 = P_Opex23/pv23	 %>
+            <% CPU_Variance23	= (((A_CPU23-P_CPU23)/A_CPU23)*100).toFixed()  %>
+            <td><%= (A_CPU23).toFixed(2) %></td>
+            <td><%= (P_CPU23).toFixed(2) %></td>
+            <td><%= CPU_Variance23 %></td>
 
                </tr>
           
@@ -1770,8 +2559,36 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                 <%= Prod_variance24 %> %
               </td>
           <% } %>
+          <td><%= acu24 %></td>
+          <td> <%= cph24	  %>    </td>  
+          <td><%= P_CPH24  %>  </td>   
+          <!--  opex  -->
+          <% A_Opex24= (cph24*Ahc24).toFixed(2)  %>
+          <% P_Opex24 = (P_CPH24*phc24).toFixed(2) %>
+          <% Opex_Variance24 = (((A_Opex24-P_Opex24)/A_Opex24)*100).toFixed() %>
+          <td><%= A_Opex24 %></td> 
+          <td><%= P_Opex24  %> </td>  
+          <% if( Opex_Variance24 >= -9  &&  Opex_Variance24 <= 9 ) {   %>
+            <td>
+              <%= Opex_Variance24 %> %
+            </td>
+          <%  } else if( Opex_Variance24 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= Opex_Variance24 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= Opex_Variance24 %> %
+              </td>
+          <% } %>  
 
-              
+            <!-- CPU Calculations -->
+            <% A_CPU24 = A_Opex24/AVol24	%>
+            <% P_CPU24 = P_Opex24/pv24	 %>
+            <% CPU_Variance24	= (((A_CPU24-P_CPU24)/A_CPU24)*100).toFixed()  %>
+            <td><%= (A_CPU24).toFixed(2) %></td>
+            <td><%= (P_CPU24).toFixed(2) %></td>
+            <td><%= CPU_Variance24 %></td>
               
               </tr>
           
@@ -1832,8 +2649,37 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                 <%= Prod_variance25 %> %
               </td>
           <% } %>
-
-
+          <td></td>
+          <td> <%= cph25	  %>    </td>  
+          <td><%= P_CPH25  %>  </td>   
+              
+              <!--  opex  -->
+              <% A_Opex25= (cph25*Ahc25).toFixed(2)  %>
+              <% P_Opex25 = (P_CPH25*phc25).toFixed(2) %>
+              <% Opex_Variance25 = (((A_Opex25-P_Opex25)/A_Opex25)*100).toFixed() %>
+              <td><%= A_Opex25 %></td> 
+              <td><%= P_Opex25  %> </td>  
+              <% if( Opex_Variance25 >= -9  &&  Opex_Variance25 <= 9 ) {   %>
+                <td>
+                  <%= Opex_Variance25 %> %
+                </td>
+              <%  } else if( Opex_Variance25 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= Opex_Variance25 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= Opex_Variance25 %> %
+                  </td>
+              <% } %>  
+               
+              <!-- CPU Calculations -->
+              <% A_CPU25 = A_Opex25/AVol25	%>
+              <% P_CPU25 = P_Opex25/pv25	 %>
+              <% CPU_Variance25	= (((A_CPU25-P_CPU25)/A_CPU25)*100).toFixed()  %>
+              <td><%= (A_CPU25).toFixed(2) %></td>
+              <td><%= (P_CPU25).toFixed(2) %></td>
+              <td><%= CPU_Variance25 %></td>
 
                </tr>
               <tr id="demo4" class="collapse">
@@ -1891,7 +2737,36 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                 <%= Prod_variance26 %> %
               </td>
           <% } %>
+          <td></td>
+          <td> <%= cph26	  %>    </td>  
+          <td><%= P_CPH26  %>  </td>   
+            <!--  opex  -->
+            <% A_Opex26= (cph26*Ahc26).toFixed(2)  %>
+            <% P_Opex26 = (P_CPH26*phc26).toFixed(2) %>
+            <% Opex_Variance26 = (((A_Opex26-P_Opex26)/A_Opex26)*100).toFixed() %>
+            <td><%= A_Opex26 %></td> 
+            <td><%= P_Opex26  %> </td>  
+            <% if( Opex_Variance26 >= -9  &&  Opex_Variance26 <= 9 ) {   %>
+              <td>
+                <%= Opex_Variance26 %> %
+              </td>
+            <%  } else if( Opex_Variance26 > 10 ) {  %>
+              <td  class="positive"   >
+                <%= Opex_Variance26 %> %
+              </td>
+              <%  } else {  %>
+                <td class="negative"  >
+                  <%= Opex_Variance26 %> %
+                </td>
+            <% } %>  
 
+              <!-- CPU Calculations -->
+              <% A_CPU26 = A_Opex26/AVol26	%>
+              <% P_CPU26 = P_Opex26/pv26	 %>
+              <% CPU_Variance26	= (((A_CPU26-P_CPU26)/A_CPU26)*100).toFixed()  %>
+              <td><%= (A_CPU26).toFixed(2) %></td>
+              <td><%= (P_CPU26).toFixed(2) %></td>
+              <td><%= CPU_Variance26 %></td>
 
                 
                </tr>
@@ -1951,8 +2826,39 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
             <%= Prod_variance27 %> %
           </td>
       <% } %>
+      <td></td>
+      <td> <%= cph27	  %>    </td>  
+      <td><%= P_CPH27  %>  </td>  
 
-               </tr>
+      <!--  opex  -->
+      <% A_Opex27= (cph27*Ahc27).toFixed(2)  %>
+      <% P_Opex27 = (P_CPH27*phc27).toFixed(2) %>
+      <% Opex_Variance27 = (((A_Opex27-P_Opex27)/A_Opex27)*100).toFixed() %>
+      <td><%= A_Opex27 %></td> 
+      <td><%= P_Opex27  %> </td>  
+      <% if( Opex_Variance27 >= -9  &&  Opex_Variance27 <= 9 ) {   %>
+        <td>
+          <%= Opex_Variance27 %> %
+        </td>
+      <%  } else if( Opex_Variance27 > 10 ) {  %>
+        <td  class="positive"   >
+          <%= Opex_Variance27 %> %
+        </td>
+        <%  } else {  %>
+          <td class="negative"  >
+            <%= Opex_Variance27 %> %
+          </td>
+      <% } %>  
+
+        <!-- CPU Calculations -->
+        <% A_CPU27 = A_Opex27/AVol27	%>
+        <% P_CPU27 = P_Opex27/pv27	 %>
+        <% CPU_Variance27	= (((A_CPU27-P_CPU27)/A_CPU27)*100).toFixed()  %>
+        <td><%= (A_CPU27).toFixed(2) %></td>
+        <td><%= (P_CPU27).toFixed(2) %></td>
+        <td><%= CPU_Variance27 %></td>
+
+    </tr>
 
               <tr id="demo4" class="collapse">
                 <th> Fixed Layout </th>
@@ -2009,8 +2915,38 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                 <%= Prod_variance28 %> %
               </td>
           <% } %>
-                
-               </tr>
+          <td></td>
+          <td> <%= cph28	  %>    </td>  
+          <td><%= P_CPH28  %>  </td>   
+
+              <!--  opex  -->
+            <% A_Opex28= (cph28*Ahc28).toFixed(2)  %>
+            <% P_Opex28 = (P_CPH28*phc28).toFixed(2) %>
+            <% Opex_Variance28 = (((A_Opex28-P_Opex28)/A_Opex28)*100).toFixed() %>
+            <td><%= A_Opex28 %></td> 
+            <td><%= P_Opex28  %> </td>  
+            <% if( Opex_Variance28 >= -9  &&  Opex_Variance28 <= 9 ) {   %>
+              <td>
+                <%= Opex_Variance28 %> %
+              </td>
+            <%  } else if( Opex_Variance28 > 10 ) {  %>
+              <td  class="positive"   >
+                <%= Opex_Variance28 %> %
+              </td>
+              <%  } else {  %>
+                <td class="negative"  >
+                  <%= Opex_Variance28 %> %
+                </td>
+            <% } %>  
+
+          <!-- CPU Calculations -->
+          <% A_CPU28 = A_Opex28/AVol28	%>
+          <% P_CPU28 = P_Opex28/pv28	 %>
+          <% CPU_Variance28	= (((A_CPU28-P_CPU28)/A_CPU28)*100).toFixed()  %>
+          <td><%= (A_CPU28).toFixed(2) %></td>
+          <td><%= (P_CPU28).toFixed(2) %></td>
+          <td><%= CPU_Variance28 %></td>
+      </tr>
               
               <tr data-toggle="collapse" data-target="#demo5"  class="ui center aligned header blue" data-parent="#myTable">
                 <td> Content Testing	</td>
@@ -2067,7 +3003,35 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                 <%= Prod_variance29 %> %
               </td>
           <% } %>
-
+          <td><%= acu29 %></td>
+          <td> <%= cph29	  %>    </td>  
+          <td><%= P_CPH29  %>  </td>   
+          <!--  opex  -->
+          <% A_Opex29= (cph29*Ahc29).toFixed(2)  %>
+          <% P_Opex29 = (P_CPH29*phc29).toFixed(2) %>
+          <% Opex_Variance29 = (((A_Opex29-P_Opex29)/A_Opex29)*100).toFixed() %>
+          <td><%= A_Opex29 %></td> 
+          <td><%= P_Opex29  %> </td>  
+          <% if( Opex_Variance29 >= -9  &&  Opex_Variance29 <= 9 ) {   %>
+            <td>
+              <%= Opex_Variance29 %> %
+            </td>
+          <%  } else if( Opex_Variance29 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= Opex_Variance29 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= Opex_Variance29 %> %
+              </td>
+          <% } %>  
+          <!-- CPU Calculations -->
+          <% A_CPU29 = A_Opex29/AVol29	%>
+          <% P_CPU29 = P_Opex29/pv29	 %>
+          <% CPU_Variance29	= (((A_CPU29-P_CPU29)/A_CPU29)*100).toFixed()  %>
+          <td><%= (A_CPU29).toFixed(2) %></td>
+          <td><%= (P_CPU29).toFixed(2) %></td>
+          <td><%= CPU_Variance29 %></td>
               </tr>
              
           
@@ -2126,6 +3090,37 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                       <%= Prod_variance30 %> %
                     </td>
                 <% } %>
+                <td><%= acu30 %></td>
+            <td> <%= cph30	  %>    </td>  
+            <td><%= P_CPH30  %>  </td>   
+            <!--  opex  -->
+          <% A_Opex30= (cph30*Ahc30).toFixed(2)  %>
+          <% P_Opex30 = (P_CPH30*phc30).toFixed(2) %>
+          <% Opex_Variance30 = (((A_Opex30-P_Opex30)/A_Opex30)*100).toFixed() %>
+          <td><%= A_Opex30 %></td> 
+          <td><%= P_Opex30  %> </td>  
+          <% if( Opex_Variance30 >= -9  &&  Opex_Variance30 <= 9 ) {   %>
+            <td>
+              <%= Opex_Variance30 %> %
+            </td>
+          <%  } else if( Opex_Variance30 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= Opex_Variance30 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= Opex_Variance30 %> %
+              </td>
+          <% } %>  
+          
+           <!-- CPU Calculations -->
+           <% A_CPU30 = A_Opex30/AVol30	%>
+           <% P_CPU30 = P_Opex30/pv30	 %>
+           <% CPU_Variance30	= (((A_CPU30-P_CPU30)/A_CPU30)*100).toFixed()  %>
+           <td><%= (A_CPU30).toFixed(2) %></td>
+           <td><%= (P_CPU30).toFixed(2) %></td>
+           <td><%= CPU_Variance30 %></td>
+          
               </tr>
               <tr data-toggle="collapse" data-target="#demo7"  class="ui center aligned header blue" data-parent="#myTable">
                 <td>Author Fix-up	</td>
@@ -2184,8 +3179,38 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                 <% } %>
 
 
+                <td><%= acu31 %></td>
+                <td> <%= cph31	  %>    </td>  
+                <td><%= P_CPH31  %>  </td>   
+
+               <!--  opex  -->
+          <% A_Opex31= (cph31*Ahc31).toFixed(2)  %>
+          <% P_Opex31 = (P_CPH31*phc31).toFixed(2) %>
+          <% Opex_Variance31 = (((A_Opex31-P_Opex31)/A_Opex31)*100).toFixed() %>
+          <td><%= A_Opex31 %></td> 
+          <td><%= P_Opex31  %> </td>  
+          <% if( Opex_Variance31 >= -9  &&  Opex_Variance31 <= 9 ) {   %>
+            <td>
+              <%= Opex_Variance31 %> %
+            </td>
+          <%  } else if( Opex_Variance31 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= Opex_Variance31 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= Opex_Variance31 %> %
+              </td>
+          <% } %>  
 
 
+           <!-- CPU Calculations -->
+           <% A_CPU31 = A_Opex31/AVol31	%>
+           <% P_CPU31 = P_Opex31/pv31	 %>
+           <% CPU_Variance31	= (((A_CPU31-P_CPU31)/A_CPU31)*100).toFixed()  %>
+           <td><%= (A_CPU31).toFixed(2) %></td>
+           <td><%= (P_CPU31).toFixed(2) %></td>
+           <td><%= CPU_Variance31 %></td>
         
 
                </tr>
@@ -2246,9 +3271,39 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
                 <%= Prod_variance32 %> %
               </td>
           <% } %>
+          <td><%= acu32 %></td>
+          
+          <td> <%= cph32	  %>    </td>  
+          <td><%= P_CPH32  %>  </td>   
 
+                <!--  opex  -->
+          <% A_Opex32= (cph32*Ahc32).toFixed(2)  %>
+          <% P_Opex32 = (P_CPH32*phc32).toFixed(2) %>
+          <% Opex_Variance32 = (((A_Opex32-P_Opex32)/A_Opex32)*100).toFixed() %>
+          <td><%= A_Opex32 %></td> 
+          <td><%= P_Opex32  %> </td>  
+          <% if( Opex_Variance32 >= -9  &&  Opex_Variance32 <= 9 ) {   %>
+            <td>
+              <%= Opex_Variance32 %> %
+            </td>
+          <%  } else if( Opex_Variance32 > 10 ) {  %>
+            <td  class="positive"   >
+              <%= Opex_Variance32 %> %
+            </td>
+            <%  } else {  %>
+              <td class="negative"  >
+                <%= Opex_Variance32 %> %
+              </td>
+          <% } %>  
 
-
+            <!-- CPU Calculations -->
+            <% A_CPU32 = A_Opex32/AVol32	%>
+            <% P_CPU32 = P_Opex32/pv32	 %>
+            <% CPU_Variance32	= (((A_CPU32-P_CPU32)/A_CPU32)*100).toFixed()  %>
+            <td><%= (A_CPU32).toFixed(2) %></td>
+            <td><%= (P_CPU32).toFixed(2) %></td>
+            <td><%= CPU_Variance32 %></td>
+         
                </tr>
 
               </tbody>

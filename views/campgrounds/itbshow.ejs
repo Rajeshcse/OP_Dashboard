@@ -1,4 +1,5 @@
 <% include ../partials/header %> 
+
 <div class="container card text-center"> 
   <div class="card-header"> 
       <ul class="nav nav-tabs card-header-tabs"> 
@@ -11,6 +12,12 @@
            
       </ul>
   </div>
+
+  <script>
+    var result = window.location.hostname;
+    console.log(result);
+  </script>
+  
   <div class="tab-content card-body">
       <div id="insta" class="tab-pane active"> <caption>
         <h2 class="team" > ITB Reports  , Year:2019 </h2>
@@ -126,9 +133,9 @@
           <td>
             <% campgrounds.forEach( function(itbMetric) {  %>
             <% if(itbMetric.week == "2019-W38" ){  %>
-            <a  href="/campgrounds/<%= itbMetric._id %>" target="0"  > Week 38 </a>
-          <% }  %> 
-          <% })  %> 
+              <a  href="/campgrounds/<%= itbMetric._id %>" target="0"  > Week 38 </a>
+            <% }  %> 
+            <% })  %> 
           </td>
     
           <td> 
@@ -138,6 +145,12 @@
           <% }  %> 
           <% })  %> 
           </td>
+         
+        </tr>
+        <tr>
+          <td class="quaterly" rowspan="3"  target="_blank" ><a href="/campgrounds/q4" target="_blank" > Q4</a></td>
+          <td class="month"><a target="_blank" href="/campgrounds/oct"  > October </a></td>
+
           <td>
             <% campgrounds.forEach( function(itbMetric) {  %>
             <% if(itbMetric.week == "2019-W40" ){  %>
@@ -145,17 +158,14 @@
           <% }  %> 
           <% })  %> 
           </td>
-        </tr>
-        <tr>
-          <td class="quaterly" rowspan="3"><a href="/campgrounds/q3" target="_blank" > Q3</a></td>
-          <td class="month"><a target="_blank" href="/campgrounds/oct"  > October </a></td>
           <td> 
             <% campgrounds.forEach( function(itbMetric) {  %>
             <% if(itbMetric.week == "2019-W41" ){  %>
-            <a  href="/campgrounds/<%= itbMetric._id %>" target="0"  > Week 41 </a>
-          <% }  %> 
-          <% })  %> 
+              <a  href="/campgrounds/<%= itbMetric._id %>" target="0"  > Week 41 </a>
+            <% }  %> 
+            <% })  %> 
           </td>
+
           <td> 
             <% campgrounds.forEach( function(itbMetric) {  %>
             <% if(itbMetric.week == "2019-W42" ){  %>
@@ -163,6 +173,7 @@
           <% }  %> 
           <% })  %> 
           </td>
+
           <td> 
             <% campgrounds.forEach( function(itbMetric) {  %>
             <% if(itbMetric.week == "2019-W43" ){  %>
@@ -170,6 +181,7 @@
           <% }  %> 
            <% })  %> 
           </td>
+
           <td> 
             <% campgrounds.forEach( function(itbMetric) {  %>
             <% if(itbMetric.week == "2019-W44" ){  %>
@@ -177,13 +189,14 @@
           <% }  %> 
            <% })  %> 
           </td>
+          
         </tr>
       
         <tr>
           <td class="month"><a target="_blank" href="/campgrounds/nov"  > November </a></td>
           <td> 
             <% campgrounds.forEach( function(itbMetric) {  %>
-            <% if(itbMetric.week == "2019-W45" && itbMetric.team =="ITB"  ){  %>
+            <% if(itbMetric.week == "2019-W45"   ){  %>
             <a  href="/campgrounds/<%= itbMetric._id %>"   > Week 45 </a>
           <% }  %> 
            <% })  %> 
@@ -210,6 +223,7 @@
           <% })  %> 
           </td>
         </tr>
+        
         <tr>
           <td class="month"><a target="_blank" href="/campgrounds/dec"  > December </a></td>
           <td>
