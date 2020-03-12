@@ -2,14 +2,15 @@
 
 <script>
 
+  
   function sum() {
     var v1 = document.getElementById("value1").value;
     var v2 = document.getElementById("value2").value;
     var v3 = document.getElementById("value3").value;
     var v4 = document.getElementById("value4").value;
     var v5 = document.getElementById("value5").value;
-    var v6 = document.getElementById("value6").value;
-    var result = +v1 + +v2 + +v3 + +v4 + +v5 + +v6;
+    // var v6 = document.getElementById("value6").value;
+    var result = +v1 + +v2 + +v3 + +v4 + +v5 ;
     if (!isNaN(result)) {
       document.getElementById("sum_value").value = result.toFixed(2); 
     }
@@ -21,8 +22,8 @@
     var hc3 = document.getElementById("headcount3").value;
     var hc4 = document.getElementById("headcount4").value;
     var hc5 = document.getElementById("headcount5").value;
-    var hc6 = document.getElementById("headcount6").value;
-    var result = +hc1 + +hc2 + +hc3 + +hc4 + +hc5 + +hc6;
+    // var hc6 = document.getElementById("headcount6").value;
+    var result = +hc1 + +hc2 + +hc3 + +hc4 + +hc5;
     if (!isNaN(result)) {
       document.getElementById("hc_value").value = result.toFixed(2);
     }
@@ -32,16 +33,8 @@
   function reactive(){
     var v1 = document.getElementById("value11").value;
     var v2 = document.getElementById("value12").value;
-    var v3 = document.getElementById("value13").value;
-    var v4 = document.getElementById("value14").value;
-    var v5 = document.getElementById("value15").value;
-    var v6 = document.getElementById("value16").value;
-    var v7 = document.getElementById("value17").value;
-    var v8 = document.getElementById("value18").value;
-    var v9 = document.getElementById("value19").value;
-    var v10 = document.getElementById("value20").value;
-    var v11 = document.getElementById("value21").value;
-    var result = +v1 + +v2 + +v3 + +v4 + +v5 + +v6 + +v7  + +v8 + +v9 + +v10 + +v11  ;
+   
+    var result = +v1 + +v2  ;
     if (!isNaN(result)) {
       document.getElementById("sum_reactive").value = result.toFixed(2);
     }
@@ -50,18 +43,10 @@
   function reactiveHCount(){
     var v1 = document.getElementById("value111").value;
     var v2 = document.getElementById("value112").value;
-    var v3 = document.getElementById("value113").value;
-    var v4 = document.getElementById("value114").value;
-    var v5 = document.getElementById("value115").value;
-    var v6 = document.getElementById("value116").value;
-    var v7 = document.getElementById("value117").value;
-    var v8 = document.getElementById("value118").value;
-    var v9 = document.getElementById("value119").value;
-    var v10 = document.getElementById("value120").value;
-    var v11 = document.getElementById("value121").value;
+   
     
     
-    var result = +v1 + +v2 + +v3 + +v4 + +v5 + +v6 + +v7  + +v8 + +v9 + +v10 + +v11  ;
+    var result = +v1 + +v2 ;
     if (!isNaN(result)) {
       document.getElementById("sum_reactiveHCount").value = result.toFixed(2);
     }
@@ -118,8 +103,7 @@
   var x = document.getElementById("myText").value;
 
   if( x=== "2019-W27" || x=== "2019-W28" || x=== "2019-W29" || x=== "2019-W30" || x=== "2019-W31" || x=== "2019-W32" || x=== "2019-W33" || x=== "2019-W34"|| x=== "2019-W35"|| x=== "2019-W36" || x=== "2019-W37" || x=== "2019-W38"|| x=== "2019-W39" ){
-    
-    
+
     document.getElementById("Planned_v1" ).innerHTML = "596.23";
     document.getElementById("Planned_v2").innerHTML = "46.15";
     document.getElementById("Planned_v3").innerHTML = "264.69";
@@ -229,6 +213,7 @@
     document.getElementById("P_CPH03").innerHTML = "1366";
     document.getElementById("P_CPH04").innerHTML = "1366";
     document.getElementById("P_CPH05").innerHTML = "1366";
+    
     document.getElementById("P_CPH06").innerHTML = "1366";
     document.getElementById("P_CPH07").innerHTML = "1366";
     document.getElementById("P_CPH08").innerHTML = "1366";
@@ -359,14 +344,14 @@
     document.getElementById("Planned_prod31").innerHTML = "7.5";
     document.getElementById("Planned_prod32").innerHTML = "8.5";
 
-    document.getElementById("P_CPH032").innerHTML = "1366" ;
 
+  
 
   }
   //  Novenmber 2019
   else if(x=== "2019-W45" || x=== "2019-W46" || x=== "2019-W47" || x=== "2019-W48"){
     
-        document.getElementById("P_CPH01").innerHTML = "1363";
+    document.getElementById("P_CPH01").innerHTML = "1363";
     document.getElementById("P_CPH02").innerHTML = "1363";
     document.getElementById("P_CPH03").innerHTML = "1363";
     document.getElementById("P_CPH04").innerHTML = "1363";
@@ -500,7 +485,8 @@
     document.getElementById("Planned_prod30").innerHTML = "6.5";
     document.getElementById("Planned_prod31").innerHTML = "7.5";
     document.getElementById("Planned_prod32").innerHTML = "8.5";
-    document.getElementById("P_CPH032").innerHTML = "1366" ;
+   
+
 
   }
 
@@ -508,7 +494,7 @@
   else if(x=== "2019-W49" || x=== "2019-W50" || x=== "2019-W51" || x=== "2019-W52"){
     
 
-        document.getElementById("P_CPH01").innerHTML = "1498";
+    document.getElementById("P_CPH01").innerHTML = "1498";
     document.getElementById("P_CPH02").innerHTML = "1498";
     document.getElementById("P_CPH03").innerHTML = "1498";
     document.getElementById("P_CPH04").innerHTML = "1498";
@@ -642,6 +628,10 @@
     document.getElementById("Planned_prod30").innerHTML = "6.5";
     document.getElementById("Planned_prod31").innerHTML = "7.5";
     document.getElementById("Planned_prod32").innerHTML = "8.5";
+
+
+
+
 
   }
 
@@ -1115,38 +1105,43 @@
     document.getElementById("Planned_hc20").innerHTML =  null;
     document.getElementById("Planned_hc21" ).innerHTML =  null;
     document.getElementById("Planned_hc22").innerHTML = null ;
+    document.getElementById("Planned_hc23").innerHTML =  null;
+    document.getElementById("Planned_hc24").innerHTML =  null;
+    document.getElementById("Planned_hc25" ).innerHTML =  null;
+    document.getElementById("Planned_hc26").innerHTML = null ;
+    document.getElementById("Planned_hc27").innerHTML =  null;
+    document.getElementById("Planned_hc28").innerHTML =  null;
+    document.getElementById("Planned_hc29" ).innerHTML = null;
+    document.getElementById("Planned_hc30").innerHTML =  null;
+    document.getElementById("Planned_hc31").innerHTML =  null;
+    document.getElementById("Planned_hc32").innerHTML = null ;
 
-        document.getElementById("Planned_hc23").innerHTML =  null;
-        document.getElementById("Planned_hc24").innerHTML =  null;
-        document.getElementById("Planned_hc25" ).innerHTML =  null;
-        document.getElementById("Planned_hc26").innerHTML = null ;
-        document.getElementById("Planned_hc27").innerHTML =  null;
-        document.getElementById("Planned_hc28").innerHTML =  null;
-        document.getElementById("Planned_hc29" ).innerHTML = null;
-        document.getElementById("Planned_hc30").innerHTML =  null;
-        document.getElementById("Planned_hc31").innerHTML =  null;
-        document.getElementById("Planned_hc32").innerHTML = null ;
   }
 }
-  
+
 </script>
 
-
-<div class="container">
+<div class="container pt-6" >
   <div class="row">
-    <h1 style="text-align: center">Edit <%= gok.week %> <%= gok.team %></h1>
+    <h1 style="text-align: center">Create New metrics of the week</h1>
     <div style="margin: 25px auto; ">
-      <form
-      action="/gok/<%= gok._id %>?_method=PUT"
-      method="POST"
-    >
+      <form action="/metadata" method="POST">
+
         <table class="ui celled structured striped table" >
           <thead>
             <tr>
               <th>
-                
+                <form class="ui fluid form">
+                    <div class="field">
+
+                      <div class="ui input focus pointing below label">
+                        Choose:
+                        <input  name="week"  type="week" id="myText" onchange="weekly()" >
+                      </div>
+                    </div>
+                  </form>
               </th>
-           
+              <th class="ui center aligned header" colspan="2">Planned</th>
               <th class="ui center aligned header" colspan="2">Actual</th>
               <th class="ui center aligned header" colspan="1">Accuracy</th>
               <th class="ui center aligned header" colspan="1">Call Outs</th>
@@ -1157,27 +1152,33 @@
               <th class="ui center aligned ">
                 Title
               </th>
-            
               <th>Volume</th>
               <th>Head Count</th>
-              <th>Accuaracy percent ( % )</th>
+              <th>Volume</th>
+              <th>Head Count</th>
+              <th>Accuaracy percent( % )</th>
               <th>Reason</th>
               <th>Actual</th>
               <th>Planned</th>
             </tr>
 
-            <!-- 1  Proactive (Fresh Audits) -->
+            <!-- 1 SRL -->
             <tr>
               <th class="ui center aligned header blue">
-                Proactive (Fresh Audits)
+               SRL
               </th>
-            
+              <td>
+                <label for="week" id="Planned_v1" ></label>
+              </td>
+              <td>
+                <label for="week" id="Planned_hc1" ></label>
+              </td>
               
+
               <td>
                 <input
-                  name="gok[A_Vol1]"
+                  name="A_Vol1"
                   id="sum_value"
-                  value="<%= gok.A_Vol1 %>"
                   class="form-control"
                   type="text"
                   readonly
@@ -1185,933 +1186,374 @@
               </td>
               <td>
                 <input
-                  name="gok[A_HCount1]"
+                  name="A_HCount1"
                   class="form-control"
-                  value="<%= gok.A_HCount1 %>"
                   id="hc_value"
                   type="text"
                   readonly
                 />
               </td>
               
-              <td><input type="text"  value="<%= gok.accuracy1 %>"  name="gok[accuracy1]" class="form-control" ></td> 
-              <td><textarea rows="2" name="gok[couts1]"></textarea></td>
-              <td><input type="text"   name="gok[A_CPH1]" class="form-control" value="<%= gok.A_CPH1 %>"    ></td>
-              <td><label for="week"  id="P_CPH01" name="gok[P_CPH01]"  ></label></td>
-        
+              <td><input type="text"   name="accuracy1" class="form-control" ></td> 
+              <td><textarea rows="2" name="couts1"></textarea></td> 
+              <td><input type="text"   name="A_CPH1" class="form-control" disabled ></td> 
+              <td><label for="week"  id="P_CPH01" name="P_CPH01"  ></label></td>  
             </tr>
 
-            <!-- 2. Best Sellers -->
+            <!-- 2.SRL - GV 90 -  Regular Ops inflow  -->
             <tr>
-              <th>Best Sellers</th>
-              
+              <th>SRL - GV 90 -  Regular Ops inflow 
+              </th>
+              <td>
+               
+                <label for="week" id="Planned_v2" ></label>
+              </td>
+              <td>
+                <label for="week" id="Planned_hc2" ></label>
+              </td>
              
               <td>
                 <input
-                  name="gok[A_Vol2]"
+                  name="A_Vol2"
                   id="value1"
                   onkeyup="sum();"
                   class="form-control"
-                  value="<%= gok.A_Vol2 %>"
                   type="text"
                 />
               </td>
               <td>
                 <input
-                  name="gok[A_HCount2]"
+                  name="A_HCount2"
                   class="form-control"
                   id="headcount1"
-                  value="<%= gok.A_HCount2 %>"
                   onkeyup="hcsum();"
                   type="text"
                 />
               </td>
-              <td><input type="text" name="gok[accuracy2]" class="form-control"></td>
-              <td><textarea rows="2" name="gok[couts2]"></textarea></td>
-              <td><input type="text"   name="gok[A_CPH2]" class="form-control"  value="<%= gok.A_CPH2 %>" ></td>
+              <td></td>
+              <td><textarea rows="2" name="couts2"></textarea></td>
+              <td><input type="text"   name="A_CPH2" class="form-control" disabled ></td> 
               <td><label   for="week"  id="P_CPH02" name="P_CPH02"  ></label></td>
             </tr>
 
-          <!-- Pre-Orders -->
+
+          <!-- SRL - GV 90 - automation shut -->
             <tr>
-              <th>Pre-Orders</th>
-             
+              <th>SRL - GV 90 - automation shut  </th>
+              <td>
+                <label for="week" id="Planned_v3" ></label>
+              </td>
+              <td>
+                <label for="week" id="Planned_hc3" ></label>
+              </td>
               
               <td>
                 <input
-                  name="gok[A_Vol3]"
+                  name="A_Vol3"
                   id="value2"
                   onkeyup="sum();"
                   class="form-control"
-                  value="<%= gok.A_Vol3 %>"
                   type="text"
                 />
               </td>
+
               <td>
                 <input
-                  name="gok[A_HCount3]"
+                  name="A_HCount3"
                   id="headcount2"
                   onkeyup="hcsum();"
                   class="form-control"
-                  value="<%= gok.A_HCount3 %>"
                   type="text"
                 />
               </td>
 
-              <td><input type="text"  name="gok[accuracy3]" class="form-control"></td>
-              <td><textarea rows="2" name="gok[couts3]"></textarea></td>
-              <td><input type="text"   name="gok[A_CPH3]" class="form-control" value="<%= gok.A_CPH3 %>"  ></td>
+              <td></td>
+              <td><textarea rows="2" name="couts3"></textarea></td>
+              <td><input type="text"   name="A_CPH3" class="form-control" disabled  ></td> 
               <td><label   for="week"  id="P_CPH03" name="P_CPH03"  ></label></td>
             </tr>
 
-            <!-- 4. Big Books -->
+            <!-- 4. SRL - GV 90 - Onsite backlog -->
             <tr>
-              <th>Big Books</th>
-              
+              <th>SRL - GV 90 - Onsite backlog </th>
+              <td>
+                <label id="Planned_v4" name="P_Vol4"  ></label>
+              </td>
+              <td>
+                <label for="week" id="Planned_hc4" ></label>
+              </td>
               
               <td>
                 <input
-                  name="gok[A_Vol4]"
+                  name="A_Vol4"
                   class="form-control"
                   id="value3"
                   onkeyup="sum();"
-                  value="<%= gok.A_Vol4 %>"
                   type="text"
                 />
               </td>
               <td>
                 <input
-                  name="gok[A_HCount4]"
+                  name="A_HCount4"
                   id="headcount3"
                   onkeyup="hcsum();"
-                  value="<%= gok.A_HCount4 %>"
                   class="form-control"
                   type="text"
                 />
               </td>
-              <td><input type="text" name="gok[accuracy4]"  class="form-control"></td>
-              <td><textarea rows="2" name="gok[couts4]"></textarea></td>
-              <td><input type="text"   name="gok[A_CPH4]" class="form-control" value="<%= gok.A_CPH4 %>"  ></td>
-              <td><label   for="week"  id="P_CPH04" name="gok[P_CPH04]"  ></label></td>
+              <td></td>
+              <td><textarea rows="2" name="couts4"></textarea></td>
+              <td><input type="text"   name="A_CPH4" class="form-control" disabled ></td> 
+              <td><label   for="week"  id="P_CPH04" name="P_CPH04"  ></label></td>
             </tr>
 
-            <!-- 5. Kindle Deals -->
+            <!-- 5. SRL testing -->
             <tr>
-              <th>Kindle Deals</th>
-             
+              <th>SRL testing</th>
+              <td>
+                <label id="Planned_v5" name="P_Vol5"   ></label>
+              </td>
+              <td>
+                <label for="week" id="Planned_hc5" ></label>
+              </td>
+              
+
+              
+              
               <td>
                 <input
-                  name="gok[A_Vol5]"
+                  name="A_Vol5"
                   class="form-control"
                   id="value4"
                   onkeyup="sum();"
-                  value="<%= gok.A_Vol5 %>"
                   type="text"
                 />
               </td>
 
               <td>
                 <input
-                  name="gok[A_HCount5]"
+                  name="A_HCount5"
                   id="headcount4"
                   onkeyup="hcsum();"
                   class="form-control"
-                  value="<%= gok.A_HCount5 %>"
                   type="text"
                 />
               </td>
-              <td><input type="text" name="gok[accuracy5]"  class="form-control"></td>
-              <td><textarea rows="2" name="gok[couts5]"></textarea></td>
-              <td><input type="text"   name="gok[A_CPH5]" class="form-control" value="<%= gok.A_CPH5 %>"  ></td>
+              <td></td>
+              <td><textarea rows="2" name="couts5"></textarea></td>
+              <td><input type="text"   name="A_CPH5" class="form-control" disabled  ></td> 
+              
               <td><label   for="week"  id="P_CPH05" name="P_CPH05"  ></label></td>
 
             </tr>
 
-            <!--  6. Ad-hoc Requests / Escalation Audits -->
+            <!--  6. SRL - KU (KDPS) -->
             <tr>
-              <th>Ad-hoc Requests / Escalation Audits</th>
-             
+              <th>SRL - KU (KDPS)</th>
+              <td>
+                <label id="Planned_v6" name="P_Vol6"   ></label>
+              </td>
+              <td>
+                <label for="week" id="Planned_hc6" ></label>
+              </td>
              
               <td>
                 <input
-                  name="gok[A_Vol6]"
+                  name="A_Vol6"
                   id="value5"
                   onkeyup="sum();"
                   class="form-control"
-                  value="<%= gok.A_Vol6 %>"
                   type="text"
                 />
               </td>
               <td>
                 <input
-                  name="gok[A_HCount6]"
+                  name="A_HCount6"
                   id="headcount5"
                   onkeyup="hcsum();"
-                  class="form-control"+
-                  value="<%= gok.A_HCount6 %>"
+                  class="form-control"
                   type="text"
                 />
               </td>
-              <td><input type="text"  name="gok[accuracy6]" class="form-control"></td>
-              <td><textarea rows="2" name="gok[couts6]"></textarea></td>
-              <td><input type="text"   name="gok[A_CPH6]" class="form-control" value="<%= gok.A_CPH6 %>"  ></td>
+              <td></td>
+              <td><textarea rows="2" name="couts6"></textarea></td>
+              <td><input type="text"   name="A_CPH6" class="form-control"  disabled ></td>
               <td><label   for="week"  id="P_CPH06" name="P_CPH06"  ></label></td>
             </tr> 
             
             
             
             <!-- 7. KU Page Violation Audits -->
-
-            <tr>
+            <!-- <tr>
               <th> KU Page Violation Audits </th>
-             
+              <td>
+                <label id="Planned_v7" name="P_Vol7"   ></label>
+              </td>
+              <td>
+                <label for="week" id="Planned_hc7" ></label>
+              </td>
+              
               <td>
                 <input
-                  name="gok[A_Vol7]"
+                  name="A_Vol7"
                   id="value6"
                   onkeyup="sum();"
                   class="form-control"
                   type="text"
-                  value="<%= gok.A_Vol7 %>"
                 />
               </td>
               <td>
                 <input
-                  name="gok[A_HCount7]"
+                  name="A_HCount7"
                   id="headcount6"
                   onkeyup="hcsum();"
                   class="form-control"
-                  value="<%= gok.A_HCount7 %>"
                   type="text"
                 />
               </td>
-              <td><input type="text" name="gok[accuracy7]"  class="form-control"></td>
-              <td><textarea rows="2" name="gok[couts7]"></textarea></td>
-              <td><input type="text"   name="gok[A_CPH7]" class="form-control" value="<%= gok.A_CPH7 %>"  ></td>
+              <td><input type="text" name="accuracy7"  class="form-control"></td>
+              <td><textarea rows="2" name="couts7"></textarea></td>
+              <td><input type="text"   name="A_CPH7" class="form-control" disabled  ></td>
               <td><label   for="week"  id="P_CPH07" name="P_CPH07"  ></label></td>
-            </tr>
+            </tr> -->
 
 
 
-        <!--8. Reactive (Contacts) -->
+          <!-- 29.NCX - GV 90 -->
+                      
           <tr>
-            <th class="ui center aligned header blue" >Reactive (Contacts) </th>
-           
+            <th class="ui center aligned header blue">NCX - GV 90 </th>
             
             <td>
-              <input name="gok[A_Vol8]" class="form-control" type="text" id="sum_reactive"  value="<%= gok.A_Vol8 %>"  readonly />
+              <label id="Planned_v29" name="P_Vol29"   ></label>
             </td>
             <td>
-              <input name="gok[A_HCount8]" class="form-control" type="text"  value="<%= gok.A_HCount8 %>" id="sum_reactiveHCount" readonly />
+              <label for="week" id="Planned_hc29" ></label>
             </td>
-            <td><input type="text"  name="gok[accuracy8]"  value="<%=gok.accuracy8 %>" class="form-control"></td>
-            <td><textarea rows="2" name="gok[couts8]"></textarea></td>
-            <td><input type="text"   name="gok[A_CPH8]" class="form-control" value="<%= gok.A_CPH8 %>"  ></td>
-            <td><label   for="week"  id="P_CPH08" name="P_CPH08"  ></label></td>
+          
+
+            <td>
+              <input name="A_Vol29" class="form-control" type="text"  />
+            </td>
+            <td>
+              <input name="A_HCount29" class="form-control" type="text"  />
+            </td>
+            <td><input type="text" name="accuracy29"  class="form-control"></td>
+            <td><textarea rows="2" name="couts29"></textarea></td>
+            <td><input type="text"   name="A_CPH29" class="form-control"  disabled  ></td>
+            <td><label   for="week"  id="P_CPH029" name="P_CPH029"  ></label></td>
+          </tr>
+        </tr>
+        <!--8. RPN -->
+          <tr>  
+            <th class="ui center aligned header blue" >RPN</th>  
+            <td>  
+              <label id="Planned_v8" name="P_Vol8"   > </label>
+            </td> 
+            <td>  
+              <label for="week" id="Planned_hc8" ></label>  
+            </td> 
+            
+            <td>  
+              <input name="A_Vol8" class="form-control" type="text" id="sum_reactive"   readonly /> 
+            </td> 
+            <td>  
+              <input name="A_HCount8" class="form-control" type="text"  id="sum_reactiveHCount" readonly /> 
+            </td> 
+           
+            <td><input  type="text"  name="accuracy8" class="form-control"></td>  
+            <td><textarea rows="2" name="couts8"></textarea></td> 
+            <td><input type="text"   name="A_CPH8" class="form-control"  disabled ></td>  
+            <td><label   for="week"  id="P_CPH08" name="P_CPH08"  ></label></td>  
           </tr>
 
 
-          <!--9. Andons & Regulars -->
+          <!--9. Page Numbering Manual -->
 
             <tr>
-              <th class="ui  header subhead grey " >Andons & Regulars</th>
-             
+              <th class="ui  header subhead grey " >Page Numbering Manual
+              </th>
+              <td>
+                <label id="Planned_v9" name="P_Vol9"   ></label>
+              </td>
+              <td>
+                <label for="week" id="Planned_hc9" ></label>
+              </td>
+              
+
               <td>
                 <input
-                  name="gok[A_Vol9]"
+                  name="A_Vol9"
                   id="value11"
                   onkeyup="reactive();"
                   class="form-control"
-                  value="<%= gok.A_Vol9 %>"
                   type="text"
                 />
               </td>          
               <td>
                 <input
-                  name="gok[A_HCount9]"
+                  name="A_HCount9"
                   id="value111"
                   onkeyup="reactiveHCount();"
-                  value="<%= gok.A_HCount9 %>"
                   class="form-control"
                   type="text"
                 />
               </td>
-              <td><input type="text"  name="gok[accuracy9]"  class="form-control"></td>
-              <td><textarea rows="2" name="gok[couts9]"></textarea></td>
-              <td><input type="text"   name="gok[A_CPH9]" value="<%= gok.A_CPH9 %>" class="form-control"  ></td>
+              <td></td>
+              <td><textarea rows="2" name="couts9"></textarea></td>
+              <td><input type="text"   name="A_CPH9" class="form-control"  disabled ></td>
               <td><label   for="week"  id="P_CPH09" name="P_CPH09"  ></label></td>
             </tr>
 
 
 
-            <!--10  Report Content Errors -->
-
+            <!--10  Page Numbering Tickets-->
             <tr>
-              <th class="ui  header subhead grey ">Report Content Errors</th>
+              <th class="ui  header subhead grey ">Page Numbering Tickets</th>
               </th>
-             
+              <td>
+                <label id="Planned_v10" name="P_Vol10"   ></label>
+              </td>
+              <td>
+                <label for="week" id="Planned_hc10" ></label>
+              </td>
               
               <td>
                 <input
-                  name="gok[A_Vol10]"
+                  name="A_Vol10"
                   id="value12"
                   onkeyup="reactive();"
                   class="form-control"
                   type="text"
-                  value="<%= gok.A_Vol10 %>"
                 />
               </td>
               <td>
                 <input
-                  name="gok[A_HCount10]"
+                  name="A_HCount10"
                   id="value112"
                   onkeyup="reactiveHCount();"
-                  value="<%= gok.A_HCount10 %>"
                   class="form-control"
                   type="text"
                 />
               </td>
-              <td><input type="text" name="gok[accuracy10]"  class="form-control"></td>
-              <td><textarea rows="2" name="gok[couts10]"></textarea></td>
-              <td><input type="text"   name="gok[A_CPH10]" value="<%= gok.A_CPH10 %>" class="form-control"  ></td>
+              <td></td>
+              <td><textarea rows="2" name="couts10"></textarea></td>
+              <td><input type="text"   name="A_CPH10" class="form-control"  disabled ></td>
               <td><label   for="week"  id="P_CPH010" name="P_CPH010"  ></label></td>
             </tr>
 
-            <!--11. English -->
-
-            <tr>
-              <th>English</th>
-             
-              <td>
-                <input
-                  name="gok[A_Vol11]"
-                  id="value13"
-                  onkeyup="reactive();"
-                  class="form-control"
-                  value="<%= gok.A_Vol11 %>"
-                  type="text"
-                />
-                
-              </td>
-              <td>
-                <input
-                  name="gok[A_HCount11]"
-                  id="value113"
-                  onkeyup="reactiveHCount();"
-                  value="<%= gok.A_HCount11 %>"
-                  class="form-control"
-                  type="text"
-                />
-
-              </td>
-              <td><input type="text"  name="gok[accuracy11]" class="form-control"></td>
-              <td><textarea rows="2" name="gok[couts11]"></textarea></td>
-              <td><input type="text"   name="gok[A_CPH11]" class="form-control" value="<%= gok.A_CPH11 %>"  ></td>
-              <td><label   for="week"  id="P_CPH011" name="P_CPH011"  ></label></td>
-            </tr>
-            </tr>
-
-            <!-- 12. English (High-value titles to be considered by Ops) -->
-
-            <tr>
-              <th>English (High-value titles to be considered by Ops)</th>
-             
-              <td>
-                <input
-                  name="gok[A_Vol12]"
-                  id="value14"
-                  onkeyup="reactive();"
-                  class="form-control"
-                  value="<%= gok.A_Vol12 %>"
-                  type="text"
-                />
-              </td>
-              <td>
-                <input
-                  name="gok[A_HCount12]"
-                  id="value114"
-                  onkeyup="reactiveHCount();"
-                  value="<%= gok.A_HCount12 %>"
-                  class="form-control"
-                  type="text"
-                />
-              </td>
-              <td><input type="text" name="gok[accuracy12]"  class="form-control"></td>
-              <td><textarea rows="2" name="gok[couts12]"></textarea></td>
-              <td><input type="text"   name="gok[A_CPH12]" value="<%= gok.A_CPH12 %>" class="form-control"  ></td>
-              <td><label   for="week"  id="P_CPH012" name="P_CPH012"  ></label></td>
-            </tr>
-            </tr>
-
-
-            <!-- 13.German  -->
-
-            <tr>
-              <th>German</th>
-             
-              
-              <td>
-                <input
-                  name="gok[A_Vol13]"
-                  id="value15"
-                  onkeyup="reactive();"
-                  class="form-control"
-                  type="text"
-                  value="<%= gok.A_Vol13 %>"
-                />
-              </td>
-              <td>
-                <input
-                  name="gok[A_HCount13]"
-                  id="value115"
-                  onkeyup="reactiveHCount();"
-                  value="<%= gok.A_HCount13 %>"
-                  class="form-control"
-                  type="text"
-                />
-              </td>
-              <td><input type="text" name="gok[accuracy13]"  class="form-control"></td>
-              <td><textarea rows="2" name="gok[couts13]"></textarea></td>
-              <td><input type="text"   name="gok[A_CPH13]" value="<%= gok.A_CPH13 %>" class="form-control"  ></td>
-              <td><label   for="week"  id="P_CPH013" name="P_CPH013"  ></label></td>
-            </tr>
-            </tr>
-
-
-            <!-- 14. French -->
-
-
-            <tr>
-              <th>French</th>
-             
-              
-              <td>
-                <input
-                  name="gok[A_Vol14]"
-                  id="value16"
-                  onkeyup="reactive();"
-                  class="form-control"
-                  type="text"
-                  value="<%= gok.A_Vol14 %>"
-                />
-              </td>
-              <td>
-                <input
-                  name="gok[A_HCount14]"
-                  id="value116"
-                  onkeyup="reactiveHCount();"
-                  value="<%= gok.A_HCount14 %>"
-                  class="form-control"
-                  type="text"
-                />
-              </td>
-              <td><input type="text"  name="gok[accuracy14]" class="form-control"></td>
-              <td><textarea rows="2" name="gok[couts14]"></textarea></td>
-              <td><input type="text"   name="gok[A_CPH14]" value="<%= gok.A_CPH14 %>" class="form-control" ></td>
-              <td><label   for="week"  id="P_CPH014" name="P_CPH014"  ></label></td>
-            </tr>
-            </tr>
-
-            <!--  15.Customer Reviews -->
-
-            <tr>
-              <th class="ui header subhead grey" >Customer Reviews  </th>
-              
-              <td>
-                <input
-                  name="gok[A_Vol15]"
-                  id="value17"
-                  onkeyup="reactive();"
-                  class="form-control"
-                  type="text"
-                  value="<%= gok.A_Vol15 %>"
-                />
-              </td>
-
-              <td>
-                <input
-                  name="gok[A_HCount15]"
-                  id="value117"
-                  onkeyup="reactiveHCount();"
-                  value="<%= gok.A_HCount15 %>"
-                  class="form-control"
-                  type="text"
-                />
-              </td>
-              <td><input type="text" name="gok[accuracy15]"  class="form-control"></td>
-              <td><textarea rows="2" name="gok[couts15]"></textarea></td>
-              <td><input type="text"   name="gok[A_CPH15]" value="<%= gok.A_CPH15 %>" class="form-control"  ></td>
-              <td><label   for="week"  id="P_CPH015" name="P_CPH015"  ></label></td>
-            </tr>
-            </tr>
-
-
-            <!-- 16 Massmail Tickets -->
-            <tr>
-              <th class="ui  header subhead grey">Massmail Tickets </th>
-              <td>
-                <input
-                  name="gok[A_Vol16]"
-                  id="value18"
-                  onkeyup="reactive();"
-                  class="form-control"
-                  value="<%= gok.A_Vol16 %>"
-                  type="text"
-                />
-              </td>
-              <td>
-                <input
-                  name="gok[A_HCount16]"
-                  id="value118"
-                  onkeyup="reactiveHCount();"
-                  value="<%= gok.A_HCount16 %>"
-                  class="form-control"
-                  type="text"
-                />
-              </td>
-              <td><input type="text"  name="gok[accuracy16]" class="form-control"></td>
-              <td><textarea rows="2" name="gok[couts16]"></textarea></td>
-              <td><input type="text"   name="gok[A_CPH16]" value="<%= gok.A_CPH16 %>" class="form-control"  ></td>
-              <td><label   for="week"  id="P_CPH016" name="gok[P_CPH016]"  ></label></td>
-            </tr>
-            </tr>
-
-
-
-            <!-- 17. Publisher Response  -->
-            <tr>
-              <th class="ui  header subhead grey">Publisher Response </th>
-              
-              
-
-              <td>
-                <input
-                  name="gok[A_Vol17]"
-                  id="value19"
-                  onkeyup="reactive();"
-                  class="form-control"
-                  value="<%= gok.A_Vol17 %>"
-                  type="text"
-                />
-              </td>
-              <td>
-                <input
-                  name="gok[A_HCount17]"
-                  id="value119"
-                  onkeyup="reactiveHCount();"
-                  value="<%= gok.A_HCount17 %>"
-                  class="form-control"
-                  type="text"
-                />
-              </td>
-              <td><input type="text"  name="gok[accuracy17]" class="form-control"></td>
-              <td><textarea rows="2" name="gok[couts17]"></textarea></td>
-              <td><input type="text"   name="gok[A_CPH17]" value="<%= gok.A_CPH17 %>" class="form-control"  ></td>
-              <td><label   for="week"  id="P_CPH017" name="P_CPH017"  ></label></td>
-            </tr>
-            </tr>
-
-
-
-            
-            <!--  18 .Submitted Corrections   -->
-
-            <tr>
-              <th>Submitted Corrections   </th>
-              
-            
-
-              <td>
-                <input
-                  name="gok[A_Vol18]"
-                  id="value20"
-                  onkeyup="reactive();"
-                  class="form-control"
-                  value="<%= gok.A_Vol18 %>"
-                  type="text"
-                />
-              </td>
-              <td>
-                <input
-                  name="gok[A_HCount18]"
-                  id="value120"
-                  onkeyup="reactiveHCount();"
-                  value="<%= gok.A_HCount18 %>"
-                  class="form-control"
-                  type="text"
-                />
-              </td>
-              <td><input type="text" name="gok[accuracy18]"  class="form-control"></td>
-              <td><textarea rows="2" name="gok[couts18]"></textarea></td>
-              <td><input type="text"   name="gok[A_CPH18]" value="<%= gok.A_CPH18 %>" class="form-control"  ></td>
-              <td><label   for="week"  id="P_CPH018" name="P_CPH018"  ></label></td>
-            </tr>
-            </tr>
-
-
-
-            <!-- 19.Queries + Escalations  -->
-
-            <tr>
-              <th>Queries + Escalations     </th>
-              
-              
-              
-              <td>
-                <input
-                  name="gok[A_Vol19]"
-                  id="value21"
-                  onkeyup="reactive();"
-                  class="form-control"
-                  type="text"
-                  value="<%= gok.A_Vol19 %>"
-                />
-              </td>
-              <td>
-                <input
-                  name="gok[A_HCount19]"
-                  id="value121"
-                  onkeyup="reactiveHCount();"
-                  value="<%= gok.A_HCount19 %>"
-                  class="form-control"
-                  type="text"
-                />
-              </td>
-              <td><input type="text"  name="gok[accuracy19]" class="form-control"></td>
-              <td><textarea rows="2" name="gok[couts19"]></textarea></td>
-              <td><input type="text"   name="gok[A_CPH19]" value="<%= gok.A_CPH19 %>" class="form-control"  ></td>
-              <td><label   for="week"  id="P_CPH019" name="P_CPH019"  ></label></td>
-            </tr>
-            </tr>
-
-
-
-            <!-- 20. Rework  -->
-            <tr>
-              <th class="ui center aligned header blue">Rework</th>
-              
-              <td>
-                <input name="gok[A_Vol20]" class="form-control" value="<%= gok.A_Vol20 %>" type="text" id="sum_rework"  readonly />
-              </td>
-
-              <td>
-                <input name="gok[A_HCount20]" class="form-control" value="<%= gok.A_HCount20 %>" type="text"  id="sum_reworkHCount" readonly />
-              </td>
-              <td><input type="text"  name="gok[accuracy20]" value="<%= gok.accuracy20 %>" class="form-control"></td>
-
-              <td><textarea rows="2" name="gok[couts20]"></textarea></td>
-
-              <td><input type="text"   name="gok[A_CPH20]" value="<%= gok.A_CPH20 %>" class="form-control" ></td>
-
-              <td><label   for="week"  id="P_CPH020" name="P_CPH020"  ></label></td>
-            </tr>
-            </tr>
-
-
-
-            
-            <!-- 21.Rework Blocking  -->
-            <tr>
-              <th>Rework Blocking  </th>
-              
-              
-              
-              <td>
-                <input
-                  name="gok[A_Vol21]"
-                  id="value1110"
-                  onkeyup="rework();"
-                  value="<%= gok.A_Vol21 %>"
-                  class="form-control"
-                  type="text"
-                />
-              </td>
-              <td>
-                <input
-                  name="gok[A_HCount21]"
-                  id="value1010"
-                  onkeyup="reworkHCount();"
-                  value="<%= gok.A_HCount21 %>"
-                  class="form-control"
-                  type="text"
-                />
-               
-              </td>
-              <td><input type="text" name="gok[accuracy21]" value="<%= gok.accuracy21 %>"  class="form-control"></td>
-              
-              <td><textarea rows="2" name="gok[couts21]"></textarea></td>
-              <td><input type="text"   name="gok[A_CPH21]" value="<%= gok.A_CPH21 %>" class="form-control"  ></td>
-              <td><label   for="week"  id="P_CPH021" name="P_CPH021"  ></label></td>
-            </tr>
-            </tr>
-
-
-
-            
-            
-          <!-- 22. Rework CFQ -->
-            <tr>
-              <th>Rework CFQI </th>
-              
-              
-              <td>
-                <input
-                  name="gok[A_Vol22]"
-                  id="value1120"
-                  onkeyup="rework();"
-                  class="form-control"
-                  value="<%= gok.A_Vol22 %>"
-                  type="text"
-                />
-              </td>
-              <td>
-                <input
-                name="gok[A_HCount22]"
-                id="value1020"
-                onkeyup="reworkHCount();"
-                value="<%= gok.A_HCount22 %>"
-                class="form-control"
-                type="text"
-              />
-              </td>
-              <td><input type="text"  name="gok[accuracy22]" class="form-control"></td>
-              <td><textarea rows="2" name="gok[couts22]"></textarea></td>
-              <td><input type="text"   name="gok[A_CPH22]" value="<%= gok.A_CPH22 %>" class="form-control"  ></td>
-              <td><label   for="week"  id="P_CPH022" name="P_CPH022"  ></label></td>
-            </tr>
-            </tr>
-
-
-
-            
-            <!-- 23.Rework Non-Blocking  -->
-
-            <tr>
-              <th>Rework Non-Blocking  </th>
-             <td>
-                <input
-                  name="gok[A_Vol23]"
-                  id="value1130"
-                  onkeyup="rework();"
-                  class="form-control"
-                  value="<%= gok.A_Vol23 %>"
-                  type="text"
-                />
-              </td>
-              <td>
-                <input
-                name="gok[A_HCount23]"
-                id="value1030"
-                onkeyup="reworkHCount();"
-                value="<%= gok.A_HCount23 %>"
-                class="form-control"
-                type="text"
-              />
-              </td>
-              <td><input type="text"  name="gok[accuracy23]" class="form-control"></td>
-              <td><textarea rows="2" name="gok[couts23]"></textarea></td>
-              <td><input type="text"   name="gok[A_CPH23]" value="<%= gok.A_CPH23 %>" class="form-control"   ></td>
-              <td><label   for="week"  id="P_CPH023" name="P_CPH023"  ></label></td>
-            </tr>
-            </tr>
-
-
-              <!-- 29.Content Testing  -->
-            
-              <tr>
-                <th class="ui center aligned header blue">Content Testing  </th>
-                
-  
-                <td>
-                  <input name="gok[A_Vol29]" value="<%= gok.A_Vol29 %>" class="form-control" type="text"  />
-                </td>
-                <td> 
-                  <input name="gok[A_HCount29]" value="<%= gok.A_HCount29 %>" class="form-control" type="text"  />
-                </td>
-                <td><input type="text" name="gok[accuracy29]" value="<%= gok.accuracy29 %>"  class="form-control"></td>
-                <td><textarea rows="2" name="gok[couts29]"></textarea></td>
-                <td><input type="text"   name="gok[A_CPH29]" class="form-control"  value="<%= gok.A_CPH29 %>"  ></td>
-                <td><label   for="week"  id="P_CPH029" name="P_CPH029"  ></label></td>
-              </tr>
-              </tr>
-  
-            
-
-            <!-- 24.KCVP Detections  -->
-            <tr>
-              <th class="ui center aligned header blue">Others   </th>
-              
-
-              <td>
-                <input name="gok[A_Vol24]" class="form-control" value="<%= gok.A_Vol24 %>" type="text" id="sum_kcvp" readonly  />
-              </td>
-
-              <td>
-                <input name="gok[A_HCount24]" class="form-control"  value="<%= gok.A_HCount24 %>" type="text"  id="sum_kcvpHCount"  readonly />
-              </td>
-
-              <td><input type="text"  name="gok[accuracy24]" value="<%=  gok.accuracy24 %>"  class="form-control"></td>
-              <td><textarea rows="2" name="gok[couts24]"></textarea></td>
-              <td><input type="text"   name="gok[A_CPH24]" value="<%= gok.A_CPH24 %>" class="form-control" ></td>
-              <td><label   for="week"  id="P_CPH024" name="P_CPH024"  ></label></td>
-            </tr>
-            </tr>
-
-
-            <!-- 25.Language Mismatch  -->
-            <tr>
-              <th > Language Mismatch  </th>
-              
-             
-              <td>
-                <input
-                  name="gok[A_Vol25]"
-                  id="kcvp1"
-                  onkeyup="kcvp();"
-                  class="form-control"
-                  value="<%= gok.A_Vol25 %>"
-                  type="text"
-                />
-              </td>
-
-              <td>
-                <input
-                  name="gok[A_HCount25]"
-                  id="kcvpHCount1"
-                  onkeyup="kcvpHCount();"
-                  value="<%= gok.A_HCount25 %>"
-                  class="form-control"
-                  type="text"
-                />
-              </td>
-              <td><input type="text"  class="form-control" name="gok[accuracy25]" ></td>
-              <td><textarea rows="2" name="gok[couts25]"></textarea></td>
-              <td><input type="text"   name="gok[A_CPH25]" value="<%= gok.A_CPH25 %>" class="form-control"  ></td>
-              <td><label   for="week"  id="P_CPH025" name="P_CPH025"  ></label></td>
-            </tr>
-            </tr>
-
-
-            <!-- 26.Unknown Language -->
-            <tr>
-              <th >Unknown Language </th>
-              
-             
-              <td>
-                <input
-                  name="gok[A_Vol26]"
-                  id="kcvp2"
-                  onkeyup="kcvp();"
-                  value="<%= gok.A_Vol26 %>"
-                  class="form-control"
-                  type="text"
-                />
-              </td>
-              
-              <td>
-                <input
-                  name="gok[A_HCount26]"
-                  id="kcvpHCount2"
-                  onkeyup="kcvpHCount();"
-                  value="<%= gok.A_HCount26 %>"
-                  class="form-control"
-                  type="text"
-                />
-              </td>
-
-              <td><input type="text"  class="form-control" name="gok[accuracy26]" ></td>
-              <td><textarea rows="2" name="gok[couts26]"></textarea></td>
-              <td><input type="text"   name="gok[A_CPH26]" value="<%= gok.A_CPH26 %>" class="form-control" ></td>
-              <td><label   for="week"  id="P_CPH026" name="P_CPH026"  ></label></td>
-            </tr>
-            </tr>
-
-            <!-- 27.Switcheroo  -->
-            
-            <tr>
-              <th >Switcheroo</th>
-             
-              
-
-              <td>
-                <input
-                  name="gok[A_Vol27]"
-                  id="kcvp3"
-                  onkeyup="kcvp();"
-                  value="<%= gok.A_Vol27 %>"
-                  class="form-control"
-                  type="text"
-                />
-              </td>
-
-              <td>
-                <input
-                  name="gok[A_HCount27]"
-                  id="kcvpHCount3"
-                  onkeyup="kcvpHCount();"
-                  value="<%= gok.A_HCount27 %>"
-                  class="form-control"
-                  type="text"
-                />
-              </td>
-              <td><input type="text" name="gok[accuracy27]"  class="form-control"></td>
-              <td><textarea rows="2" name="gok[couts27]"></textarea></td>
-              <td><input type="text"   name="gok[A_CPH27]" value="<%= gok.A_CPH27 %>" class="form-control"  ></td>
-              <td><label   for="week"  id="P_CPH027" name="P_CPH027"  ></label></td>
-            </tr>
-            </tr>
-
-
-
-            <!-- 28.Fixed Layout  -->
-            
-            <tr>
-              <th>Fixed Layout   </th>
-              
-              
-
-              <td>
-                <input
-                  name="gok[A_Vol28]"
-                  id="kcvp4"
-                  onkeyup="kcvp();"
-                  class="form-control"
-                  value="<%= gok.A_Vol28 %>"
-                  type="text"
-                />
-              </td>
-
-              <td>
-                <input
-                  name="gok[A_HCount28]"
-                  id="kcvpHCount4"
-                  onkeyup="kcvpHCount();"
-                  value="<%= gok.A_HCount28 %>"
-                  class="form-control"
-                  type="text"
-                />
-              </td>
-              <td><input type="text" name="gok[accuracy28]"  class="form-control"></td>
-              <td><textarea rows="2" name="gok[couts28]"></textarea></td>
-              <td><input type="text"   name="gok[A_CPH28]" value="<%= gok.A_CPH28 %>" class="form-control"  ></td>
-              <td><label   for="week"  id="P_CPH028" name="P_CPH028"  ></label></td>
-            </tr>
-            </tr>
-
-
-
           
-
-
+            
+           
           </thead>
         </table>
 
         <div class="form-group">
-          <button class="ui basic large blue  button">Update!</button>
+          <button class="ui basic large blue  button">Submit!</button>
         </div>
       </form>
 
-      <a href="/gok">Go Back</a>
+      <a href="/metadata">Go Back</a>
     </div>
   </div>
 </div>

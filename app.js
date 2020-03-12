@@ -4,6 +4,10 @@ var express = require("express"),
   flash = require("connect-flash"),
   Campground = require("./models/campground"),
   Comment = require("./models/comment"),
+  Gok = require("./models/gok"),
+  Xray = require("./models/xray"),
+  Metadata = require("./models/metadata"),
+  Series = require("./models/series"),
   passport = require("passport"),
   LocalStrategy = require("passport-local"),
   User = require("./models/user"),
@@ -12,6 +16,10 @@ var express = require("express"),
 
 var commentRoutes = require("./routes/comments"),
   compgroundRoutes = require("./routes/campgrounds"),
+  gokRoutes = require("./routes/gokMetrics"),
+  xrayRoutes = require("./routes/xrays"),
+  metadataRoutes = require("./routes/metadatas"),
+  seriesRoutes = require("./routes/series"),
   indexRoutes = require("./routes/index");
 
 //seedDB();
@@ -65,6 +73,10 @@ app.use(function(req, res, next) {
 // routes
 app.use("/", indexRoutes);
 app.use("/campgrounds", compgroundRoutes);
+app.use("/xray", xrayRoutes);
+app.use("/metadata", metadataRoutes);
+app.use("/gok", gokRoutes);
+app.use("/series", seriesRoutes);
 
 app.use(commentRoutes);
 

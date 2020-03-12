@@ -1,28 +1,28 @@
 var express = require("express");
 var router = express.Router();
-var Gok = require("../models/gok");
+var sjoitb = require("../models/sjoitb");
 var middleware = require("../middleware");
 
 //INDEX - show all campgrounds
 router.get("/", function(req, res) {
   // Get all campgrounds from DB
-  Gok.find({}, function(err, allGoks) {
+  sjoitb.find({}, function(err, allsjoitbs) {
     if (err) {
       console.log(err);
     } else {
-      res.render("gok/index", { gok: allGoks });
+      res.render("sjoitb/index", { sjoitb: allsjoitbs });
     }
   });
 });
 
-// gok routes here
-router.get("/gokcreate", middleware.isLoggedIn, function(req, res) {
-  Gok.find({}, function(err, allGoks) {
+// sjoitb routes here
+router.get("/sjoitbcreate", middleware.isLoggedIn, function(req, res) {
+  sjoitb.find({}, function(err, allsjoitbs) {
     if (err) {
       console.log(err);
     } else {
-      console.log(allGoks);
-      res.render("gok/gokcreate", { gok: allGoks });
+      console.log(allsjoitbs);
+      res.render("sjoitb/sjoitbcreate", { sjoitb: allsjoitbs });
     }
   });
 });
@@ -574,36 +574,37 @@ router.post("/", function(req, res) {
   };
 
   // Create a new campground and save to DB
-  Gok.create(newMetrics, function(err, newlyCreated) {
+  sjoitb.create(newMetrics, function(err, newlyCreated) {
     if (err) {
       console.log(err);
     } else {
       //redirect back to campgrounds page
       console.log(newlyCreated);
-      res.redirect("/gok");
+      res.redirect("/sjoitb");
     }
   });
 });
 
 router.get("/", function(req, res) {
   // Get all campgrounds from DB
-  Gok.find({}, function(err, allGoks) {
+  sjoitb.find({}, function(err, allsjoitbs) {
     if (err) {
       console.log(err);
     } else {
-      res.render("gok", { gok: allGoks });
+      res.render("sjoitb", { sjoitb: allsjoitbs });
     }
   });
 });
 
-router.get("/showGOK_month", function(req, res) {
-  res.render("gok/showGOK_month");
+router.get("/showsjoitb_month", function(req, res) {
+  res.render("sjoitb/showsjoitb_month");
 });
 
 // SHOW - shows more info about one campground
 router.get("/:id", function(req, res) {
   //find the campground with provided ID
-  Gok.findById(req.params.id)
+  sjoitb
+    .findById(req.params.id)
     .populate("comments")
     .exec(function(err, foundCampground) {
       if (err) {
@@ -611,41 +612,44 @@ router.get("/:id", function(req, res) {
       } else {
         console.log(foundCampground);
         //render show template with that campground
-        res.render("gok/show", { gok: foundCampground });
+        res.render("sjoitb/show", { sjoitb: foundCampground });
       }
     });
 });
 
 // EDIT CAMPGROUND ROUTE
-router.get("/:id/edit", middleware.checkGokTeamOwnership, function(req, res) {
-  Gok.findById(req.params.id, function(err, foundGok) {
-    res.render("gok/edit", { gok: foundGok });
+router.get("/:id/edit", middleware.checksjoitbTeamOwnership, function(
+  req,
+  res
+) {
+  sjoitb.findById(req.params.id, function(err, foundsjoitb) {
+    res.render("sjoitb/edit", { sjoitb: foundsjoitb });
   });
 });
 
 // UPDATE CAMPGROUND ROUTE
-router.put("/:id", middleware.checkGokTeamOwnership, function(req, res) {
+router.put("/:id", middleware.checksjoitbTeamOwnership, function(req, res) {
   // find and update the correct campground
-  Gok.findByIdAndUpdate(req.params.id, req.body.campground, function(
+  sjoitb.findByIdAndUpdate(req.params.id, req.body.campground, function(
     err,
     updatedCampground
   ) {
     if (err) {
-      res.redirect("/gok");
+      res.redirect("/sjoitb");
     } else {
       //redirect somewhere(show page)
-      res.redirect("/gok/" + req.params.id);
+      res.redirect("/sjoitb/" + req.params.id);
     }
   });
 });
 
 // DESTROY CAMPGROUND ROUTE:
-router.delete("/:id", middleware.checkGokTeamOwnership, function(req, res) {
-  Gok.findByIdAndRemove(req.params.id, function(err) {
+router.delete("/:id", middleware.checksjoitbTeamOwnership, function(req, res) {
+  sjoitb.findByIdAndRemove(req.params.id, function(err) {
     if (err) {
-      res.redirect("/gok");
+      res.redirect("/sjoitb");
     } else {
-      res.redirect("/gok");
+      res.redirect("/sjoitb");
     }
   });
 });

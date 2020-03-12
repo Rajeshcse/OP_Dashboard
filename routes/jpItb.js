@@ -1,28 +1,28 @@
 var express = require("express");
 var router = express.Router();
-var Gok = require("../models/gok");
+var jpitb = require("../models/jpitb");
 var middleware = require("../middleware");
 
 //INDEX - show all campgrounds
 router.get("/", function(req, res) {
   // Get all campgrounds from DB
-  Gok.find({}, function(err, allGoks) {
+  jpitb.find({}, function(err, alljpitbs) {
     if (err) {
       console.log(err);
     } else {
-      res.render("gok/index", { gok: allGoks });
+      res.render("jpitb/index", { jpitb: alljpitbs });
     }
   });
 });
 
-// gok routes here
-router.get("/gokcreate", middleware.isLoggedIn, function(req, res) {
-  Gok.find({}, function(err, allGoks) {
+// jpitb routes here
+router.get("/jpitbcreate", middleware.isLoggedIn, function(req, res) {
+  jpitb.find({}, function(err, alljpitbs) {
     if (err) {
       console.log(err);
     } else {
-      console.log(allGoks);
-      res.render("gok/gokcreate", { gok: allGoks });
+      console.log(alljpitbs);
+      res.render("jpitb/jpitbcreate", { jpitb: alljpitbs });
     }
   });
 });
@@ -574,36 +574,37 @@ router.post("/", function(req, res) {
   };
 
   // Create a new campground and save to DB
-  Gok.create(newMetrics, function(err, newlyCreated) {
+  jpitb.create(newMetrics, function(err, newlyCreated) {
     if (err) {
       console.log(err);
     } else {
       //redirect back to campgrounds page
       console.log(newlyCreated);
-      res.redirect("/gok");
+      res.redirect("/jpitb");
     }
   });
 });
 
 router.get("/", function(req, res) {
   // Get all campgrounds from DB
-  Gok.find({}, function(err, allGoks) {
+  jpitb.find({}, function(err, alljpitbs) {
     if (err) {
       console.log(err);
     } else {
-      res.render("gok", { gok: allGoks });
+      res.render("jpitb", { jpitb: alljpitbs });
     }
   });
 });
 
-router.get("/showGOK_month", function(req, res) {
-  res.render("gok/showGOK_month");
+router.get("/showjpitb_month", function(req, res) {
+  res.render("jpitb/showjpitb_month");
 });
 
 // SHOW - shows more info about one campground
 router.get("/:id", function(req, res) {
   //find the campground with provided ID
-  Gok.findById(req.params.id)
+  jpitb
+    .findById(req.params.id)
     .populate("comments")
     .exec(function(err, foundCampground) {
       if (err) {
@@ -611,41 +612,41 @@ router.get("/:id", function(req, res) {
       } else {
         console.log(foundCampground);
         //render show template with that campground
-        res.render("gok/show", { gok: foundCampground });
+        res.render("jpitb/show", { jpitb: foundCampground });
       }
     });
 });
 
 // EDIT CAMPGROUND ROUTE
-router.get("/:id/edit", middleware.checkGokTeamOwnership, function(req, res) {
-  Gok.findById(req.params.id, function(err, foundGok) {
-    res.render("gok/edit", { gok: foundGok });
+router.get("/:id/edit", middleware.checkjpitbTeamOwnership, function(req, res) {
+  jpitb.findById(req.params.id, function(err, foundjpitb) {
+    res.render("jpitb/edit", { jpitb: foundjpitb });
   });
 });
 
 // UPDATE CAMPGROUND ROUTE
-router.put("/:id", middleware.checkGokTeamOwnership, function(req, res) {
+router.put("/:id", middleware.checkjpitbTeamOwnership, function(req, res) {
   // find and update the correct campground
-  Gok.findByIdAndUpdate(req.params.id, req.body.campground, function(
+  jpitb.findByIdAndUpdate(req.params.id, req.body.campground, function(
     err,
     updatedCampground
   ) {
     if (err) {
-      res.redirect("/gok");
+      res.redirect("/jpitb");
     } else {
       //redirect somewhere(show page)
-      res.redirect("/gok/" + req.params.id);
+      res.redirect("/jpitb/" + req.params.id);
     }
   });
 });
 
 // DESTROY CAMPGROUND ROUTE:
-router.delete("/:id", middleware.checkGokTeamOwnership, function(req, res) {
-  Gok.findByIdAndRemove(req.params.id, function(err) {
+router.delete("/:id", middleware.checkjpitbTeamOwnership, function(req, res) {
+  jpitb.findByIdAndRemove(req.params.id, function(err) {
     if (err) {
-      res.redirect("/gok");
+      res.redirect("/jpitb");
     } else {
-      res.redirect("/gok");
+      res.redirect("/jpitb");
     }
   });
 });

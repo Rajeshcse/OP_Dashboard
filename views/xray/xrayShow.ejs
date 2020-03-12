@@ -5,7 +5,7 @@
       <ul class="nav nav-tabs card-header-tabs"> 
           <li class="nav-item">
               <a class="nav-link active" data-toggle="tab" href="#insta">ITB , 2019</a>
-          </li> 
+          </li>
           <li class="nav-item">  
               <a class="nav-link" data-toggle="tab" href="#face">ITB, 2020 </a> 
           </li> 
@@ -13,10 +13,7 @@
       </ul>
   </div>
 
-  <script>
-    var result = window.location.hostname;
-    console.log(result);
-  </script>
+  
   
   <div class="tab-content card-body">
       <div id="insta" class="tab-pane active"> <caption>
@@ -49,7 +46,7 @@
           <td>
             <% campgrounds.forEach( function(itbMetric) {  %>
               <% if(itbMetric.week == "2019-W28" ){  %>
-                <a  href="/campgrounds/<%= itbMetric._id %>"  target="0" > Week 28 </a>
+                <a  href="/campgrounds/<%= itbMetric._id %>"  target="0" > Week 28 </a> 
               <% }  %> 
             <% })  %> 
           </td>
@@ -57,21 +54,21 @@
           <td>
             <% campgrounds.forEach( function(itbMetric) {  %>
               <% if(itbMetric.week == "2019-W29" ){  %>
-               <a  href="/campgrounds/<%= itbMetric._id %>"  target="0" > Week 29 </a>
+               <a  href="/campgrounds/<%= itbMetric._id %>"  target="0" > Week 29 </a>  
               <% }  %> 
             <% }) %>
           </td>
           <td> 
             <% campgrounds.forEach(function(itbMetric) {  %>
               <% if(itbMetric.week == "2019-W30" ){  %>
-                <a href="/campgrounds/<%= itbMetric._id %>" target="0" > Week 30 </a>
+                <a href="/campgrounds/<%= itbMetric._id %>" target="0" > Week 30 </a>  
               <% }  %> 
             <% })  %> 
           </td>
           <td> 
             <% campgrounds.forEach( function(itbMetric) {  %>
             <% if(itbMetric.week == "2019-W31" ){  %>
-            <a  href="/campgrounds/<%= itbMetric._id %>" target="0" > Week 31 </a>
+            <a  href="/campgrounds/<%= itbMetric._id %>" target="0" > Week 31 </a>  
             <% }  %> 
             <% })  %> 
           </td>
@@ -82,7 +79,7 @@
           <td> 
             <% campgrounds.forEach( function(itbMetric) {  %>
               <% if(itbMetric.week == "2019-W32" ){  %>
-              <a  href="/campgrounds/<%= itbMetric._id %>" target="0"  > Week 32 </a>
+              <a  href="/campgrounds/<%= itbMetric._id %>" target="0"  > Week 32 </a>  
               <% }  %>
             <% })  %> 
           </td>
@@ -90,7 +87,7 @@
           <td> 
             <% campgrounds.forEach( function(itbMetric) {  %>
             <% if(itbMetric.week == "2019-W33" ){  %>
-              <a  href="/campgrounds/<%= itbMetric._id %>" target="0"  > Week 33 </a>
+              <a  href="/campgrounds/<%= itbMetric._id %>" target="0"  > Week 33 </a>  
             <% }  %> 
           <% })  %> 
           </td>
@@ -194,10 +191,11 @@
       
         <tr>
           <td class="month"><a target="_blank" href="/campgrounds/nov"  > November </a></td>
-          <td> 
+          
+          3<td> 
             <% campgrounds.forEach( function(itbMetric) {  %>
             <% if(itbMetric.week == "2019-W45"   ){  %>
-            <a  href="/campgrounds/<%= itbMetric._id %>"   > Week 45 </a>
+            <a  href="/xray/<%= xrayMetrics._id %>"   > Week 45 </a>
           <% }  %> 
            <% })  %> 
           </td>
@@ -297,13 +295,14 @@
   }
   
   td:hover{
+
     background-color: #444;
     color: #f4f4f4;
-   
     -webkit-transition: background-color 1s ease-out;
     -moz-transition: background-color 1s ease-out;
     -o-transition: background-color 1s ease-out;
     transition: background-color 2s ease-out;
+
   }
 
   .nav-item{
@@ -319,25 +318,25 @@
     color: #f4f4f4;
     cursor: pointer;
     
-    -webkit-transition: background-color 1s ease-out;
-    -moz-transition: background-color 1s ease-out;
-    -o-transition: background-color 1s ease-out;
-    transition: background-color 2s ease-out;
-  }
+    -webkit-transition: background-color 1s ease-out; 
+    -moz-transition: background-color 1s ease-out; 
+    -o-transition: background-color 1s ease-out; 
+    transition: background-color 2s ease-out; 
+  } 
 
   .quaterly {
-    font-size: 2rem;
+    font-size: 2rem;  
    
   }
   .month {
-    text-align: center;
-    font-size: 1.4rem;
+    text-align: center; 
+    font-size: 1.4rem; 
   }
-  thead {
-    text-align: center;
+  thead { 
+    text-align: center;  
   }
   a{
-    color:rgb(229, 231, 223)
+    color:rgb(229, 231, 223)  
   }
  
 </style>

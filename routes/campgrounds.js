@@ -22,6 +22,7 @@ router.get("/itb", middleware.isLoggedIn, function(req, res) {
       console.log(err);
     } else {
       console.log(allCampgrounds);
+
       res.render("campgrounds/itb", { campgrounds: allCampgrounds });
     }
   });
@@ -653,6 +654,7 @@ router.get("/sep", function(req, res) {
     }
   });
 });
+
 router.get("/oct", function(req, res) {
   Campground.find({}, function(err, allCampgrounds) {
     if (err) {

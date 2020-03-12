@@ -269,6 +269,7 @@ var campgroundSchema = new mongoose.Schema({
   A_CPH32: Number,
 
   created: { type: Date, default: Date },
+
   week: String,
   author: {
     id: {

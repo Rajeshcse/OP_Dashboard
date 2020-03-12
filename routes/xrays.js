@@ -1,28 +1,28 @@
 var express = require("express");
 var router = express.Router();
-var Gok = require("../models/gok");
+var xray = require("../models/xray");
 var middleware = require("../middleware");
 
 //INDEX - show all campgrounds
 router.get("/", function(req, res) {
   // Get all campgrounds from DB
-  Gok.find({}, function(err, allGoks) {
+  xray.find({}, function(err, allxrays) {
     if (err) {
       console.log(err);
     } else {
-      res.render("gok/index", { gok: allGoks });
+      res.render("xray/index", { xray: allxrays });
     }
   });
 });
 
-// gok routes here
-router.get("/gokcreate", middleware.isLoggedIn, function(req, res) {
-  Gok.find({}, function(err, allGoks) {
+// xray routes here
+router.get("/xraycreate", middleware.isLoggedIn, function(req, res) {
+  xray.find({}, function(err, allxrays) {
     if (err) {
       console.log(err);
     } else {
-      console.log(allGoks);
-      res.render("gok/gokcreate", { gok: allGoks });
+      console.log(allxrays);
+      res.render("xray/xraycreate", { xray: allxrays });
     }
   });
 });
@@ -574,36 +574,37 @@ router.post("/", function(req, res) {
   };
 
   // Create a new campground and save to DB
-  Gok.create(newMetrics, function(err, newlyCreated) {
+  xray.create(newMetrics, function(err, newlyCreated) {
     if (err) {
       console.log(err);
     } else {
       //redirect back to campgrounds page
       console.log(newlyCreated);
-      res.redirect("/gok");
+      res.redirect("/xray");
     }
   });
 });
 
 router.get("/", function(req, res) {
   // Get all campgrounds from DB
-  Gok.find({}, function(err, allGoks) {
+  xray.find({}, function(err, allxrays) {
     if (err) {
       console.log(err);
     } else {
-      res.render("gok", { gok: allGoks });
+      res.render("xray", { xray: allxrays });
     }
   });
 });
 
-router.get("/showGOK_month", function(req, res) {
-  res.render("gok/showGOK_month");
+router.get("/showxray_month", function(req, res) {
+  res.render("xray/showxray_month");
 });
 
 // SHOW - shows more info about one campground
 router.get("/:id", function(req, res) {
   //find the campground with provided ID
-  Gok.findById(req.params.id)
+  xray
+    .findById(req.params.id)
     .populate("comments")
     .exec(function(err, foundCampground) {
       if (err) {
@@ -611,41 +612,41 @@ router.get("/:id", function(req, res) {
       } else {
         console.log(foundCampground);
         //render show template with that campground
-        res.render("gok/show", { gok: foundCampground });
+        res.render("xray/show", { xray: foundCampground });
       }
     });
 });
 
 // EDIT CAMPGROUND ROUTE
-router.get("/:id/edit", middleware.checkGokTeamOwnership, function(req, res) {
-  Gok.findById(req.params.id, function(err, foundGok) {
-    res.render("gok/edit", { gok: foundGok });
+router.get("/:id/edit", middleware.checkxrayTeamOwnership, function(req, res) {
+  xray.findById(req.params.id, function(err, foundxray) {
+    res.render("xray/edit", { xray: foundxray });
   });
 });
 
 // UPDATE CAMPGROUND ROUTE
-router.put("/:id", middleware.checkGokTeamOwnership, function(req, res) {
+router.put("/:id", middleware.checkxrayTeamOwnership, function(req, res) {
   // find and update the correct campground
-  Gok.findByIdAndUpdate(req.params.id, req.body.campground, function(
+  xray.findByIdAndUpdate(req.params.id, req.body.campground, function(
     err,
     updatedCampground
   ) {
     if (err) {
-      res.redirect("/gok");
+      res.redirect("/xray");
     } else {
       //redirect somewhere(show page)
-      res.redirect("/gok/" + req.params.id);
+      res.redirect("/xray/" + req.params.id);
     }
   });
 });
 
 // DESTROY CAMPGROUND ROUTE:
-router.delete("/:id", middleware.checkGokTeamOwnership, function(req, res) {
-  Gok.findByIdAndRemove(req.params.id, function(err) {
+router.delete("/:id", middleware.checkxrayTeamOwnership, function(req, res) {
+  xray.findByIdAndRemove(req.params.id, function(err) {
     if (err) {
-      res.redirect("/gok");
+      res.redirect("/xray");
     } else {
-      res.redirect("/gok");
+      res.redirect("/xray");
     }
   });
 });

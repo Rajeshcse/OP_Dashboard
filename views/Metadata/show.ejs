@@ -12,7 +12,7 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 <link rel="stylesheet" href="/stylesheets/main.css" />
 
 
-<% week= gok.week %>
+<% week= metadata.week %>
 
 <!-- 2019 , 3rd Quarter  -->
 <% if(week == "2019-W27" || week== "2019-W28" || week== "2019-W29" || week== "2019-W30" || week== "2019-W31" || week== "2019-W32" || week== "2019-W33" || week== "2019-W34"|| week== "2019-W35"|| week== "2019-W36" || week== "2019-W37" || week== "2019-W38"|| week== "2019-W39" ) { %>
@@ -129,15 +129,15 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
         <div class="thumbnail">
             <div class="caption-full">
               <caption>
-                <% week= gok.week %> 
-                <a href="/gok"> 
+                <% week= metadata.week %> 
+                <a href="/metadata"> 
                   <button class="ui labeled icon button">
                     <i class="left arrow icon"></i>
                     Go Back
                   </button>
                 </a>
 
-                <h2 class="team " > GOK Team: [ <%= week %> ] </h2>   
+                <h2 class="team " > Metadata Team: [ <%= week %> ] </h2>   
               </caption>
         <div>
          
@@ -146,8 +146,8 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
         <input type="button" class="xs-btn btn btn-success"  onclick="tableToExcel('testTable', 'W3C Example Table')" value="Export to Excel">
        
          <div>
-          <em>Submitted By <b><%= gok.author.username %></b> - </em>
-          <span><i> On, </i><%=  gok.created.toDateString() %></span><br> 
+          <em>Submitted By <b><%= metadata.author.username %></b> - </em>
+          <span><i> On, </i><%=  metadata.created.toDateString() %></span><br> 
           
          </div>
              
@@ -155,7 +155,7 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
   <thead>
     <tr>
       <th>
-        <h4><%= gok.week %></h4>
+        <h4><%= metadata.week %></h4>
       </th>
       
       <th class="ui center aligned header" colspan="3">Planned  </th>
@@ -185,23 +185,23 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
   </thead>
   <tbody class="panel">
     <tr data-toggle="collapse" data-target="#demo1" class="ui center aligned header blue" data-parent="#testTable"> 
-      <td></i>  GOK-Content Quality Score  <i class="right aligned small dropdown icon  "></i></td> 
+      <td></i>  SRL<i class="right aligned small dropdown icon  "></i></td> 
       <td ><b><%= week_v1 %></b></td> 
       <td> <b><%= week_hc1 %></b> </td> 
       <td>  
         <% var fix_Pprod1= (week_v1 / week_hc1)/60 %>  
          <b><%=fix_Pprod1.toFixed(2) %></b>  
       </td> 
-      <td><b><%= gok.A_Vol1 %></b></td> 
-      <td><b><%= gok.A_HCount1 %></b></td> 
+      <td><b><%= metadata.A_Vol1 %></b></td> 
+      <td><b><%= metadata.A_HCount1 %></b></td> 
       <td>
-        <% var fix_Aprod1  = (gok.A_Vol1/ gok.A_HCount1)/60 %> 
+        <% var fix_Aprod1  = (metadata.A_Vol1/ metadata.A_HCount1)/60 %> 
         <b><%=  fix_Aprod1.toFixed(2) %></b> 
       </td> 
       
       <!-- variance --> 
-       <% var vol_variance1= (((gok.A_Vol1 - week_v1)/week_v1)*100).toFixed()  %>
-       <% var HCount_variance1= (((gok.A_HCount1 - week_hc1)/week_hc1)*100).toFixed()  %>
+       <% var vol_variance1= (((metadata.A_Vol1 - week_v1)/week_v1)*100).toFixed()  %>
+       <% var HCount_variance1= (((metadata.A_HCount1 - week_hc1)/week_hc1)*100).toFixed()  %>
        <% var Prod_variance1= (((fix_Aprod1 - fix_Pprod1)/fix_Pprod1)*100).toFixed() %>
       
        <!-- Volume variance -->
@@ -249,16 +249,16 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
           </td>
       <% } %>
 
-      <td><%= gok.couts1 %></td>
+      <td><%= metadata.couts1 %></td>
      
-      <!-- <td><%= gok.accuracy1 %>%</td> -->
-      <td><%=  gok.A_CPH1 %></td>
+      <!-- <td><%= metadata.accuracy1 %>%</td> -->
+      <td><%=  metadata.A_CPH1 %></td>
 
     </tr>
 
     </tr>
     <tr id="demo1" class="collapse ">
-      <th>CQS - Fresh	</th>
+      <th>SRL - GV 90 - Regular Ops inflow</th>
       <td><%= week_v2 %></td>   
         <td><%= week_hc2 %></td>  
         <td>  
@@ -267,16 +267,16 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
         </td> 
 
 
-        <td><%= gok.A_Vol2 %></td> 
-        <td><%= gok.A_HCount2 %></td>
+        <td><%= metadata.A_Vol2 %></td> 
+        <td><%= metadata.A_HCount2 %></td>
 
         <td>
-          <% var fix_Aprod2  = (gok.A_Vol2/ gok.A_HCount2)/60 %>
+          <% var fix_Aprod2  = (metadata.A_Vol2/ metadata.A_HCount2)/60 %>
           <%=  fix_Aprod2.toFixed(2) %>
         </td>
          <!-- variance -->
-         <% var vol_variance2= (((gok.A_Vol2 - week_v2)/week_v2)*100).toFixed()  %>
-         <% var HCount_variance2= (((gok.A_HCount2 - week_hc2)/week_hc2)*100).toFixed()  %>
+         <% var vol_variance2= (((metadata.A_Vol2 - week_v2)/week_v2)*100).toFixed()  %>
+         <% var HCount_variance2= (((metadata.A_HCount2 - week_hc2)/week_hc2)*100).toFixed()  %>
          <% var Prod_variance2= (((fix_Aprod2 - fix_Pprod2)/fix_Pprod2)*100).toFixed() %>
          <!-- Volume variance -->
          <% if( vol_variance2 >= -9  &&  vol_variance2 <= 9 ) {   %>
@@ -323,14 +323,14 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
             </td>
         <% } %>
         <!-- call outs -->
-        <td><%= gok.couts2 %></td>
-        <!-- <td><%= gok.accuracy2 %> </td> -->
-       <td><%=  gok.A_CPH2 %></td>
+        <td><%= metadata.couts2 %></td>
+        <!-- <td><%= metadata.accuracy2 %> </td> -->
+       <td><%=  metadata.A_CPH2 %></td>
     </tr>
 
     
     <tr id="demo1" class="collapse">
-      <th>CQS Rework - CQS Pass but GUID Change	</th>
+      <th>SRL - GV 90 - automation shut</th>
       <td><%= week_v3 %></td> 
       <td><%= week_hc3 %></td>
       <td>  
@@ -339,16 +339,16 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
       </td> 
 
 
-      <td><%= gok.A_Vol3 %></td> 
-      <td><%= gok.A_HCount3 %></td>
+      <td><%= metadata.A_Vol3 %></td> 
+      <td><%= metadata.A_HCount3 %></td>
 
       <td>
-        <% var fix_Aprod3  = (gok.A_Vol3/ gok.A_HCount3)/60 %>
+        <% var fix_Aprod3  = (metadata.A_Vol3/ metadata.A_HCount3)/60 %>
         <%=  fix_Aprod3.toFixed(2) %>
       </td>
        <!-- variance -->
-       <% var vol_variance3= (((gok.A_Vol3 - week_v3)/week_v3)*100).toFixed()  %>
-       <% var HCount_variance3= (((gok.A_HCount3 - week_hc3)/week_hc3)*100).toFixed()  %>
+       <% var vol_variance3= (((metadata.A_Vol3 - week_v3)/week_v3)*100).toFixed()  %>
+       <% var HCount_variance3= (((metadata.A_HCount3 - week_hc3)/week_hc3)*100).toFixed()  %>
        <% var Prod_variance3= (((fix_Aprod3 - fix_Pprod3)/fix_Pprod3)*100).toFixed() %>
        <!-- Volume variance -->
        <% if( vol_variance3 >= -9  &&  vol_variance3 <= 9 ) {   %>
@@ -396,14 +396,14 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
       <% } %>
 
       <!-- call outs -->
-      <td><%= gok.couts3 %></td>
-      <!-- <td><%= gok.accuracy3 %></td> -->
-      <td><%= gok.A_CPH3 %></td>
+      <td><%= metadata.couts3 %></td>
+      <!-- <td><%= metadata.accuracy3 %></td> -->
+      <td><%= metadata.A_CPH3 %></td>
 
     </tr>
 
     <tr id="demo1" class="collapse">
-      <th>CQS Rework - CQS Fails	</th>
+      <th>SRL - GV 90 - Onsite backlog</th>
       <td><%= week_v4 %></td> 
         <td><%= week_hc4 %></td>
         <td>  
@@ -412,16 +412,16 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
         </td> 
 
 
-        <td><%= gok.A_Vol4 %></td> 
-        <td><%= gok.A_HCount4 %></td>
+        <td><%= metadata.A_Vol4 %></td> 
+        <td><%= metadata.A_HCount4 %></td>
 
         <td>
-          <% var fix_Aprod4  = (gok.A_Vol4/ gok.A_HCount4)/60 %>
+          <% var fix_Aprod4  = (metadata.A_Vol4/ metadata.A_HCount4)/60 %>
           <%=  fix_Aprod4.toFixed(2) %>
         </td>
          <!-- variance -->
-         <% var vol_variance4= (((gok.A_Vol4 - week_v4)/week_v4)*100).toFixed()  %>
-         <% var HCount_variance4= (((gok.A_HCount4 - week_hc4)/week_hc4)*100).toFixed()  %>
+         <% var vol_variance4= (((metadata.A_Vol4 - week_v4)/week_v4)*100).toFixed()  %>
+         <% var HCount_variance4= (((metadata.A_HCount4 - week_hc4)/week_hc4)*100).toFixed()  %>
          <% var Prod_variance4= (((fix_Aprod4 - fix_Pprod4)/fix_Pprod4)*100).toFixed() %>
          <!-- Volume variance -->
          <% if( vol_variance4 >= -9  &&  vol_variance4 <= 9 ) {   %>
@@ -469,428 +469,160 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
         <% } %>
 
         <!-- call outs -->
-        <td><%= gok.couts4 %></td>
+        <td><%= metadata.couts4 %></td>
         
-        <!-- <td><%= gok.accuracy4 %></td> -->
+        <!-- <td><%= metadata.accuracy4 %></td> -->
 
-        <td><%=  gok.A_CPH4 %></td>
+        <td><%=  metadata.A_CPH4 %></td>
 
     </tr>
-    <tr
-    data-toggle="collapse"
-    data-target="#demo03"
-    data-parent="#testTable" class="ui center aligned header blue"
-  >
-    <td >GOK-HDV<i class="right aligned small dropdown icon  "></i></td>
-    <td><b><%= week_v8 %></b></td> 
-    <td> <b><%= week_hc8 %></b> </td>
-    <td>  
-      <% var fix_Pprod8= (week_v8 / week_hc8)/60 %>  
-      <b><%=  fix_Pprod8.toFixed(2) %></b> 
-    </td> 
-    
-    <td><b><%= gok.A_Vol8 %></b></td> 
-    <td><b><%= gok.A_HCount8 %></b></td>
 
-    <td>
-      <% var fix_Aprod8  = (gok.A_Vol8/ gok.A_HCount8)/60 %>
-      <b><%=  fix_Aprod8.toFixed(2) %></b>
-    </td>
-     <!-- variance -->
-     <% var vol_variance8= (((gok.A_Vol8 - week_v8)/week_v8)*100).toFixed()  %>
-     <% var HCount_variance8= (((gok.A_HCount8 - week_hc8)/week_hc8)*100).toFixed()  %>
-     <% var Prod_variance8= (((fix_Aprod8 - fix_Pprod8)/fix_Pprod8)*100).toFixed() %>
-     
-     <!-- Volume variance -->
-     <% if( vol_variance8 >= -9  &&  vol_variance8 <= 9 ) {   %>
-      <td   >
-        <%= vol_variance8 %> % 
-      </td>
-    <%  }else  if( vol_variance8 > 10 ) {  %>
-      <td  class="positive"   >
-        <%= vol_variance8 %> %
-      </td>
-      <%  } else {  %>
-        <td class="negative"  >
-          <%= vol_variance8 %> %
-        </td>
-    <% } %>
-    
-    <!-- HCount  variance -->
-    <% if( HCount_variance8 >= -9  &&  HCount_variance8 <= 9 ) {   %>
-      <td   >
-        <%= HCount_variance8 %> %
-      </td>
-    <%  }else  if( HCount_variance8 > 10 ) {  %>
-      <td  class="positive"   >
-        <%= HCount_variance8 %> %
-      </td>
-      <%  } else {  %>
-        <td class="negative"  >
-          <%= HCount_variance8 %> %
-        </td>
-    <% } %>
-
-    <!-- Prod Variance -->
-    <% if( Prod_variance8 >= -9  &&  Prod_variance8 <= 9 ) {   %>
-      <td   >
-        <%= Prod_variance8 %> %
-      </td>
-    <%  }else  if( Prod_variance8 > 10 ) {  %>
-      <td  class="positive"   >
-        <%= Prod_variance8 %> %
-      </td>
-      <%  } else {  %>
-        <td class="negative"  >
-          <%= Prod_variance8 %> %
-        </td>
-    <% } %>
-  <!-- call outs -->
-    <td><%= gok.couts8 %></td>
-    <!-- <td><%= gok.accuracy8 %>%</td> -->
-    <td><%=  gok.A_CPH8 %></td>
-    
-
-    
-  </tr>
-  
+    <tr id="demo1" class="collapse">
+      <th>SRL testing</th>
+      <td><%= week_v5 %></td> 
+      <td><%= week_hc5 %></td>
+      <td>  
+        <% var fix_Pprod5= (week_v5 / week_hc5)/60 %>  
+        <%=  fix_Pprod5.toFixed(2) %> 
+      </td> 
 
 
+      <td><%= metadata.A_Vol5 %></td> 
+      <td><%= metadata.A_HCount5 %></td>
 
-  
-  <tr id="demo03" class="collapse"> 
-    <td
-      data-toggle="collapse"
-      data-target="#demo09"
-      data-parent="#testTable" class="ui  header subhead grey "
-    >
-    HDV - (Image Imp or not important)	
-    </td>
-    <td><%= week_v15  %></td>  
-    <td><%= week_hc15 %></td> 
-    
-    <td>  
-      <% var fix_Pprod15= (week_v15 / week_hc15)/60 %>   
-      <%=  fix_Pprod15.toFixed(2) %>  
-    </td> 
-    
-    <td><%= gok.A_Vol15 %></td> 
-    <td><%= gok.A_HCount15 %></td>
-
-    <td>
-      <% var fix_Aprod15  = (gok.A_Vol15/ gok.A_HCount15)/60 %>
-      <%=  fix_Aprod15.toFixed(2) %>
-    </td>
-     <!-- variance -->
-     <% var vol_variance15= (((gok.A_Vol15 - week_v15)/week_v15)*100).toFixed()  %>
-     <% var HCount_variance15= (((gok.A_HCount15 - week_hc15)/week_hc15)*100).toFixed()  %>
-     <% var Prod_variance15= (((fix_Aprod15 - fix_Pprod15)/fix_Pprod15)*100).toFixed() %>
-
-     <!-- Volume variance -->
-
-     <% if( vol_variance15 >= -9  &&  vol_variance15 <= 9 ) {   %>
       <td>
-        <%= vol_variance15 %> %
+        <% var fix_Aprod5  = (metadata.A_Vol5/ metadata.A_HCount5)/60 %>
+        <%=  fix_Aprod5.toFixed(2) %>
       </td>
-
-     <%  } else  if ( vol_variance15 > 10 ) {  %>
-      <td  class="positive"   >
-        <%= vol_variance15 %> %
-      </td>
-
-      <%  } else {  %>
-        <td class="negative"  >
-          <%= vol_variance15 %> %
+       <!-- variance -->
+       <% var vol_variance5= (((metadata.A_Vol5 - week_v5)/week_v5)*100).toFixed()  %>
+       <% var HCount_variance5= (((metadata.A_HCount5 - week_hc5)/week_hc5)*100).toFixed()  %>
+       <% var Prod_variance5= (((fix_Aprod5 - fix_Pprod5)/fix_Pprod5)*100).toFixed() %>
+       <!-- Volume variance -->
+       <% if( vol_variance5 >= -9  &&  vol_variance5 <= 9 ) {   %>
+        <td   >
+          <%= vol_variance5 %> % 
         </td>
-    <% } %>
-    
-    <!-- HCount  variance -->
-    <% if( HCount_variance15 >= -9  &&  HCount_variance15 <= 9 ) {   %>
-      <td   >
-        <%= HCount_variance15 %> %
-      </td>
-    <%  }else  if( HCount_variance15 > 10 ) {  %>
-      <td  class="positive"   >
-        <%= HCount_variance15 %> %
-      </td>
-      <%  } else {  %>
-        <td class="negative"  >
-          <%= HCount_variance15 %> %
+      <%  }else  if( vol_variance5 > 10 ) {  %>
+        <td  class="positive"   >
+          <%= vol_variance5 %> %
         </td>
-    <% } %>
-
-    <!-- Prod Variance -->
-    <% if( Prod_variance15 >= -9  &&  Prod_variance15 <= 9 ) {   %>
-      <td   >
-        <%= Prod_variance15 %> %
-      </td>
-    <%  }else  if( Prod_variance15 > 10 ) {  %>
-      <td  class="positive"   >
-        <%= Prod_variance15 %> %
-      </td>
-      <%  } else {  %>
-        <td class="negative"  >
-          <%= Prod_variance15 %> %
+        <%  } else {  %>
+          <td class="negative"  >
+            <%= vol_variance5 %> %
+          </td>
+      <% } %>
+      
+      <!-- HCount  variance -->
+      <% if( HCount_variance5 >= -9  &&  HCount_variance5 <= 9 ) {   %>
+        <td   >
+          <%= HCount_variance5 %> %
         </td>
-    <% } %>
+      <%  }else  if( HCount_variance5 > 10 ) {  %>
+        <td  class="positive"   >
+          <%= HCount_variance5 %> %
+        </td>
+        <%  } else {  %>
+          <td class="negative"  >
+            <%= HCount_variance5 %> %
+          </td>
+      <% } %>
+
+      <!-- Prod Variance -->
+      <% if( Prod_variance5 >= -9  &&  Prod_variance5 <= 9 ) {   %>
+        <td   >
+          <%= Prod_variance5 %> %
+        </td>
+      <%  }else  if( Prod_variance5 > 10 ) {  %>
+        <td  class="positive"   >
+          <%= Prod_variance5 %> %
+        </td>
+        <%  } else {  %>
+          <td class="negative"  >
+            <%= Prod_variance5 %> %
+          </td>
+      <% } %>
+      <!-- call outs -->
+      <td><%= metadata.couts5 %></td>
+      
+      <!-- <td><%= metadata.accuracy5 %></td> -->
+
+      <td><%=  metadata.A_CPH5 %></td>
+    </tr>
+
+    <tr id="demo1" class="collapse">
+      <th>SRL - KU (KDPS)</th>
+      <td><%= week_v6 %></td> 
+        <td><%= week_hc6 %></td>
+        <td>  
+          <% var fix_Pprod6= (week_v6 / week_hc6)/60 %>  
+          <%=  fix_Pprod6.toFixed(2) %> 
+        </td> 
 
 
+        <td><%= metadata.A_Vol6 %></td> 
+        <td><%= metadata.A_HCount6 %></td>
 
-  <!-- call outs --> 
-    <td><%= gok.couts15 %></td>
-    <!-- <td><%= gok.accuracy15 %></td> -->
-    <td><%=  gok.A_CPH15 %></td>
-</tr>
+        <td>
+          <% var fix_Aprod6  = (metadata.A_Vol6/ metadata.A_HCount6)/60 %>
+          <%=  fix_Aprod6.toFixed(2) %>
+        </td>
+         <!-- variance -->
+         <% var vol_variance6= (((metadata.A_Vol6 - week_v6)/week_v6)*100).toFixed()  %>
+         <% var HCount_variance6= (((metadata.A_HCount6 - week_hc6)/week_hc6)*100).toFixed()  %>
+         <% var Prod_variance6= (((fix_Aprod6 - fix_Pprod6)/fix_Pprod6)*100).toFixed() %>
+         <!-- Volume variance -->
+         <% if( vol_variance6 >= -9  &&  vol_variance6 <= 9 ) {   %>
+          <td   >
+            <%= vol_variance6 %> % 
+          </td>
+        <%  }else  if( vol_variance6 > 10 ) {  %>
+          <td  class="positive"   >
+            <%= vol_variance6 %> %
+          </td>
+          <%  } else {  %>
+            <td class="negative"  >
+              <%= vol_variance6 %> %
+            </td>
+        <% } %>
+        
+        <!-- HCount  variance -->
+        <% if( HCount_variance6 >= -9  &&  HCount_variance6 <= 9 ) {   %>
+          <td   >
+            <%= HCount_variance6 %> %
+          </td>
+        <%  }else  if( HCount_variance6 > 10 ) {  %>
+          <td  class="positive"   >
+            <%= HCount_variance6 %> %
+          </td>
+          <%  } else {  %>
+            <td class="negative"  >
+              <%= HCount_variance6 %> %
+            </td>
+        <% } %>
 
-  <tr id="demo03" class="collapse"> 
-    <td
-      data-toggle="collapse"
-      data-target="#demo09"
-      data-parent="#testTable" class="ui  header subhead grey"
-    >
-    HDV - (PDF fix up)
-    </td>
-    <td><%= week_v16  %></td> 
-              <td><%= week_hc16 %></td>
-              
-              <td>  
-                <% var fix_Pprod16= (week_v16 / week_hc16)/60 %>  
-                <%=  fix_Pprod16.toFixed(2) %> 
-              </td> 
-              
-              <td><%= gok.A_Vol16 %></td> 
-              <td><%= gok.A_HCount16 %></td>
-  
-              <td>
-                <% var fix_Aprod16  = (gok.A_Vol16/ gok.A_HCount16)/60 %>
-                <%=  fix_Aprod16.toFixed(2) %>
-              </td>
-               <!-- variance -->
-               <% var vol_variance16= (((gok.A_Vol16 - week_v16)/week_v16)*100).toFixed()  %>
-               <% var HCount_variance16= (((gok.A_HCount16 - week_hc16)/week_hc16)*100).toFixed()  %>
-               <% var Prod_variance16= (((fix_Aprod16 - fix_Pprod16)/fix_Pprod16)*100).toFixed() %>
-               <!-- Volume variance -->
-               <% if( vol_variance16 >= -9  &&  vol_variance16 <= 9 ) {   %>
-                <td   >
-                  <%= vol_variance16 %> % 
-                </td>
-              <%  } else  if( vol_variance16 > 10 ) {  %>
-                <td  class="positive"   >
-                  <%= vol_variance16 %> %
-                </td>
-                <%  } else {  %>
-                  <td class="negative"  >
-                    <%= vol_variance16 %> %
-                  </td>
-              <% } %>
-              
-              <!-- HCount  variance -->
-              <% if( HCount_variance16 >= -9  &&  HCount_variance16 <= 9 ) {   %>
-                <td   >
-                  <%= HCount_variance16 %> %
-                </td>
-              <%  }else if( HCount_variance16 > 10 ) {  %>
-                <td  class="positive"   >
-                  <%= HCount_variance16 %> %
-                </td>
-                <%  } else {  %>
-                  <td class="negative"  >
-                    <%= HCount_variance16 %> %
-                  </td>
-              <% } %>
-  
-              <!-- Prod Variance -->
-              <% if( Prod_variance16 >= -9  &&  Prod_variance16 <= 9 ) {   %>
-                <td   >
-                  <%= Prod_variance16 %> %
-                </td>
-              <%  }else if( Prod_variance16 > 10 ) {  %>
-                <td  class="positive"   >
-                  <%= Prod_variance16 %> %
-                </td>
-                <%  } else {  %>
-                  <td class="negative"  >
-                    <%= Prod_variance16 %> %
-                  </td>
-              <% } %>
+        <!-- Prod Variance -->
+        <% if( Prod_variance6 >= -9  &&  Prod_variance6 <= 9 ) {   %>
+          <td   >
+            <%= Prod_variance6 %> %
+          </td>
+        <%  }else  if( Prod_variance6 > 10 ) {  %>
+          <td  class="positive"   >
+            <%= Prod_variance6 %> %
+          </td>
+          <%  } else {  %>
+            <td class="negative"  >
+              <%= Prod_variance6 %> %
+            </td>
+        <% } %>
+        <!-- call outs -->
+        <td><%= metadata.couts6 %></td>
+        <!-- <td><%= metadata.accuracy6 %> </td> -->
+        <td><%=  metadata.A_CPH6 %></td>
+    </tr>
 
-
-
-            <!-- call outs --> 
-              <td><%= gok.couts16 %></td>
-              <!-- <td><%= gok.accuracy16 %></td> -->
-              <td><%=  gok.A_CPH16 %></td>
-</tr>
-
-
-<tr id="demo03" class="collapse"> 
-  <td
-    data-toggle="collapse"
-    data-target="#demo011"
-    data-parent="#testTable" class="ui  header subhead grey"
-  >
-  
-  HDV Review SOP
-  </td>
-  <td><%= week_v17  %></td> 
-              <td><%= week_hc17 %></td>
-              
-
-
-              <td>  
-                <% var fix_Pprod17= (week_v17 / week_hc17)/60 %>  
-                <%=  fix_Pprod17.toFixed(2) %> 
-              </td> 
-              
-              <td><%= gok.A_Vol17 %></td> 
-              <td><%= gok.A_HCount17 %></td>
-  
-              <td>
-                <% var fix_Aprod17  = (gok.A_Vol17/ gok.A_HCount17)/60 %>
-                <%=  fix_Aprod17.toFixed(2) %>
-              </td>
-               <!-- variance -->
-               <% var vol_variance17= (((gok.A_Vol17 - week_v17)/week_v17)*100).toFixed()  %>
-               <% var HCount_variance17= (((gok.A_HCount17 - week_hc17)/week_hc17)*100).toFixed()  %>
-               <% var Prod_variance17= (((fix_Aprod17 - fix_Pprod17)/fix_Pprod17)*100).toFixed() %>
-               <!-- Volume variance -->
-               <% if( vol_variance17 >= -9  &&  vol_variance17 <= 9 ) {   %>
-                <td   >
-                  <%= vol_variance17 %> % 
-                </td>
-              <%  }else  if( vol_variance17 > 10 ) {  %>
-                <td  class="positive"   >
-                  <%= vol_variance17 %> %
-                </td>
-                <%  } else {  %>
-                  <td class="negative"  >
-                    <%= vol_variance17 %> %
-                  </td>
-              <% } %>
-              
-              <!-- HCount  variance -->
-              <% if( HCount_variance17 >= -9  &&  HCount_variance17 <= 9 ) {   %>
-                <td   >
-                  <%= HCount_variance17 %> %
-                </td>
-              <%  }else  if( HCount_variance17 > 10 ) {  %>
-                <td  class="positive"   >
-                  <%= HCount_variance17 %> %
-                </td>
-                <%  } else {  %>
-                  <td class="negative"  >
-                    <%= HCount_variance17 %> %
-                  </td>
-              <% } %>
-  
-              <!-- Prod Variance -->
-              <% if( Prod_variance17 >= -9  &&  Prod_variance17 <= 9 ) {   %>
-                <td   >
-                  <%= Prod_variance17 %> %
-                </td>
-              <%  }else  if( Prod_variance17 > 10 ) {  %>
-                <td  class="positive"   >
-                  <%= Prod_variance17 %> %
-                </td>
-                <%  } else {  %>
-                  <td class="negative"  >
-                    <%= Prod_variance17 %> %
-                  </td>
-              <% } %>
-
-            <!-- call outs --> 
-              <td><%= gok.couts17 %></td>
-              <!-- <td><%= gok.accuracy17 %></td> -->
-              <td><%=  gok.A_CPH17 %></td>
-
-                </tr>
-                <tr data-toggle="collapse" data-target="#demo5"  class="ui center aligned header blue" data-parent="#testTable">
-                  <td>GOK X-Ray	 	</td>
-                  <td><%= week_v24  %></td> 
-                      <td><%= week_hc24 %></td>
-                      
-              
-                      <td>  
-                        <% var fix_Pprod24= (week_v24 / week_hc24)/60 %>  
-                        <%=  fix_Pprod24.toFixed(2) %> 
-                      </td> 
-                      
-                      <td><%= gok.A_Vol24 %></td> 
-                      <td><%= gok.A_HCount24 %></td>
-              
-                      <td>
-                        <% var fix_Aprod24  = (gok.A_Vol24/ gok.A_HCount24)/60 %>
-                        <%=  fix_Aprod24.toFixed(2) %>
-                      </td>
-                       <!-- variance -->
-                       <% var vol_variance24= (((gok.A_Vol24 - week_v24)/week_v24)*100).toFixed()  %>
-                       <% var HCount_variance24= (((gok.A_HCount24 - week_hc24)/week_hc24)*100).toFixed()  %>
-                       <% var Prod_variance24= (((fix_Aprod24 - fix_Pprod24)/fix_Pprod24)*100).toFixed() %>
-                       <!-- Volume variance -->
-                       <% if( vol_variance24 >= -9  &&  vol_variance24 <= 9 ) {   %>
-                        <td   >
-                          <%= vol_variance24 %> % 
-                        </td>
-                      <%  }else if( vol_variance24 > 10 ) {  %>
-                        <td  class="positive"   >
-                          <%= vol_variance24 %> %
-                        </td>
-                        <%  } else {  %>
-                          <td class="negative"  >
-                            <%= vol_variance24 %> %
-                          </td>
-                      <% } %>
-                      
-                      <!-- HCount  variance -->
-                      <% if( HCount_variance24 >= -9  &&  HCount_variance24 <= 9 ) {   %>
-                        <td   >
-                          <%= HCount_variance24 %> %
-                        </td>
-                      <%  }else if( HCount_variance24 > 10 ) {  %>
-                        <td  class="positive"   >
-                          <%= HCount_variance24 %> %
-                        </td>
-                        <%  } else {  %>
-                          <td class="negative"  >
-                            <%= HCount_variance24 %> %
-                          </td>
-                      <% } %>
-              
-                      <!-- Prod Variance -->
-                      <% if( Prod_variance24 >= -9  &&  Prod_variance24 <= 9 ) {   %>
-                        <td   >
-                          <%= Prod_variance24 %> %
-                        </td>
-                      <%  }else if( Prod_variance24 > 10 ) {  %>
-                        <td  class="positive"   >
-                          <%= Prod_variance24 %> %
-                        </td>
-                        <%  } else {  %>
-                          <td class="negative"  >
-                            <%= Prod_variance24 %> %
-                          </td>
-                      <% } %>
-              
-              
-              
-              
-                    <!-- call outs --> 
-                      <td><%= gok.couts24 %></td>
-                      <!-- <td><%= gok.accuracy24 %>%</td> -->
-                      <td><%=  gok.A_CPH24 %></td>
-              
-                </tr>
-               
-              
-
-                
-  
-
-
-
-       
     <tr data-toggle="collapse" data-target="#demo5"  class="ui center aligned header blue" data-parent="#testTable">
-      <td> RPN	</td>
+      <td> NCX - GV 90	</td>
       <td><%= week_v29  %></td> 
           <td><%= week_hc29 %></td>
           
@@ -900,16 +632,16 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
             <%=  fix_Pprod29.toFixed(2) %> 
           </td> 
           
-          <td><%= gok.A_Vol29 %></td> 
-          <td><%= gok.A_HCount29 %></td>
+          <td><%= metadata.A_Vol29 %></td> 
+          <td><%= metadata.A_HCount29 %></td>
 
           <td>
-            <% var fix_Aprod29  = (gok.A_Vol29/ gok.A_HCount29)/60 %>
+            <% var fix_Aprod29  = (metadata.A_Vol29/ metadata.A_HCount29)/60 %>
             <%=  fix_Aprod29.toFixed(2) %>
           </td>
            <!-- variance -->
-           <% var vol_variance29= (((gok.A_Vol29 - week_v29)/week_v29)*100).toFixed()  %>
-           <% var HCount_variance29= (((gok.A_HCount29 - week_hc29)/week_hc29)*100).toFixed()  %>
+           <% var vol_variance29= (((metadata.A_Vol29 - week_v29)/week_v29)*100).toFixed()  %>
+           <% var HCount_variance29= (((metadata.A_HCount29 - week_hc29)/week_hc29)*100).toFixed()  %>
            <% var Prod_variance29= (((fix_Aprod29 - fix_Pprod29)/fix_Pprod29)*100).toFixed() %>
            <!-- Volume variance -->
            <% if( vol_variance29 >= -9  &&  vol_variance29 <= 9 ) {   %>
@@ -960,21 +692,248 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 
 
         <!-- call outs --> 
-          <td><%= gok.couts29 %></td>
-          <!-- <td><%= gok.accuracy29 %>%</td> -->
-          <td><%=  gok.A_CPH29 %></td>
+          <td><%= metadata.couts29 %></td>
+          <!-- <td><%= metadata.accuracy29 %>%</td> -->
+          <td><%=  metadata.A_CPH29 %></td>
 
     </tr>
    
+
+
+    <tr
+    data-toggle="collapse"
+    data-target="#demo03"
+    data-parent="#testTable" class="ui center aligned header blue"
+  >
+    <td >RPN<i class="right aligned small dropdown icon  "></i></td>
+    <td><b><%= week_v8 %></b></td> 
+    <td> <b><%= week_hc8 %></b> </td>
+    <td>  
+      <% var fix_Pprod8= (week_v8 / week_hc8)/60 %>  
+      <b><%=  fix_Pprod8.toFixed(2) %></b> 
+    </td> 
+    
+    <td><b><%= metadata.A_Vol8 %></b></td> 
+    <td><b><%= metadata.A_HCount8 %></b></td>
+
+    <td>
+      <% var fix_Aprod8  = (metadata.A_Vol8/ metadata.A_HCount8)/60 %>
+      <b><%=  fix_Aprod8.toFixed(2) %></b>
+    </td>
+     <!-- variance -->
+     <% var vol_variance8= (((metadata.A_Vol8 - week_v8)/week_v8)*100).toFixed()  %>
+     <% var HCount_variance8= (((metadata.A_HCount8 - week_hc8)/week_hc8)*100).toFixed()  %>
+     <% var Prod_variance8= (((fix_Aprod8 - fix_Pprod8)/fix_Pprod8)*100).toFixed() %>
+     
+     <!-- Volume variance -->
+     <% if( vol_variance8 >= -9  &&  vol_variance8 <= 9 ) {   %>
+      <td   >
+        <%= vol_variance8 %> % 
+      </td>
+    <%  }else  if( vol_variance8 > 10 ) {  %>
+      <td  class="positive"   >
+        <%= vol_variance8 %> %
+      </td>
+      <%  } else {  %>
+        <td class="negative"  >
+          <%= vol_variance8 %> %
+        </td>
+    <% } %>
+    
+    <!-- HCount  variance -->
+    <% if( HCount_variance8 >= -9  &&  HCount_variance8 <= 9 ) {   %>
+      <td   >
+        <%= HCount_variance8 %> %
+      </td>
+    <%  }else  if( HCount_variance8 > 10 ) {  %>
+      <td  class="positive"   >
+        <%= HCount_variance8 %> %
+      </td>
+      <%  } else {  %>
+        <td class="negative"  >
+          <%= HCount_variance8 %> %
+        </td>
+    <% } %>
+
+    <!-- Prod Variance -->
+    <% if( Prod_variance8 >= -9  &&  Prod_variance8 <= 9 ) {   %>
+      <td   >
+        <%= Prod_variance8 %> %
+      </td>
+    <%  }else  if( Prod_variance8 > 10 ) {  %>
+      <td  class="positive"   >
+        <%= Prod_variance8 %> %
+      </td>
+      <%  } else {  %>
+        <td class="negative"  >
+          <%= Prod_variance8 %> %
+        </td>
+    <% } %>
+  <!-- call outs -->
+    <td><%= metadata.couts8 %></td>
+    <!-- <td><%= metadata.accuracy8 %>%</td> -->
+    <td><%=  metadata.A_CPH8 %></td>
+    
+
+    
+  </tr>
+  
+
+
+
+  <tr id="demo03" class="collapse"> 
+        <th>Page Numbering Manual</th>
+        <td><%= week_v9 %></td> 
+              <td><%= week_hc9 %></td>
+              <td>  
+                <% var fix_Pprod9= (week_v9 / week_hc9)/60 %>  
+                <%=  fix_Pprod9.toFixed(2) %> 
+              </td> 
+              
+              <td><%= metadata.A_Vol9 %></td> 
+              <td><%= metadata.A_HCount9 %></td>
+  
+              <td>
+                <% var fix_Aprod9  = (metadata.A_Vol9/ metadata.A_HCount9)/60 %>
+                <%=  fix_Aprod9.toFixed(2) %>
+              </td>
+               <!-- variance -->
+               <% var vol_variance9= (((metadata.A_Vol9 - week_v9)/week_v9)*100).toFixed()  %>
+               <% var HCount_variance9= (((metadata.A_HCount9 - week_hc9)/week_hc9)*100).toFixed()  %>
+               <% var Prod_variance9= (((fix_Aprod9 - fix_Pprod9)/fix_Pprod9)*100).toFixed() %>
+               <!-- Volume variance -->
+               <% if( vol_variance9 >= -9  &&  vol_variance9 <= 9 ) {   %>
+                <td   >
+                  <%= vol_variance9 %> % 
+                </td>
+              <%  }else  if( vol_variance9 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= vol_variance9 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= vol_variance9 %> %
+                  </td>
+              <% } %>
+              
+              <!-- HCount  variance -->
+              <% if( HCount_variance9 >= -9  &&  HCount_variance9 <= 9 ) {   %>
+                <td   >
+                  <%= HCount_variance9 %> %
+                </td>
+              <%  }else  if( HCount_variance9 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= HCount_variance9 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= HCount_variance9 %> %
+                  </td>
+              <% } %>
+  
+              <!-- Prod Variance -->
+              <% if( Prod_variance9 >= -9  &&  Prod_variance9 <= 9 ) {   %>
+                <td   >
+                  <%= Prod_variance9 %> %
+                </td>
+              <%  }else  if( Prod_variance9 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= Prod_variance9 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= Prod_variance9 %> %
+                  </td>
+              <% } %>
+            <!-- call outs -->           
+              <td><%= metadata.couts9 %></td>
+              <!-- <td><%= metadata.accuracy9 %></td> -->
+              <td><%=  metadata.A_CPH9 %></td>
+  </tr>
+
+
+
+  <tr id="demo03" class="collapse"> 
+    
+        <th>Page Numbering Tickets</th>
+        <td><%= week_v10 %></td> 
+              <td><%= week_hc10 %></td>
+              <td>  
+                <% var fix_Pprod10= (week_v10 / week_hc10)/60 %>  
+                <%=  fix_Pprod10.toFixed(2) %> 
+              </td> 
+              
+              <td><%= metadata.A_Vol10 %></td> 
+              <td><%= metadata.A_HCount10 %></td>
+  
+              <td>
+                <% var fix_Aprod10  = (metadata.A_Vol10/ metadata.A_HCount10)/60 %>
+                <%=  fix_Aprod10.toFixed(2) %>
+              </td>
+               <!-- variance -->
+               <% var vol_variance10= (((metadata.A_Vol10 - week_v10)/week_v10)*100).toFixed()  %>
+               <% var HCount_variance10= (((metadata.A_HCount10 - week_hc10)/week_hc10)*100).toFixed()  %>
+               <% var Prod_variance10= (((fix_Aprod10 - fix_Pprod10)/fix_Pprod10)*100).toFixed() %>
+               <!-- Volume variance -->
+               <% if( vol_variance10 >= -9  &&  vol_variance10 <= 9 ) {   %>
+                <td>
+                  <%= vol_variance10 %> % 
+                </td>
+              <%  } else if( vol_variance10 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= vol_variance10 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= vol_variance10 %> %
+                  </td>
+              <% } %>
+              
+              <!-- HCount  variance -->
+              <% if( HCount_variance10 >= -9  &&  HCount_variance10 <= 9 ) {   %>
+                <td>
+                  <%= HCount_variance10 %> %
+                </td>
+              <%  }else   if( HCount_variance10 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= HCount_variance10 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= HCount_variance10 %> %
+                  </td>
+              <% } %>
+  
+              <!-- Prod Variance -->
+              <% if( Prod_variance10 >= -9  &&  Prod_variance10 <= 9 ) {   %>
+                <td   >
+                  <%= Prod_variance10 %> %
+                </td>
+              <%  }else  if( Prod_variance10 > 10 ) {  %>
+                <td  class="positive"   >
+                  <%= Prod_variance10 %> %
+                </td>
+                <%  } else {  %>
+                  <td class="negative"  >
+                    <%= Prod_variance10 %> %
+                  </td>
+              <% } %>
+            <!-- call outs -->           
+              <td><%= metadata.couts10 %></td>
+              <!-- <td><%= metadata.accuracy10 %></td> -->
+              <td><%=  metadata.A_CPH10 %></td>
+       
+       
    
+
     </tbody>
   </table>
 
-    <% if(currentUser && gok.author.id.equals(currentUser._id)  || currentUser && currentUser.isAdmin ){ %> 
+    <% if(currentUser && metadata.author.id.equals(currentUser._id)  || currentUser && currentUser.isAdmin ){ %> 
         
-        <a class="btn btn-warning btn-xs"  href="/gok/<%= gok._id %>/edit"> Edit <i class="edit icon" >  </i> </a>
+        <a class="btn btn-warning btn-xs"  href="/metadata/<%= metadata._id %>/edit"> Edit <i class="edit icon" >  </i> </a>
         
-        <form id="delete-form" action="/gok/<%= gok._id %>?_method=DELETE" method="POST">
+        <form id="delete-form" action="/metadata/<%= metadata._id %>?_method=DELETE" method="POST">
             <button id="del" onclick="show_confirm()" class="btn  btn-danger btn-xs"> Delete <i class= "trash alternate icon"  > </i></button>
         </form>
 
