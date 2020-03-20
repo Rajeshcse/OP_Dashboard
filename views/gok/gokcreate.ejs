@@ -1,14 +1,16 @@
 <% include ../partials/header %>
 
 <script>
-  function sum() {
+    function sum() {
     var v1 = document.getElementById("value1").value;
     var v2 = document.getElementById("value2").value;
     var v3 = document.getElementById("value3").value;
-    var result = +v1 + +v2 + +v3 ;
+    var v4 = document.getElementById("value4").value;
+    var v5 = document.getElementById("value5").value;
+    // var v6 = document.getElementById("value6").value;
+    var result = +v1 + +v2 + +v3 + +v4 + +v5 ;
     if (!isNaN(result)) {
       document.getElementById("sum_value").value = result.toFixed(2); 
-      
     }
   }
 
@@ -16,8 +18,10 @@
     var hc1 = document.getElementById("headcount1").value;
     var hc2 = document.getElementById("headcount2").value;
     var hc3 = document.getElementById("headcount3").value;
-   
-    var result = +hc1 + +hc2 + +hc3;
+    var hc4 = document.getElementById("headcount4").value;
+    var hc5 = document.getElementById("headcount5").value;
+    // var hc6 = document.getElementById("headcount6").value;
+    var result = +hc1 + +hc2 + +hc3 + +hc4 + +hc5;
     if (!isNaN(result)) {
       document.getElementById("hc_value").value = result.toFixed(2);
     }
@@ -25,1441 +29,623 @@
 
 
   function reactive(){
-    var v7 = document.getElementById("value17").value;
-    var v8 = document.getElementById("value18").value;
-    var v9 = document.getElementById("value19").value;
-    
-    var result =  +v7  + +v8 + +v9   ;
+    var v1 = document.getElementById("value11").value;
+    var v2 = document.getElementById("value12").value;
+   
+    var result = +v1 + +v2  ;
     if (!isNaN(result)) {
       document.getElementById("sum_reactive").value = result.toFixed(2);
     }
   }
 
   function reactiveHCount(){
-   
-    var v7 = document.getElementById("value117").value;
-    var v8 = document.getElementById("value118").value;
-    var v9 = document.getElementById("value119").value;
+    var v1 = document.getElementById("value111").value;
+    var v2 = document.getElementById("value112").value;
    
     
     
-    var result =  +v7  + +v8 + +v9  ;
+    var result = +v1 + +v2 ;
     if (!isNaN(result)) {
       document.getElementById("sum_reactiveHCount").value = result.toFixed(2);
     }
   }
 
- 
-  function weekly() {
+  function rework(){
+    var v1 = document.getElementById("value1110").value;
+    var v2 = document.getElementById("value1120").value;
+    var v3 = document.getElementById("value1130").value;
 
-  var x = document.getElementById("myText").value;
-
-  if( x=== "2019-W27" || x=== "2019-W28" || x=== "2019-W29" || x=== "2019-W30" || x=== "2019-W31" || x=== "2019-W32" || x=== "2019-W33" || x=== "2019-W34"|| x=== "2019-W35"|| x=== "2019-W36" || x=== "2019-W37" || x=== "2019-W38"|| x=== "2019-W39" ){
-    
-    
-    document.getElementById("Planned_v1" ).innerHTML = "596.23";
-    document.getElementById("Planned_v2").innerHTML = "46.15";
-    document.getElementById("Planned_v3").innerHTML = "264.69";
-    document.getElementById("Planned_v4").innerHTML = "10.15";
-    document.getElementById("Planned_v5" ).innerHTML = "184.61";
-    document.getElementById("Planned_v6").innerHTML = "6.47";
-    document.getElementById("Planned_v7").innerHTML = "84.15";
-    document.getElementById("Planned_v8").innerHTML = "1572";
-    document.getElementById("Planned_v9" ).innerHTML = "127.61";
-    document.getElementById("Planned_v10").innerHTML = "1005.62";
-    document.getElementById("Planned_v11").innerHTML = "780";
-    document.getElementById("Planned_v12").innerHTML = "";
-    document.getElementById("Planned_v13" ).innerHTML = "173";
-    document.getElementById("Planned_v14").innerHTML = "53.46";
-    document.getElementById("Planned_v15").innerHTML = "125.1";
-    document.getElementById("Planned_v16").innerHTML = "50.76";
-    document.getElementById("Planned_v17" ).innerHTML = "262.92";
-    document.getElementById("Planned_v18").innerHTML = "202.92";
-    document.getElementById("Planned_v19").innerHTML = "60";
-    document.getElementById("Planned_v20").innerHTML = "462.92";
-    document.getElementById("Planned_v21" ).innerHTML = "48.46";
-    document.getElementById("Planned_v22").innerHTML = "40.07";
-    document.getElementById("Planned_v23").innerHTML = "374.41";
-    document.getElementById("Planned_v24").innerHTML = "165.62";
-    document.getElementById("Planned_v25" ).innerHTML = "125";
-    document.getElementById("Planned_v26").innerHTML = "18.46";
-    document.getElementById("Planned_v27").innerHTML = "15.69";
-    document.getElementById("Planned_v28").innerHTML = "6.46";
-    document.getElementById("Planned_v29" ).innerHTML = "92.31";
-    document.getElementById("Planned_v30").innerHTML = "2500";
-    document.getElementById("Planned_v31").innerHTML = "92.31";
-    document.getElementById("Planned_v32").innerHTML = "85.85";
-
-    document.getElementById("Planned_hc1" ).innerHTML = "4.05";
-    document.getElementById("Planned_hc2").innerHTML = "0.38";
-    document.getElementById("Planned_hc3").innerHTML = "1.61";
-    document.getElementById("Planned_hc4").innerHTML = "0.12";
-    document.getElementById("Planned_hc5" ).innerHTML = "1.40";
-    document.getElementById("Planned_hc6").innerHTML = "0.05";
-    document.getElementById("Planned_hc7").innerHTML = "0.49";
-    document.getElementById("Planned_hc8").innerHTML = "17.65";
-    document.getElementById("Planned_hc9" ).innerHTML = "0.97";
-    document.getElementById("Planned_hc10").innerHTML = "7.62";
-    document.getElementById("Planned_hc11").innerHTML = "6.03";
-    document.getElementById("Planned_hc12").innerHTML = "";
-    document.getElementById("Planned_hc13" ).innerHTML = "1.22";
-    document.getElementById("Planned_hc14").innerHTML = "0.38";
-    document.getElementById("Planned_hc15").innerHTML = "0.95";
-    document.getElementById("Planned_hc16").innerHTML = "0.29";
-    document.getElementById("Planned_hc17" ).innerHTML = "0.82";
-    document.getElementById("Planned_hc18").innerHTML = "0.32";
-    document.getElementById("Planned_hc19").innerHTML = "0.50";
-    document.getElementById("Planned_hc20").innerHTML = "1.22";
-    document.getElementById("Planned_hc21" ).innerHTML = "0.35";
-    document.getElementById("Planned_hc22").innerHTML = "0.11";
-    document.getElementById("Planned_hc23").innerHTML = "0.76";
-    document.getElementById("Planned_hc24").innerHTML = "0.30";
-    document.getElementById("Planned_hc25" ).innerHTML = "0.20";
-    document.getElementById("Planned_hc26").innerHTML = "0.03";
-    document.getElementById("Planned_hc27").innerHTML = "0.05";
-    document.getElementById("Planned_hc28").innerHTML = "0.02";
-    document.getElementById("Planned_hc29" ).innerHTML = "2";
-    document.getElementById("Planned_hc30").innerHTML = "0.10";
-    document.getElementById("Planned_hc31").innerHTML = "2";
-    document.getElementById("Planned_hc32").innerHTML = "0.10";
-
-    document.getElementById("Planned_prod1" ).innerHTML = "1.5";
-    document.getElementById("Planned_prod2").innerHTML = "6.5";
-    document.getElementById("Planned_prod3").innerHTML = "68.5";
-    document.getElementById("Planned_prod4").innerHTML = "4.5";
-    document.getElementById("Planned_prod5" ).innerHTML = "4.5";
-    document.getElementById("Planned_prod6").innerHTML = "34.5";
-    document.getElementById("Planned_prod7").innerHTML = "5.5";
-    document.getElementById("Planned_prod8").innerHTML = "6.5";
-    document.getElementById("Planned_prod9" ).innerHTML = "1.5";
-    document.getElementById("Planned_prod10").innerHTML = "1.5";
-    document.getElementById("Planned_prod11").innerHTML = "3.5";
-    document.getElementById("Planned_prod12").innerHTML = "863.5";
-    document.getElementById("Planned_prod13" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod14").innerHTML = "6.5";
-    document.getElementById("Planned_prod15").innerHTML = "7.5";
-    document.getElementById("Planned_prod16").innerHTML = "3.5";
-    document.getElementById("Planned_prod17" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod18").innerHTML = "6.5";
-    document.getElementById("Planned_prod19").innerHTML = "7.5";
-    document.getElementById("Planned_prod20").innerHTML = "8.5";
-    document.getElementById("Planned_prod21" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod22").innerHTML = "6.5";
-    document.getElementById("Planned_prod23").innerHTML = "7.5";
-    document.getElementById("Planned_prod24").innerHTML = "8.5";
-    document.getElementById("Planned_prod25" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod26").innerHTML = "6.5";
-    document.getElementById("Planned_prod27").innerHTML = "7.5";
-    document.getElementById("Planned_prod28").innerHTML = "8.5";
-    document.getElementById("Planned_prod29" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod30").innerHTML = "6.5";
-    document.getElementById("Planned_prod31").innerHTML = "7.5";
-    document.getElementById("Planned_prod32").innerHTML = "8.5";
-
+    var result = +v1 + +v2 + +v3;
+    if (!isNaN(result)) {
+      document.getElementById("sum_rework").value = result.toFixed(2);
+    }
   }
 
-// October 2019
-  else if(x=== "2019-W40" || x=== "2019-W41" || x=== "2019-W42" || x=== "2019-W43" || x=== "2019-W44"){
-
-        document.getElementById("P_CPH01").innerHTML = "1366";
-    document.getElementById("P_CPH02").innerHTML = "1366";
-    document.getElementById("P_CPH03").innerHTML = "1366";
-    document.getElementById("P_CPH04").innerHTML = "1366";
-    document.getElementById("P_CPH05").innerHTML = "1366";
-    
-    document.getElementById("P_CPH06").innerHTML = "1366";
-    document.getElementById("P_CPH07").innerHTML = "1366";
-    document.getElementById("P_CPH08").innerHTML = "1366";
-    document.getElementById("P_CPH09").innerHTML = "1366";
-    document.getElementById("P_CPH010").innerHTML = "1366";
-    document.getElementById("P_CPH011").innerHTML = "1366";
-    document.getElementById("P_CPH012").innerHTML = "1366";
-    document.getElementById("P_CPH013").innerHTML = "1366";
-    document.getElementById("P_CPH014").innerHTML = "1366";
-    document.getElementById("P_CPH015").innerHTML = "1366";
-    document.getElementById("P_CPH016").innerHTML = "1366";
-    document.getElementById("P_CPH017").innerHTML = "1366";
-    document.getElementById("P_CPH018").innerHTML = "1366";
-    document.getElementById("P_CPH019").innerHTML = "1366";
-    document.getElementById("P_CPH020").innerHTML = "1366";
-    document.getElementById("P_CPH021").innerHTML = "1366";
-    document.getElementById("P_CPH022").innerHTML = "1366";
-    document.getElementById("P_CPH023").innerHTML = "1366";
-    document.getElementById("P_CPH024").innerHTML = "1366";
-    document.getElementById("P_CPH025").innerHTML = "1366";
-    document.getElementById("P_CPH026").innerHTML = "1366";
-    document.getElementById("P_CPH027").innerHTML = "1366";
-    document.getElementById("P_CPH028").innerHTML = "1366";
-    document.getElementById("P_CPH029").innerHTML = "1366";
-    document.getElementById("P_CPH030").innerHTML = "1366";
-    document.getElementById("P_CPH031").innerHTML = "1366";
-    document.getElementById("P_CPH032").innerHTML = "1366";
+  function reworkHCount(){
+    var v1 = document.getElementById("value1010").value;
+    var v2 = document.getElementById("value1020").value;
+    var v3 = document.getElementById("value1030").value;
+    var result = +v1 + +v2 + +v3;
+    if (!isNaN(result)) {
+      document.getElementById("sum_reworkHCount").value = result.toFixed(2);
+    }
+  }
 
 
 
-    document.getElementById("Planned_v1" ).innerHTML = "658.84";
-    document.getElementById("Planned_v2").innerHTML = "46.15";
-    document.getElementById("Planned_v3").innerHTML = "264.69";
-    document.getElementById("Planned_v4").innerHTML = "10.15";
-    document.getElementById("Planned_v5" ).innerHTML = "184.61";
-    document.getElementById("Planned_v6").innerHTML = "6.46";
-    document.getElementById("Planned_v7").innerHTML = "84.15";
-    document.getElementById("Planned_v8").innerHTML = "1572";
-    document.getElementById("Planned_v9" ).innerHTML = "123.2";
-    document.getElementById("Planned_v10").innerHTML = "52";
-    document.getElementById("Planned_v11").innerHTML = "14";
-    document.getElementById("Planned_v12").innerHTML = "63";
-    document.getElementById("Planned_v13" ).innerHTML = "5";
-    document.getElementById("Planned_v14").innerHTML = "663.5";
-    document.getElementById("Planned_v15").innerHTML = "763.5";
-    document.getElementById("Planned_v16").innerHTML = "863.5";
-    document.getElementById("Planned_v17" ).innerHTML = "563.5";
-    document.getElementById("Planned_v18").innerHTML = "663.5";
-    document.getElementById("Planned_v19").innerHTML = "763.5";
-    document.getElementById("Planned_v20").innerHTML = "863.5";
-    document.getElementById("Planned_v21" ).innerHTML = "563.5";
-    document.getElementById("Planned_v22").innerHTML = "663.5";
-    document.getElementById("Planned_v23").innerHTML = "763.5";
-    document.getElementById("Planned_v24").innerHTML = "863.5";
-    document.getElementById("Planned_v25" ).innerHTML = "563.5";
-    document.getElementById("Planned_v26").innerHTML = "663.5";
-    document.getElementById("Planned_v27").innerHTML = "763.5";
-    document.getElementById("Planned_v28").innerHTML = "863.5";
-    document.getElementById("Planned_v29" ).innerHTML = "563.5";
-    document.getElementById("Planned_v30").innerHTML = "663.5";
-    document.getElementById("Planned_v31").innerHTML = "763.5";
-    document.getElementById("Planned_v32").innerHTML = "863.5";
-
-    document.getElementById("Planned_hc1" ).innerHTML = "1.35";
-    document.getElementById("Planned_hc2").innerHTML = "5.5";
-    document.getElementById("Planned_hc3").innerHTML = "8.05";
-    document.getElementById("Planned_hc4").innerHTML = "4.5";
-    document.getElementById("Planned_hc5" ).innerHTML = "3.15";
-    document.getElementById("Planned_hc6").innerHTML = "4.5";
-    document.getElementById("Planned_hc7").innerHTML = "3.5";
-    document.getElementById("Planned_hc8").innerHTML = "2.05";
-    document.getElementById("Planned_hc9" ).innerHTML = "1.35";
-    document.getElementById("Planned_hc10").innerHTML = "6.5";
-    document.getElementById("Planned_hc11").innerHTML = "6.5";
-    document.getElementById("Planned_hc12").innerHTML = "8.5";
-    document.getElementById("Planned_hc13" ).innerHTML = "6.5";
-    document.getElementById("Planned_hc14").innerHTML = "6.5";
-    document.getElementById("Planned_hc15").innerHTML = "76.35";
-    document.getElementById("Planned_hc16").innerHTML = "8.5";
-    document.getElementById("Planned_hc17" ).innerHTML = "6.5";
-    document.getElementById("Planned_hc18").innerHTML = "66.5";
-    document.getElementById("Planned_hc19").innerHTML = "6.35";
-    document.getElementById("Planned_hc20").innerHTML = "6.5";
-    document.getElementById("Planned_hc21" ).innerHTML = "6.05";
-    document.getElementById("Planned_hc22").innerHTML = "66.5";
-    document.getElementById("Planned_hc23").innerHTML = "6.5";
-    document.getElementById("Planned_hc24").innerHTML = "86.5";
-    document.getElementById("Planned_hc25" ).innerHTML = "56.15";
-    document.getElementById("Planned_hc26").innerHTML = "66.5";
-    document.getElementById("Planned_hc27").innerHTML = "6.5";
-    document.getElementById("Planned_hc28").innerHTML = "6.5";
-    document.getElementById("Planned_hc29" ).innerHTML = "6.15";
-    document.getElementById("Planned_hc30").innerHTML = "6.5";
-    document.getElementById("Planned_hc31").innerHTML = "7.5";
-    document.getElementById("Planned_hc32").innerHTML = "6.5";
-
-
-    document.getElementById("Planned_prod1" ).innerHTML = "1.5";
-    document.getElementById("Planned_prod2").innerHTML = "6.5";
-    document.getElementById("Planned_prod3").innerHTML = "68.5";
-    document.getElementById("Planned_prod4").innerHTML = "4.5";
-    document.getElementById("Planned_prod5" ).innerHTML = "4.5";
-    document.getElementById("Planned_prod6").innerHTML = "34.5";
-    document.getElementById("Planned_prod7").innerHTML = "5.5";
-    document.getElementById("Planned_prod8").innerHTML = "6.5";
-    document.getElementById("Planned_prod9" ).innerHTML = "1.5";
-    document.getElementById("Planned_prod10").innerHTML = "1.5";
-    document.getElementById("Planned_prod11").innerHTML = "3.5";
-    document.getElementById("Planned_prod12").innerHTML = "863.5";
-    document.getElementById("Planned_prod13" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod14").innerHTML = "6.5";
-    document.getElementById("Planned_prod15").innerHTML = "7.5";
-    document.getElementById("Planned_prod16").innerHTML = "3.5";
-    document.getElementById("Planned_prod17" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod18").innerHTML = "5.5";
-    document.getElementById("Planned_prod19").innerHTML = "7.5";
-    document.getElementById("Planned_prod20").innerHTML = "8.5";
-    document.getElementById("Planned_prod21" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod22").innerHTML = "6.5";
-    document.getElementById("Planned_prod23").innerHTML = "7.5";
-    document.getElementById("Planned_prod24").innerHTML = "8.5";
-    document.getElementById("Planned_prod25" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod26").innerHTML = "6.5";
-    document.getElementById("Planned_prod27").innerHTML = "7.5";
-    document.getElementById("Planned_prod28").innerHTML = "8.5";
-    document.getElementById("Planned_prod29" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod30").innerHTML = "6.5";
-    document.getElementById("Planned_prod31").innerHTML = "7.5";
-    document.getElementById("Planned_prod32").innerHTML = "8.5";
-
-
+  function kcvp(){
+    var v1 = document.getElementById("kcvp1").value;
+    var v2 = document.getElementById("kcvp2").value;
+    var v3 = document.getElementById("kcvp3").value;
+    var v4 = document.getElementById("kcvp4").value;
+    var result = +v1 + +v2 + +v3 + +v4;
+    if (!isNaN(result)) {
+      document.getElementById("sum_kcvp").value = result.toFixed(2);
+    }
+  }
   
-
-  }
-  //  Novenmber 2019
-  else if(x=== "2019-W45" || x=== "2019-W46" || x=== "2019-W47" || x=== "2019-W48"){
-    
-    document.getElementById("P_CPH01").innerHTML = "1363";
-    document.getElementById("P_CPH02").innerHTML = "1363";
-    document.getElementById("P_CPH03").innerHTML = "1363";
-    document.getElementById("P_CPH04").innerHTML = "1363";
-    document.getElementById("P_CPH05").innerHTML = "1363";
-    
-    document.getElementById("P_CPH06").innerHTML = "1363";
-    document.getElementById("P_CPH07").innerHTML = "1363";
-    document.getElementById("P_CPH08").innerHTML = "1363";
-    document.getElementById("P_CPH09").innerHTML = "1363";
-    document.getElementById("P_CPH010").innerHTML = "1363";
-    document.getElementById("P_CPH011").innerHTML = "1363";
-    document.getElementById("P_CPH012").innerHTML = "1363";
-    document.getElementById("P_CPH013").innerHTML = "1363";
-    document.getElementById("P_CPH014").innerHTML = "1363";
-    document.getElementById("P_CPH015").innerHTML = "1363";
-    document.getElementById("P_CPH016").innerHTML = "1363";
-    document.getElementById("P_CPH017").innerHTML = "1363";
-    document.getElementById("P_CPH018").innerHTML = "1363";
-    document.getElementById("P_CPH019").innerHTML = "1363";
-    document.getElementById("P_CPH020").innerHTML = "1363";
-    document.getElementById("P_CPH021").innerHTML = "1363";
-    document.getElementById("P_CPH022").innerHTML = "1363";
-    document.getElementById("P_CPH023").innerHTML = "1363";
-    document.getElementById("P_CPH024").innerHTML = "1363";
-    document.getElementById("P_CPH025").innerHTML = "1363";
-    document.getElementById("P_CPH026").innerHTML = "1363";
-    document.getElementById("P_CPH027").innerHTML = "1363";
-    document.getElementById("P_CPH028").innerHTML = "1363";
-    document.getElementById("P_CPH029").innerHTML = "1363";
-    document.getElementById("P_CPH030").innerHTML = "1363";
-    document.getElementById("P_CPH031").innerHTML = "1363";
-    document.getElementById("P_CPH032").innerHTML = "1363";
-
-
-    document.getElementById("Planned_v1" ).innerHTML = "658.84";
-    document.getElementById("Planned_v2").innerHTML = "46.15";
-    document.getElementById("Planned_v3").innerHTML = "264.69";
-    document.getElementById("Planned_v4").innerHTML = "10.15";
-    document.getElementById("Planned_v5" ).innerHTML = "184.61";
-    document.getElementById("Planned_v6").innerHTML = "6.46";
-    document.getElementById("Planned_v7").innerHTML = "84.15";
-    document.getElementById("Planned_v8").innerHTML = "1572";
-    document.getElementById("Planned_v9" ).innerHTML = "123.2";
-    document.getElementById("Planned_v10").innerHTML = "52";
-    document.getElementById("Planned_v11").innerHTML = "14";
-    document.getElementById("Planned_v12").innerHTML = "63";
-    document.getElementById("Planned_v13" ).innerHTML = "5";
-    document.getElementById("Planned_v14").innerHTML = "663.5";
-    document.getElementById("Planned_v15").innerHTML = "763.5";
-    document.getElementById("Planned_v16").innerHTML = "863.5";
-    document.getElementById("Planned_v17" ).innerHTML = "563.5";
-    document.getElementById("Planned_v18").innerHTML = "663.5";
-    document.getElementById("Planned_v19").innerHTML = "763.5";
-    document.getElementById("Planned_v20").innerHTML = "863.5";
-    document.getElementById("Planned_v21" ).innerHTML = "563.5";
-    document.getElementById("Planned_v22").innerHTML = "663.5";
-    document.getElementById("Planned_v23").innerHTML = "763.5";
-    document.getElementById("Planned_v24").innerHTML = "863.5";
-    document.getElementById("Planned_v25" ).innerHTML = "563.5";
-    document.getElementById("Planned_v26").innerHTML = "663.5";
-    document.getElementById("Planned_v27").innerHTML = "763.5";
-    document.getElementById("Planned_v28").innerHTML = "863.5";
-    document.getElementById("Planned_v29" ).innerHTML = "563.5";
-    document.getElementById("Planned_v30").innerHTML = "663.5";
-    document.getElementById("Planned_v31").innerHTML = "763.5";
-    document.getElementById("Planned_v32").innerHTML = "863.5";
-
-    document.getElementById("Planned_hc1" ).innerHTML = "1.35";
-    document.getElementById("Planned_hc2").innerHTML = "5.5";
-    document.getElementById("Planned_hc3").innerHTML = "8.05";
-    document.getElementById("Planned_hc4").innerHTML = "4.5";
-    document.getElementById("Planned_hc5" ).innerHTML = "3.15";
-    document.getElementById("Planned_hc6").innerHTML = "4.5";
-    document.getElementById("Planned_hc7").innerHTML = "3.5";
-    document.getElementById("Planned_hc8").innerHTML = "2.05";
-    document.getElementById("Planned_hc9" ).innerHTML = "1.35";
-    document.getElementById("Planned_hc10").innerHTML = "6.5";
-    document.getElementById("Planned_hc11").innerHTML = "6.5";
-    document.getElementById("Planned_hc12").innerHTML = "8.5";
-    document.getElementById("Planned_hc13" ).innerHTML = "6.5";
-    document.getElementById("Planned_hc14").innerHTML = "6.5";
-    document.getElementById("Planned_hc15").innerHTML = "76.35";
-    document.getElementById("Planned_hc16").innerHTML = "8.5";
-    document.getElementById("Planned_hc17" ).innerHTML = "6.5";
-    document.getElementById("Planned_hc18").innerHTML = "66.5";
-    document.getElementById("Planned_hc19").innerHTML = "6.35";
-    document.getElementById("Planned_hc20").innerHTML = "6.5";
-    document.getElementById("Planned_hc21" ).innerHTML = "6.05";
-    document.getElementById("Planned_hc22").innerHTML = "66.5";
-    document.getElementById("Planned_hc23").innerHTML = "6.5";
-    document.getElementById("Planned_hc24").innerHTML = "86.5";
-    document.getElementById("Planned_hc25" ).innerHTML = "56.15";
-    document.getElementById("Planned_hc26").innerHTML = "66.5";
-    document.getElementById("Planned_hc27").innerHTML = "6.5";
-    document.getElementById("Planned_hc28").innerHTML = "6.5";
-    document.getElementById("Planned_hc29" ).innerHTML = "6.15";
-    document.getElementById("Planned_hc30").innerHTML = "6.5";
-    document.getElementById("Planned_hc31").innerHTML = "7.5";
-    document.getElementById("Planned_hc32").innerHTML = "6.5";
-
-
-    document.getElementById("Planned_prod1" ).innerHTML = "1.5";
-    document.getElementById("Planned_prod2").innerHTML = "6.5";
-    document.getElementById("Planned_prod3").innerHTML = "68.5";
-    document.getElementById("Planned_prod4").innerHTML = "4.5";
-    document.getElementById("Planned_prod5" ).innerHTML = "4.5";
-    document.getElementById("Planned_prod6").innerHTML = "34.5";
-    document.getElementById("Planned_prod7").innerHTML = "5.5";
-    document.getElementById("Planned_prod8").innerHTML = "6.5";
-    document.getElementById("Planned_prod9" ).innerHTML = "1.5";
-    document.getElementById("Planned_prod10").innerHTML = "1.5";
-    document.getElementById("Planned_prod11").innerHTML = "3.5";
-    document.getElementById("Planned_prod12").innerHTML = "863.5";
-    document.getElementById("Planned_prod13" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod14").innerHTML = "6.5";
-    document.getElementById("Planned_prod15").innerHTML = "7.5";
-    document.getElementById("Planned_prod16").innerHTML = "3.5";
-    document.getElementById("Planned_prod17" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod18").innerHTML = "5.5";
-    document.getElementById("Planned_prod19").innerHTML = "7.5";
-    document.getElementById("Planned_prod20").innerHTML = "8.5";
-    document.getElementById("Planned_prod21" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod22").innerHTML = "6.5";
-    document.getElementById("Planned_prod23").innerHTML = "7.5";
-    document.getElementById("Planned_prod24").innerHTML = "8.5";
-    document.getElementById("Planned_prod25" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod26").innerHTML = "6.5";
-    document.getElementById("Planned_prod27").innerHTML = "7.5";
-    document.getElementById("Planned_prod28").innerHTML = "8.5";
-    document.getElementById("Planned_prod29" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod30").innerHTML = "6.5";
-    document.getElementById("Planned_prod31").innerHTML = "7.5";
-    document.getElementById("Planned_prod32").innerHTML = "8.5";
-   
-
-
+  function kcvpHCount(){
+    var v1 = document.getElementById("kcvpHCount1").value;
+    var v2 = document.getElementById("kcvpHCount2").value;
+    var v3 = document.getElementById("kcvpHCount3").value;
+    var v4 = document.getElementById("kcvpHCount4").value;
+    var result = +v1 + +v2 + +v3 + +v4;
+    if (!isNaN(result)) {
+      document.getElementById("sum_kcvpHCount").value = result.toFixed(2);
+    }
   }
 
-  //  December 2019
-  else if(x=== "2019-W49" || x=== "2019-W50" || x=== "2019-W51" || x=== "2019-W52"){
-    
-
-    document.getElementById("P_CPH01").innerHTML = "1498";
-    document.getElementById("P_CPH02").innerHTML = "1498";
-    document.getElementById("P_CPH03").innerHTML = "1498";
-    document.getElementById("P_CPH04").innerHTML = "1498";
-    document.getElementById("P_CPH05").innerHTML = "1498";
-    
-    document.getElementById("P_CPH06").innerHTML = "1498";
-    document.getElementById("P_CPH07").innerHTML = "1498";
-    document.getElementById("P_CPH08").innerHTML = "1498";
-    document.getElementById("P_CPH09").innerHTML = "1498";
-    document.getElementById("P_CPH010").innerHTML = "1498";
-    document.getElementById("P_CPH011").innerHTML = "1498";
-    document.getElementById("P_CPH012").innerHTML = "1498";
-    document.getElementById("P_CPH013").innerHTML = "1498";
-    document.getElementById("P_CPH014").innerHTML = "1498";
-    document.getElementById("P_CPH015").innerHTML = "1498";
-    document.getElementById("P_CPH016").innerHTML = "1498";
-    document.getElementById("P_CPH017").innerHTML = "1498";
-    document.getElementById("P_CPH018").innerHTML = "1498";
-    document.getElementById("P_CPH019").innerHTML = "1498";
-    document.getElementById("P_CPH020").innerHTML = "1498";
-    document.getElementById("P_CPH021").innerHTML = "1498";
-    document.getElementById("P_CPH022").innerHTML = "1498";
-    document.getElementById("P_CPH023").innerHTML = "1498";
-    document.getElementById("P_CPH024").innerHTML = "1498";
-    document.getElementById("P_CPH025").innerHTML = "1498";
-    document.getElementById("P_CPH026").innerHTML = "1498";
-    document.getElementById("P_CPH027").innerHTML = "1498";
-    document.getElementById("P_CPH028").innerHTML = "1498";
-    document.getElementById("P_CPH029").innerHTML = "1498";
-    document.getElementById("P_CPH030").innerHTML = "1498";
-    document.getElementById("P_CPH031").innerHTML = "1498";
-    document.getElementById("P_CPH032").innerHTML = "1498";
-
-
-    document.getElementById("Planned_v1" ).innerHTML = "658.84";
-    document.getElementById("Planned_v2").innerHTML = "46.15";
-    document.getElementById("Planned_v3").innerHTML = "264.69";
-    document.getElementById("Planned_v4").innerHTML = "10.15";
-    document.getElementById("Planned_v5" ).innerHTML = "184.61";
-    document.getElementById("Planned_v6").innerHTML = "6.46";
-    document.getElementById("Planned_v7").innerHTML = "84.15";
-    document.getElementById("Planned_v8").innerHTML = "1572";
-    document.getElementById("Planned_v9" ).innerHTML = "123.2";
-    document.getElementById("Planned_v10").innerHTML = "52";
-    document.getElementById("Planned_v11").innerHTML = "14";
-    document.getElementById("Planned_v12").innerHTML = "63";
-    document.getElementById("Planned_v13" ).innerHTML = "5";
-    document.getElementById("Planned_v14").innerHTML = "663.5";
-    document.getElementById("Planned_v15").innerHTML = "763.5";
-    document.getElementById("Planned_v16").innerHTML = "863.5";
-    document.getElementById("Planned_v17" ).innerHTML = "563.5";
-    document.getElementById("Planned_v18").innerHTML = "663.5";
-    document.getElementById("Planned_v19").innerHTML = "763.5";
-    document.getElementById("Planned_v20").innerHTML = "863.5";
-    document.getElementById("Planned_v21" ).innerHTML = "563.5";
-    document.getElementById("Planned_v22").innerHTML = "663.5";
-    document.getElementById("Planned_v23").innerHTML = "763.5";
-    document.getElementById("Planned_v24").innerHTML = "863.5";
-    document.getElementById("Planned_v25" ).innerHTML = "563.5";
-    document.getElementById("Planned_v26").innerHTML = "663.5";
-    document.getElementById("Planned_v27").innerHTML = "763.5";
-    document.getElementById("Planned_v28").innerHTML = "863.5";
-    document.getElementById("Planned_v29" ).innerHTML = "563.5";
-    document.getElementById("Planned_v30").innerHTML = "663.5";
-    document.getElementById("Planned_v31").innerHTML = "763.5";
-    document.getElementById("Planned_v32").innerHTML = "863.5";
-
-    document.getElementById("Planned_hc1" ).innerHTML = "1.35";
-    document.getElementById("Planned_hc2").innerHTML = "5.5";
-    document.getElementById("Planned_hc3").innerHTML = "8.05";
-    document.getElementById("Planned_hc4").innerHTML = "4.5";
-    document.getElementById("Planned_hc5" ).innerHTML = "3.15";
-    document.getElementById("Planned_hc6").innerHTML = "4.5";
-    document.getElementById("Planned_hc7").innerHTML = "3.5";
-    document.getElementById("Planned_hc8").innerHTML = "2.05";
-    document.getElementById("Planned_hc9" ).innerHTML = "1.35";
-    document.getElementById("Planned_hc10").innerHTML = "6.5";
-    document.getElementById("Planned_hc11").innerHTML = "6.5";
-    document.getElementById("Planned_hc12").innerHTML = "8.5";
-    document.getElementById("Planned_hc13" ).innerHTML = "6.5";
-    document.getElementById("Planned_hc14").innerHTML = "6.5";
-    document.getElementById("Planned_hc15").innerHTML = "76.35";
-    document.getElementById("Planned_hc16").innerHTML = "8.5";
-    document.getElementById("Planned_hc17" ).innerHTML = "6.5";
-    document.getElementById("Planned_hc18").innerHTML = "66.5";
-    document.getElementById("Planned_hc19").innerHTML = "6.35";
-    document.getElementById("Planned_hc20").innerHTML = "6.5";
-    document.getElementById("Planned_hc21" ).innerHTML = "6.05";
-    document.getElementById("Planned_hc22").innerHTML = "66.5";
-    document.getElementById("Planned_hc23").innerHTML = "6.5";
-    document.getElementById("Planned_hc24").innerHTML = "86.5";
-    document.getElementById("Planned_hc25" ).innerHTML = "56.15";
-    document.getElementById("Planned_hc26").innerHTML = "66.5";
-    document.getElementById("Planned_hc27").innerHTML = "6.5";
-    document.getElementById("Planned_hc28").innerHTML = "6.5";
-    document.getElementById("Planned_hc29" ).innerHTML = "6.15";
-    document.getElementById("Planned_hc30").innerHTML = "6.5";
-    document.getElementById("Planned_hc31").innerHTML = "7.5";
-    document.getElementById("Planned_hc32").innerHTML = "6.5";
-
-
-    document.getElementById("Planned_prod1" ).innerHTML = "1.5";
-    document.getElementById("Planned_prod2").innerHTML = "6.5";
-    document.getElementById("Planned_prod3").innerHTML = "68.5";
-    document.getElementById("Planned_prod4").innerHTML = "4.5";
-    document.getElementById("Planned_prod5" ).innerHTML = "4.5";
-    document.getElementById("Planned_prod6").innerHTML = "34.5";
-    document.getElementById("Planned_prod7").innerHTML = "5.5";
-    document.getElementById("Planned_prod8").innerHTML = "6.5";
-    document.getElementById("Planned_prod9" ).innerHTML = "1.5";
-    document.getElementById("Planned_prod10").innerHTML = "1.5";
-    document.getElementById("Planned_prod11").innerHTML = "3.5";
-    document.getElementById("Planned_prod12").innerHTML = "863.5";
-    document.getElementById("Planned_prod13" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod14").innerHTML = "6.5";
-    document.getElementById("Planned_prod15").innerHTML = "7.5";
-    document.getElementById("Planned_prod16").innerHTML = "3.5";
-    document.getElementById("Planned_prod17" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod18").innerHTML = "5.5";
-    document.getElementById("Planned_prod19").innerHTML = "7.5";
-    document.getElementById("Planned_prod20").innerHTML = "8.5";
-    document.getElementById("Planned_prod21" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod22").innerHTML = "6.5";
-    document.getElementById("Planned_prod23").innerHTML = "7.5";
-    document.getElementById("Planned_prod24").innerHTML = "8.5";
-    document.getElementById("Planned_prod25" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod26").innerHTML = "6.5";
-    document.getElementById("Planned_prod27").innerHTML = "7.5";
-    document.getElementById("Planned_prod28").innerHTML = "8.5";
-    document.getElementById("Planned_prod29" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod30").innerHTML = "6.5";
-    document.getElementById("Planned_prod31").innerHTML = "7.5";
-    document.getElementById("Planned_prod32").innerHTML = "8.5";
-
-
-
-
-
-  }
-
-  
-  // 2020 Q1 
-  else if(x=== "2020-W01" || x=== "2020-W02" || x=== "2020-W03" || x=== "2020-W04" || x=== "2020-W05" || x=== "2020-W06"   || x=== "2020-W07" || x=== "2020-W08" || x=== "2020-W09" || x=== "2020-W10" || x=== "2020-W11" || x=== "2020-W12" || x=== "2020-W13" ){
-    
-
-
-    document.getElementById("Planned_v1" ).innerHTML = "563.5";
-    document.getElementById("Planned_v2").innerHTML = "663.5";
-    document.getElementById("Planned_v3").innerHTML = "763.5";
-    document.getElementById("Planned_v4").innerHTML = "863.5";
-    document.getElementById("Planned_v5" ).innerHTML = "563.5";
-    document.getElementById("Planned_v6").innerHTML = "663.5";
-    document.getElementById("Planned_v7").innerHTML = "763.5";
-    document.getElementById("Planned_v8").innerHTML = "863.5";
-    document.getElementById("Planned_v9" ).innerHTML = "563.5";
-    document.getElementById("Planned_v10").innerHTML = "663.5";
-    document.getElementById("Planned_v11").innerHTML = "763.5";
-    document.getElementById("Planned_v12").innerHTML = "863.5";
-    document.getElementById("Planned_v13" ).innerHTML = "563.5";
-    document.getElementById("Planned_v14").innerHTML = "663.5";
-    document.getElementById("Planned_v15").innerHTML = "763.5";
-    document.getElementById("Planned_v16").innerHTML = "863.5";
-    document.getElementById("Planned_v17" ).innerHTML = "563.5";
-    document.getElementById("Planned_v18").innerHTML = "663.5";
-    document.getElementById("Planned_v19").innerHTML = "763.5";
-    document.getElementById("Planned_v20").innerHTML = "863.5";
-    document.getElementById("Planned_v21" ).innerHTML = "563.5";
-    document.getElementById("Planned_v22").innerHTML = "663.5";
-    document.getElementById("Planned_v23").innerHTML = "763.5";
-    document.getElementById("Planned_v24").innerHTML = "863.5";
-    document.getElementById("Planned_v25" ).innerHTML = "563.5";
-    document.getElementById("Planned_v26").innerHTML = "663.5";
-    document.getElementById("Planned_v27").innerHTML = "763.5";
-    document.getElementById("Planned_v28").innerHTML = "863.5";
-    document.getElementById("Planned_v29" ).innerHTML = "563.5";
-    document.getElementById("Planned_v30").innerHTML = "663.5";
-    document.getElementById("Planned_v31").innerHTML = "763.5";
-    document.getElementById("Planned_v32").innerHTML = "863.5";
-
-    document.getElementById("Planned_hc1" ).innerHTML = "1.35";
-    document.getElementById("Planned_hc2").innerHTML = "5.5";
-    document.getElementById("Planned_hc3").innerHTML = "8.05";
-    document.getElementById("Planned_hc4").innerHTML = "4.5";
-    document.getElementById("Planned_hc5" ).innerHTML = "3.15";
-    document.getElementById("Planned_hc6").innerHTML = "4.5";
-    document.getElementById("Planned_hc7").innerHTML = "3.5";
-    document.getElementById("Planned_hc8").innerHTML = "2.05";
-    document.getElementById("Planned_hc9" ).innerHTML = "1.35";
-    document.getElementById("Planned_hc10").innerHTML = "6.5";
-    document.getElementById("Planned_hc11").innerHTML = "6.5";
-    document.getElementById("Planned_hc12").innerHTML = "8.5";
-    document.getElementById("Planned_hc13" ).innerHTML = "6.5";
-    document.getElementById("Planned_hc14").innerHTML = "6.5";
-    document.getElementById("Planned_hc15").innerHTML = "76.35";
-    document.getElementById("Planned_hc16").innerHTML = "8.5";
-    document.getElementById("Planned_hc17" ).innerHTML = "6.5";
-    document.getElementById("Planned_hc18").innerHTML = "66.5";
-    document.getElementById("Planned_hc19").innerHTML = "6.35";
-    document.getElementById("Planned_hc20").innerHTML = "6.5";
-    document.getElementById("Planned_hc21" ).innerHTML = "6.05";
-    document.getElementById("Planned_hc22").innerHTML = "66.5";
-    document.getElementById("Planned_hc23").innerHTML = "6.5";
-    document.getElementById("Planned_hc24").innerHTML = "86.5";
-    document.getElementById("Planned_hc25" ).innerHTML = "56.15";
-    document.getElementById("Planned_hc26").innerHTML = "66.5";
-    document.getElementById("Planned_hc27").innerHTML = "6.5";
-    document.getElementById("Planned_hc28").innerHTML = "6.5";
-    document.getElementById("Planned_hc29" ).innerHTML = "6.15";
-    document.getElementById("Planned_hc30").innerHTML = "6.5";
-    document.getElementById("Planned_hc31").innerHTML = "7.5";
-    document.getElementById("Planned_hc32").innerHTML = "6.5";
-
-
-    document.getElementById("Planned_prod1" ).innerHTML = "1.5";
-    document.getElementById("Planned_prod2").innerHTML = "6.5";
-    document.getElementById("Planned_prod3").innerHTML = "68.5";
-    document.getElementById("Planned_prod4").innerHTML = "4.5";
-    document.getElementById("Planned_prod5" ).innerHTML = "4.5";
-    document.getElementById("Planned_prod6").innerHTML = "34.5";
-    document.getElementById("Planned_prod7").innerHTML = "5.5";
-    document.getElementById("Planned_prod8").innerHTML = "6.5";
-    document.getElementById("Planned_prod9" ).innerHTML = "1.5";
-    document.getElementById("Planned_prod10").innerHTML = "1.5";
-    document.getElementById("Planned_prod11").innerHTML = "3.5";
-    document.getElementById("Planned_prod12").innerHTML = "863.5";
-    document.getElementById("Planned_prod13" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod14").innerHTML = "6.5";
-    document.getElementById("Planned_prod15").innerHTML = "7.5";
-    document.getElementById("Planned_prod16").innerHTML = "3.5";
-    document.getElementById("Planned_prod17" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod18").innerHTML = "6.5";
-    document.getElementById("Planned_prod19").innerHTML = "7.5";
-    document.getElementById("Planned_prod20").innerHTML = "8.5";
-    document.getElementById("Planned_prod21" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod22").innerHTML = "6.5";
-    document.getElementById("Planned_prod23").innerHTML = "7.5";
-    document.getElementById("Planned_prod24").innerHTML = "8.5";
-    document.getElementById("Planned_prod25" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod26").innerHTML = "6.5";
-    document.getElementById("Planned_prod27").innerHTML = "7.5";
-    document.getElementById("Planned_prod28").innerHTML = "8.5";
-    document.getElementById("Planned_prod29" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod30").innerHTML = "6.5";
-    document.getElementById("Planned_prod31").innerHTML = "7.5";
-    document.getElementById("Planned_prod32").innerHTML = "8.5";
-    
-  }
-  else if( x=== "2020-W14" || x=== "2020-W15" || x=== "2020-W16"   || x=== "2020-W17" || x=== "2020-W18" || x=== "2020-W19" || x=== "2020-W20" || x=== "2020-W21" || x=== "2020-W22" || x=== "2020-W23" || x=== "2020-W24"|| x=== "2020-W25"|| x=== "2020-W26" ){
-    
-  
-    document.getElementById("Planned_v1" ).innerHTML = "563.5";
-    document.getElementById("Planned_v2").innerHTML = "663.5";
-    document.getElementById("Planned_v3").innerHTML = "763.5";
-    document.getElementById("Planned_v4").innerHTML = "863.5";
-    document.getElementById("Planned_v5" ).innerHTML = "563.5";
-    document.getElementById("Planned_v6").innerHTML = "663.5";
-    document.getElementById("Planned_v7").innerHTML = "763.5";
-    document.getElementById("Planned_v8").innerHTML = "863.5";
-    document.getElementById("Planned_v9" ).innerHTML = "563.5";
-    document.getElementById("Planned_v10").innerHTML = "663.5";
-    document.getElementById("Planned_v11").innerHTML = "763.5";
-    document.getElementById("Planned_v12").innerHTML = "863.5";
-    document.getElementById("Planned_v13").innerHTML = "563.5";
-    document.getElementById("Planned_v14").innerHTML = "663.5";
-    document.getElementById("Planned_v15").innerHTML = "763.5";
-    document.getElementById("Planned_v16").innerHTML = "863.5";
-    document.getElementById("Planned_v17").innerHTML = "563.5";
-    document.getElementById("Planned_v18").innerHTML = "663.5";
-    document.getElementById("Planned_v19").innerHTML = "763.5";
-    document.getElementById("Planned_v20").innerHTML = "863.5";
-    document.getElementById("Planned_v21" ).innerHTML = "563.5";
-    document.getElementById("Planned_v22").innerHTML = "663.5";
-    document.getElementById("Planned_v23").innerHTML = "763.5";
-    document.getElementById("Planned_v24").innerHTML = "863.5";
-    document.getElementById("Planned_v25" ).innerHTML = "563.5";
-    document.getElementById("Planned_v26").innerHTML = "663.5";
-    document.getElementById("Planned_v27").innerHTML = "763.5";
-    document.getElementById("Planned_v28").innerHTML = "863.5";
-    document.getElementById("Planned_v29" ).innerHTML = "563.5";
-    document.getElementById("Planned_v30").innerHTML = "663.5";
-    document.getElementById("Planned_v31").innerHTML = "763.5";
-    document.getElementById("Planned_v32").innerHTML = "863.5";
-
-
-    document.getElementById("Planned_hc1" ).innerHTML = "1.35";
-    document.getElementById("Planned_hc2").innerHTML = "5.5";
-    document.getElementById("Planned_hc3").innerHTML = "8.05";
-    document.getElementById("Planned_hc4").innerHTML = "4.5";
-    document.getElementById("Planned_hc5" ).innerHTML = "3.15";
-    document.getElementById("Planned_hc6").innerHTML = "4.5";
-    document.getElementById("Planned_hc7").innerHTML = "3.5";
-    document.getElementById("Planned_hc8").innerHTML = "2.05";
-    document.getElementById("Planned_hc9" ).innerHTML = "1.35";
-    document.getElementById("Planned_hc10").innerHTML = "6.5";
-    document.getElementById("Planned_hc11").innerHTML = "6.5";
-    document.getElementById("Planned_hc12").innerHTML = "8.5";
-    document.getElementById("Planned_hc13" ).innerHTML = "6.5";
-    document.getElementById("Planned_hc14").innerHTML = "6.5";
-    document.getElementById("Planned_hc15").innerHTML = "76.35";
-    document.getElementById("Planned_hc16").innerHTML = "8.5";
-    document.getElementById("Planned_hc17" ).innerHTML = "6.5";
-    document.getElementById("Planned_hc18").innerHTML = "66.5";
-    document.getElementById("Planned_hc19").innerHTML = "6.35";
-    document.getElementById("Planned_hc20").innerHTML = "6.5";
-    document.getElementById("Planned_hc21" ).innerHTML = "6.05";
-    document.getElementById("Planned_hc22").innerHTML = "66.5";
-    document.getElementById("Planned_hc23").innerHTML = "6.5";
-    document.getElementById("Planned_hc24").innerHTML = "86.5";
-    document.getElementById("Planned_hc25" ).innerHTML = "56.15";
-    document.getElementById("Planned_hc26").innerHTML = "66.5";
-    document.getElementById("Planned_hc27").innerHTML = "6.5";
-    document.getElementById("Planned_hc28").innerHTML = "6.5";
-    document.getElementById("Planned_hc29" ).innerHTML = "6.15";
-    document.getElementById("Planned_hc30").innerHTML = "6.5";
-    document.getElementById("Planned_hc31").innerHTML = "7.5";
-    document.getElementById("Planned_hc32").innerHTML = "6.5";
-
-
-    document.getElementById("Planned_prod1" ).innerHTML = "1.5";
-    document.getElementById("Planned_prod2").innerHTML = "6.5";
-    document.getElementById("Planned_prod3").innerHTML = "68.5";
-    document.getElementById("Planned_prod4").innerHTML = "4.5";
-    document.getElementById("Planned_prod5" ).innerHTML = "4.5";
-    document.getElementById("Planned_prod6").innerHTML = "34.5";
-    document.getElementById("Planned_prod7").innerHTML = "5.5";
-    document.getElementById("Planned_prod8").innerHTML = "6.5";
-    document.getElementById("Planned_prod9" ).innerHTML = "1.5";
-    document.getElementById("Planned_prod10").innerHTML = "1.5";
-    document.getElementById("Planned_prod11").innerHTML = "3.5";
-    document.getElementById("Planned_prod12").innerHTML = "863.5";
-    document.getElementById("Planned_prod13" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod14").innerHTML = "6.5";
-    document.getElementById("Planned_prod15").innerHTML = "7.5";
-    document.getElementById("Planned_prod16").innerHTML = "3.5";
-    document.getElementById("Planned_prod17" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod18").innerHTML = "6.5";
-    document.getElementById("Planned_prod19").innerHTML = "7.5";
-    document.getElementById("Planned_prod20").innerHTML = "8.5";
-    document.getElementById("Planned_prod21" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod22").innerHTML = "6.5";
-    document.getElementById("Planned_prod23").innerHTML = "7.5";
-    document.getElementById("Planned_prod24").innerHTML = "8.5";
-    document.getElementById("Planned_prod25" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod26").innerHTML = "6.5";
-    document.getElementById("Planned_prod27").innerHTML = "7.5";
-    document.getElementById("Planned_prod28").innerHTML = "8.5";
-    document.getElementById("Planned_prod29" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod30").innerHTML = "6.5";
-    document.getElementById("Planned_prod31").innerHTML = "7.5";
-    document.getElementById("Planned_prod32").innerHTML = "8.5";
-    
-  }
-
-  else if( x=== "2020-W27" || x=== "2020-W28" || x=== "2020-W29" || x=== "2020-W30" || x=== "2020-W31" || x=== "2020-W32" || x=== "2020-W33" || x=== "2020-W34"|| x=== "2020-W35"|| x=== "2020-W36" || x=== "2020-W37" || x=== "2020-W38"|| x=== "2020-W39"|| x=== "2020-W40" ){
-    
-    
-    document.getElementById("Planned_v1" ).innerHTML = "563.5";
-    document.getElementById("Planned_v2").innerHTML = "663.5";
-    document.getElementById("Planned_v3").innerHTML = "763.5";
-    document.getElementById("Planned_v4").innerHTML = "863.5";
-    document.getElementById("Planned_v5" ).innerHTML = "563.5";
-    document.getElementById("Planned_v6").innerHTML = "663.5";
-    document.getElementById("Planned_v7").innerHTML = "763.5";
-    document.getElementById("Planned_v8").innerHTML = "863.5";
-    document.getElementById("Planned_v9" ).innerHTML = "563.5";
-    document.getElementById("Planned_v10").innerHTML = "663.5";
-    document.getElementById("Planned_v11").innerHTML = "763.5";
-    document.getElementById("Planned_v12").innerHTML = "863.5";
-    document.getElementById("Planned_v13" ).innerHTML = "563.5";
-    document.getElementById("Planned_v14").innerHTML = "663.5";
-    document.getElementById("Planned_v15").innerHTML = "763.5";
-    document.getElementById("Planned_v16").innerHTML = "863.5";
-    document.getElementById("Planned_v17" ).innerHTML = "563.5";
-    document.getElementById("Planned_v18").innerHTML = "663.5";
-    document.getElementById("Planned_v19").innerHTML = "763.5";
-    document.getElementById("Planned_v20").innerHTML = "863.5";
-    document.getElementById("Planned_v21" ).innerHTML = "563.5";
-    document.getElementById("Planned_v22").innerHTML = "663.5";
-    document.getElementById("Planned_v23").innerHTML = "763.5";
-    document.getElementById("Planned_v24").innerHTML = "863.5";
-    document.getElementById("Planned_v25" ).innerHTML = "563.5";
-    document.getElementById("Planned_v26").innerHTML = "663.5";
-    document.getElementById("Planned_v27").innerHTML = "763.5";
-    document.getElementById("Planned_v28").innerHTML = "863.5";
-    document.getElementById("Planned_v29" ).innerHTML = "563.5";
-    document.getElementById("Planned_v30").innerHTML = "663.5";
-    document.getElementById("Planned_v31").innerHTML = "763.5";
-    document.getElementById("Planned_v32").innerHTML = "863.5";
-
-    document.getElementById("Planned_hc1" ).innerHTML = "1.35";
-    document.getElementById("Planned_hc2").innerHTML = "5.5";
-    document.getElementById("Planned_hc3").innerHTML = "8.05";
-    document.getElementById("Planned_hc4").innerHTML = "4.5";
-    document.getElementById("Planned_hc5" ).innerHTML = "3.15";
-    document.getElementById("Planned_hc6").innerHTML = "4.5";
-    document.getElementById("Planned_hc7").innerHTML = "3.5";
-    document.getElementById("Planned_hc8").innerHTML = "2.05";
-    document.getElementById("Planned_hc9" ).innerHTML = "1.35";
-    document.getElementById("Planned_hc10").innerHTML = "6.5";
-    document.getElementById("Planned_hc11").innerHTML = "6.5";
-    document.getElementById("Planned_hc12").innerHTML = "8.5";
-    document.getElementById("Planned_hc13" ).innerHTML = "6.5";
-    document.getElementById("Planned_hc14").innerHTML = "6.5";
-    document.getElementById("Planned_hc15").innerHTML = "76.35";
-    document.getElementById("Planned_hc16").innerHTML = "8.5";
-    document.getElementById("Planned_hc17" ).innerHTML = "6.5";
-    document.getElementById("Planned_hc18").innerHTML = "66.5";
-    document.getElementById("Planned_hc19").innerHTML = "6.35";
-    document.getElementById("Planned_hc20").innerHTML = "6.5";
-    document.getElementById("Planned_hc21" ).innerHTML = "6.05";
-    document.getElementById("Planned_hc22").innerHTML = "66.5";
-    document.getElementById("Planned_hc23").innerHTML = "6.5";
-    document.getElementById("Planned_hc24").innerHTML = "86.5";
-    document.getElementById("Planned_hc25" ).innerHTML = "56.15";
-    document.getElementById("Planned_hc26").innerHTML = "66.5";
-    document.getElementById("Planned_hc27").innerHTML = "6.5";
-    document.getElementById("Planned_hc28").innerHTML = "6.5";
-    document.getElementById("Planned_hc29" ).innerHTML = "6.15";
-    document.getElementById("Planned_hc30").innerHTML = "6.5";
-    document.getElementById("Planned_hc31").innerHTML = "7.5";
-    document.getElementById("Planned_hc32").innerHTML = "6.5";
-
-    document.getElementById("Planned_prod1" ).innerHTML = "1.5";
-    document.getElementById("Planned_prod2").innerHTML = "6.5";
-    document.getElementById("Planned_prod3").innerHTML = "68.5";
-    document.getElementById("Planned_prod4").innerHTML = "4.5";
-    document.getElementById("Planned_prod5" ).innerHTML = "4.5";
-    document.getElementById("Planned_prod6").innerHTML = "34.5";
-    document.getElementById("Planned_prod7").innerHTML = "5.5";
-    document.getElementById("Planned_prod8").innerHTML = "6.5";
-    document.getElementById("Planned_prod9" ).innerHTML = "1.5";
-    document.getElementById("Planned_prod10").innerHTML = "1.5";
-    document.getElementById("Planned_prod11").innerHTML = "3.5";
-    document.getElementById("Planned_prod12").innerHTML = "863.5";
-    document.getElementById("Planned_prod13" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod14").innerHTML = "6.5";
-    document.getElementById("Planned_prod15").innerHTML = "7.5";
-    document.getElementById("Planned_prod16").innerHTML = "3.5";
-    document.getElementById("Planned_prod17" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod18").innerHTML = "6.5";
-    document.getElementById("Planned_prod19").innerHTML = "7.5";
-    document.getElementById("Planned_prod20").innerHTML = "8.5";
-    document.getElementById("Planned_prod21" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod22").innerHTML = "6.5";
-    document.getElementById("Planned_prod23").innerHTML = "7.5";
-    document.getElementById("Planned_prod24").innerHTML = "8.5";
-    document.getElementById("Planned_prod25" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod26").innerHTML = "6.5";
-    document.getElementById("Planned_prod27").innerHTML = "7.5";
-    document.getElementById("Planned_prod28").innerHTML = "8.5";
-    document.getElementById("Planned_prod29" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod30").innerHTML = "6.5";
-    document.getElementById("Planned_prod31").innerHTML = "7.5";
-    document.getElementById("Planned_prod32").innerHTML = "8.5";
-    
-  }
-
-
-  else   if(x=== "2020-W41" || x=== "2020-W42" || x=== "2020-W43" || x=== "2020-W44" || x=== "2020-W45" || x=== "2020-W46"   || x=== "2020-W47" || x=== "2020-W48" || x=== "2020-W49" || x=== "2020-W50" || x=== "2020-W51" || x=== "2020-W52" || x=== "2020-W53" ){
-    
-    
-    document.getElementById("Planned_v1" ).innerHTML = "363.5";
-    document.getElementById("Planned_v2").innerHTML = "663.5";
-    document.getElementById("Planned_v3").innerHTML = "563.5";
-    document.getElementById("Planned_v4").innerHTML = "963.5";
-    document.getElementById("Planned_v5" ).innerHTML = "563.5";
-    document.getElementById("Planned_v6").innerHTML = "663.5";
-    document.getElementById("Planned_v7").innerHTML = "763.5";
-    document.getElementById("Planned_v8").innerHTML = "863.5";
-    document.getElementById("Planned_v9" ).innerHTML = "763.5";
-    document.getElementById("Planned_v10").innerHTML = "663.5";
-    document.getElementById("Planned_v11").innerHTML = "763.5";
-    document.getElementById("Planned_v12").innerHTML = "863.5";
-    document.getElementById("Planned_v13" ).innerHTML = "563.5";
-    document.getElementById("Planned_v14").innerHTML = "663.5";
-    document.getElementById("Planned_v15").innerHTML = "763.5";
-    document.getElementById("Planned_v16").innerHTML = "863.5";
-    document.getElementById("Planned_v17" ).innerHTML = "563.5";
-    document.getElementById("Planned_v18").innerHTML = "663.5";
-    document.getElementById("Planned_v19").innerHTML = "763.5";
-    document.getElementById("Planned_v20").innerHTML = "863.5";
-    document.getElementById("Planned_v21" ).innerHTML = "563.5";
-    document.getElementById("Planned_v22").innerHTML = "663.5";
-    document.getElementById("Planned_v23").innerHTML = "763.5";
-    document.getElementById("Planned_v24").innerHTML = "863.5";
-    document.getElementById("Planned_v25" ).innerHTML = "563.5";
-    document.getElementById("Planned_v26").innerHTML = "663.5";
-    document.getElementById("Planned_v27").innerHTML = "763.5";
-    document.getElementById("Planned_v28").innerHTML = "863.5";
-    document.getElementById("Planned_v29" ).innerHTML = "563.5";
-    document.getElementById("Planned_v30").innerHTML = "663.5";
-    document.getElementById("Planned_v31").innerHTML = "763.5";
-    document.getElementById("Planned_v32").innerHTML = "863.5";
-
-    document.getElementById("Planned_hc1" ).innerHTML = "1.35";
-    document.getElementById("Planned_hc2").innerHTML = "5.5";
-    document.getElementById("Planned_hc3").innerHTML = "8.05";
-    document.getElementById("Planned_hc4").innerHTML = "4.5";
-    document.getElementById("Planned_hc5" ).innerHTML = "3.15";
-    document.getElementById("Planned_hc6").innerHTML = "4.5";
-    document.getElementById("Planned_hc7").innerHTML = "3.5";
-    document.getElementById("Planned_hc8").innerHTML = "2.05";
-    document.getElementById("Planned_hc9" ).innerHTML = "1.35";
-    document.getElementById("Planned_hc10").innerHTML = "6.5";
-    document.getElementById("Planned_hc11").innerHTML = "6.5";
-    document.getElementById("Planned_hc12").innerHTML = "8.5";
-    document.getElementById("Planned_hc13" ).innerHTML = "6.5";
-    document.getElementById("Planned_hc14").innerHTML = "6.5";
-    document.getElementById("Planned_hc15").innerHTML = "76.35";
-    document.getElementById("Planned_hc16").innerHTML = "8.5";
-    document.getElementById("Planned_hc17" ).innerHTML = "6.5";
-    document.getElementById("Planned_hc18").innerHTML = "66.5";
-    document.getElementById("Planned_hc19").innerHTML = "6.35";
-    document.getElementById("Planned_hc20").innerHTML = "6.5";
-    document.getElementById("Planned_hc21" ).innerHTML = "6.05";
-    document.getElementById("Planned_hc22").innerHTML = "66.5";
-    document.getElementById("Planned_hc23").innerHTML = "6.5";
-    document.getElementById("Planned_hc24").innerHTML = "86.5";
-    document.getElementById("Planned_hc25" ).innerHTML = "56.15";
-    document.getElementById("Planned_hc26").innerHTML = "66.5";
-    document.getElementById("Planned_hc27").innerHTML = "6.5";
-    document.getElementById("Planned_hc28").innerHTML = "6.5";
-    document.getElementById("Planned_hc29" ).innerHTML = "6.15";
-    document.getElementById("Planned_hc30").innerHTML = "6.5";
-    document.getElementById("Planned_hc31").innerHTML = "7.5";
-    document.getElementById("Planned_hc32").innerHTML = "6.5";
-
-    document.getElementById("Planned_prod1" ).innerHTML = "1.5";
-    document.getElementById("Planned_prod2").innerHTML = "6.5";
-    document.getElementById("Planned_prod3").innerHTML = "68.5";
-    document.getElementById("Planned_prod4").innerHTML = "4.5";
-    document.getElementById("Planned_prod5" ).innerHTML = "4.5";
-    document.getElementById("Planned_prod6").innerHTML = "34.5";
-    document.getElementById("Planned_prod7").innerHTML = "5.5";
-    document.getElementById("Planned_prod8").innerHTML = "6.5";
-    document.getElementById("Planned_prod9" ).innerHTML = "1.5";
-    document.getElementById("Planned_prod10").innerHTML = "1.5";
-    document.getElementById("Planned_prod11").innerHTML = "3.5";
-    document.getElementById("Planned_prod12").innerHTML = "863.5";
-    document.getElementById("Planned_prod13" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod14").innerHTML = "6.5";
-    document.getElementById("Planned_prod15").innerHTML = "7.5";
-    document.getElementById("Planned_prod16").innerHTML = "3.5";
-    document.getElementById("Planned_prod17" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod18").innerHTML = "6.5";
-    document.getElementById("Planned_prod19").innerHTML = "7.5";
-    document.getElementById("Planned_prod20").innerHTML = "8.5";
-    document.getElementById("Planned_prod21" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod22").innerHTML = "6.5";
-    document.getElementById("Planned_prod23").innerHTML = "7.5";
-    document.getElementById("Planned_prod24").innerHTML = "8.5";
-    document.getElementById("Planned_prod25" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod26").innerHTML = "6.5";
-    document.getElementById("Planned_prod27").innerHTML = "7.5";
-    document.getElementById("Planned_prod28").innerHTML = "8.5";
-    document.getElementById("Planned_prod29" ).innerHTML = "5.5";
-    document.getElementById("Planned_prod30").innerHTML = "6.5";
-    document.getElementById("Planned_prod31").innerHTML = "7.5";
-    document.getElementById("Planned_prod32").innerHTML = "8.5";
-
-
-  }
-
-  else{
-    document.getElementById("P_CPH032").innerHTML = x ;
-  	document.getElementById("Planned_v1" ).innerHTML = x;
-    document.getElementById("Planned_v2").innerHTML = x;
-    document.getElementById("Planned_v3").innerHTML = x;
-    document.getElementById("Planned_v4").innerHTML = x;
-    document.getElementById("Planned_v5" ).innerHTML =  x;
-    document.getElementById("Planned_v6").innerHTML =  x;
-    document.getElementById("Planned_v7").innerHTML =  x;
-    document.getElementById("Planned_v8").innerHTML = x;
-    document.getElementById("Planned_v9" ).innerHTML =  x;
-    document.getElementById("Planned_v10").innerHTML =  x;
-  	document.getElementById("Planned_v21" ).innerHTML = x;
-    document.getElementById("Planned_v22").innerHTML = x;
-    document.getElementById("Planned_v23").innerHTML = x;
-    document.getElementById("Planned_v24").innerHTML = x;
-    document.getElementById("Planned_v25" ).innerHTML =  x;
-    document.getElementById("Planned_v26").innerHTML =  x;
-    document.getElementById("Planned_v27").innerHTML =  x;
-    document.getElementById("Planned_v28").innerHTML = x;
-    document.getElementById("Planned_v29" ).innerHTML =  x;
-    document.getElementById("Planned_v30").innerHTML =  x;
-  	document.getElementById("Planned_v31" ).innerHTML = x;
-    document.getElementById("Planned_v32").innerHTML = x;
-
-    document.getElementById("Planned_hc1" ).innerHTML = null;
-    document.getElementById("Planned_hc2").innerHTML = null;
-    document.getElementById("Planned_hc3").innerHTML =  null ;
-    document.getElementById("Planned_hc4").innerHTML =  null ;
-    document.getElementById("Planned_hc5" ).innerHTML = null; 
-    document.getElementById("Planned_hc6").innerHTML =  null;
-    document.getElementById("Planned_hc7").innerHTML =  null;
-    document.getElementById("Planned_hc8").innerHTML = null ;
-    document.getElementById("Planned_hc9" ).innerHTML =  null;
-    document.getElementById("Planned_hc10").innerHTML =  null;
-    document.getElementById("Planned_hc11").innerHTML = null; 
-    document.getElementById("Planned_hc12").innerHTML = null ;
-    document.getElementById("Planned_hc13" ).innerHTML = null;
-    document.getElementById("Planned_hc14").innerHTML = null ;
-    document.getElementById("Planned_hc15").innerHTML =  null;
-    document.getElementById("Planned_hc16").innerHTML = null;
-    document.getElementById("Planned_hc17" ).innerHTML =  null;
-    document.getElementById("Planned_hc18").innerHTML = null;
-    document.getElementById("Planned_hc19").innerHTML =  null;
-    document.getElementById("Planned_hc20").innerHTML =  null;
-    document.getElementById("Planned_hc21" ).innerHTML =  null;
-    document.getElementById("Planned_hc22").innerHTML = null ;
-    document.getElementById("Planned_hc23").innerHTML =  null;
-    document.getElementById("Planned_hc24").innerHTML =  null;
-    document.getElementById("Planned_hc25" ).innerHTML =  null;
-    document.getElementById("Planned_hc26").innerHTML = null ;
-    document.getElementById("Planned_hc27").innerHTML =  null;
-    document.getElementById("Planned_hc28").innerHTML =  null;
-    document.getElementById("Planned_hc29" ).innerHTML = null;
-    document.getElementById("Planned_hc30").innerHTML =  null;
-    document.getElementById("Planned_hc31").innerHTML =  null;
-    document.getElementById("Planned_hc32").innerHTML = null ;
-
-  }
-}
-  
-  
 </script>
-
 
 <div class="container pt-6" >
   <div class="row">
     <h1 style="text-align: center">Create New metrics of the week</h1>
     <div style="margin: 25px auto; ">
-      <form action="/gok" method="POST">
-        <table class="ui celled structured striped table" >
-          <thead>
-            <tr>
-              <th>
-                <form class="ui fluid form">
-                    <div class="field  ">
-                      <div class="ui input focus pointing below label">
-                        Choose :
-                        <input  name="week"  type="week" id="myText" onchange="weekly()" >
-                      </div>
-                    </div>
-                  </form>
-              </th>
-              <th class="ui center aligned header" colspan="2">Planned</th>
-              <th class="ui center aligned header" colspan="2">Actual</th>
-              <th class="ui center aligned header" colspan="1">Accuracy</th>
-              <th class="ui center aligned header" colspan="1">Call Outs</th>
-              <th class="ui center aligned header" colspan="2">CPH</th>
-            </tr>
+      <form action="/metadata" method="POST">
 
-            <tr>
-              <th class="ui center aligned ">
-                Title
-              </th>
-              <th>Volume</th>
-              <th>Head Count</th>
-              <th>Volume</th>
-              <th>Head Count</th>
-              <th>Accuaracy percent ( % )</th>
-              <th>Reason</th>
-              <th>Actual</th>
-              <th>Planned</th>
-            </tr>
+        <table>
+          <table class="ui celled structured striped table" >
+            <thead>
+              <tr>
+                <th>
+                  <div class="ui input focus pointing below label">
+                    <h6><b>Choose week no.</b> </h6>
+                    <input  name="week" class="week"  type="week" id="week"  > 
+                  </div>
+                </th>
+                <th class="ui center aligned header" colspan="2">Planned</th>
+                <th class="ui center aligned header" colspan="2">Actual</th>
+                <th class="ui center aligned header" colspan="1">Accuracy</th>
+                <th class="ui center aligned header" colspan="1">Call Outs</th>
+                <th class="ui center aligned header" colspan="2">CPH</th>
+              </tr>
+  
+              <tr>
+                <th class="ui center aligned ">
+                  Title
+                </th>
+                <th>Volume</th>
+                <th>Head Count</th>
+                <th>Volume</th>
+                <th>Head Count</th>
+                <th>Accuaracy percent( % )</th>
+                <th>Reason</th>
+                <th>Actual</th>
+                <th>Planned</th>
+              </tr>
+              <tr>
+                <th class="ui center aligned header blue">
+                  GOK-Content Quality Score
+                </th>
+                <td>
+                  <input type="text" name="Planned_v1" class="form-control" id="Planned_v1" readonly                </td>
+                <td>
+                  <input type="text" name="Planned_hc1" class="form-control" id="Planned_hc1" readonly>
+                </td>
+                <td>
+                  <input
+                    name="A_Vol1"
+                    id="sum_value"
+                    class="form-control"
+                    type="text"
+                    readonly
+                  />
+                </td>
+                <td>
+                  <input
+                    name="A_HCount1"
+                    class="form-control"
+                    id="hc_value"
+                    type="text"
+                    readonly
+                  />
+                </td>
+                
+                <td><input type="text"   name="accuracy1" class="form-control" ></td> 
+                <td><textarea rows="2" name="couts1"></textarea></td> 
+                <td><input type="text"   name="A_CPH1" class="form-control" readonly ></td> 
+                <td><input type="text" name="Planned_cph1" class="form-control" id="Planned_cph1" readonly></td>  
+              </tr>
+  
+              <!-- 2.SRL - GV 90 -  Regular Ops inflow  -->
+              <tr>
+                <th>SCQS - Fresh
 
-            <!-- 1  Proactive (Fresh Audits) -->
-            <tr>
-              <th class="ui center aligned header blue">
-                GOK-Content Quality Score
-
-              </th>
-              <td>
-                <label for="week" id="Planned_v1" ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc1" ></label>
-              </td>
-              
-
-              <td>
-                <input
-                  name="A_Vol1"
-                  id="sum_value"
-                  class="form-control"
-                  type="text"
-                  readonly
-                />
-              </td>
-              <td>
-                <input
-                  name="A_HCount1"
-                  class="form-control"
-                  id="hc_value"
-                  type="text"
-                  readonly
-                />
-              </td>
-              
-              <td><input type="text"   name="accuracy1" class="form-control" ></td> 
-              <td><textarea rows="2" name="couts1"></textarea></td> 
-              <td><input type="text"   name="A_CPH1" class="form-control" disabled ></td> 
-              <td><label for="week"  id="P_CPH01" name="P_CPH01"  ></label></td>  
-            </tr>
-
-            <!-- 2. Best Sellers -->
-            <tr>
-              <th>CQS - Fresh</th>
-              <td>
+                </th>
+                <td>
+                 
+                  <input type="text" name="Planned_v2" class="form-control" id="Planned_v2" readonly>
+                </td>
+                <td>
+                  
+                  <input type="text" name="Planned_hc2" class="form-control" id="Planned_hc2" readonly>
+                </td>
                
-                <label for="week" id="Planned_v2" ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc2" ></label>
-              </td>
-             
-              <td>
-                <input
-                  name="A_Vol2"
-                  id="value1"
-                  onkeyup="sum();"
-                  class="form-control"
-                  type="text"
-                />
-              </td>
-              <td>
-                <input
-                  name="A_HCount2"
-                  class="form-control"
-                  id="headcount1"
-                  onkeyup="hcsum();"
-                  type="text"
-                />
-              </td>
-              <td><input type="text" name="accuracy2" class="form-control"></td>
-              <td><textarea rows="2" name="couts2"></textarea></td>
-              <td><input type="text"   name="A_CPH2" class="form-control" disabled ></td> 
-              <td><label   for="week"  id="P_CPH02" name="P_CPH02"  ></label></td>
-            </tr>
-
-          <!-- Pre-Orders -->
-            <tr>
-              <th>CQS Rework - CQS Pass but GUID Change</th>
-              <td>
-                <label for="week" id="Planned_v3" ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc3" ></label>
-              </td>
+                <td>
+                  <input
+                    name="A_Vol2"
+                    id="value1"
+                    onkeyup="sum();"
+                    class="form-control"
+                    type="text"
+                  />
+                </td>
+                <td>
+                  <input
+                    name="A_HCount2"
+                    class="form-control"
+                    id="headcount1"
+                    onkeyup="hcsum();"
+                    type="text"
+                  />
+                </td>
+                <td></td>
+                <td><textarea rows="2" name="couts2"></textarea></td>
+                <td><input type="text"   name="A_CPH2" class="form-control" readonly ></td> 
+                <td><input type="text" name="Planned_cph2" class="form-control" id="Planned_cph2" readonly></td>  
+              </tr>
+  
+              <!-- SRL - GV 90 - automation shut -->
+              <tr>
+                <th>CQS Rework - CQS Pass but GUID Change
+                </th>
+                <td>
+                  <input type="text" name="Planned_v3" class="form-control" id="Planned_v3" readonly>
+                </td>
+                <td>
+                  
+                  <input type="text" name="Planned_hc3" class="form-control" id="Planned_hc3" readonly>
+                </td>
+                
+                <td>
+                  <input
+                    name="A_Vol3"
+                    id="value2"
+                    onkeyup="sum();"
+                    class="form-control"
+                    type="text"
+                  />
+                </td>
+  
+                <td>
+                  <input
+                    name="A_HCount3"
+                    id="headcount2"
+                    onkeyup="hcsum();"
+                    class="form-control"
+                    type="text"
+                  />
+                </td>
+  
+                <td></td>
+                <td><textarea rows="2" name="couts3"></textarea></td>
+                <td><input type="text"   name="A_CPH3" class="form-control" readonly  ></td> 
+                <td><input type="text" name="Planned_cph3" class="form-control" id="Planned_cph3" readonly></td>  
+              </tr>
+  
+              <!-- 4. SRL - GV 90 - Onsite backlog -->
+              <tr>
+                <th>CQS Rework - CQS Fails</th>
+                <td>
+                  <input type="text" name="Planned_v4" class="form-control" id="Planned_v4" readonly>
+                </td>
+                <td>
+  
+                  <input type="text" name="Planned_hc4" class="form-control" id="Planned_hc4" readonly>
+                </td>
+                
+                <td>
+                  <input
+                    name="A_Vol4"
+                    class="form-control"
+                    id="value3"
+                    onkeyup="sum();"
+                    type="text"
+                  />
+                </td>
+                <td>
+                  <input
+                    name="A_HCount4"
+                    id="headcount3"
+                    onkeyup="hcsum();"
+                    class="form-control"
+                    type="text"
+                  />
+                </td>
+                <td></td>
+                <td><textarea rows="2" name="couts4"></textarea></td>
+                <td><input type="text"   name="A_CPH4" class="form-control" readonly ></td> 
+                <td><input type="text" name="Planned_cph4" class="form-control" id="Planned_cph4" readonly></td>  
+              </tr>
+  
+              <!-- 5. SRL testing -->
+              <tr>
+                <th>SRL testing</th>
+                <td>
+                  <input type="text" name="Planned_v5" class="form-control" id="Planned_v5" readonly>
+                </td>
+                <td>
+  
+                  <input type="text" name="Planned_hc5" class="form-control" id="Planned_hc5" readonly>
+                </td>
+                
+  
+                
+                
+                <td>
+                  <input
+                    name="A_Vol5"
+                    class="form-control"
+                    id="value4"
+                    onkeyup="sum();"
+                    type="text"
+                  />
+                </td>
+  
+                <td>
+                  <input
+                    name="A_HCount5"
+                    id="headcount4"
+                    onkeyup="hcsum();"
+                    class="form-control"
+                    type="text"
+                  />
+                </td>
+                <td></td>
+                <td><textarea rows="2" name="couts5"></textarea></td>
+                <td><input type="text"   name="A_CPH5" class="form-control" readonly  ></td> 
+                
+                <td><input type="text" name="Planned_cph5" class="form-control" id="Planned_cph5" readonly></td>  
+  
+              </tr>
+  
+              <!--  6. SRL - KU (KDPS) -->
+              <tr>
+                <th>SRL - KU (KDPS)</th>
+                <td>
+                  <input type="text" name="Planned_v6" class="form-control" id="Planned_v6" readonly>
+                </td>
+                <td>
+                  
+                  <input type="text" name="Planned_hc6" class="form-control" id="Planned_hc6" readonly>
+                 </td>
+               
+                <td>
+                  <input
+                    name="A_Vol6"
+                    id="value5"
+                    onkeyup="sum();"
+                    class="form-control"
+                    type="text"
+                  />
+                </td>
+                <td>
+                  <input
+                    name="A_HCount6"
+                    id="headcount5"
+                    onkeyup="hcsum();"
+                    class="form-control"
+                    type="text"
+                  />
+                </td>
+                <td></td>
+                <td><textarea rows="2" name="couts6"></textarea></td>
+                <td><input type="text"   name="A_CPH6" class="form-control"  readonly ></td>
+                <td><input type="text" name="Planned_cph6" class="form-control" id="Planned_cph6" readonly></td>  
+              </tr> 
+              <tr>
+                <th class="ui center aligned header blue">NCX - GV 90 </th>
+                
+                <td>
+                  <input type="text" name="Planned_v7" class="form-control" id="Planned_v7" readonly>
+                </td>
+                <td>
+                  
+                  <input type="text" name="Planned_hc7" class="form-control" id="Planned_hc7" readonly>
+                 </td>
               
-              <td>
-                <input
-                  name="A_Vol3"
-                  id="value2"
-                  onkeyup="sum();"
-                  class="form-control"
-                  type="text"
-                />
-              </td>
-              <td>
-                <input
-                  name="A_HCount3"
-                  id="headcount2"
-                  onkeyup="hcsum();"
-                  class="form-control"
-                  type="text"
-                />
-              </td>
-
-              <td><input type="text"  name="accuracy3" class="form-control"></td>
-              <td><textarea rows="2" name="couts3"></textarea></td>
-              <td><input type="text"   name="A_CPH3" class="form-control" disabled  ></td> 
-              <td><label   for="week"  id="P_CPH03" name="P_CPH03"  ></label></td>
+    
+                <td>
+                  <input name="A_Vol7" class="form-control" type="text"  />
+                </td>
+                <td>
+                  <input name="A_HCount7" class="form-control" type="text"  />
+                </td>
+                <td><input type="text" name="accuracy7"  class="form-control"></td>
+                <td><textarea rows="2" name="couts7"></textarea></td>
+                <td><input type="text"   name="A_CPH7" class="form-control"  readonly  ></td>
+                <td><input type="text" name="Planned_cph7" class="form-control" id="Planned_cph7" readonly></td>  
+              </tr>
             </tr>
-
-            <!-- 4. Big Books -->
-            <tr>
-              <th>CQS Rework - CQS Fails</th>
-              <td>
-                <label id="Planned_v4" name="P_Vol4"  ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc4" ></label>
-              </td>
-              
-              <td>
-                <input
-                  name="A_Vol4"
-                  class="form-control"
-                  id="value3"
-                  onkeyup="sum();"
-                  type="text"
-                />
-              </td>
-              <td>
-                <input
-                  name="A_HCount4"
-                  id="headcount3"
-                  onkeyup="hcsum();"
-                  class="form-control"
-                  type="text"
-                />
-              </td>
-              <td><input type="text" name="accuracy4"  class="form-control"></td>
-              <td><textarea rows="2" name="couts4"></textarea></td>
-              <td><input type="text"   name="A_CPH4" class="form-control" disabled ></td> 
-              <td><label   for="week"  id="P_CPH04" name="P_CPH04"  ></label></td>
-            </tr>
-
-            
-        <!--8.GOK-HDV -->
-          <tr>  
-            <th class="ui center aligned header blue" >GOK-HDV   </th>  
-            <td>  
-              <label id="Planned_v8" name="P_Vol8"   > </label>
-            </td> 
-            <td>  
-              <label for="week" id="Planned_hc8" ></label>  
-            </td> 
-            
-            <td>  
-              <input name="A_Vol8" class="form-control" type="text" id="sum_reactive"   readonly /> 
-            </td> 
-            <td>  
-              <input name="A_HCount8" class="form-control" type="text"  id="sum_reactiveHCount" readonly /> 
-            </td> 
-           
-            <td><input  type="text"  name="accuracy8" class="form-control"></td>  
-            <td><textarea rows="2" name="couts8"></textarea></td> 
-            <td><input type="text"   name="A_CPH8" class="form-control"  disabled ></td>  
-            <td><label   for="week"  id="P_CPH08" name="P_CPH08"  ></label></td>  
-          </tr>
-
-
-            <!--  15.HDV - (Image Imp or not important)-->
-            <tr>
-              <th class="ui header subhead grey" >HDV - (Image Imp or not important)  </th>
-              <td>
-                <label id="Planned_v15" name="P_Vol15"   ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc15" ></label>
-              </td>
-              
-
-
-              <td>
-                <input
-                  name="A_Vol15"
-                  id="value17"
-                  onkeyup="reactive();"
-                  class="form-control"
-                  type="text"
-                />
-              </td>
-
-              <td>
-                <input
-                  name="A_HCount15"
-                  id="value117"
-                  onkeyup="reactiveHCount();"
-                  class="form-control"
-                  type="text"
-                />
-              </td>
-              <td><input type="text" name="accuracy15"  class="form-control"></td>
-              <td><textarea rows="2" name="couts15"></textarea></td>
-              <td><input type="text"   name="A_CPH15" class="form-control" disabled  ></td>
-              <td><label   for="week"  id="P_CPH015" name="P_CPH015"  ></label></td>
-            </tr>
-            </tr>
-
-
-            <!-- 16 HDV - (PDF fix up)-->
-            <tr>
-              <th class="ui  header subhead grey">HDV - (PDF fix up) </th>
-              <td>
-                <label id="Planned_v16" name="P_Vol16"   ></label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc16" ></label>
-              </td>
-              
-
-              <td>
-                <input
-                  name="A_Vol16"
-                  id="value18"
-                  onkeyup="reactive();"
-                  class="form-control"
-                  type="text"
-                />
-              </td>
-              <td>
-                <input
-                  name="A_HCount16"
-                  id="value118"
-                  onkeyup="reactiveHCount();"
-                  class="form-control"
-                  type="text"
-                />
-              </td>
-              <td><input type="text"  name="accuracy16" class="form-control"></td>
-              <td><textarea rows="2" name="couts16"></textarea></td>
-              <td><input type="text"   name="A_CPH16" class="form-control" disabled  ></td>
-              <td><label   for="week"  id="P_CPH016" name="P_CPH016"  ></label></td>
-            </tr>
-            </tr>
-
-
-
-            <!-- 17. HDV Review SOP -->
-            <tr>
-              <th class="ui  header subhead grey">HDV Review SOP </th>
-              <td>
-                <label id="Planned_v17" name="P_Vol17"   > </label>
-              </td>
-              <td>
-                <label for="week" id="Planned_hc17" ></label>
-              </td>
-              
-
-              <td>
-                <input
-                  name="A_Vol17"
-                  id="value19"
-                  onkeyup="reactive();"
-                  class="form-control"
-                  type="text"
-                />
-              </td>
-              <td>
-                <input
-                  name="A_HCount17"
-                  id="value119"
-                  onkeyup="reactiveHCount();"
-                  class="form-control"
-                  type="text"
-                />
-              </td>
-              <td><input type="text"  name="accuracy17" class="form-control"></td>
-              <td><textarea rows="2" name="couts17"></textarea></td>
-              <td><input type="text"   name="A_CPH17" class="form-control" disabled  ></td>
-              <td><label   for="week"  id="P_CPH017" name="P_CPH017"  ></label></td>
-            </tr>
-            </tr>
-
-
-
-        <!-- 29.Content Testing  -->
+            <!--8. RPN -->
+              <tr>  
+                <th class="ui center aligned header blue" >GOK-HDV </th>  
+                <td>  
+                  <input type="text" name="Planned_v8" class="form-control" id="Planned_v8" readonly>
+                </td> 
+                <td>  
+  
+                  <input type="text" name="Planned_hc8" class="form-control" id="Planned_hc8" readonly>
+                </td> 
+                
+                <td>  
+                  <input name="A_Vol8" class="form-control" type="text" id="sum_reactive"   readonly /> 
+                </td> 
+                <td>  
+                  <input name="A_HCount8" class="form-control" type="text"  id="sum_reactiveHCount" readonly /> 
+                </td> 
+               
+                <td><input  type="text"  name="accuracy8" class="form-control"></td>  
+                <td><textarea rows="2" name="couts8"></textarea></td> 
+                <td><input type="text"   name="A_CPH8" class="form-control"  readonly ></td>  
+                <td><input type="text" name="Planned_cph8" class="form-control" id="Planned_cph8" readonly></td>  
+              </tr>
+    
+    
+              <!--9. Page Numbering Manual -->
+    
+                <tr>
+                  <th class="ui  header subhead grey " >Page Numbering Manual
+                  </th>
+                  <td>
+                    <input type="text" name="Planned_v9" class="form-control" id="Planned_v9" readonly>
+                  </td>
+                  <td>
                     
-        <tr>
-          <th class="ui center aligned header blue">GOK X-Ray </th>
-          <td>
-            <label id="Planned_v24" name="P_Vol24"   ></label>
-          </td>
-          <td>
-            <label for="week" id="Planned_hc24" ></label>
-          </td>
-        
-
-          <td>
-            <input name="A_Vol24" class="form-control" type="text"  />
-          </td>
-          <td>
-            <input name="A_HCount24" class="form-control" type="text"  />
-          </td>
-          <td><input type="text" name="accuracy24"  class="form-control"></td>
-          <td><textarea rows="2" name="couts24"></textarea></td>
-          <td><input type="text"   name="A_CPH24" class="form-control"  disabled  ></td>
-          <td><label   for="week"  id="P_CPH024" name="P_CPH024"  ></label></td>
-        </tr>
-        </tr>
+                  <input type="text" name="Planned_hc9" class="form-control" id="Planned_hc9" readonly>
+                  </td> 
+                  
+                  
+    
+                  <td>
+                    <input
+                      name="A_Vol9"
+                      id="value11"
+                      onkeyup="reactive();"
+                      class="form-control"
+                      type="text"
+                    />
+                  </td>          
+                  <td>
+                    <input
+                      name="A_HCount9"
+                      id="value111"
+                      onkeyup="reactiveHCount();"
+                      class="form-control"
+                      type="text"
+                    />
+                  </td>
+                  <td></td>
+                  <td><textarea rows="2" name="couts9"></textarea></td>
+                  <td><input type="text"   name="A_CPH9" class="form-control"  readonly ></td>
+                  <td><input type="text" name="Planned_cph9" class="form-control" id="Planned_cph9" readonly></td>  
+                </tr>
+    
+    
+    
+                <!--10  Page Numbering Tickets-->
+                <tr>
+                  <th class="ui  header subhead grey ">Page Numbering Tickets</th>
+                  </th>
+                  <td>
+                    <input type="text" name="Planned_v10" class="form-control" id="Planned_v10" readonly>
+                  </td>
+                  <td>
                     
-        <!-- 29.Content Testing  -->
-                    
-        <tr>
-          <th class="ui center aligned header blue">RPN  </th>
-          <td>
-            <label id="Planned_v29" name="P_Vol29"   ></label>
-          </td>
-          <td>
-            <label for="week" id="Planned_hc29" ></label>
-          </td>
-        
-
-          <td>
-            <input name="A_Vol29" class="form-control" type="text"  />
-          </td>
-          <td>
-            <input name="A_HCount29" class="form-control" type="text"  />
-          </td>
-          <td><input type="text" name="accuracy29"  class="form-control"></td>
-          <td><textarea rows="2" name="couts29"></textarea></td>
-          <td><input type="text"   name="A_CPH29" class="form-control"  disabled  ></td>
-          <td><label   for="week"  id="P_CPH029" name="P_CPH029"  ></label></td>
-        </tr>
-        </tr>
-                    
-           
-          </thead>
+                  <input type="text" name="Planned_hc10" class="form-control" id="Planned_hc10" readonly>
+                  </td>
+                  
+                  <td>
+                    <input
+                      name="A_Vol10"
+                      id="value12"
+                      onkeyup="reactive();"
+                      class="form-control"
+                      type="text"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      name="A_HCount10"
+                      id="value112"
+                      onkeyup="reactiveHCount();"
+                      class="form-control"
+                      type="text"
+                    />
+                  </td>
+                  <td></td>
+                  <td><textarea rows="2" name="couts10"></textarea></td>
+                  <td><input type="text"   name="A_CPH10" class="form-control"  readonly ></td>
+                  <td><input type="text" name="Planned_cph10" class="form-control" id="Planned_cph10" readonly></td>  
+                </tr>
+          </thead>  
         </table>
-
         <div class="form-group">
           <button class="ui basic large blue  button">Submit!</button>
         </div>
       </form>
 
-      <a href="/gok">Go Back</a>
+      <a href="/metadata">Go Back</a>
     </div>
   </div>
 </div>
 
+<script >
+
+  document.querySelector("#week").addEventListener("change", function(e) {
+  console.log("Calculating ....");
+  const UIamount = document.getElementById("week");
+  const Planned_v1 = document.getElementById("Planned_v1");
+  const Planned_v2 = document.getElementById("Planned_v2");
+  const Planned_v3 = document.getElementById("Planned_v3");
+  const Planned_v4 = document.getElementById("Planned_v4");
+  const Planned_v5 = document.getElementById("Planned_v5");
+  const Planned_v6 = document.getElementById("Planned_v6");
+  const Planned_v7 = document.getElementById("Planned_v7");
+  const Planned_v9 = document.getElementById("Planned_v9");
+  const Planned_v8 = document.getElementById("Planned_v8");
+  const Planned_v10 = document.getElementById("Planned_v10");
+
+  const Planned_hc1 = document.getElementById("Planned_hc1");
+  const Planned_hc2 = document.getElementById("Planned_hc2");
+  const Planned_hc3 = document.getElementById("Planned_hc3");
+  const Planned_hc4 = document.getElementById("Planned_hc4");
+  const Planned_hc5 = document.getElementById("Planned_hc5");
+  const Planned_hc6 = document.getElementById("Planned_hc6");
+  const Planned_hc7 = document.getElementById("Planned_hc7");
+  const Planned_hc9 = document.getElementById("Planned_hc9");
+  const Planned_hc8 = document.getElementById("Planned_hc8");
+  const Planned_hc10 = document.getElementById("Planned_hc10");
+
+  const Planned_cph1 = document.getElementById("Planned_cph1");
+  
+  const Planned_cph2 = document.getElementById("Planned_cph2");
+
+
+  const weekly = UIamount.value;
+  // const calculatedInterest = parseFloat(UIinterest.value);
+  // const calculatedPayment = parseFloat(UIyears.value);
+  console.log(weekly);
+  if (
+    weekly === "2019-W45" ||
+    weekly === "2019-W46" ||
+    weekly === "2019-W47" ||
+    weekly === "2019-W48"
+  ) {
+    Planned_v1.value = 989;
+    Planned_v2.value = 876;
+    Planned_v3.value = 542;
+    Planned_v4.value = 789;
+    Planned_v5.value = 1176;  
+    Planned_v6.value = 402;
+    Planned_v7.value = 189;
+    Planned_v8.value = 276;
+    Planned_v9.value = 402;
+    Planned_v10.value = 789;
+
+    Planned_hc1.value = 2.05;
+    Planned_hc2.value = 0.06;
+    Planned_hc3.value = 1.06;
+    Planned_hc4.value = 0.06;
+    Planned_hc5.value = 1.06;
+    Planned_hc6.value = 0.06;
+    Planned_hc7.value = 0.06;
+    Planned_hc8.value = 1.06;
+    Planned_hc9.value = 0.2;
+    Planned_hc10.value = 2.05;
+
+    Planned_cph1.value =1780;
+    Planned_cph2.value =1780;
+    Planned_cph3.value =1780;
+    Planned_cph4.value =1780;
+    Planned_cph5.value =1780;
+    Planned_cph6.value =1780;
+    Planned_cph7.value =1780;
+    Planned_cph8.value =1780;
+    Planned_cph9.value =1780;
+    Planned_cph10.value =1780;
+
+  } else if (
+    weekly === "2019-W49" ||
+    weekly === "2019-W50" ||
+    weekly === "2019-W51" ||
+    weekly === "2019-W52"
+  ) {
+    Planned_v1.value = 3189;
+    Planned_v2.value = 8316;
+    Planned_v3.value = 3142;
+    Planned_v4.value = 3189;
+    Planned_v5.value = 1316;
+    Planned_v6.value = 3102;
+    Planned_v7.value = 3189;
+    Planned_v8.value = 2731;
+    Planned_v9.value = 431;
+    Planned_v10.value = 3189;
+   
+    Planned_hc1.value = 1.7;
+    Planned_hc2.value = 3.2;
+    Planned_hc3.value = 0.02;
+    Planned_hc4.value = 0.2;
+    Planned_hc5.value = 1.07;
+    Planned_hc6.value = 0.2;
+    Planned_hc7.value = 3.2;
+    Planned_hc8.value = 0.02;
+    Planned_hc9.value = 0.2;
+    Planned_hc10.value = 1.7;
+
+    
+    Planned_cph1.value =1667;
+    Planned_cph2.value =1667;
+    Planned_cph3.value =1667;
+    Planned_cph4.value =1667;
+    Planned_cph5.value =1667;
+    Planned_cph6.value =1667;
+    Planned_cph7.value =1667;
+    Planned_cph8.value =1667;
+    Planned_cph9.value =1667;
+    Planned_cph10.value =1667;
+   
+    
+  } else {
+    Planned_v1.value = null;
+    Planned_v2.value = null;
+    Planned_v3.value = null;
+    Planned_v4.value = null;
+    Planned_v5.value = null;
+    Planned_v6.value = null;
+    Planned_v7.value = null;
+    Planned_v8.value = null;
+    Planned_v9.value = null;
+    Planned_v10.value = null;
+   
+    Planned_hc1.value = null;
+    Planned_hc2.value = null;
+    Planned_hc3.value = null;
+    Planned_hc4.value = null;
+    Planned_hc5.value = null;
+    Planned_hc6.value = null;
+    Planned_hc7.value = null;
+    Planned_hc8.value = null;
+    Planned_hc9.value = null;
+    Planned_hc10.value = null;
+
+    Planned_cph1.value =null;
+    Planned_cph2.value =null;
+    Planned_cph3.value =null;
+    Planned_cph4.value =null;
+    Planned_cph5.value =null;
+    Planned_cph6.value =null;
+    Planned_cph7.value =null;
+    Planned_cph8.value =null;
+    Planned_cph9.value =null;
+    Planned_cph10.value =null;
+   
+
+  }
+
+  e.preventDefault();
+  
+});
+
+</script>
 <% include ../partials/footer %>

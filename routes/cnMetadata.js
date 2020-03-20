@@ -1,28 +1,28 @@
 var express = require("express");
 var router = express.Router();
-var cnMetadata = require("../models/cnMetadata");
+var cnmetadata = require("../models/cnmetadata");
 var middleware = require("../middleware");
 
 //INDEX - show all campgrounds
 router.get("/", function(req, res) {
   // Get all campgrounds from DB
-  cnMetadata.find({}, function(err, allcnMetadatas) {
+  cnmetadata.find({}, function(err, allcnmetadatas) {
     if (err) {
       console.log(err);
     } else {
-      res.render("cnMetadata/index", { cnMetadata: allcnMetadatas });
+      res.render("cnmetadata/index", { cnmetadata: allcnmetadatas });
     }
   });
 });
 
-// cnMetadata routes here
-router.get("/cnMetadatacreate", middleware.isLoggedIn, function(req, res) {
-  cnMetadata.find({}, function(err, allcnMetadatas) {
+// cnmetadata routes here
+router.get("/cnmetadatacreate", middleware.isLoggedIn, function(req, res) {
+  cnmetadata.find({}, function(err, allcnmetadatas) {
     if (err) {
       console.log(err);
     } else {
-      console.log(allcnMetadatas);
-      res.render("cnMetadata/cnMetadatacreate", { cnMetadata: allcnMetadatas });
+      console.log(allcnmetadatas);
+      res.render("cnmetadata/cnmetadatacreate", { cnmetadata: allcnmetadatas });
     }
   });
 });
@@ -574,36 +574,36 @@ router.post("/", function(req, res) {
   };
 
   // Create a new campground and save to DB
-  cnMetadata.create(newMetrics, function(err, newlyCreated) {
+  cnmetadata.create(newMetrics, function(err, newlyCreated) {
     if (err) {
       console.log(err);
     } else {
       //redirect back to campgrounds page
       console.log(newlyCreated);
-      res.redirect("/cnMetadata");
+      res.redirect("/cnmetadata");
     }
   });
 });
 
 router.get("/", function(req, res) {
   // Get all campgrounds from DB
-  cnMetadata.find({}, function(err, allcnMetadatas) {
+  cnmetadata.find({}, function(err, allcnmetadatas) {
     if (err) {
       console.log(err);
     } else {
-      res.render("cnMetadata", { cnMetadata: allcnMetadatas });
+      res.render("cnmetadata", { cnmetadata: allcnmetadatas });
     }
   });
 });
 
-router.get("/showcnMetadata_month", function(req, res) {
-  res.render("cnMetadata/showcnMetadata_month");
+router.get("/showcnmetadata_month", function(req, res) {
+  res.render("cnmetadata/showcnmetadata_month");
 });
 
 // SHOW - shows more info about one campground
 router.get("/:id", function(req, res) {
   //find the campground with provided ID
-  cnMetadata
+  cnmetadata
     .findById(req.params.id)
     .populate("comments")
     .exec(function(err, foundCampground) {
@@ -612,47 +612,47 @@ router.get("/:id", function(req, res) {
       } else {
         console.log(foundCampground);
         //render show template with that campground
-        res.render("cnMetadata/show", { cnMetadata: foundCampground });
+        res.render("cnmetadata/show", { cnmetadata: foundCampground });
       }
     });
 });
 
 // EDIT CAMPGROUND ROUTE
-router.get("/:id/edit", middleware.checkcnMetadataTeamOwnership, function(
+router.get("/:id/edit", middleware.checkcnmetadataTeamOwnership, function(
   req,
   res
 ) {
-  cnMetadata.findById(req.params.id, function(err, foundcnMetadata) {
-    res.render("cnMetadata/edit", { cnMetadata: foundcnMetadata });
+  cnmetadata.findById(req.params.id, function(err, foundcnmetadata) {
+    res.render("cnmetadata/edit", { cnmetadata: foundcnmetadata });
   });
 });
 
 // UPDATE CAMPGROUND ROUTE
-router.put("/:id", middleware.checkcnMetadataTeamOwnership, function(req, res) {
+router.put("/:id", middleware.checkcnmetadataTeamOwnership, function(req, res) {
   // find and update the correct campground
-  cnMetadata.findByIdAndUpdate(req.params.id, req.body.campground, function(
+  cnmetadata.findByIdAndUpdate(req.params.id, req.body.campground, function(
     err,
     updatedCampground
   ) {
     if (err) {
-      res.redirect("/cnMetadata");
+      res.redirect("/cnmetadata");
     } else {
       //redirect somewhere(show page)
-      res.redirect("/cnMetadata/" + req.params.id);
+      res.redirect("/cnmetadata/" + req.params.id);
     }
   });
 });
 
 // DESTROY CAMPGROUND ROUTE:
-router.delete("/:id", middleware.checkcnMetadataTeamOwnership, function(
+router.delete("/:id", middleware.checkcnmetadataTeamOwnership, function(
   req,
   res
 ) {
-  cnMetadata.findByIdAndRemove(req.params.id, function(err) {
+  cnmetadata.findByIdAndRemove(req.params.id, function(err) {
     if (err) {
-      res.redirect("/cnMetadata");
+      res.redirect("/cnmetadata");
     } else {
-      res.redirect("/cnMetadata");
+      res.redirect("/cnmetadata");
     }
   });
 });

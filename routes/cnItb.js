@@ -1,6 +1,6 @@
 var express = require("express");
 var router = express.Router();
-var cnitb = require("../models/cnitb");
+var cnitb = require("../models/cnItb");
 var middleware = require("../middleware");
 
 //INDEX - show all campgrounds

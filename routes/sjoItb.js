@@ -1,6 +1,6 @@
 var express = require("express");
 var router = express.Router();
-var sjoitb = require("../models/sjoitb");
+var sjoitb = require("../models/sjoItb");
 var middleware = require("../middleware");
 
 //INDEX - show all campgrounds

@@ -8,6 +8,10 @@ var express = require("express"),
   Xray = require("./models/xray"),
   Metadata = require("./models/metadata"),
   Series = require("./models/series"),
+  sjoItb = require("./models/sjoItb"),
+  jpItb = require("./models/jpitb"),
+  cnitb = require("./models/cnItb"),
+  cnmetadata = require("./models/cnmetadata"),
   passport = require("passport"),
   LocalStrategy = require("passport-local"),
   User = require("./models/user"),
@@ -20,10 +24,14 @@ var commentRoutes = require("./routes/comments"),
   xrayRoutes = require("./routes/xrays"),
   metadataRoutes = require("./routes/metadatas"),
   seriesRoutes = require("./routes/series"),
+  sjoitbRoutes = require("./routes/sjoItb"),
+  jpitbRoutes = require("./routes/jpItb"),
+  cnitbRoutes = require("./routes/cnItb"),
+  cnmetadataRoutes = require("./routes/cnmetadata"),
   indexRoutes = require("./routes/index");
 
 //seedDB();
-//mongoose.connect("mongodb://localhost:27017/win",{useNewUrlParser: true});
+// mongoose.connect("mongodb://localhost:27017/win", { useNewUrlParser: true });
 //rparaman:<password>@cluster0-zugga.mongodb.net/test?retryWrites=true&w=majority
 
 mongoose
@@ -70,6 +78,7 @@ app.use(function(req, res, next) {
   res.locals.success = req.flash("success");
   next();
 });
+
 // routes
 app.use("/", indexRoutes);
 app.use("/campgrounds", compgroundRoutes);
@@ -77,6 +86,10 @@ app.use("/xray", xrayRoutes);
 app.use("/metadata", metadataRoutes);
 app.use("/gok", gokRoutes);
 app.use("/series", seriesRoutes);
+app.use("/sjoitb", sjoitbRoutes);
+app.use("/cnitb", cnitbRoutes);
+app.use("/cnmetadata", cnmetadataRoutes);
+app.use("/jpitb", jpitbRoutes);
 
 app.use(commentRoutes);
 
